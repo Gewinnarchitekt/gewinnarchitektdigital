@@ -4,9 +4,9 @@ interface HeroSectionProps {}
 
 const HeroSection = ({}: HeroSectionProps) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-primary-light/10" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Beautiful gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500" />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
