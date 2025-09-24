@@ -1,38 +1,39 @@
-import { CheckCircle, Lightbulb, BarChart3, Target, TrendingUp } from "lucide-react";
+import { Package, TrendingUp, Target } from "lucide-react";
 
 interface SolutionSectionProps {}
 
 const SolutionSection = ({}: SolutionSectionProps) => {
   const solutions = [
     {
-      icon: CheckCircle,
-      title: "Klares Werteversprechen",
-      description: "Durch Kundenbefragungen und Einzelkundenanalysen entsteht ein Werteversprechen, das bei Kunden auf Interesse stösst und erfolgreiche Abschlüsse generiert.",
-      color: "from-green-500 to-green-600"
-    },
-    {
-      icon: Lightbulb,
-      title: "Strukturiertes Angebot",
-      description: "Verhaltenspsychologische Prinzipien und einheitliche Kommunikationsstandards schaffen Transparenz und erleichtern Kaufentscheidungen.",
-      color: "from-blue-500 to-blue-600"
-    },
-    {
-      icon: BarChart3,
-      title: "Methodische Herangehensweise",
-      description: "Strukturierte Datenerfassung und gezielte Analysen schaffen belastbare Entscheidungsgrundlagen, Risiken werden minimiert, Chancen früh erkannt und die Geschäftsentwicklung verbessert.",
-      color: "from-purple-500 to-purple-600"
-    },
-    {
-      icon: Target,
-      title: "Zielgerichtete Angebotsentwicklung",
-      description: "Datenbasierte Bedarfsanalysen ermöglichen eine gezielte Ausrichtung auf Kundensegmente mit der höchsten Zahlungsbereitschaft und steigern so die Profitabilität.",
-      color: "from-indigo-500 to-indigo-600"
+      icon: Package,
+      title: "Angebotsgestaltung",
+      descriptions: [
+        "Die klare Spezifikation des Problems und der Vergleich mit bestehenden \"Jobs To Be Done\" ermöglicht die Erstellung eines marktorientierten Angebots.",
+        "Dieses strukturiere ich gemäss neuesten Erkenntnissen aus der Verhaltensforschung und bringe die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess.",
+        "Begleitet wird der Prozess mit quantitativen Analysen bezüglich Marktpotential, Gewinnerwartung und Liquiditätsentwicklung."
+      ],
+      note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
+      result: "Profitable Angebote, die sich verkaufen lassen"
     },
     {
       icon: TrendingUp,
-      title: "Strategischer Fahrplan",
-      description: "Durch klare Zielsetzung und Szenarienplanung entsteht ein Fahrplan für Wachstum. Ressourcen werden gezielt eingesetzt, Potenziale optimal genutzt und die Profitabilität gesteigert.",
-      color: "from-teal-500 to-teal-600"
+      title: "Angebotsoptimierung",
+      descriptions: [
+        "Detaillierte Produkt- und Kundenanalysen bringen Transparenz über den tatsächlich erzielten Gewinnbeitrag pro Angebot.",
+        "Mit \"Soll-vs-Ist\" Vergleichen lassen sich ungewollte Umsatzverluste aufdecken und ein regelmässiges Erfolgsreporting identifiziert die wichtigsten Gewinntreiber.",
+        "Monatlich besprechen wir die aktuellen Entwicklungen und besprechen Massnahmen zur Optimierung."
+      ],
+      result: "Kontinuierliche Erhöhung deiner Gewinne"
+    },
+    {
+      icon: Target,
+      title: "Angebotsstrategie",
+      descriptions: [
+        "Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.",
+        "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.",
+        "Als strategische Partner unterstütze ich dich zudem beim Durchspielen verschiedener Angebotsstrategien und zeige Chancen und Gefahren auf."
+      ],
+      result: "Nachhaltige Wettbewerbsvorteile"
     }
   ];
 
@@ -41,52 +42,53 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">
-            Diese Lösungsansätze versprechen Erfolg
+            So helfe ich dir, maximale Wertschöpfung aus dem Markt zu holen
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Mit bewährten Methoden und strategischen Ansätzen helfe ich Unternehmen dabei, profitable Angebote zu entwickeln
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {solutions.map((solution, index) => {
             const IconComponent = solution.icon;
             return (
               <div 
                 key={index} 
-                className="bg-card rounded-xl p-8 card-shadow hover:elegant-shadow smooth-transition group hover:-translate-y-1"
+                className="bg-card rounded-xl p-8 card-shadow hover:elegant-shadow smooth-transition"
               >
-                <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${solution.color} flex items-center justify-center mb-6 group-hover:scale-110 smooth-transition`}>
-                  <IconComponent className="w-8 h-8 text-white" />
+                <div className="flex items-center mb-6">
+                  <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                    <IconComponent className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">
+                    {solution.title}
+                  </h3>
                 </div>
-                
-                <h3 className="text-xl font-semibold mb-4 text-foreground">
-                  {solution.title}
-                </h3>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  {solution.description}
-                </p>
+
+                <div className="space-y-4 mb-8">
+                  {solution.descriptions.map((description, descIndex) => (
+                    <p key={descIndex} className="text-muted-foreground leading-relaxed text-sm">
+                      {description}
+                    </p>
+                  ))}
+                  
+                  {solution.note && (
+                    <p className="text-muted-foreground leading-relaxed text-sm italic">
+                      {solution.note}
+                    </p>
+                  )}
+                </div>
+
+                <div className="mb-4">
+                  <p className="font-semibold text-foreground mb-2">Du erhältst:</p>
+                </div>
+
+                <div className="bg-green-100 border-2 border-green-300 rounded-lg p-4 text-center">
+                  <p className="font-semibold text-green-800">
+                    {solution.result}
+                  </p>
+                </div>
               </div>
             );
           })}
-        </div>
-
-        <div className="mt-16 text-center">
-          <div className="bg-card rounded-xl p-8 card-shadow max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold mb-4 text-foreground">
-              Ihr Weg zu mehr Erfolg
-            </h3>
-            <p className="text-lg text-muted-foreground mb-6">
-              Lassen Sie uns gemeinsam Ihre Angebotsstrategie optimieren und nachhaltiges Wachstum schaffen.
-            </p>
-            <div className="flex justify-center">
-              <div className="inline-flex items-center space-x-2 text-primary">
-                <CheckCircle className="w-5 h-5" />
-                <span className="font-medium">Individuelle Beratung • Datenbasierte Lösungen • Langfristige Partnerschaften</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
