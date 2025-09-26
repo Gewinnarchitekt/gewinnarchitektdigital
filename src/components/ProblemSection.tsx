@@ -6,19 +6,23 @@ const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [
     {
       icon: AlertTriangle,
-      title: "Konzeptionelle Fehler",
+      title: "Fehlende Akzeptanz",
       problems: [
         {
-          title: "Fehlt ein klares Werteversprechen, ignorieren dich die Kunden",
-          description: "Ohne starkes Werteversprechen werden Angebote übersehen und potentieller Umsatz geht verloren."
+          title: "Fehlende Wertkommunikation",
+          description: ""
         },
         {
-          title: "Unterschiedliche Kundensegmente setzen ein differenziertes Angebot voraus",
-          description: "Verschiedene Zielgruppen benötigen maßgeschneiderte Lösungen für optimale Ergebnisse."
+          title: "One Size Fits All",
+          description: ""
         },
         {
-          title: "Eine falsche Pricinglogik ruiniert die beste Lösung",
-          description: "Fehlerhafte Preisstrategien können selbst die innovativsten Produkte zum Scheitern bringen."
+          title: "Falsche Pricinglogik",
+          description: ""
+        },
+        {
+          title: "Kostenorientierte Preisbildung",
+          description: ""
         }
       ],
       highlight: "Das richtige Angebot bringt 20% mehr Umsatz¹",
