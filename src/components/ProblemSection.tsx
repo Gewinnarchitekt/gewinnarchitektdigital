@@ -74,7 +74,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
             Das Gewinnpotenial gut durchdachter Angebote wird oft übersehen
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Diese häufigen Probleme verhindern, dass Unternehmen ihr volles Potenzial ausschöpfen können
+            Für nachhaltiges, profitables Wachstum ist eine gut durchdachte Angebotsgestaltung unerlässlich und dennoch wird sie regelmässig vernachlässigt. Es fehlt oft an Transparenz über wesentliche Gewinntreiber, Kundenbedürfnisse werden zu spät berücksichtigt und wichtige Entscheidungen entstehen nach Bauchgefühl. Vielen Geschäftsführern und Produktverantwortlichen sind die Konsequenzen gar nicht bewusst.
           </p>
         </div>
 
