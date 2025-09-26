@@ -33,20 +33,20 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Ungenutztes Potential",
       problems: [
         {
-          title: "Silodenken",
-          description: "Isolierte Abteilungen arbeiten gegeneinander statt miteinander, was zu ineffizienten Prozessen führt"
-        },
-        {
           title: "Limitierte Ressourcen",
           description: "Mangelnde personelle und finanzielle Mittel verhindern die optimale Umsetzung von Strategien"
+        },
+        {
+          title: "Schlechte Datenlage",
+          description: "Unvollständige oder veraltete Informationen erschweren fundierte Geschäftsentscheidungen erheblich"
         },
         {
           title: "Schwache Expertise",
           description: "Fehlendes Know-how in kritischen Bereichen führt zu suboptimalen Entscheidungen und Ergebnissen"
         },
         {
-          title: "Schlechte Datenlage",
-          description: "Unvollständige oder veraltete Informationen erschweren fundierte Geschäftsentscheidungen erheblich"
+          title: "Silodenken",
+          description: "Isolierte Abteilungen arbeiten gegeneinander statt miteinander, was zu ineffizienten Prozessen führt"
         }
       ],
       highlight: "66% des Preispotentials geht durch falsche Prozesse verloren²",
