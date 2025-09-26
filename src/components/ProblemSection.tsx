@@ -10,19 +10,19 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       problems: [
         {
           title: "Kostenorientierte Preisbildung",
-          description: "Preise basierend auf internen Kosten ignorieren den wahrgenommenen Kundenwert und führen zu mangelnder Marktakzeptanz."
+          description: "Preise basierend auf internen Kosten ignorieren den wahrgenommenen Kundenwert"
         },
         {
           title: "Fehlende Wertkommunikation",
-          description: "Ohne klare Kommunikation des Nutzens verstehen Kunden den Wert nicht und lehnen das Angebot ab."
+          description: "Ohne klare Kommunikation des Nutzens verstehen Kunden den Wert nicht"
         },
         {
           title: "One-Size-Fits-All",
-          description: "Einheitslösungen verfehlen die spezifischen Bedürfnisse verschiedener Kundensegmente und reduzieren die Akzeptanz."
+          description: "Einheitslösungen verfehlen die spezifischen Bedürfnisse verschiedener Kundensegmente"
         },
         {
           title: "Falsche Pricinglogik",
-          description: "Unpassende Preisstrategien schaffen Barrieren und verhindern die Kaufentscheidung der Zielkunden."
+          description: "Die Preislogik hat einen grösseren Einfluss auf den Kaufentscheid als die finalen Preispunkte"
         }
       ],
       highlight: "Das richtige Angebot bringt 20% mehr Umsatz¹",
