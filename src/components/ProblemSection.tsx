@@ -30,7 +30,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     },
     {
       icon: TrendingDown,
-      title: "Kein Optimierungsprozess",
+      title: "Ungenutztes Potential",
       problems: [
         {
           title: "Mangelnde Datengrundlagen machen Anpassungen zum Ratespiel",
