@@ -54,7 +54,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     },
     {
       icon: Target,
-      title: "Schlechte Planung",
+      title: "Verpasste Chancen",
       problems: [
         {
           title: "Das zu späte Berücksichtigen von Kundenbedürfnissen führt zu belanglosen Produkten",
