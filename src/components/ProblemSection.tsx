@@ -30,7 +30,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     },
     {
       icon: TrendingDown,
-      title: "Ungenutztes Potential",
+      title: "Entgangene Umsätze",
       problems: [
         {
           title: "Limitierte Ressourcen",
