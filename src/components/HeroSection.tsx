@@ -15,7 +15,7 @@ const HeroSection = ({}: HeroSectionProps) => {
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Main headline */}
           <h1 className="font-bold mb-6 leading-tight">
-            Verschenke kein Gewinnpotential aufgrund der falschen Angebote
+            Hole mehr aus deinen Angeboten
           </h1>
           
           {/* Subheading */}
