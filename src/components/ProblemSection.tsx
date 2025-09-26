@@ -71,7 +71,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">
-            Folgende Schwachstellen in der Angebotsentwicklung kosten wertvollen Gewinn
+            Das Gewinnpotenial gut durchdachter Angebote wird oft übersehen
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Diese häufigen Probleme verhindern, dass Unternehmen ihr volles Potenzial ausschöpfen können
