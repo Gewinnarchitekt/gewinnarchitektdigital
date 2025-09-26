@@ -34,19 +34,19 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       problems: [
         {
           title: "Silodenken",
-          description: ""
+          description: "Isolierte Abteilungen arbeiten gegeneinander statt miteinander, was zu ineffizienten Prozessen führt"
         },
         {
           title: "Limitierte Ressourcen",
-          description: ""
+          description: "Mangelnde personelle und finanzielle Mittel verhindern die optimale Umsetzung von Strategien"
         },
         {
           title: "Schwache Expertise",
-          description: ""
+          description: "Fehlendes Know-how in kritischen Bereichen führt zu suboptimalen Entscheidungen und Ergebnissen"
         },
         {
           title: "Schlechte Datenlage",
-          description: ""
+          description: "Unvollständige oder veraltete Informationen erschweren fundierte Geschäftsentscheidungen erheblich"
         }
       ],
       highlight: "66% des Preispotentials geht durch falsche Prozesse verloren²",
