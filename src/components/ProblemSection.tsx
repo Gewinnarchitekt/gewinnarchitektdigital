@@ -9,20 +9,20 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Fehlende Akzeptanz",
       problems: [
         {
-          title: "Fehlende Wertkommunikation",
-          description: ""
+          title: "Kostenorientierte Preisbildung",
+          description: "Preise basierend auf internen Kosten ignorieren den wahrgenommenen Kundenwert und führen zu mangelnder Marktakzeptanz."
         },
         {
-          title: "One Size Fits All",
-          description: ""
+          title: "Fehlende Wertkommunikation",
+          description: "Ohne klare Kommunikation des Nutzens verstehen Kunden den Wert nicht und lehnen das Angebot ab."
+        },
+        {
+          title: "One-Size-Fits-All",
+          description: "Einheitslösungen verfehlen die spezifischen Bedürfnisse verschiedener Kundensegmente und reduzieren die Akzeptanz."
         },
         {
           title: "Falsche Pricinglogik",
-          description: ""
-        },
-        {
-          title: "Kostenorientierte Preisbildung",
-          description: ""
+          description: "Unpassende Preisstrategien schaffen Barrieren und verhindern die Kaufentscheidung der Zielkunden."
         }
       ],
       highlight: "Das richtige Angebot bringt 20% mehr Umsatz¹",
