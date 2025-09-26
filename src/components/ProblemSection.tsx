@@ -33,16 +33,20 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Ungenutztes Potential",
       problems: [
         {
-          title: "Mangelnde Datengrundlagen machen Anpassungen zum Ratespiel",
-          description: "Entscheidungen auf Basis unvollständiger Informationen führen zu suboptimalen Ergebnissen."
+          title: "Silodenken",
+          description: ""
         },
         {
-          title: "Transparenz ist die Voraussetzung für unternehmensweite Unterstützung",
-          description: "Ohne klare Kommunikation fehlt die nötige Unterstützung der Organisation."
+          title: "Limitierte Ressourcen",
+          description: ""
         },
         {
-          title: "Gute Entscheidungen setzen Kenntnisse über Produkte- und Kundenprofitabilität voraus",
-          description: "Fundierte Analysen sind essentiell für erfolgreiche Geschäftsentscheidungen."
+          title: "Schwache Expertise",
+          description: ""
+        },
+        {
+          title: "Schlechte Datenlage",
+          description: ""
         }
       ],
       highlight: "66% des Preispotentials geht durch falsche Prozesse verloren²",
