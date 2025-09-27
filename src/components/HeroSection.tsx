@@ -12,7 +12,7 @@ const HeroSection = ({}: HeroSectionProps) => {
       <div className="absolute inset-0 bg-black/50" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl text-left text-white">
+        <div className="max-w-4xl text-left text-white opacity-0 animate-fadeIn">
           {/* Main headline */}
           <h1 className="font-bold mb-6 leading-tight">
             Hole mehr aus deinen digitalen Angeboten
