@@ -59,7 +59,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
             return (
               <div key={key} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition h-[500px] flex flex-col">
                 {/* Icon and Title at the top of each box */}
-                <div className="flex items-center justify-center mb-6 pb-4 border-b border-border">
+                <div className="flex items-center mb-6 pb-4 border-b border-border">
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
