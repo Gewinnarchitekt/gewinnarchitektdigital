@@ -52,47 +52,45 @@ const SolutionSection = ({}: SolutionSectionProps) => {
           </h2>
         </div>
 
-        {/* Table layout with 2 rows and 3 columns */}
+        {/* Grid layout with 3 columns */}
         <div className="grid grid-cols-3 gap-8">
-          {/* First row - Titles */}
           {Object.entries(solutions).map(([key, solution]) => {
             const IconComponent = solution.icon;
             return (
-              <div key={`title-${key}`} className="flex items-center justify-center p-4">
-                <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
-                  <IconComponent className="w-6 h-6 text-white" />
+              <div key={key} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition h-[500px] flex flex-col">
+                {/* Icon and Title at the top of each box */}
+                <div className="flex items-center justify-center mb-6 pb-4 border-b border-border">
+                  <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
+                    <IconComponent className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">
+                    {solution.title}
+                  </h3>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">
-                  {solution.title}
-                </h3>
+                
+                {/* Content */}
+                <div className="space-y-4 mb-6 flex-grow">
+                  {solution.descriptions.map((description, descIndex) => (
+                    <p key={descIndex} className="text-muted-foreground leading-relaxed text-sm">
+                      {description}
+                    </p>
+                  ))}
+                  
+                  {solution.note && (
+                    <p className="text-muted-foreground leading-relaxed italic text-sm">
+                      {solution.note}
+                    </p>
+                  )}
+                </div>
+
+                <div className="flex justify-center mt-auto">
+                  <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                    mehr erfahren!
+                  </Button>
+                </div>
               </div>
             );
           })}
-          
-          {/* Second row - Content */}
-          {Object.entries(solutions).map(([key, solution]) => (
-            <div key={`content-${key}`} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition h-[400px] flex flex-col">
-              <div className="space-y-4 mb-6 flex-grow">
-                {solution.descriptions.map((description, descIndex) => (
-                  <p key={descIndex} className="text-muted-foreground leading-relaxed text-sm">
-                    {description}
-                  </p>
-                ))}
-                
-                {solution.note && (
-                  <p className="text-muted-foreground leading-relaxed italic text-sm">
-                    {solution.note}
-                  </p>
-                )}
-              </div>
-
-              <div className="flex justify-center mt-auto">
-                <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-                  mehr erfahren!
-                </Button>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>
