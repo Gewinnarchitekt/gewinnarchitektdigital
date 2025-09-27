@@ -76,12 +76,11 @@ const PricingSection = ({}: PricingSectionProps) => {
                 key={index}
                 className="relative bg-card rounded-2xl p-8 card-shadow hover:elegant-shadow smooth-transition hover:-translate-y-1 flex flex-col"
               >
-                <div className="text-center mb-8">
-                  <div className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${pkg.color} mb-4`}>
-                    <IconComponent className="w-8 h-8 text-white" />
+                <div className="flex items-center mb-6 pb-4 border-b border-border">
+                  <div className={`p-3 rounded-lg bg-gradient-to-r ${pkg.color} mr-4`}>
+                    <IconComponent className="w-6 h-6 text-white" />
                   </div>
-                  
-                  <h3 className="text-xl font-semibold mb-8">
+                  <h3 className="text-xl font-semibold text-foreground">
                     {pkg.name}
                   </h3>
                 </div>
