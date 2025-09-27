@@ -120,8 +120,8 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 </div>
 
                 {/* Highlight box */}
-                <div className={`p-4 rounded-lg bg-gradient-to-r ${category.color} text-white`}>
-                  <p className="font-semibold text-center">
+                <div className={`p-4 rounded-lg bg-gradient-to-r ${category.color} text-white h-20 flex items-center justify-center`}>
+                  <p className="font-semibold text-center leading-tight">
                     {category.highlight}
                   </p>
                 </div>
