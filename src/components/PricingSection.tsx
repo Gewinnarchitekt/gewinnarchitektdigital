@@ -61,7 +61,7 @@ const PricingSection = ({}: PricingSectionProps) => {
           <h2 className="font-bold mb-6">
             Mein Angebot an euch
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-muted-foreground mx-auto mb-8">
             Ihr erhaltet spezialisierte Expertise, ohne teure Beratungsunternehmen beauftragen 
             oder Fachexperten anstellen zu müssen. Die Zusammenarbeit ist langfristig ausgelegt 
             und zielt auf eine Wertsteigerung eures Unternehmens ab.
