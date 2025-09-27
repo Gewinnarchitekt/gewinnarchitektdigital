@@ -60,6 +60,19 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         </div>
 
         <Tabs defaultValue="angebotsgestaltung" className="w-full">
+          {/* Navigation spanning full width */}
+          <TabsList className="grid w-full grid-cols-3 mb-12 max-w-4xl mx-auto">
+            <TabsTrigger value="angebotsgestaltung" className="text-sm">
+              Angebotsgestaltung
+            </TabsTrigger>
+            <TabsTrigger value="angebotsoptimierung" className="text-sm">
+              Angebotsoptimierung
+            </TabsTrigger>
+            <TabsTrigger value="angebotsstrategie" className="text-sm">
+              Angebotsstrategie
+            </TabsTrigger>
+          </TabsList>
+
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Column - Image */}
             <div className="order-2 lg:order-1">
@@ -94,19 +107,6 @@ const SolutionSection = ({}: SolutionSectionProps) => {
 
             {/* Right Column - Content */}
             <div className="order-1 lg:order-2">
-              {/* Tabs Selector */}
-              <TabsList className="grid w-full grid-cols-3 mb-8">
-                <TabsTrigger value="angebotsgestaltung" className="text-sm">
-                  Angebotsgestaltung
-                </TabsTrigger>
-                <TabsTrigger value="angebotsoptimierung" className="text-sm">
-                  Angebotsoptimierung
-                </TabsTrigger>
-                <TabsTrigger value="angebotsstrategie" className="text-sm">
-                  Angebotsstrategie
-                </TabsTrigger>
-              </TabsList>
-
               {/* Content for each tab */}
               <div className="h-[600px] lg:h-[500px]">
                 {Object.entries(solutions).map(([key, solution]) => {
