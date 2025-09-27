@@ -85,7 +85,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           <h2 className="font-bold mb-6">
             Das Gewinnpotenial gut durchdachter Angebote wird oft übersehen
           </h2>
-          <p className="text-xl text-muted-foreground mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Digitale Produkte stehen online in direkter Konkurrenz zueinander und die Leistungserbringung erfolgt meist ohne direkten Kundenkontakt. Eine gewinnbringende Angebotsgestaltung wird dadurch zur erfolgskritischen Disziplin mit spezifischen Herausforderungen.
           </p>
         </div>
@@ -121,7 +121,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
 
                 {/* Highlight box */}
                 <div className="p-4 rounded-lg bg-transparent h-20 flex items-center justify-center">
-                  <p className="text-center leading-tight text-red-600 text-xs align-super">
+                  <p className="font-semibold text-center leading-tight text-red-600">
                     {category.highlight}
                   </p>
                 </div>
