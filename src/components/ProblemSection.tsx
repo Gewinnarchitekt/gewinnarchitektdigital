@@ -85,7 +85,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           <h2 className="font-bold mb-6">
             Das Gewinnpotenial gut durchdachter Angebote wird oft übersehen
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground mx-auto">
             Digitale Produkte stehen online in direkter Konkurrenz zueinander und die Leistungserbringung erfolgt meist ohne direkten Kundenkontakt. Eine gewinnbringende Angebotsgestaltung wird dadurch zur erfolgskritischen Disziplin mit spezifischen Herausforderungen.
           </p>
         </div>
