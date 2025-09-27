@@ -95,6 +95,16 @@ const PricingSection = ({}: PricingSectionProps) => {
                   ))}
                 </div>
 
+                {/* Coaching offer box - only for first package */}
+                {pkg.coachingNote && (
+                  <div className="mb-4 p-3 bg-muted rounded-lg border">
+                    <div className="text-sm text-muted-foreground text-center">
+                      <div className="font-medium">Coachingoffer</div>
+                      <div>{pkg.coachingNote}</div>
+                    </div>
+                  </div>
+                )}
+
                 <div className="text-center mb-6 mt-auto">
                   <div className="text-4xl font-bold text-foreground mb-2">
                     {pkg.price}
@@ -102,12 +112,6 @@ const PricingSection = ({}: PricingSectionProps) => {
                   <div className="text-muted-foreground">
                     {pkg.period}
                   </div>
-                  {pkg.coachingNote && (
-                    <div className="text-sm text-muted-foreground mt-2">
-                      Coachinghonorar<br />
-                      {pkg.coachingNote}
-                    </div>
-                  )}
                 </div>
 
                 <Button 
