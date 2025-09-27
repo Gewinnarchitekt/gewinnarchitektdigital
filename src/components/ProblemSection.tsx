@@ -6,7 +6,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [
     {
       icon: AlertTriangle,
-      title: "Hohe Kundenakzeptanz",
+      title: "Akzeptanz",
       problems: [
         {
           title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
@@ -17,7 +17,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           description: ""
         },
         {
-          title: "Einheitsangebote ignorieren die Bedürfnisse unterschiedlicher Kundensegmente",
+          title: "Einheitsangebote ignorieren unterschiedliche Kundensegmente",
           description: ""
         },
         {
