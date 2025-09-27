@@ -1,4 +1,4 @@
-import { Package, TrendingUp, Target } from "lucide-react";
+import { AlertTriangle, TrendingDown, Target } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import angebotsgestaltungImage from "@/assets/solution-angebotsgestaltung.jpg";
@@ -10,7 +10,7 @@ interface SolutionSectionProps {}
 const SolutionSection = ({}: SolutionSectionProps) => {
   const solutions = {
     "angebotsgestaltung": {
-      icon: Package,
+      icon: AlertTriangle,
       title: "Angebotsgestaltung",
       image: angebotsgestaltungImage,
       descriptions: [
@@ -22,7 +22,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       result: "Profitable Angebote, die sich verkaufen lassen"
     },
     "angebotsoptimierung": {
-      icon: TrendingUp,
+      icon: TrendingDown,
       title: "Angebotsoptimierung", 
       image: angebotsoptimierungImage,
       descriptions: [
