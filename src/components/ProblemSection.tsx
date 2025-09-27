@@ -94,9 +94,9 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           {problemCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <div key={index} className="space-y-6">
+              <div key={index} className="flex flex-col h-full">
                 {/* Icon and Title above the boxes */}
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center mb-6">
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} mr-4 flex-shrink-0`}>
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
@@ -104,7 +104,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 </div>
 
                 {/* Individual boxes for each problem */}
-                <div className="space-y-4">
+                <div className="space-y-4 mb-6 flex-1">
                   {category.problems.map((problem, problemIndex) => (
                     <div key={problemIndex} className="bg-card rounded-lg p-4 card-shadow hover:elegant-shadow smooth-transition h-20 flex items-center">
                       <h4 className="text-muted-foreground leading-tight">
@@ -119,8 +119,8 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                   ))}
                 </div>
 
-                {/* Highlight box */}
-                <div className="p-4 rounded-lg bg-transparent h-20 flex items-center justify-center">
+                {/* Highlight box - aligned to bottom */}
+                <div className="p-4 rounded-lg bg-transparent min-h-20 flex items-start justify-center">
                   <p className="font-semibold text-center leading-tight text-red-600">
                     {category.highlight}
                   </p>
