@@ -30,7 +30,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     },
     {
       icon: TrendingDown,
-      title: "Transparente Leistungserbringung",
+      title: "Leistungserbingung",
       problems: [
         {
           title: "Daten über das Kundenverhalten werden nicht ausreichend genutzt",
