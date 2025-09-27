@@ -1,12 +1,18 @@
 import { Package, TrendingUp, Target } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
+import angebotsgestaltungImage from "@/assets/solution-angebotsgestaltung.jpg";
+import angebotsoptimierungImage from "@/assets/solution-angebotsoptimierung.jpg";
+import angebotsstrategieImage from "@/assets/solution-angebotsstrategie.jpg";
 
 interface SolutionSectionProps {}
 
 const SolutionSection = ({}: SolutionSectionProps) => {
-  const solutions = [
-    {
+  const solutions = {
+    "angebotsgestaltung": {
       icon: Package,
       title: "Angebotsgestaltung",
+      image: angebotsgestaltungImage,
       descriptions: [
         "Die klare Spezifikation des Problems und der Vergleich mit bestehenden \"Jobs To Be Done\" ermöglicht die Erstellung eines marktorientierten Angebots.",
         "Dieses strukturiere ich gemäss neuesten Erkenntnissen aus der Verhaltensforschung und bringe die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess.",
@@ -15,27 +21,31 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
       result: "Profitable Angebote, die sich verkaufen lassen"
     },
-    {
+    "angebotsoptimierung": {
       icon: TrendingUp,
-      title: "Angebotsoptimierung",
+      title: "Angebotsoptimierung", 
+      image: angebotsoptimierungImage,
       descriptions: [
         "Detaillierte Produkt- und Kundenanalysen bringen Transparenz über den tatsächlich erzielten Gewinnbeitrag pro Angebot.",
         "Mit \"Soll-vs-Ist\" Vergleichen lassen sich ungewollte Umsatzverluste aufdecken und ein regelmässiges Erfolgsreporting identifiziert die wichtigsten Gewinntreiber.",
         "Monatlich besprechen wir die aktuellen Entwicklungen und besprechen Massnahmen zur Optimierung."
       ],
+      note: undefined,
       result: "Kontinuierliche Erhöhung deiner Gewinne"
     },
-    {
+    "angebotsstrategie": {
       icon: Target,
       title: "Angebotsstrategie",
+      image: angebotsstrategieImage,
       descriptions: [
         "Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.",
         "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.",
         "Als strategische Partner unterstütze ich dich zudem beim Durchspielen verschiedener Angebotsstrategien und zeige Chancen und Gefahren auf."
       ],
+      note: undefined,
       result: "Nachhaltige Wettbewerbsvorteile"
     }
-  ];
+  };
 
   return (
     <section className="py-20 bg-muted">
@@ -46,50 +56,106 @@ const SolutionSection = ({}: SolutionSectionProps) => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {solutions.map((solution, index) => {
-            const IconComponent = solution.icon;
-            return (
-              <div 
-                key={index} 
-                className="bg-card rounded-xl p-8 card-shadow hover:elegant-shadow smooth-transition"
-              >
-                <div className="flex items-center mb-6">
-                  <div className="p-3 bg-primary/10 rounded-lg mr-4">
-                    <IconComponent className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground">
-                    {solution.title}
-                  </h3>
+        <Tabs defaultValue="angebotsgestaltung" className="w-full">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Left Column - Image */}
+            <div className="order-2 lg:order-1">
+              <TabsContent value="angebotsgestaltung" className="mt-0">
+                <div className="aspect-square rounded-xl overflow-hidden">
+                  <img 
+                    src={solutions.angebotsgestaltung.image} 
+                    alt="Angebotsgestaltung" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
+              </TabsContent>
+              <TabsContent value="angebotsoptimierung" className="mt-0">
+                <div className="aspect-square rounded-xl overflow-hidden">
+                  <img 
+                    src={solutions.angebotsoptimierung.image} 
+                    alt="Angebotsoptimierung" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </TabsContent>
+              <TabsContent value="angebotsstrategie" className="mt-0">
+                <div className="aspect-square rounded-xl overflow-hidden">
+                  <img 
+                    src={solutions.angebotsstrategie.image} 
+                    alt="Angebotsstrategie" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </TabsContent>
+            </div>
 
-                <div className="space-y-4 mb-8">
-                  {solution.descriptions.map((description, descIndex) => (
-                    <p key={descIndex} className="text-muted-foreground leading-relaxed text-sm">
-                      {description}
-                    </p>
-                  ))}
-                  
-                  {solution.note && (
-                    <p className="text-muted-foreground leading-relaxed text-sm italic">
-                      {solution.note}
-                    </p>
-                  )}
-                </div>
+            {/* Right Column - Content */}
+            <div className="order-1 lg:order-2">
+              {/* Tabs Selector */}
+              <TabsList className="grid w-full grid-cols-3 mb-8">
+                <TabsTrigger value="angebotsgestaltung" className="text-sm">
+                  Angebotsgestaltung
+                </TabsTrigger>
+                <TabsTrigger value="angebotsoptimierung" className="text-sm">
+                  Angebotsoptimierung
+                </TabsTrigger>
+                <TabsTrigger value="angebotsstrategie" className="text-sm">
+                  Angebotsstrategie
+                </TabsTrigger>
+              </TabsList>
 
-                <div className="mb-4">
-                  <p className="font-semibold text-foreground mb-2">Du erhältst:</p>
-                </div>
+              {/* Content for each tab */}
+              {Object.entries(solutions).map(([key, solution]) => {
+                const IconComponent = solution.icon;
+                return (
+                  <TabsContent key={key} value={key} className="mt-0">
+                    <div className="bg-card rounded-xl p-8 card-shadow">
+                      <div className="flex items-center mb-6">
+                        <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                          <IconComponent className="w-6 h-6 text-primary" />
+                        </div>
+                        <h3 className="text-xl font-semibold text-foreground">
+                          {solution.title}
+                        </h3>
+                      </div>
 
-                <div className="bg-green-100 border-2 border-green-300 rounded-lg p-4 text-center">
-                  <p className="font-semibold text-green-800">
-                    {solution.result}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+                      <div className="space-y-4 mb-8">
+                        {solution.descriptions.map((description, descIndex) => (
+                          <p key={descIndex} className="text-muted-foreground leading-relaxed">
+                            {description}
+                          </p>
+                        ))}
+                        
+                        {solution.note && (
+                          <p className="text-muted-foreground leading-relaxed italic">
+                            {solution.note}
+                          </p>
+                        )}
+                      </div>
+
+                      <div className="space-y-4">
+                        <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                          <p className="font-semibold text-green-800 mb-2">
+                            Du erhältst:
+                          </p>
+                          <p className="font-semibold text-green-800">
+                            {solution.result}
+                          </p>
+                        </div>
+                        
+                        <div className="flex justify-end">
+                          <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                            mehr erfahren!
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+                  </TabsContent>
+                );
+              })}
+            </div>
+          </div>
+        </Tabs>
       </div>
     </section>
   );
