@@ -10,7 +10,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsgestaltung": {
       icon: Package,
       title: "Angebotsgestaltung",
-      overlayText: "Entwickle profitable Angebote, die sich verkaufen lassen",
+      overlayText: "Du erhältst profitable Angebote, die sich verkaufen lassen",
       descriptions: [
         "Die klare Spezifikation des Problems und der Vergleich mit bestehenden \"Jobs To Be Done\" ermöglicht die Erstellung eines marktorientierten Angebots.",
         "Dieses strukturiere ich gemäss neuesten Erkenntnissen aus der Verhaltensforschung und bringe die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess.",
@@ -22,7 +22,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsoptimierung": {
       icon: TrendingUp,
       title: "Angebotsoptimierung", 
-      overlayText: "Erhöhe kontinuierlich deine Gewinne",
+      overlayText: "Du erhältst eine kontinuierliche Erhöhung deiner Gewinne",
       descriptions: [
         "Detaillierte Produkt- und Kundenanalysen bringen Transparenz über den tatsächlich erzielten Gewinnbeitrag pro Angebot.",
         "Mit \"Soll-vs-Ist\" Vergleichen lassen sich ungewollte Umsatzverluste aufdecken und ein regelmässiges Erfolgsreporting identifiziert die wichtigsten Gewinntreiber.",
@@ -34,7 +34,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsstrategie": {
       icon: Target,
       title: "Angebotsstrategie",
-      overlayText: "Entwickle nachhaltige Wettbewerbsvorteile",
+      overlayText: "Du erhältst nachhaltige Wettbewerbsvorteile",
       descriptions: [
         "Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.",
         "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.",
@@ -56,8 +56,23 @@ const SolutionSection = ({}: SolutionSectionProps) => {
 
         <Tabs defaultValue="angebotsgestaltung" className="w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Selector and Text */}
-            <div className="order-1 lg:order-1">
+            {/* Left Column - Text Only */}
+            <div className="order-2 lg:order-1">
+              {Object.entries(solutions).map(([key, solution]) => (
+                <TabsContent key={key} value={key} className="mt-0">
+                  <div className="aspect-square rounded-xl flex items-center justify-center p-4 bg-muted">
+                    <div className="w-full text-center">
+                      <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                        {solution.overlayText}
+                      </p>
+                    </div>
+                  </div>
+                </TabsContent>
+              ))}
+            </div>
+
+            {/* Right Column - Content */}
+            <div className="order-1 lg:order-2">
               {/* Tabs Selector */}
               <TabsList className="grid w-full grid-cols-3 mb-8">
                 <TabsTrigger value="angebotsgestaltung" className="text-sm">
@@ -71,12 +86,12 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                 </TabsTrigger>
               </TabsList>
 
-              {/* Text Content for each tab */}
+              {/* Content for each tab */}
               {Object.entries(solutions).map(([key, solution]) => {
                 const IconComponent = solution.icon;
                 return (
                   <TabsContent key={key} value={key} className="mt-0">
-                    <div className="bg-card rounded-xl p-8 card-shadow mb-8">
+                    <div className="bg-card rounded-xl p-8 card-shadow">
                       <div className="flex items-center mb-6">
                         <div className="p-3 bg-primary/10 rounded-lg mr-4">
                           <IconComponent className="w-6 h-6 text-primary" />
@@ -100,40 +115,26 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                         )}
                       </div>
 
-                      <div className="flex justify-end">
-                        <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-                          mehr erfahren!
-                        </Button>
-                      </div>
-                    </div>
-
-                    {/* Large text display */}
-                    <div className="aspect-square rounded-xl flex items-center justify-center p-4 bg-muted">
-                      <div className="w-full text-center">
-                        <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-                          {solution.overlayText}
-                        </p>
+                      <div className="space-y-4">
+                        <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                          <p className="font-semibold text-green-800 mb-2">
+                            Du erhältst:
+                          </p>
+                          <p className="font-semibold text-green-800">
+                            {solution.result}
+                          </p>
+                        </div>
+                        
+                        <div className="flex justify-end">
+                          <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                            mehr erfahren!
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </TabsContent>
                 );
               })}
-            </div>
-
-            {/* Right Column - Value Proposition */}
-            <div className="order-2 lg:order-2">
-              {Object.entries(solutions).map(([key, solution]) => (
-                <TabsContent key={key} value={key} className="mt-0">
-                  <div className="bg-green-50 border border-green-200 rounded-lg p-8">
-                    <p className="font-semibold text-green-800 mb-4 text-xl">
-                      Du erhältst:
-                    </p>
-                    <p className="font-semibold text-green-800 text-lg">
-                      {solution.result}
-                    </p>
-                  </div>
-                </TabsContent>
-              ))}
             </div>
           </div>
         </Tabs>
