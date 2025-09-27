@@ -53,8 +53,8 @@ const SolutionSection = ({}: SolutionSectionProps) => {
 
         <Tabs defaultValue="angebotsgestaltung" className="w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Text Only */}
-            <div className="order-2 lg:order-1">
+            {/* Right Column - Text Only */}
+            <div className="order-1 lg:order-2">
               {Object.entries(solutions).map(([key, solution]) => (
                 <TabsContent key={key} value={key} className="mt-0">
                   <div className="aspect-square rounded-xl flex items-center justify-center p-4 bg-muted">
@@ -68,8 +68,8 @@ const SolutionSection = ({}: SolutionSectionProps) => {
               ))}
             </div>
 
-            {/* Right Column - Content */}
-            <div className="order-1 lg:order-2">
+            {/* Left Column - Content */}
+            <div className="order-2 lg:order-1">
               {/* Tabs Selector */}
               <TabsList className="grid w-full grid-cols-3 mb-8">
                 <TabsTrigger value="angebotsgestaltung" className="text-sm">
