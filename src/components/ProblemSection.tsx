@@ -26,7 +26,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
         }
       ],
       highlight: "Das richtige Angebot bringt 20% mehr Umsatz¹",
-      color: "from-red-500 to-red-600"
+      color: "from-green-600 to-green-700"
     },
     {
       icon: TrendingDown,
@@ -50,7 +50,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
         }
       ],
       highlight: "66% des Preispotentials geht durch falsche Prozesse verloren²",
-      color: "from-orange-500 to-orange-600"
+      color: "from-emerald-500 to-emerald-600"
     },
     {
       icon: Target,
@@ -74,7 +74,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
         }
       ],
       highlight: "88% Führungspersonen erachten strategische Planung als sehr wichtig/Essentiell³",
-      color: "from-yellow-500 to-yellow-600"
+      color: "from-teal-500 to-teal-600"
     }
   ];
 
