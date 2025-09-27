@@ -90,7 +90,7 @@ const PricingSection = ({}: PricingSectionProps) => {
                   {pkg.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      <span className="text-foreground">{feature}</span>
+                      <span className="text-muted-foreground">{feature}</span>
                     </div>
                   ))}
                 </div>
