@@ -1,33 +1,32 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Star, Zap, Crown } from "lucide-react";
+import { CheckCircle, AlertTriangle, TrendingDown, Target } from "lucide-react";
 
 interface PricingSectionProps {}
 
 const PricingSection = ({}: PricingSectionProps) => {
   const packages = [
     {
-      name: "Kundenzentrierte Angebotsgestaltung",
+      name: "Angebotsgestaltung",
       subtitle: "Starthilfe",
       price: "CHF 2'500",
       period: "pro Monat¹",
       description: "Bi-weekly Abstimmungen",
-      icon: Star,
+      icon: AlertTriangle,
       color: "from-green-600 to-green-700",
       features: [
         "Kundenanalysen",
         "Marktauswertungen", 
         "Tracking- und Plansysteme"
       ],
-      highlight: false,
       coachingNote: "bi-weekly calls à 1 Std. CHF 350"
     },
     {
-      name: "Kontinuierliche Angebotsoptimierung", 
+      name: "Angebotsoptimierung", 
       subtitle: "Gewinnbooster",
       price: "CHF 3'500",
       period: "pro Monat¹",
       description: "Wöchentliche Abstimmungen",
-      icon: Zap,
+      icon: TrendingDown,
       color: "from-green-600 to-green-700",
       features: [
         "Kundenanalysen",
@@ -35,16 +34,15 @@ const PricingSection = ({}: PricingSectionProps) => {
         "Tracking- und Plansysteme",
         "Monatlicher Performancereport",
         "Abweichungsanalyse ggü. Vorjahr"
-      ],
-      highlight: true
+      ]
     },
     {
-      name: "Langfristige Angebotsstrategie",
+      name: "Angebotsstrategie",
       subtitle: "Sparringpartner", 
       price: "CHF 5'500",
       period: "pro Monat¹",
       description: "Abstimmungen nach Bedarf",
-      icon: Crown,
+      icon: Target,
       color: "from-green-600 to-green-700",
       features: [
         "Kundenanalysen",
@@ -55,8 +53,7 @@ const PricingSection = ({}: PricingSectionProps) => {
         "Business Cases",
         "Szenariomodellierungen",
         "Mittel- und Langfristplanung"
-      ],
-      highlight: false
+      ]
     }
   ];
 
@@ -80,20 +77,8 @@ const PricingSection = ({}: PricingSectionProps) => {
             return (
               <div 
                 key={index}
-                className={`relative bg-card rounded-2xl p-8 ${
-                  pkg.highlight 
-                    ? 'ring-2 ring-accent elegant-shadow scale-105' 
-                    : 'card-shadow hover:elegant-shadow'
-                } smooth-transition hover:-translate-y-1`}
+                className="relative bg-card rounded-2xl p-8 card-shadow hover:elegant-shadow smooth-transition hover:-translate-y-1"
               >
-                {pkg.highlight && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-semibold">
-                      Beliebteste Wahl
-                    </div>
-                  </div>
-                )}
-
                 <div className="text-center mb-8">
                   <div className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${pkg.color} mb-4`}>
                     <IconComponent className="w-8 h-8 text-white" />
@@ -107,21 +92,6 @@ const PricingSection = ({}: PricingSectionProps) => {
                       {pkg.name}
                     </h3>
                   </div>
-
-                  <div className="mb-6">
-                    <div className="text-4xl font-bold text-foreground mb-2">
-                      {pkg.price}
-                    </div>
-                    <div className="text-muted-foreground">
-                      {pkg.period}
-                    </div>
-                    {pkg.coachingNote && (
-                      <div className="text-sm text-muted-foreground mt-2">
-                        Coachinghonorar<br />
-                        {pkg.coachingNote}
-                      </div>
-                    )}
-                  </div>
                 </div>
 
                 <div className="space-y-4 mb-8">
@@ -131,6 +101,21 @@ const PricingSection = ({}: PricingSectionProps) => {
                       <span className="text-foreground">{feature}</span>
                     </div>
                   ))}
+                </div>
+
+                <div className="text-center mb-6">
+                  <div className="text-4xl font-bold text-foreground mb-2">
+                    {pkg.price}
+                  </div>
+                  <div className="text-muted-foreground">
+                    {pkg.period}
+                  </div>
+                  {pkg.coachingNote && (
+                    <div className="text-sm text-muted-foreground mt-2">
+                      Coachinghonorar<br />
+                      {pkg.coachingNote}
+                    </div>
+                  )}
                 </div>
 
                 <Button 
