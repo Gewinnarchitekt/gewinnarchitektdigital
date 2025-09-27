@@ -82,7 +82,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
             Das Gewinnpotenial gut durchdachter Angebote wird oft übersehen
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Für nachhaltiges, profitables Wachstum ist eine gut durchdachte Angebotsgestaltung unerlässlich und dennoch wird sie regelmässig vernachlässigt. Viele Geschäftsführer und Produktverantwortliche sind sich der diesbezüglichen Konsequenzen nicht bewusst.
+            Digitale Produkte stehen online in direkter Konkurrenz zueinander und die Leistungserbringung erfolgt meist ohne direkten Kundenkontakt. Eine gewinnbringende Angebotsgestaltung wird dadurch zur erfolgskritischen Disziplin mit spezifischen Herausforderungen.
           </p>
         </div>
 
