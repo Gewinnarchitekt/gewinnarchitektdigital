@@ -15,7 +15,7 @@ const HeroSection = ({}: HeroSectionProps) => {
         <div className="max-w-4xl text-left text-white">
           {/* Main headline */}
           <h1 className="font-bold mb-6 leading-tight">
-            Hole mehr aus deinen Angeboten
+            Hole mehr aus deinen digitalen Angeboten
           </h1>
           
           {/* Subheading */}
