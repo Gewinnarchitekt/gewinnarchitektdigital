@@ -8,7 +8,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsgestaltung": {
       icon: AlertTriangle,
       title: "Angebotsgestaltung",
-      color: "from-green-600 to-green-700",
+      color: "from-blue-600 to-blue-700",
       descriptions: [
         "Die klare Spezifikation des Problems und der Vergleich mit bestehenden \"Jobs To Be Done\" ermöglicht die Erstellung eines marktorientierten Angebots.",
         "Dieses strukturiere ich gemäss neuesten Erkenntnissen aus der Verhaltensforschung und bringe die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess.",
@@ -20,7 +20,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsoptimierung": {
       icon: TrendingDown,
       title: "Angebotsoptimierung",
-      color: "from-emerald-500 to-emerald-600",
+      color: "from-indigo-500 to-indigo-600",
       descriptions: [
         "Detaillierte Produkt- und Kundenanalysen bringen Transparenz über den tatsächlich erzielten Gewinnbeitrag pro Angebot.",
         "Mit \"Soll-vs-Ist\" Vergleichen lassen sich ungewollte Umsatzverluste aufdecken und ein regelmässiges Erfolgsreporting identifiziert die wichtigsten Gewinntreiber.",
@@ -32,7 +32,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsstrategie": {
       icon: Target,
       title: "Angebotsstrategie",
-      color: "from-teal-500 to-teal-600",
+      color: "from-slate-600 to-slate-700",
       descriptions: [
         "Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.",
         "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.",
@@ -84,7 +84,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                 </div>
 
                 <div className="flex justify-center mt-auto">
-                  <Button className="bg-green-600 hover:bg-green-700 text-white">
+                  <Button className="bg-accent hover:bg-accent-hover text-accent-foreground">
                     mehr erfahren!
                   </Button>
                 </div>
