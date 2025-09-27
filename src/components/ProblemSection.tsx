@@ -94,27 +94,32 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           {problemCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <div key={index} className="bg-card rounded-xl p-8 card-shadow hover:elegant-shadow smooth-transition">
-                <div className="flex items-center mb-6">
+              <div key={index} className="space-y-6">
+                {/* Icon and Title above the boxes */}
+                <div className="flex items-center justify-center">
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} mr-4 flex-shrink-0`}>
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold">{category.title}</h3>
                 </div>
 
-                <div className="space-y-6 mb-8">
+                {/* Individual boxes for each problem */}
+                <div className="space-y-4">
                   {category.problems.map((problem, problemIndex) => (
-                    <div key={problemIndex} className="border-l-4 border-muted pl-4">
-                      <h4 className="font-medium mb-2 text-foreground">
+                    <div key={problemIndex} className="bg-card rounded-lg p-4 card-shadow hover:elegant-shadow smooth-transition">
+                      <h4 className="font-medium text-foreground">
                         {problem.title}
                       </h4>
-                      <p className="text-sm text-muted-foreground">
-                        {problem.description}
-                      </p>
+                      {problem.description && (
+                        <p className="text-sm text-muted-foreground mt-2">
+                          {problem.description}
+                        </p>
+                      )}
                     </div>
                   ))}
                 </div>
 
+                {/* Highlight box */}
                 <div className={`p-4 rounded-lg bg-gradient-to-r ${category.color} text-white`}>
                   <p className="font-semibold text-center">
                     {category.highlight}
