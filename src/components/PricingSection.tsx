@@ -59,12 +59,12 @@ const PricingSection = ({}: PricingSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">
-            Mein Angebot an euch
+            Mein Angebot an dich
           </h2>
           <p className="text-xl text-muted-foreground mx-auto mb-8">
-            Ihr erhaltet spezialisierte Expertise, ohne teure Beratungsunternehmen beauftragen 
+            Du erhältst spezialisierte Expertise, ohne teure Beratungsunternehmen beauftragen 
             oder Fachexperten anstellen zu müssen. Die Zusammenarbeit ist langfristig ausgelegt 
-            und zielt auf eine Wertsteigerung eures Unternehmens ab.
+            und zielt auf eine Wertsteigerung deines Unternehmens ab.
           </p>
         </div>
 
