@@ -67,9 +67,9 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                       className="w-full h-full object-cover"
                     />
                     {/* Centered text overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-white/95 backdrop-blur-sm rounded-lg p-6 mx-4 text-center shadow-lg max-w-sm">
-                        <p className="text-lg font-bold text-gray-800 leading-tight">
+                    <div className="absolute inset-0 flex items-center justify-center p-4">
+                      <div className="w-full text-center">
+                        <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
                           {solution.overlayText}
                         </p>
                       </div>
