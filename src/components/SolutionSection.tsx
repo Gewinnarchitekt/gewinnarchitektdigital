@@ -1,9 +1,7 @@
 import { Package, TrendingUp, Target } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import angebotsgestaltungImage from "@/assets/solution-angebotsgestaltung.jpg";
-import angebotsoptimierungImage from "@/assets/solution-angebotsoptimierung.jpg";
-import angebotsstrategieImage from "@/assets/solution-angebotsstrategie.jpg";
+import solutionBackground from "@/assets/solution-background.jpg";
 
 interface SolutionSectionProps {}
 
@@ -12,7 +10,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsgestaltung": {
       icon: Package,
       title: "Angebotsgestaltung",
-      image: angebotsgestaltungImage,
+      overlayText: "Du erhältst profitable Angebote, die sich verkaufen lassen",
       descriptions: [
         "Die klare Spezifikation des Problems und der Vergleich mit bestehenden \"Jobs To Be Done\" ermöglicht die Erstellung eines marktorientierten Angebots.",
         "Dieses strukturiere ich gemäss neuesten Erkenntnissen aus der Verhaltensforschung und bringe die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess.",
@@ -24,7 +22,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsoptimierung": {
       icon: TrendingUp,
       title: "Angebotsoptimierung", 
-      image: angebotsoptimierungImage,
+      overlayText: "Du erhältst eine kontinuierliche Erhöhung deiner Gewinne",
       descriptions: [
         "Detaillierte Produkt- und Kundenanalysen bringen Transparenz über den tatsächlich erzielten Gewinnbeitrag pro Angebot.",
         "Mit \"Soll-vs-Ist\" Vergleichen lassen sich ungewollte Umsatzverluste aufdecken und ein regelmässiges Erfolgsreporting identifiziert die wichtigsten Gewinntreiber.",
@@ -36,7 +34,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsstrategie": {
       icon: Target,
       title: "Angebotsstrategie",
-      image: angebotsstrategieImage,
+      overlayText: "Du erhältst nachhaltige Wettbewerbsvorteile",
       descriptions: [
         "Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.",
         "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.",
@@ -60,33 +58,25 @@ const SolutionSection = ({}: SolutionSectionProps) => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Column - Image */}
             <div className="order-2 lg:order-1">
-              <TabsContent value="angebotsgestaltung" className="mt-0">
-                <div className="aspect-square rounded-xl overflow-hidden">
-                  <img 
-                    src={solutions.angebotsgestaltung.image} 
-                    alt="Angebotsgestaltung" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </TabsContent>
-              <TabsContent value="angebotsoptimierung" className="mt-0">
-                <div className="aspect-square rounded-xl overflow-hidden">
-                  <img 
-                    src={solutions.angebotsoptimierung.image} 
-                    alt="Angebotsoptimierung" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </TabsContent>
-              <TabsContent value="angebotsstrategie" className="mt-0">
-                <div className="aspect-square rounded-xl overflow-hidden">
-                  <img 
-                    src={solutions.angebotsstrategie.image} 
-                    alt="Angebotsstrategie" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </TabsContent>
+              {Object.entries(solutions).map(([key, solution]) => (
+                <TabsContent key={key} value={key} className="mt-0">
+                  <div className="aspect-square rounded-xl overflow-hidden relative">
+                    <img 
+                      src={solutionBackground} 
+                      alt={solution.title} 
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Centered text overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="bg-white/95 backdrop-blur-sm rounded-lg p-6 mx-4 text-center shadow-lg max-w-sm">
+                        <p className="text-lg font-bold text-gray-800 leading-tight">
+                          {solution.overlayText}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </TabsContent>
+              ))}
             </div>
 
             {/* Right Column - Content */}
