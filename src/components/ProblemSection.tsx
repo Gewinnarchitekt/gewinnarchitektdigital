@@ -106,8 +106,8 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 {/* Individual boxes for each problem */}
                 <div className="space-y-4">
                   {category.problems.map((problem, problemIndex) => (
-                    <div key={problemIndex} className="bg-card rounded-lg p-4 card-shadow hover:elegant-shadow smooth-transition">
-                      <h4 className="font-medium text-foreground">
+                    <div key={problemIndex} className="bg-card rounded-lg p-4 card-shadow hover:elegant-shadow smooth-transition h-20 flex items-center">
+                      <h4 className="font-medium text-foreground leading-tight">
                         {problem.title}
                       </h4>
                       {problem.description && (
