@@ -1,9 +1,5 @@
 import { AlertTriangle, TrendingDown, Target } from "lucide-react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import angebotsgestaltungImage from "@/assets/solution-angebotsgestaltung.jpg";
-import angebotsoptimierungImage from "@/assets/solution-angebotsoptimierung.jpg";
-import angebotsstrategieImage from "@/assets/solution-angebotsstrategie.jpg";
 
 interface SolutionSectionProps {}
 
@@ -12,7 +8,6 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsgestaltung": {
       icon: AlertTriangle,
       title: "Angebotsgestaltung",
-      image: angebotsgestaltungImage,
       color: "from-red-500 to-red-600",
       descriptions: [
         "Die klare Spezifikation des Problems und der Vergleich mit bestehenden \"Jobs To Be Done\" ermöglicht die Erstellung eines marktorientierten Angebots.",
@@ -25,7 +20,6 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsoptimierung": {
       icon: TrendingDown,
       title: "Angebotsoptimierung",
-      image: angebotsoptimierungImage,
       color: "from-orange-500 to-orange-600",
       descriptions: [
         "Detaillierte Produkt- und Kundenanalysen bringen Transparenz über den tatsächlich erzielten Gewinnbeitrag pro Angebot.",
@@ -38,7 +32,6 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsstrategie": {
       icon: Target,
       title: "Angebotsstrategie",
-      image: angebotsstrategieImage,
       color: "from-yellow-500 to-yellow-600",
       descriptions: [
         "Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.",
@@ -59,97 +52,48 @@ const SolutionSection = ({}: SolutionSectionProps) => {
           </h2>
         </div>
 
-        <Tabs defaultValue="angebotsgestaltung" className="w-full">
-          {/* Navigation spanning full width */}
-          <TabsList className="grid w-full grid-cols-3 mb-12 max-w-4xl mx-auto">
-            <TabsTrigger value="angebotsgestaltung" className="text-sm flex items-center gap-3 py-4">
-              <div className="p-2 rounded-lg bg-gradient-to-r from-red-500 to-red-600">
-                <AlertTriangle className="w-5 h-5 text-white" />
-              </div>
-              Angebotsgestaltung
-            </TabsTrigger>
-            <TabsTrigger value="angebotsoptimierung" className="text-sm flex items-center gap-3 py-4">
-              <div className="p-2 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600">
-                <TrendingDown className="w-5 h-5 text-white" />
-              </div>
-              Angebotsoptimierung
-            </TabsTrigger>
-            <TabsTrigger value="angebotsstrategie" className="text-sm flex items-center gap-3 py-4">
-              <div className="p-2 rounded-lg bg-gradient-to-r from-yellow-500 to-yellow-600">
-                <Target className="w-5 h-5 text-white" />
-              </div>
-              Angebotsstrategie
-            </TabsTrigger>
-          </TabsList>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Image */}
-            <div className="order-2 lg:order-1">
-              <TabsContent value="angebotsgestaltung" className="mt-0">
-                <div className="aspect-square rounded-xl overflow-hidden h-full">
-                  <img 
-                    src={solutions.angebotsgestaltung.image} 
-                    alt="Angebotsgestaltung" 
-                    className="w-full h-full object-cover"
-                  />
+        {/* Table layout with 2 rows and 3 columns */}
+        <div className="grid grid-cols-3 gap-8">
+          {/* First row - Titles */}
+          {Object.entries(solutions).map(([key, solution]) => {
+            const IconComponent = solution.icon;
+            return (
+              <div key={`title-${key}`} className="flex items-center justify-center p-4">
+                <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
+                  <IconComponent className="w-6 h-6 text-white" />
                 </div>
-              </TabsContent>
-              <TabsContent value="angebotsoptimierung" className="mt-0">
-                <div className="aspect-square rounded-xl overflow-hidden h-full">
-                  <img 
-                    src={solutions.angebotsoptimierung.image} 
-                    alt="Angebotsoptimierung" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </TabsContent>
-              <TabsContent value="angebotsstrategie" className="mt-0">
-                <div className="aspect-square rounded-xl overflow-hidden h-full">
-                  <img 
-                    src={solutions.angebotsstrategie.image} 
-                    alt="Angebotsstrategie" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </TabsContent>
-            </div>
+                <h3 className="text-xl font-semibold text-foreground">
+                  {solution.title}
+                </h3>
+              </div>
+            );
+          })}
+          
+          {/* Second row - Content */}
+          {Object.entries(solutions).map(([key, solution]) => (
+            <div key={`content-${key}`} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition h-[400px] flex flex-col">
+              <div className="space-y-4 mb-6 flex-grow">
+                {solution.descriptions.map((description, descIndex) => (
+                  <p key={descIndex} className="text-muted-foreground leading-relaxed text-sm">
+                    {description}
+                  </p>
+                ))}
+                
+                {solution.note && (
+                  <p className="text-muted-foreground leading-relaxed italic text-sm">
+                    {solution.note}
+                  </p>
+                )}
+              </div>
 
-            {/* Right Column - Content */}
-            <div className="order-1 lg:order-2">
-              {/* Content for each tab */}
-              <div className="h-[600px] lg:h-[500px]">
-                {Object.entries(solutions).map(([key, solution]) => {
-                  const IconComponent = solution.icon;
-                  return (
-                    <TabsContent key={key} value={key} className="mt-0 h-full">
-                      <div className="bg-card rounded-xl p-8 card-shadow h-full flex flex-col">
-                        <div className="space-y-4 mb-8 flex-grow">
-                          {solution.descriptions.map((description, descIndex) => (
-                            <p key={descIndex} className="text-muted-foreground leading-relaxed">
-                              {description}
-                            </p>
-                          ))}
-                          
-                          {solution.note && (
-                            <p className="text-muted-foreground leading-relaxed italic">
-                              {solution.note}
-                            </p>
-                          )}
-                        </div>
-
-                        <div className="flex justify-center mt-auto">
-                          <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-                            mehr erfahren!
-                          </Button>
-                        </div>
-                      </div>
-                    </TabsContent>
-                  );
-                })}
+              <div className="flex justify-center mt-auto">
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                  mehr erfahren!
+                </Button>
               </div>
             </div>
-          </div>
-        </Tabs>
+          ))}
+        </div>
       </div>
     </section>
   );
