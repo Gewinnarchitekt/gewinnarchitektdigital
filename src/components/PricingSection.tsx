@@ -7,7 +7,6 @@ const PricingSection = ({}: PricingSectionProps) => {
   const packages = [
     {
       name: "Angebotsgestaltung",
-      subtitle: "Starthilfe",
       price: "CHF 2'500",
       period: "pro Monat¹",
       description: "Bi-weekly Abstimmungen",
@@ -22,7 +21,6 @@ const PricingSection = ({}: PricingSectionProps) => {
     },
     {
       name: "Angebotsoptimierung", 
-      subtitle: "Gewinnbooster",
       price: "CHF 3'500",
       period: "pro Monat¹",
       description: "Wöchentliche Abstimmungen",
@@ -38,7 +36,6 @@ const PricingSection = ({}: PricingSectionProps) => {
     },
     {
       name: "Angebotsstrategie",
-      subtitle: "Sparringpartner", 
       price: "CHF 5'500",
       period: "pro Monat¹",
       description: "Abstimmungen nach Bedarf",
@@ -77,24 +74,19 @@ const PricingSection = ({}: PricingSectionProps) => {
             return (
               <div 
                 key={index}
-                className="relative bg-card rounded-2xl p-8 card-shadow hover:elegant-shadow smooth-transition hover:-translate-y-1"
+                className="relative bg-card rounded-2xl p-8 card-shadow hover:elegant-shadow smooth-transition hover:-translate-y-1 flex flex-col"
               >
                 <div className="text-center mb-8">
                   <div className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${pkg.color} mb-4`}>
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   
-                  <div className="mb-4">
-                    <div className="text-sm font-medium text-accent uppercase tracking-wide">
-                      {pkg.subtitle}
-                    </div>
-                    <h3 className="text-xl font-semibold mt-2 mb-4">
-                      {pkg.name}
-                    </h3>
-                  </div>
+                  <h3 className="text-xl font-semibold mb-8">
+                    {pkg.name}
+                  </h3>
                 </div>
 
-                <div className="space-y-4 mb-8">
+                <div className="space-y-4 mb-8 flex-1">
                   {pkg.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-3">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
@@ -103,7 +95,7 @@ const PricingSection = ({}: PricingSectionProps) => {
                   ))}
                 </div>
 
-                <div className="text-center mb-6">
+                <div className="text-center mb-6 mt-auto">
                   <div className="text-4xl font-bold text-foreground mb-2">
                     {pkg.price}
                   </div>
