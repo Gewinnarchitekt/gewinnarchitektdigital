@@ -62,13 +62,22 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         <Tabs defaultValue="angebotsgestaltung" className="w-full">
           {/* Navigation spanning full width */}
           <TabsList className="grid w-full grid-cols-3 mb-12 max-w-4xl mx-auto">
-            <TabsTrigger value="angebotsgestaltung" className="text-sm">
+            <TabsTrigger value="angebotsgestaltung" className="text-sm flex items-center gap-3 py-4">
+              <div className="p-2 rounded-lg bg-gradient-to-r from-red-500 to-red-600">
+                <AlertTriangle className="w-5 h-5 text-white" />
+              </div>
               Angebotsgestaltung
             </TabsTrigger>
-            <TabsTrigger value="angebotsoptimierung" className="text-sm">
+            <TabsTrigger value="angebotsoptimierung" className="text-sm flex items-center gap-3 py-4">
+              <div className="p-2 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600">
+                <TrendingDown className="w-5 h-5 text-white" />
+              </div>
               Angebotsoptimierung
             </TabsTrigger>
-            <TabsTrigger value="angebotsstrategie" className="text-sm">
+            <TabsTrigger value="angebotsstrategie" className="text-sm flex items-center gap-3 py-4">
+              <div className="p-2 rounded-lg bg-gradient-to-r from-yellow-500 to-yellow-600">
+                <Target className="w-5 h-5 text-white" />
+              </div>
               Angebotsstrategie
             </TabsTrigger>
           </TabsList>
@@ -114,15 +123,6 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                   return (
                     <TabsContent key={key} value={key} className="mt-0 h-full">
                       <div className="bg-card rounded-xl p-8 card-shadow h-full flex flex-col">
-                        <div className="flex items-center mb-6">
-                          <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
-                            <IconComponent className="w-6 h-6 text-white" />
-                          </div>
-                          <h3 className="text-xl font-semibold text-foreground">
-                            {solution.title}
-                          </h3>
-                        </div>
-
                         <div className="space-y-4 mb-8 flex-grow">
                           {solution.descriptions.map((description, descIndex) => (
                             <p key={descIndex} className="text-muted-foreground leading-relaxed">
