@@ -1,7 +1,9 @@
 import { Package, TrendingUp, Target } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import solutionBackground from "@/assets/solution-background.jpg";
+import angebotsgestaltungImage from "@/assets/solution-angebotsgestaltung.jpg";
+import angebotsoptimierungImage from "@/assets/solution-angebotsoptimierung.jpg";
+import angebotsstrategieImage from "@/assets/solution-angebotsstrategie.jpg";
 
 interface SolutionSectionProps {}
 
@@ -10,35 +12,38 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     "angebotsgestaltung": {
       icon: Package,
       title: "Angebotsgestaltung",
-      overlayText: "Du erhältst profitable Angebote, die sich verkaufen lassen",
+      image: angebotsgestaltungImage,
       descriptions: [
         "Die klare Spezifikation des Problems und der Vergleich mit bestehenden \"Jobs To Be Done\" ermöglicht die Erstellung eines marktorientierten Angebots.",
         "Dieses strukturiere ich gemäss neuesten Erkenntnissen aus der Verhaltensforschung und bringe die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess.",
         "Begleitet wird der Prozess mit quantitativen Analysen bezüglich Marktpotential, Gewinnerwartung und Liquiditätsentwicklung."
       ],
-      note: "Optional besteht die Möglichkeit professioneller Marktforschung."
+      note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
+      result: "Profitable Angebote, die sich verkaufen lassen"
     },
     "angebotsoptimierung": {
       icon: TrendingUp,
       title: "Angebotsoptimierung", 
-      overlayText: "Du erhältst eine kontinuierliche Erhöhung deiner Gewinne",
+      image: angebotsoptimierungImage,
       descriptions: [
         "Detaillierte Produkt- und Kundenanalysen bringen Transparenz über den tatsächlich erzielten Gewinnbeitrag pro Angebot.",
         "Mit \"Soll-vs-Ist\" Vergleichen lassen sich ungewollte Umsatzverluste aufdecken und ein regelmässiges Erfolgsreporting identifiziert die wichtigsten Gewinntreiber.",
         "Monatlich besprechen wir die aktuellen Entwicklungen und besprechen Massnahmen zur Optimierung."
       ],
-      note: undefined
+      note: undefined,
+      result: "Kontinuierliche Erhöhung deiner Gewinne"
     },
     "angebotsstrategie": {
       icon: Target,
       title: "Angebotsstrategie",
-      overlayText: "Du erhältst nachhaltige Wettbewerbsvorteile",
+      image: angebotsstrategieImage,
       descriptions: [
         "Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.",
         "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.",
         "Als strategische Partner unterstütze ich dich zudem beim Durchspielen verschiedener Angebotsstrategien und zeige Chancen und Gefahren auf."
       ],
-      note: undefined
+      note: undefined,
+      result: "Nachhaltige Wettbewerbsvorteile"
     }
   };
 
@@ -53,28 +58,39 @@ const SolutionSection = ({}: SolutionSectionProps) => {
 
         <Tabs defaultValue="angebotsgestaltung" className="w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Right Column - Text with Button */}
-            <div className="order-1 lg:order-2">
-              {Object.entries(solutions).map(([key, solution]) => (
-                <TabsContent key={key} value={key} className="mt-0">
-                  <div className="aspect-square rounded-xl flex flex-col items-center justify-center p-4 bg-muted">
-                    <div className="w-full text-center mb-8">
-                      <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-                        {solution.overlayText}
-                      </p>
-                    </div>
-                    <div className="flex justify-center">
-                      <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-                        mehr erfahren!
-                      </Button>
-                    </div>
-                  </div>
-                </TabsContent>
-              ))}
+            {/* Left Column - Image */}
+            <div className="order-2 lg:order-1">
+              <TabsContent value="angebotsgestaltung" className="mt-0">
+                <div className="aspect-square rounded-xl overflow-hidden">
+                  <img 
+                    src={solutions.angebotsgestaltung.image} 
+                    alt="Angebotsgestaltung" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </TabsContent>
+              <TabsContent value="angebotsoptimierung" className="mt-0">
+                <div className="aspect-square rounded-xl overflow-hidden">
+                  <img 
+                    src={solutions.angebotsoptimierung.image} 
+                    alt="Angebotsoptimierung" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </TabsContent>
+              <TabsContent value="angebotsstrategie" className="mt-0">
+                <div className="aspect-square rounded-xl overflow-hidden">
+                  <img 
+                    src={solutions.angebotsstrategie.image} 
+                    alt="Angebotsstrategie" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </TabsContent>
             </div>
 
-            {/* Left Column - Content */}
-            <div className="order-2 lg:order-1">
+            {/* Right Column - Content */}
+            <div className="order-1 lg:order-2">
               {/* Tabs Selector */}
               <TabsList className="grid w-full grid-cols-3 mb-8">
                 <TabsTrigger value="angebotsgestaltung" className="text-sm">
@@ -103,7 +119,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                         </h3>
                       </div>
 
-                      <div className="space-y-4">
+                      <div className="space-y-4 mb-8">
                         {solution.descriptions.map((description, descIndex) => (
                           <p key={descIndex} className="text-muted-foreground leading-relaxed">
                             {description}
@@ -115,6 +131,23 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                             {solution.note}
                           </p>
                         )}
+                      </div>
+
+                      <div className="space-y-4">
+                        <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                          <p className="font-semibold text-green-800 mb-2">
+                            Du erhältst:
+                          </p>
+                          <p className="font-semibold text-green-800">
+                            {solution.result}
+                          </p>
+                        </div>
+                        
+                        <div className="flex justify-end">
+                          <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                            mehr erfahren!
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </TabsContent>
