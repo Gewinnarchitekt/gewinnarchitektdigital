@@ -12,7 +12,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       period: "pro Monat¹",
       description: "Bi-weekly Abstimmungen",
       icon: Star,
-      color: "from-green-500 to-green-600",
+      color: "from-green-600 to-green-700",
       features: [
         "Kundenanalysen",
         "Marktauswertungen", 
@@ -28,7 +28,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       period: "pro Monat¹",
       description: "Wöchentliche Abstimmungen",
       icon: Zap,
-      color: "from-blue-500 to-blue-600",
+      color: "from-green-600 to-green-700",
       features: [
         "Kundenanalysen",
         "Marktauswertungen",
@@ -45,7 +45,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       period: "pro Monat¹",
       description: "Abstimmungen nach Bedarf",
       icon: Crown,
-      color: "from-purple-500 to-purple-600",
+      color: "from-green-600 to-green-700",
       features: [
         "Kundenanalysen",
         "Marktauswertungen", 
@@ -127,15 +127,14 @@ const PricingSection = ({}: PricingSectionProps) => {
                 <div className="space-y-4 mb-8">
                   {pkg.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-3">
-                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                       <span className="text-foreground">{feature}</span>
                     </div>
                   ))}
                 </div>
 
                 <Button 
-                  variant={pkg.highlight ? "hero" : "outline"}
-                  className="w-full text-lg py-3 h-auto"
+                  className="w-full text-lg py-3 h-auto bg-gray-500 hover:bg-accent text-white hover:text-accent-foreground transition-colors"
                 >
                   Angebot sichern
                 </Button>
