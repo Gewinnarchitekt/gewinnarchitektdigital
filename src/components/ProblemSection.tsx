@@ -21,7 +21,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           description: ""
         },
         {
-          title: "Die Preislogik wirkt stärker als einzelne Preispunkte",
+          title: "Die Preislogik ist nicht auf das Kundenverhalten abgestimmt",
           description: ""
         }
       ],
