@@ -16,8 +16,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "Dieses strukturiere ich gemäss neuesten Erkenntnissen aus der Verhaltensforschung und bringe die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess.",
         "Begleitet wird der Prozess mit quantitativen Analysen bezüglich Marktpotential, Gewinnerwartung und Liquiditätsentwicklung."
       ],
-      note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
-      result: "Profitable Angebote, die sich verkaufen lassen"
+      note: "Optional besteht die Möglichkeit professioneller Marktforschung."
     },
     "angebotsoptimierung": {
       icon: TrendingUp,
@@ -28,8 +27,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "Mit \"Soll-vs-Ist\" Vergleichen lassen sich ungewollte Umsatzverluste aufdecken und ein regelmässiges Erfolgsreporting identifiziert die wichtigsten Gewinntreiber.",
         "Monatlich besprechen wir die aktuellen Entwicklungen und besprechen Massnahmen zur Optimierung."
       ],
-      note: undefined,
-      result: "Kontinuierliche Erhöhung deiner Gewinne"
+      note: undefined
     },
     "angebotsstrategie": {
       icon: Target,
@@ -40,8 +38,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.",
         "Als strategische Partner unterstütze ich dich zudem beim Durchspielen verschiedener Angebotsstrategien und zeige Chancen und Gefahren auf."
       ],
-      note: undefined,
-      result: "Nachhaltige Wettbewerbsvorteile"
+      note: undefined
     }
   };
 
@@ -115,21 +112,10 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                         )}
                       </div>
 
-                      <div className="space-y-4">
-                        <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                          <p className="font-semibold text-green-800 mb-2">
-                            Du erhältst:
-                          </p>
-                          <p className="font-semibold text-green-800">
-                            {solution.result}
-                          </p>
-                        </div>
-                        
-                        <div className="flex justify-end">
-                          <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-                            mehr erfahren!
-                          </Button>
-                        </div>
+                      <div className="flex justify-end">
+                        <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                          mehr erfahren!
+                        </Button>
                       </div>
                     </div>
                   </TabsContent>
