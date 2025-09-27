@@ -110,33 +110,31 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                   const IconComponent = solution.icon;
                   return (
                     <TabsContent key={key} value={key} className="mt-0 h-full">
-                      <div className="bg-card rounded-xl p-8 card-shadow h-full flex flex-col justify-between">
-                        <div>
-                          <div className="flex items-center mb-6">
-                            <div className="p-3 bg-primary/10 rounded-lg mr-4">
-                              <IconComponent className="w-6 h-6 text-primary" />
-                            </div>
-                            <h3 className="text-xl font-semibold text-foreground">
-                              {solution.title}
-                            </h3>
+                      <div className="bg-card rounded-xl p-8 card-shadow h-full flex flex-col">
+                        <div className="flex items-center mb-6">
+                          <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                            <IconComponent className="w-6 h-6 text-primary" />
                           </div>
-
-                          <div className="space-y-4 mb-8">
-                            {solution.descriptions.map((description, descIndex) => (
-                              <p key={descIndex} className="text-muted-foreground leading-relaxed">
-                                {description}
-                              </p>
-                            ))}
-                            
-                            {solution.note && (
-                              <p className="text-muted-foreground leading-relaxed italic">
-                                {solution.note}
-                              </p>
-                            )}
-                          </div>
+                          <h3 className="text-xl font-semibold text-foreground">
+                            {solution.title}
+                          </h3>
                         </div>
 
-                        <div className="flex justify-center mt-8">
+                        <div className="space-y-4 mb-8 flex-grow">
+                          {solution.descriptions.map((description, descIndex) => (
+                            <p key={descIndex} className="text-muted-foreground leading-relaxed">
+                              {description}
+                            </p>
+                          ))}
+                          
+                          {solution.note && (
+                            <p className="text-muted-foreground leading-relaxed italic">
+                              {solution.note}
+                            </p>
+                          )}
+                        </div>
+
+                        <div className="flex justify-center mt-auto">
                           <Button className="bg-orange-500 hover:bg-orange-600 text-white">
                             mehr erfahren!
                           </Button>
