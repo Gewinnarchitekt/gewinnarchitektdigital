@@ -6,7 +6,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [
     {
       icon: AlertTriangle,
-      title: "Fehlende Kundenakzeptanz",
+      title: "Kundenakzeptanz",
       problems: [
         {
           title: "Kostenorientierte Preisbildung",
@@ -30,7 +30,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     },
     {
       icon: TrendingDown,
-      title: "Revenue Leakage",
+      title: "Transparente Leistungserbringung",
       problems: [
         {
           title: "Limitierte Ressourcen",
@@ -54,7 +54,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     },
     {
       icon: Target,
-      title: "Verpasste Chancen",
+      title: "Langfristige Planung",
       problems: [
         {
           title: "Das zu späte Berücksichtigen von Kundenbedürfnissen führt zu belanglosen Produkten",
