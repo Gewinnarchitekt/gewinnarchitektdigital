@@ -133,21 +133,10 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                         )}
                       </div>
 
-                      <div className="space-y-4">
-                        <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                          <p className="font-semibold text-green-800 mb-2">
-                            Du erhältst:
-                          </p>
-                          <p className="font-semibold text-green-800">
-                            {solution.result}
-                          </p>
-                        </div>
-                        
-                        <div className="flex justify-end">
-                          <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-                            mehr erfahren!
-                          </Button>
-                        </div>
+                      <div className="flex justify-center mt-8">
+                        <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                          mehr erfahren!
+                        </Button>
                       </div>
                     </div>
                   </TabsContent>
