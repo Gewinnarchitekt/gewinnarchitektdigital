@@ -6,7 +6,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [
     {
       icon: AlertTriangle,
-      title: "Kundenakzeptanz",
+      title: "Hohe Kundenakzeptanz",
       problems: [
         {
           title: "Kostenorientierte Preisbildung",
