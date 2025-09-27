@@ -61,7 +61,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
             {/* Left Column - Image */}
             <div className="order-2 lg:order-1">
               <TabsContent value="angebotsgestaltung" className="mt-0">
-                <div className="aspect-square rounded-xl overflow-hidden">
+                <div className="aspect-square rounded-xl overflow-hidden h-full">
                   <img 
                     src={solutions.angebotsgestaltung.image} 
                     alt="Angebotsgestaltung" 
@@ -70,7 +70,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                 </div>
               </TabsContent>
               <TabsContent value="angebotsoptimierung" className="mt-0">
-                <div className="aspect-square rounded-xl overflow-hidden">
+                <div className="aspect-square rounded-xl overflow-hidden h-full">
                   <img 
                     src={solutions.angebotsoptimierung.image} 
                     alt="Angebotsoptimierung" 
@@ -79,7 +79,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                 </div>
               </TabsContent>
               <TabsContent value="angebotsstrategie" className="mt-0">
-                <div className="aspect-square rounded-xl overflow-hidden">
+                <div className="aspect-square rounded-xl overflow-hidden h-full">
                   <img 
                     src={solutions.angebotsstrategie.image} 
                     alt="Angebotsstrategie" 
@@ -105,43 +105,47 @@ const SolutionSection = ({}: SolutionSectionProps) => {
               </TabsList>
 
               {/* Content for each tab */}
-              {Object.entries(solutions).map(([key, solution]) => {
-                const IconComponent = solution.icon;
-                return (
-                  <TabsContent key={key} value={key} className="mt-0">
-                    <div className="bg-card rounded-xl p-8 card-shadow">
-                      <div className="flex items-center mb-6">
-                        <div className="p-3 bg-primary/10 rounded-lg mr-4">
-                          <IconComponent className="w-6 h-6 text-primary" />
+              <div className="h-[600px] lg:h-[500px]">
+                {Object.entries(solutions).map(([key, solution]) => {
+                  const IconComponent = solution.icon;
+                  return (
+                    <TabsContent key={key} value={key} className="mt-0 h-full">
+                      <div className="bg-card rounded-xl p-8 card-shadow h-full flex flex-col justify-between">
+                        <div>
+                          <div className="flex items-center mb-6">
+                            <div className="p-3 bg-primary/10 rounded-lg mr-4">
+                              <IconComponent className="w-6 h-6 text-primary" />
+                            </div>
+                            <h3 className="text-xl font-semibold text-foreground">
+                              {solution.title}
+                            </h3>
+                          </div>
+
+                          <div className="space-y-4 mb-8">
+                            {solution.descriptions.map((description, descIndex) => (
+                              <p key={descIndex} className="text-muted-foreground leading-relaxed">
+                                {description}
+                              </p>
+                            ))}
+                            
+                            {solution.note && (
+                              <p className="text-muted-foreground leading-relaxed italic">
+                                {solution.note}
+                              </p>
+                            )}
+                          </div>
                         </div>
-                        <h3 className="text-xl font-semibold text-foreground">
-                          {solution.title}
-                        </h3>
-                      </div>
 
-                      <div className="space-y-4 mb-8">
-                        {solution.descriptions.map((description, descIndex) => (
-                          <p key={descIndex} className="text-muted-foreground leading-relaxed">
-                            {description}
-                          </p>
-                        ))}
-                        
-                        {solution.note && (
-                          <p className="text-muted-foreground leading-relaxed italic">
-                            {solution.note}
-                          </p>
-                        )}
+                        <div className="flex justify-center mt-8">
+                          <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                            mehr erfahren!
+                          </Button>
+                        </div>
                       </div>
-
-                      <div className="flex justify-center mt-8">
-                        <Button className="bg-orange-500 hover:bg-orange-600 text-white">
-                          mehr erfahren!
-                        </Button>
-                      </div>
-                    </div>
-                  </TabsContent>
-                );
-              })}
+                    </TabsContent>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </Tabs>
