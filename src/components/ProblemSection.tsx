@@ -33,20 +33,20 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Transparente Leistungserbringung",
       problems: [
         {
-          title: "Limitierte Ressourcen",
-          description: "Mangelnde personelle und finanzielle Mittel verhindern die optimale Umsetzung von Strategien"
+          title: "Daten über das Kundenverhalten werden nicht ausreichend genutzt",
+          description: ""
         },
         {
-          title: "Schlechte Datenlage",
-          description: "Unvollständige oder veraltete Informationen erschweren fundierte Geschäftsentscheidungen erheblich"
+          title: "Limitierte Ressourcen zur Identifikation von Opportunitäten",
+          description: ""
         },
         {
-          title: "Schwache Expertise",
-          description: "Fehlendes Know-how in kritischen Bereichen führt zu suboptimalen Entscheidungen und Ergebnissen"
+          title: "Mangelnde Expertise im Bereich Pricing & Monetarisierung",
+          description: ""
         },
         {
-          title: "Silodenken",
-          description: "Isolierte Abteilungen arbeiten gegeneinander statt miteinander, was zu ineffizienten Prozessen führt"
+          title: "Isolierte Abteilungen und mangelnder Informationsaustausch",
+          description: ""
         }
       ],
       highlight: "66% des Preispotentials geht durch falsche Prozesse verloren²",
