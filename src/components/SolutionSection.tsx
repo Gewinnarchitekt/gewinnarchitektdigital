@@ -56,23 +56,15 @@ const SolutionSection = ({}: SolutionSectionProps) => {
 
         <Tabs defaultValue="angebotsgestaltung" className="w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Image */}
+            {/* Left Column - Text Only */}
             <div className="order-2 lg:order-1">
               {Object.entries(solutions).map(([key, solution]) => (
                 <TabsContent key={key} value={key} className="mt-0">
-                  <div className="aspect-square rounded-xl overflow-hidden relative">
-                    <img 
-                      src={solutionBackground} 
-                      alt={solution.title} 
-                      className="w-full h-full object-cover"
-                    />
-                    {/* Centered text overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center p-4">
-                      <div className="w-full text-center">
-                        <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
-                          {solution.overlayText}
-                        </p>
-                      </div>
+                  <div className="aspect-square rounded-xl flex items-center justify-center p-4 bg-muted">
+                    <div className="w-full text-center">
+                      <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                        {solution.overlayText}
+                      </p>
                     </div>
                   </div>
                 </TabsContent>
