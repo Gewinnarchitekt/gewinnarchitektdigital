@@ -121,7 +121,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
 
                 {/* Highlight box */}
                 <div className="p-4 rounded-lg bg-transparent h-20 flex items-center justify-center">
-                  <p className="font-semibold text-center leading-tight text-red-600">
+                  <p className="font-bold text-center leading-tight text-red-600">
                     {category.highlight}
                   </p>
                 </div>
