@@ -54,19 +54,23 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     },
     {
       icon: Target,
-      title: "Langfristige Planung",
+      title: "Planung",
       problems: [
         {
-          title: "Das zu späte Berücksichtigen von Kundenbedürfnissen führt zu belanglosen Produkten",
-          description: "Kundenorientierung muss von Anfang an in die Produktentwicklung einfließen."
+          title: "Kundenbedürfnisse werden zu spät berücksichtigt",
+          description: ""
         },
         {
-          title: "Kurzfristig lassen sich keine nachhaltigen, strategische Vorteile erarbeiten",
-          description: "Langfristige Planung ist entscheidend für dauerhaften Erfolg."
+          title: "Innovationen werden am Markt vorbei entwickelt",
+          description: ""
         },
         {
-          title: "Klare Ziele sind die Voraussetzung für einen optimalen Ressourceneinsatz",
-          description: "Ohne definierte Ziele werden Ressourcen ineffizient eingesetzt."
+          title: "Priorisierung ist nicht auf monetäres Wachstum ausgerichtet",
+          description: ""
+        },
+        {
+          title: "Es fehlt eine langfristige Perspektive",
+          description: ""
         }
       ],
       highlight: "88% Führungspersonen erachten strategische Planung als sehr wichtig/Essentiell³",
