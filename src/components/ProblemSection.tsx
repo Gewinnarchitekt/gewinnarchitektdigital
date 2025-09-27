@@ -26,7 +26,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
         }
       ],
       highlight: "Das richtige Angebot bringt 20% mehr Umsatz¹",
-      color: "from-green-600 to-green-700"
+      color: "from-red-600 to-red-700"
     },
     {
       icon: TrendingDown,
@@ -50,7 +50,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
         }
       ],
       highlight: "66% des Preispotentials geht durch falsche Prozesse verloren²",
-      color: "from-green-600 to-green-700"
+      color: "from-red-600 to-red-700"
     },
     {
       icon: Target,
@@ -74,7 +74,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
         }
       ],
       highlight: "88% Führungspersonen erachten strategische Planung als sehr wichtig/Essentiell³",
-      color: "from-green-600 to-green-700"
+      color: "from-red-600 to-red-700"
     }
   ];
 
@@ -120,8 +120,8 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 </div>
 
                 {/* Highlight box */}
-                <div className={`p-4 rounded-lg bg-gradient-to-r ${category.color} text-white h-20 flex items-center justify-center`}>
-                  <p className="font-semibold text-center leading-tight">
+                <div className="p-4 rounded-lg bg-transparent h-20 flex items-center justify-center">
+                  <p className="font-semibold text-center leading-tight text-red-600">
                     {category.highlight}
                   </p>
                 </div>
