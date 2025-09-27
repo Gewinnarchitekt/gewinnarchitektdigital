@@ -13,6 +13,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       icon: AlertTriangle,
       title: "Angebotsgestaltung",
       image: angebotsgestaltungImage,
+      color: "from-red-500 to-red-600",
       descriptions: [
         "Die klare Spezifikation des Problems und der Vergleich mit bestehenden \"Jobs To Be Done\" ermöglicht die Erstellung eines marktorientierten Angebots.",
         "Dieses strukturiere ich gemäss neuesten Erkenntnissen aus der Verhaltensforschung und bringe die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess.",
@@ -23,8 +24,9 @@ const SolutionSection = ({}: SolutionSectionProps) => {
     },
     "angebotsoptimierung": {
       icon: TrendingDown,
-      title: "Angebotsoptimierung", 
+      title: "Angebotsoptimierung",
       image: angebotsoptimierungImage,
+      color: "from-orange-500 to-orange-600",
       descriptions: [
         "Detaillierte Produkt- und Kundenanalysen bringen Transparenz über den tatsächlich erzielten Gewinnbeitrag pro Angebot.",
         "Mit \"Soll-vs-Ist\" Vergleichen lassen sich ungewollte Umsatzverluste aufdecken und ein regelmässiges Erfolgsreporting identifiziert die wichtigsten Gewinntreiber.",
@@ -37,6 +39,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       icon: Target,
       title: "Angebotsstrategie",
       image: angebotsstrategieImage,
+      color: "from-yellow-500 to-yellow-600",
       descriptions: [
         "Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.",
         "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.",
@@ -112,8 +115,8 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                     <TabsContent key={key} value={key} className="mt-0 h-full">
                       <div className="bg-card rounded-xl p-8 card-shadow h-full flex flex-col">
                         <div className="flex items-center mb-6">
-                          <div className="p-3 bg-primary/10 rounded-lg mr-4">
-                            <IconComponent className="w-6 h-6 text-primary" />
+                          <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
+                            <IconComponent className="w-6 h-6 text-white" />
                           </div>
                           <h3 className="text-xl font-semibold text-foreground">
                             {solution.title}
