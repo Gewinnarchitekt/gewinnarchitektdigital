@@ -49,7 +49,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           description: ""
         }
       ],
-      highlight: "66% des Preispotentials geht durch falsche Prozesse verloren²",
+      highlight: "66% des Potentials von Preisanpassungen geht durch falsche Prozesse verloren²",
       color: "from-red-600 to-red-700"
     },
     {
@@ -126,7 +126,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                   </p>
                 </div>
                 
-                {/* Footnote for first category only */}
+                {/* Footnote for first and second categories */}
                 {index === 0 && (
                   <div className="text-center mt-4">
                     <p className="text-sm text-muted-foreground">
@@ -141,6 +141,21 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                     </p>
                   </div>
                 )}
+                
+                {index === 1 && (
+                  <div className="text-center mt-4">
+                    <p className="text-sm text-muted-foreground">
+                      <a 
+                        href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        ²The pricing response to cost volatility | McKinsey
+                      </a>
+                    </p>
+                  </div>
+                )}
               </div>
             );
           })}
@@ -148,7 +163,6 @@ const ProblemSection = ({}: ProblemSectionProps) => {
 
         <div className="mt-12 text-center">
           <div className="text-sm text-muted-foreground space-y-1">
-            <p>²The pricing response to cost volatility | McKinsey</p>
             <p>³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series</p>
           </div>
         </div>
