@@ -125,6 +125,22 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                     {category.highlight}
                   </p>
                 </div>
+                
+                {/* Footnote for first category only */}
+                {index === 0 && (
+                  <div className="text-center mt-4">
+                    <p className="text-sm text-muted-foreground">
+                      <a 
+                        href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        ¹Proven packaging and pricing designs | Simon Kucher
+                      </a>
+                    </p>
+                  </div>
+                )}
               </div>
             );
           })}
@@ -132,7 +148,6 @@ const ProblemSection = ({}: ProblemSectionProps) => {
 
         <div className="mt-12 text-center">
           <div className="text-sm text-muted-foreground space-y-1">
-            <p>¹Proven packaging and pricing designs | Simon Kucher</p>
             <p>²The pricing response to cost volatility | McKinsey</p>
             <p>³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series</p>
           </div>
