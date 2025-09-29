@@ -73,7 +73,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           description: ""
         }
       ],
-      highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie tatsächlich umzusetzen³",
+      highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen³",
       color: "from-red-600 to-red-700"
     }
   ];
