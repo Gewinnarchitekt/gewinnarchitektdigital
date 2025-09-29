@@ -120,7 +120,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 </div>
 
                 {/* Highlight box - aligned to bottom */}
-                <div className="p-4 rounded-lg bg-transparent min-h-20 flex items-start justify-center">
+                <div className="p-4 rounded-lg bg-transparent h-20 flex items-center justify-center">
                   <p className="font-semibold text-center leading-tight text-red-600">
                     {category.highlight}
                   </p>
