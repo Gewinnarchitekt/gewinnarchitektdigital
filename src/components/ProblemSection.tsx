@@ -83,10 +83,10 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">
-            Das Gewinnpotenial gut durchdachter Angebote wird oft übersehen
+            Die meisten digitalen Produkte scheitern nicht an der Technik, sondern am Angebot
           </h2>
           <p className="text-xl text-muted-foreground mx-auto">
-            Digitale Produkte stehen online in direkter Konkurrenz zueinander und die Leistungserbringung erfolgt meist ohne direkten Kundenkontakt. Eine gewinnbringende Angebotsgestaltung wird dadurch zur erfolgskritischen Disziplin mit spezifischen Herausforderungen.
+            Eine gute Angebotsgestaltung macht den Unterschied zwischen nachhaltigem Gewinn und dem jagen kurzfristiger Umsatzziele. Folgende Herausforderungen gilt es bei der Umsetzung zu meistern:
           </p>
         </div>
 
