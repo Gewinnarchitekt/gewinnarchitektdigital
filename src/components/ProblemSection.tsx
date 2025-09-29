@@ -83,7 +83,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">
-            Eine gute Angebotsgestaltung ist der meistunterschätzte Hebel, um Gewinne nachhaltig zu steigern
+            Die Angebotsgestaltung entscheidet über Erfolg und Misserfolg
           </h2>
           <p className="text-xl text-muted-foreground mx-auto">
             Eine gute Angebotsgestaltung macht den Unterschied zwischen nachhaltigem Gewinn und dem jagen kurzfristiger Umsatzziele. Die Herausforderungen sind vielfältig.
