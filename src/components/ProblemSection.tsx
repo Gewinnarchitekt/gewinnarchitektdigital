@@ -6,7 +6,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [
     {
       icon: AlertTriangle,
-      title: "Akzeptanz",
+      title: "Kundenakzeptanz",
       problems: [
         {
           title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
@@ -37,7 +37,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           description: ""
         },
         {
-          title: "Limitierte Ressourcen zur Identifikation von Opportunitäten",
+          title: "Es fehlen Ressourcen für die Identifikation von Umsatzopportunitäten",
           description: ""
         },
         {
