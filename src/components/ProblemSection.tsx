@@ -73,7 +73,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           description: ""
         }
       ],
-      highlight: "88% Führungspersonen erachten strategische Planung als sehr wichtig/Essentiell³",
+      highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie tatsächlich umzusetzen³",
       color: "from-red-600 to-red-700"
     }
   ];
@@ -156,16 +156,26 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                     </p>
                   </div>
                 )}
+                
+                {index === 2 && (
+                  <div className="text-center mt-4">
+                    <p className="text-sm text-muted-foreground">
+                      <a 
+                        href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        ³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
+                      </a>
+                    </p>
+                  </div>
+                )}
               </div>
             );
           })}
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="text-sm text-muted-foreground space-y-1">
-            <p>³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series</p>
-          </div>
-        </div>
       </div>
     </section>
   );
