@@ -48,7 +48,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">
-            Die Angebotsgestaltung entscheidet über Erfolg und Misserfolg
+            So helfe ich dir, maximale Wertschöpfung aus dem Markt zu holen
           </h2>
         </div>
 
