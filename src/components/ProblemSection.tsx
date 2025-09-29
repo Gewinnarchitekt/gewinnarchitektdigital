@@ -86,7 +86,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
             Die meisten digitalen Produkte scheitern nicht an der Technik, sondern am Angebot
           </h2>
           <p className="text-xl text-muted-foreground mx-auto">
-            Eine gute Angebotsgestaltung macht den Unterschied zwischen nachhaltigem Gewinn und dem jagen kurzfristiger Umsatzziele. Folgende Herausforderungen gilt es bei der Umsetzung zu meistern:
+            Eine gute Angebotsgestaltung macht den Unterschied zwischen nachhaltigem Gewinn und dem jagen kurzfristiger Umsatzziele. Die Herausforderungen sind dabei vielfältig.
           </p>
         </div>
 
