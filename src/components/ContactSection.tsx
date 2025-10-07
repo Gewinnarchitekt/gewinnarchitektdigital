@@ -24,8 +24,8 @@ const ContactSection = ({}: ContactSectionProps) => {
 
         {/* Two Column Layout */}
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Left Column - Erstgespräch */}
-          <div className="bg-card p-8 md:p-12 rounded-xl card-shadow">
+          {/* Left Column - Erstgespräch (no box) */}
+          <div className="space-y-8">
             <h3 className="text-3xl font-bold mb-8">Erstgespräch</h3>
             
             {/* Benefits List */}
@@ -59,17 +59,17 @@ const ContactSection = ({}: ContactSectionProps) => {
             </div>
 
             {/* Details */}
-            <div className="space-y-3 mb-8 text-sm">
-              <div>
-                <span className="font-semibold">Dauer:</span>{" "}
+            <div className="space-y-3 mb-8">
+              <div className="text-sm">
+                <span className="font-semibold text-foreground">Dauer:</span>{" "}
                 <span className="text-muted-foreground">30-45 Minuten</span>
               </div>
-              <div>
-                <span className="font-semibold">Format:</span>{" "}
+              <div className="text-sm">
+                <span className="font-semibold text-foreground">Format:</span>{" "}
                 <span className="text-muted-foreground">Video-Call</span>
               </div>
-              <div>
-                <span className="font-semibold">Kosten:</span>{" "}
+              <div className="text-sm">
+                <span className="font-semibold text-foreground">Kosten:</span>{" "}
                 <span className="text-muted-foreground">Kostenlos, keine Verpflichtungen</span>
               </div>
             </div>
@@ -90,14 +90,12 @@ const ContactSection = ({}: ContactSectionProps) => {
             
             <form className="space-y-6">
               {/* Email */}
-              <div>
-                <Input 
-                  type="email" 
-                  placeholder="Email*" 
-                  required
-                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
-                />
-              </div>
+              <Input 
+                type="email" 
+                placeholder="Email*" 
+                required
+                className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
+              />
 
               {/* First and Last Name */}
               <div className="grid md:grid-cols-2 gap-4">
@@ -114,31 +112,25 @@ const ContactSection = ({}: ContactSectionProps) => {
               </div>
 
               {/* Company Name */}
-              <div>
-                <Input 
-                  placeholder="Firmenname" 
-                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
-                />
-              </div>
+              <Input 
+                placeholder="Firmenname" 
+                className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
+              />
 
               {/* Phone */}
-              <div>
-                <Input 
-                  type="tel" 
-                  placeholder="Telefonnummer" 
-                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
-                />
-              </div>
+              <Input 
+                type="tel" 
+                placeholder="Telefonnummer" 
+                className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
+              />
 
               {/* Message */}
-              <div>
-                <Textarea 
-                  placeholder="Nachricht*" 
-                  required
-                  rows={6}
-                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70 resize-none"
-                />
-              </div>
+              <Textarea 
+                placeholder="Nachricht*" 
+                required
+                rows={6}
+                className="bg-accent/50 border-white/20 text-white placeholder:text-white/70 resize-none"
+              />
 
               {/* Copy Checkbox */}
               <div className="flex items-center space-x-2">
