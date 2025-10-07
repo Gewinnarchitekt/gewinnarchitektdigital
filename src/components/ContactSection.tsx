@@ -32,6 +32,15 @@ const ContactSection = ({}: ContactSectionProps) => {
                   <Check className="w-4 h-4 text-accent" />
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed">
+                  Analyse eurer aktuellen Angebote
+                </p>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center mt-1">
+                  <Check className="w-4 h-4 text-accent" />
+                </div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   Konkrete Handlungsempfehlungen - Sofort umsetzbare Tipps für mehr Gewinn
                 </p>
               </div>
