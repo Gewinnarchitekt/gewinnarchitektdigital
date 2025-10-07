@@ -11,7 +11,7 @@ const ContactSection = ({}: ContactSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">
-            Lassen Sie uns über Ihr Wachstumspotenzial sprechen
+            Lass uns sprechen
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Vereinbaren Sie noch heute ein kostenloses Beratungsgespräch und erfahren Sie, 
