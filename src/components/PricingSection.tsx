@@ -76,8 +76,11 @@ const PricingSection = ({}: PricingSectionProps) => {
                 <div className="space-y-4 mb-8 flex-1">
                   {pkg.features.map((feature, featureIndex) => {
                     const isAngebotsoptimierung = pkg.name === "Angebotsoptimierung";
-                    const shouldNotBeBold = isAngebotsoptimierung && 
-                      ["Kundenanalysen", "Marktauswertungen", "Erfolgstracking"].includes(feature);
+                    const isAngebotsstrategie = pkg.name === "Angebotsstrategie";
+                    
+                    const shouldNotBeBold = 
+                      (isAngebotsoptimierung && ["Kundenanalysen", "Marktauswertungen", "Erfolgstracking"].includes(feature)) ||
+                      (isAngebotsstrategie && ["Kundenanalysen", "Marktauswertungen", "Erfolgstracking", "Monatlicher Performancereport"].includes(feature));
                     
                     return (
                       <div key={featureIndex} className="flex items-center space-x-3">
