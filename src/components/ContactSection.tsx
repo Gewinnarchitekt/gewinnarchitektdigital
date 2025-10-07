@@ -20,8 +20,9 @@ const ContactSection = ({}: ContactSectionProps) => {
 
         {/* Two Column Layout */}
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Left Column - Erstgespräch (no box) */}
-          <div className="space-y-8">
+          {/* Left Column - Erstgespräch */}
+          <div className="bg-muted/50 p-8 md:p-12 rounded-xl flex flex-col h-full">
+            <div className="space-y-8 flex-1">
             <h3 className="text-3xl font-bold mb-8">Erstgespräch</h3>
 
             {/* Benefits List */}
@@ -62,16 +63,17 @@ const ContactSection = ({}: ContactSectionProps) => {
             </div>
 
             {/* CTA Button */}
-            <Button variant="outline" size="lg" className="w-full text-lg py-6 h-auto">
+            <Button variant="outline" size="lg" className="w-full text-lg py-3 h-auto">
               Jetzt Gewinnpotential abklären!
             </Button>
+            </div>
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="bg-accent p-8 md:p-12 rounded-xl">
+          <div className="bg-accent p-8 md:p-12 rounded-xl flex flex-col h-full">
             <h3 className="text-3xl font-bold mb-8 text-white">Nachricht senden</h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6 flex-1 flex flex-col">
               {/* Email */}
               <Input
                 type="email"
@@ -129,13 +131,15 @@ const ContactSection = ({}: ContactSectionProps) => {
               </div>
 
               {/* Submit Button */}
-              <Button
-                type="submit"
-                size="lg"
-                className="w-full text-lg py-6 h-auto bg-accent-foreground hover:bg-accent-foreground/90 text-accent font-semibold"
-              >
-                senden
-              </Button>
+              <div className="mt-auto">
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full text-lg py-3 h-auto bg-accent-foreground hover:bg-accent-foreground/90 text-accent font-semibold"
+                >
+                  senden
+                </Button>
+              </div>
             </form>
           </div>
         </div>
