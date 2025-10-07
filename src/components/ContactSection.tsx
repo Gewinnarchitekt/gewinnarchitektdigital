@@ -32,7 +32,7 @@ const ContactSection = ({}: ContactSectionProps) => {
                   <Check className="w-4 h-4 text-accent" />
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Analyse eurer aktuellen Angebote
+                  Analyse eurer aktuellen Angebote - Wo steht Ihr heute und wo sind die grössten Hebel?
                 </p>
               </div>
 
