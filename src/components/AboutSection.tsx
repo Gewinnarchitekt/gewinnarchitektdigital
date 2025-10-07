@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import karlPortrait from "@/assets/karl-portrait.png";
+import karlPortrait from "@/assets/karl-portrait.jpg";
 interface AboutSectionProps {}
 const AboutSection = ({}: AboutSectionProps) => {
   return <section className="py-20 bg-muted">
@@ -18,7 +18,11 @@ const AboutSection = ({}: AboutSectionProps) => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
-              
+              <img 
+                src={karlPortrait} 
+                alt="Karl Aschwanden Portrait" 
+                className="rounded-2xl w-full max-w-md h-auto object-cover card-shadow"
+              />
               {/* Decorative gradient border */}
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl -z-10 opacity-20"></div>
             </div>
