@@ -5,12 +5,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Check } from "lucide-react";
 import { useState } from "react";
 interface ContactSectionProps {}
-
 const ContactSection = ({}: ContactSectionProps) => {
   const [copyToSelf, setCopyToSelf] = useState(false);
-
-  return (
-    <section className="py-20 bg-background">
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -34,9 +31,7 @@ const ContactSection = ({}: ContactSectionProps) => {
                 <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center mt-1">
                   <Check className="w-4 h-4 text-accent" />
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  Analyse eurer aktuellen Angebote - Wo steht Ihr heute und wo sind die grössten Hebel?
-                </p>
+                <p className="text-muted-foreground leading-relaxed">Analyse deiner aktuellen Angebote - Wo stehst du heute und was sind die grössten Hebel?</p>
               </div>
               
               <div className="flex items-start space-x-4">
@@ -52,9 +47,7 @@ const ContactSection = ({}: ContactSectionProps) => {
                 <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center mt-1">
                   <Check className="w-4 h-4 text-accent" />
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  Passende Lösung finden - Welches Angebot passt am besten zu euren Zielen?
-                </p>
+                <p className="text-muted-foreground leading-relaxed">Passende Lösung finden - Welches Angebot passt am besten zu deinen Zielen?</p>
               </div>
             </div>
 
@@ -75,11 +68,7 @@ const ContactSection = ({}: ContactSectionProps) => {
             </div>
 
             {/* CTA Button */}
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="w-full text-lg py-6 h-auto"
-            >
+            <Button variant="outline" size="lg" className="w-full text-lg py-6 h-auto">
               Jetzt Gewinnpotential abklären!
             </Button>
           </div>
@@ -90,78 +79,39 @@ const ContactSection = ({}: ContactSectionProps) => {
             
             <form className="space-y-6">
               {/* Email */}
-              <Input 
-                type="email" 
-                placeholder="Email*" 
-                required
-                className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
-              />
+              <Input type="email" placeholder="Email*" required className="bg-accent/50 border-white/20 text-white placeholder:text-white/70" />
 
               {/* First and Last Name */}
               <div className="grid md:grid-cols-2 gap-4">
-                <Input 
-                  placeholder="Vorname*" 
-                  required
-                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
-                />
-                <Input 
-                  placeholder="Nachname*" 
-                  required
-                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
-                />
+                <Input placeholder="Vorname*" required className="bg-accent/50 border-white/20 text-white placeholder:text-white/70" />
+                <Input placeholder="Nachname*" required className="bg-accent/50 border-white/20 text-white placeholder:text-white/70" />
               </div>
 
               {/* Company Name */}
-              <Input 
-                placeholder="Firmenname" 
-                className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
-              />
+              <Input placeholder="Firmenname" className="bg-accent/50 border-white/20 text-white placeholder:text-white/70" />
 
               {/* Phone */}
-              <Input 
-                type="tel" 
-                placeholder="Telefonnummer" 
-                className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
-              />
+              <Input type="tel" placeholder="Telefonnummer" className="bg-accent/50 border-white/20 text-white placeholder:text-white/70" />
 
               {/* Message */}
-              <Textarea 
-                placeholder="Nachricht*" 
-                required
-                rows={6}
-                className="bg-accent/50 border-white/20 text-white placeholder:text-white/70 resize-none"
-              />
+              <Textarea placeholder="Nachricht*" required rows={6} className="bg-accent/50 border-white/20 text-white placeholder:text-white/70 resize-none" />
 
               {/* Copy Checkbox */}
               <div className="flex items-center space-x-2">
-                <Checkbox 
-                  id="copy" 
-                  checked={copyToSelf}
-                  onCheckedChange={(checked) => setCopyToSelf(checked as boolean)}
-                  className="border-white/40 data-[state=checked]:bg-white data-[state=checked]:text-accent"
-                />
-                <label 
-                  htmlFor="copy" 
-                  className="text-sm text-white cursor-pointer"
-                >
+                <Checkbox id="copy" checked={copyToSelf} onCheckedChange={checked => setCopyToSelf(checked as boolean)} className="border-white/40 data-[state=checked]:bg-white data-[state=checked]:text-accent" />
+                <label htmlFor="copy" className="text-sm text-white cursor-pointer">
                   Kopie erhalten
                 </label>
               </div>
 
               {/* Submit Button */}
-              <Button 
-                type="submit"
-                size="lg" 
-                className="w-full text-lg py-6 h-auto bg-accent-foreground hover:bg-accent-foreground/90 text-accent font-semibold"
-              >
+              <Button type="submit" size="lg" className="w-full text-lg py-6 h-auto bg-accent-foreground hover:bg-accent-foreground/90 text-accent font-semibold">
                 senden
               </Button>
             </form>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
