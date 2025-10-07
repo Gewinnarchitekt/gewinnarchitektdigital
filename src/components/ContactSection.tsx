@@ -98,32 +98,26 @@ const ContactSection = ({}: ContactSectionProps) => {
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium mb-2">Vorname *</label>
                   <Input placeholder="Ihr Vorname" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Nachname *</label>
                   <Input placeholder="Ihr Nachname" />
                 </div>
               </div>
               
               <div>
-                <label className="block text-sm font-medium mb-2">E-Mail *</label>
                 <Input type="email" placeholder="ihre.email@beispiel.ch" />
               </div>
               
               <div>
-                <label className="block text-sm font-medium mb-2">Unternehmen</label>
                 <Input placeholder="Ihr Unternehmen" />
               </div>
               
               <div>
-                <label className="block text-sm font-medium mb-2">Telefon</label>
                 <Input placeholder="+41 79 XXX XX XX" />
               </div>
               
               <div>
-                <label className="block text-sm font-medium mb-2">Nachricht *</label>
                 <Textarea placeholder="Beschreiben Sie kurz Ihre Herausforderung oder Ihr Anliegen..." rows={5} />
               </div>
               
