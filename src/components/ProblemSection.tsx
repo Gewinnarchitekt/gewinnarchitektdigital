@@ -5,27 +5,27 @@ interface ProblemSectionProps {}
 const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [
     {
-      icon: AlertTriangle,
-      title: "Kundenakzeptanz",
+      icon: Target,
+      title: "Planung",
       problems: [
         {
-          title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
+          title: "Kundenbedürfnisse werden zu spät berücksichtigt",
           description: ""
         },
         {
-          title: "Intern kalkulierte Angebote widerspiegeln nicht den Kundenwert",
+          title: "Innovationen werden am Markt vorbei entwickelt",
           description: ""
         },
         {
-          title: "Einheitsangebote ignorieren unterschiedliche Kundensegmente",
+          title: "Priorisierung ist nicht auf monetäres Wachstum ausgerichtet",
           description: ""
         },
         {
-          title: "Die Preislogik ist nicht auf das Kundenverhalten abgestimmt",
+          title: "Es fehlt eine langfristige Perspektive",
           description: ""
         }
       ],
-      highlight: "Das richtige Angebot bringt 20% mehr Umsatz¹",
+      highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen³",
       color: "from-red-600 to-red-700"
     },
     {
@@ -53,27 +53,27 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       color: "from-red-600 to-red-700"
     },
     {
-      icon: Target,
-      title: "Planung",
+      icon: AlertTriangle,
+      title: "Kundenakzeptanz",
       problems: [
         {
-          title: "Kundenbedürfnisse werden zu spät berücksichtigt",
+          title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
           description: ""
         },
         {
-          title: "Innovationen werden am Markt vorbei entwickelt",
+          title: "Intern kalkulierte Angebote widerspiegeln nicht den Kundenwert",
           description: ""
         },
         {
-          title: "Priorisierung ist nicht auf monetäres Wachstum ausgerichtet",
+          title: "Einheitsangebote ignorieren unterschiedliche Kundensegmente",
           description: ""
         },
         {
-          title: "Es fehlt eine langfristige Perspektive",
+          title: "Die Preislogik ist nicht auf das Kundenverhalten abgestimmt",
           description: ""
         }
       ],
-      highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen³",
+      highlight: "Das richtige Angebot bringt 20% mehr Umsatz¹",
       color: "from-red-600 to-red-700"
     }
   ];
