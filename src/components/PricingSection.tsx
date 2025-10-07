@@ -74,12 +74,20 @@ const PricingSection = ({}: PricingSectionProps) => {
                 </div>
 
                 <div className="space-y-4 mb-8 flex-1">
-                  {pkg.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center space-x-3">
-                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      <span className="text-muted-foreground font-semibold">{feature}</span>
-                    </div>
-                  ))}
+                  {pkg.features.map((feature, featureIndex) => {
+                    const isAngebotsoptimierung = pkg.name === "Angebotsoptimierung";
+                    const shouldNotBeBold = isAngebotsoptimierung && 
+                      ["Kundenanalysen", "Marktauswertungen", "Erfolgstracking"].includes(feature);
+                    
+                    return (
+                      <div key={featureIndex} className="flex items-center space-x-3">
+                        <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                        <span className={`text-muted-foreground ${shouldNotBeBold ? '' : 'font-semibold'}`}>
+                          {feature}
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
 
                 <div className="text-center mb-6 mt-auto">
