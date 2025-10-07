@@ -1,12 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import karlPortrait from "@/assets/karl-portrait.png";
-
 interface AboutSectionProps {}
-
 const AboutSection = ({}: AboutSectionProps) => {
-  return (
-    <section className="py-20 bg-muted">
+  return <section className="py-20 bg-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">
@@ -21,13 +18,7 @@ const AboutSection = ({}: AboutSectionProps) => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
-              <div className="w-80 h-80 rounded-2xl overflow-hidden elegant-shadow">
-                <img 
-                  src={karlPortrait} 
-                  alt="Karl Aschwanden - Pricing Experte"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              
               {/* Decorative gradient border */}
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl -z-10 opacity-20"></div>
             </div>
@@ -121,8 +112,6 @@ const AboutSection = ({}: AboutSectionProps) => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
