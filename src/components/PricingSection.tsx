@@ -6,18 +6,22 @@ interface PricingSectionProps {}
 const PricingSection = ({}: PricingSectionProps) => {
   const packages = [
     {
-      name: "Angebotsgestaltung",
-      price: "CHF 2'500",
+      name: "Angebotsstrategie",
+      price: "CHF 5'500",
       period: "pro Monat¹",
-      description: "Bi-weekly Abstimmungen",
-      icon: AlertTriangle,
+      description: "Abstimmungen nach Bedarf",
+      icon: Target,
       color: "from-green-600 to-green-700",
       features: [
         "Kundenanalysen",
         "Marktauswertungen", 
-        "Tracking- und Plansysteme"
-      ],
-      coachingNote: "bi-weekly calls à 1 Std. CHF 350"
+        "Tracking- und Plansysteme",
+        "Monatlicher Performancereport",
+        "Abweichungsanalyse ggü. Plan",
+        "Business Cases",
+        "Szenariomodellierungen",
+        "Mittel- und Langfristplanung"
+      ]
     },
     {
       name: "Angebotsoptimierung", 
@@ -35,22 +39,18 @@ const PricingSection = ({}: PricingSectionProps) => {
       ]
     },
     {
-      name: "Angebotsstrategie",
-      price: "CHF 5'500",
+      name: "Angebotsgestaltung",
+      price: "CHF 2'500",
       period: "pro Monat¹",
-      description: "Abstimmungen nach Bedarf",
-      icon: Target,
+      description: "Bi-weekly Abstimmungen",
+      icon: AlertTriangle,
       color: "from-green-600 to-green-700",
       features: [
         "Kundenanalysen",
         "Marktauswertungen", 
-        "Tracking- und Plansysteme",
-        "Monatlicher Performancereport",
-        "Abweichungsanalyse ggü. Plan",
-        "Business Cases",
-        "Szenariomodellierungen",
-        "Mittel- und Langfristplanung"
-      ]
+        "Tracking- und Plansysteme"
+      ],
+      coachingNote: "bi-weekly calls à 1 Std. CHF 350"
     }
   ];
 
