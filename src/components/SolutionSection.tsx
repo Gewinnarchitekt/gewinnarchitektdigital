@@ -67,7 +67,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                 {/* Content */}
                 <div className="space-y-4 mb-8 flex-grow">
                   {solution.descriptions.map((description, descIndex) => (
-                    <p key={descIndex} className="text-muted-foreground leading-relaxed">
+                    <p key={descIndex} className="text-lg text-muted-foreground leading-relaxed">
                       {description}
                     </p>
                   ))}

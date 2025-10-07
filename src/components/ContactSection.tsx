@@ -31,7 +31,7 @@ const ContactSection = ({}: ContactSectionProps) => {
                 <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center mt-1">
                   <Check className="w-4 h-4 text-accent" />
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   Konkrete Handlungsempfehlungen - Sofort umsetzbare Tipps für mehr Gewinn
                 </p>
               </div>
@@ -40,7 +40,7 @@ const ContactSection = ({}: ContactSectionProps) => {
                 <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center mt-1">
                   <Check className="w-4 h-4 text-accent" />
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   Passende Lösung finden - Welches Angebot passt am besten zu deinen Zielen?
                 </p>
               </div>

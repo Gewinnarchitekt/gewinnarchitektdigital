@@ -59,19 +59,19 @@ const AboutSection = ({}: AboutSectionProps) => {
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <div className="w-1.5 h-1.5 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-base text-muted-foreground">
+                      <span className="text-lg text-muted-foreground">
                         Pricing für 20minuten.ch und tagesanzeiger.ch
                       </span>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-1.5 h-1.5 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-base text-muted-foreground">
+                      <span className="text-lg text-muted-foreground">
                         Entwicklung Cashback Cards (Testsieger bei Moneyland)
                       </span>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-1.5 h-1.5 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-base text-muted-foreground">
+                      <span className="text-lg text-muted-foreground">
                         Mehrere Angebote für Sunrise (Prepaid, Postpaid, Handsets)
                       </span>
                     </div>
@@ -87,19 +87,19 @@ const AboutSection = ({}: AboutSectionProps) => {
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <div className="w-1.5 h-1.5 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-base text-muted-foreground">
+                      <span className="text-lg text-muted-foreground">
                         Master of Science in Business Administration (Universität Zürich)
                       </span>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-1.5 h-1.5 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-base text-muted-foreground">
+                      <span className="text-lg text-muted-foreground">
                         Spezialisierung auf Pricing & Revenue Management
                       </span>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-1.5 h-1.5 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-base text-muted-foreground">
+                      <span className="text-lg text-muted-foreground">
                         Zertifizierungen in Business Analytics & Customer Research
                       </span>
                     </div>
