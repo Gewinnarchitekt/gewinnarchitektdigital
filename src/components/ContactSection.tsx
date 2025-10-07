@@ -97,7 +97,7 @@ const ContactSection = ({}: ContactSectionProps) => {
             <h3 className="text-2xl font-semibold mb-6">Nachricht senden</h3>
             <form className="space-y-6">
               <div>
-                <Input type="email" placeholder="ihre.email@beispiel.ch" />
+                <Input type="email" placeholder="Email" />
               </div>
               
               <div className="grid md:grid-cols-2 gap-4">
