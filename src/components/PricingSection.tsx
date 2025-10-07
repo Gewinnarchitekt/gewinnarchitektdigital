@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle, AlertTriangle, TrendingDown, Target } from "lucide-react";
+import { CheckCircle, AlertTriangle, Wrench, Target } from "lucide-react";
 
 interface PricingSectionProps {}
 
@@ -28,7 +28,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       price: "CHF 4'000",
       period: "pro Monat¹",
       description: "Wöchentliche Abstimmungen",
-      icon: TrendingDown,
+      icon: Wrench,
       color: "from-green-600 to-green-700",
       features: [
         "Kundenanalysen",
