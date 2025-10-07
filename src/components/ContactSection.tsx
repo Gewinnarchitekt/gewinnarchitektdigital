@@ -1,14 +1,32 @@
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Check } from "lucide-react";
+import { useState } from "react";
 interface ContactSectionProps {}
 
 const ContactSection = ({}: ContactSectionProps) => {
+  const [copyToSelf, setCopyToSelf] = useState(false);
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-2xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Lass uns sprechen
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Bereit für den nächsten Schritt? Kontaktiere mich per Email oder buche einen Termin
+          </p>
+        </div>
+
+        {/* Two Column Layout */}
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {/* Left Column - Erstgespräch */}
           <div className="bg-card p-8 md:p-12 rounded-xl card-shadow">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Erstgespräch</h2>
+            <h3 className="text-3xl font-bold mb-8">Erstgespräch</h3>
             
             {/* Benefits List */}
             <div className="space-y-6 mb-10">
@@ -58,12 +76,95 @@ const ContactSection = ({}: ContactSectionProps) => {
 
             {/* CTA Button */}
             <Button 
-              variant="hero" 
+              variant="outline" 
               size="lg" 
               className="w-full text-lg py-6 h-auto"
             >
               Jetzt Gewinnpotential abklären!
             </Button>
+          </div>
+
+          {/* Right Column - Contact Form */}
+          <div className="bg-accent p-8 md:p-12 rounded-xl">
+            <h3 className="text-3xl font-bold mb-8 text-white">Nachricht senden</h3>
+            
+            <form className="space-y-6">
+              {/* Email */}
+              <div>
+                <Input 
+                  type="email" 
+                  placeholder="Email*" 
+                  required
+                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
+                />
+              </div>
+
+              {/* First and Last Name */}
+              <div className="grid md:grid-cols-2 gap-4">
+                <Input 
+                  placeholder="Vorname*" 
+                  required
+                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
+                />
+                <Input 
+                  placeholder="Nachname*" 
+                  required
+                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
+                />
+              </div>
+
+              {/* Company Name */}
+              <div>
+                <Input 
+                  placeholder="Firmenname" 
+                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
+                />
+              </div>
+
+              {/* Phone */}
+              <div>
+                <Input 
+                  type="tel" 
+                  placeholder="Telefonnummer" 
+                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70"
+                />
+              </div>
+
+              {/* Message */}
+              <div>
+                <Textarea 
+                  placeholder="Nachricht*" 
+                  required
+                  rows={6}
+                  className="bg-accent/50 border-white/20 text-white placeholder:text-white/70 resize-none"
+                />
+              </div>
+
+              {/* Copy Checkbox */}
+              <div className="flex items-center space-x-2">
+                <Checkbox 
+                  id="copy" 
+                  checked={copyToSelf}
+                  onCheckedChange={(checked) => setCopyToSelf(checked as boolean)}
+                  className="border-white/40 data-[state=checked]:bg-white data-[state=checked]:text-accent"
+                />
+                <label 
+                  htmlFor="copy" 
+                  className="text-sm text-white cursor-pointer"
+                >
+                  Kopie erhalten
+                </label>
+              </div>
+
+              {/* Submit Button */}
+              <Button 
+                type="submit"
+                size="lg" 
+                className="w-full text-lg py-6 h-auto bg-accent-foreground hover:bg-accent-foreground/90 text-accent font-semibold"
+              >
+                senden
+              </Button>
+            </form>
           </div>
         </div>
       </div>
