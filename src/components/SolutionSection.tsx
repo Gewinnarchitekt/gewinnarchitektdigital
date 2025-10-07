@@ -5,17 +5,17 @@ interface SolutionSectionProps {}
 
 const SolutionSection = ({}: SolutionSectionProps) => {
   const solutions = {
-    "angebotsgestaltung": {
-      icon: AlertTriangle,
-      title: "Angebotsgestaltung",
+    "angebotsstrategie": {
+      icon: Target,
+      title: "Angebotsstrategie",
       color: "from-green-600 to-green-700",
       descriptions: [
-        "Die klare Spezifikation des Problems und der Vergleich mit bestehenden \"Jobs To Be Done\" ermöglicht die Erstellung eines marktorientierten Angebots.",
-        "Dieses strukturiere ich gemäss neuesten Erkenntnissen aus der Verhaltensforschung und bringe die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess.",
-        "Begleitet wird der Prozess mit quantitativen Analysen bezüglich Marktpotential, Gewinnerwartung und Liquiditätsentwicklung."
+        "Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.",
+        "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.",
+        "Als strategische Partner unterstütze ich dich zudem beim Durchspielen verschiedener Angebotsstrategien und zeige Chancen und Gefahren auf."
       ],
-      note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
-      result: "Profitable Angebote, die sich verkaufen lassen"
+      note: undefined,
+      result: "Nachhaltige Wettbewerbsvorteile"
     },
     "angebotsoptimierung": {
       icon: TrendingDown,
@@ -29,17 +29,17 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       note: undefined,
       result: "Kontinuierliche Erhöhung deiner Gewinne"
     },
-    "angebotsstrategie": {
-      icon: Target,
-      title: "Angebotsstrategie",
+    "angebotsgestaltung": {
+      icon: AlertTriangle,
+      title: "Angebotsgestaltung",
       color: "from-green-600 to-green-700",
       descriptions: [
-        "Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.",
-        "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.",
-        "Als strategische Partner unterstütze ich dich zudem beim Durchspielen verschiedener Angebotsstrategien und zeige Chancen und Gefahren auf."
+        "Die klare Spezifikation des Problems und der Vergleich mit bestehenden \"Jobs To Be Done\" ermöglicht die Erstellung eines marktorientierten Angebots.",
+        "Dieses strukturiere ich gemäss neuesten Erkenntnissen aus der Verhaltensforschung und bringe die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess.",
+        "Begleitet wird der Prozess mit quantitativen Analysen bezüglich Marktpotential, Gewinnerwartung und Liquiditätsentwicklung."
       ],
-      note: undefined,
-      result: "Nachhaltige Wettbewerbsvorteile"
+      note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
+      result: "Profitable Angebote, die sich verkaufen lassen"
     }
   };
 
