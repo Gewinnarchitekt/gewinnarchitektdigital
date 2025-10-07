@@ -54,7 +54,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     },
     {
       icon: AlertTriangle,
-      title: "Kundenakzeptanz",
+      title: "Entwicklung",
       problems: [
         {
           title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
