@@ -79,22 +79,22 @@ const ContactSection = ({}: ContactSectionProps) => {
             
             <form className="space-y-6">
               {/* Email */}
-              <Input type="email" placeholder="Email*" required className="bg-accent/50 border-white/20 text-white placeholder:text-white/70" />
+              <Input type="email" placeholder="Email*" required className="bg-white/10 border-white/20 text-white placeholder:text-white/70" />
 
               {/* First and Last Name */}
               <div className="grid md:grid-cols-2 gap-4">
-                <Input placeholder="Vorname*" required className="bg-accent/50 border-white/20 text-white placeholder:text-white/70" />
-                <Input placeholder="Nachname*" required className="bg-accent/50 border-white/20 text-white placeholder:text-white/70" />
+                <Input placeholder="Vorname*" required className="bg-white/10 border-white/20 text-white placeholder:text-white/70" />
+                <Input placeholder="Nachname*" required className="bg-white/10 border-white/20 text-white placeholder:text-white/70" />
               </div>
 
               {/* Company Name */}
-              <Input placeholder="Firmenname" className="bg-accent/50 border-white/20 text-white placeholder:text-white/70" />
+              <Input placeholder="Firmenname" className="bg-white/10 border-white/20 text-white placeholder:text-white/70" />
 
               {/* Phone */}
-              <Input type="tel" placeholder="Telefonnummer" className="bg-accent/50 border-white/20 text-white placeholder:text-white/70" />
+              <Input type="tel" placeholder="Telefonnummer" className="bg-white/10 border-white/20 text-white placeholder:text-white/70" />
 
               {/* Message */}
-              <Textarea placeholder="Nachricht*" required rows={6} className="bg-accent/50 border-white/20 text-white placeholder:text-white/70 resize-none" />
+              <Textarea placeholder="Nachricht*" required rows={6} className="bg-white/10 border-white/20 text-white placeholder:text-white/70 resize-none" />
 
               {/* Copy Checkbox */}
               <div className="flex items-center space-x-2">
