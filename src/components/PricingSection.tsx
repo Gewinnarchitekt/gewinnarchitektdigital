@@ -25,8 +25,7 @@ const PricingSection = ({}: PricingSectionProps) => {
     description: "Bi-weekly Abstimmungen",
     icon: Package,
     color: "from-green-600 to-green-700",
-    features: ["Kundenanalysen", "Marktauswertungen", "Tracking- und Plansysteme"],
-    coachingNote: "bi-weekly calls à 1 Std. CHF 350"
+    features: ["Kundenanalysen", "Marktauswertungen", "Tracking- und Plansysteme"]
   }];
   return <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
@@ -60,9 +59,6 @@ const PricingSection = ({}: PricingSectionProps) => {
                       <span className="text-muted-foreground">{feature}</span>
                     </div>)}
                 </div>
-
-                {/* Coaching offer box - only for first package */}
-                {pkg.coachingNote}
 
                 <div className="text-center mb-6 mt-auto">
                   <div className="text-4xl font-bold text-foreground mb-2">
