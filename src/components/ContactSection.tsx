@@ -17,7 +17,7 @@ const ContactSection = ({}: ContactSectionProps) => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Kontaktieren Sie mich direkt</h3>
+              <h3 className="text-2xl font-semibold mb-6">Erstgespräch</h3>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="p-3 bg-primary/10 rounded-lg">
