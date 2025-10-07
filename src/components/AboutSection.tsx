@@ -58,19 +58,19 @@ const AboutSection = ({}: AboutSectionProps) => {
                 <AccordionContent className="pt-4 space-y-4">
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-base text-muted-foreground">
                         Pricing für 20minuten.ch und tagesanzeiger.ch
                       </span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-base text-muted-foreground">
                         Entwicklung Cashback Cards (Testsieger bei Moneyland)
                       </span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-base text-muted-foreground">
                         Mehrere Angebote für Sunrise (Prepaid, Postpaid, Handsets)
                       </span>
@@ -86,19 +86,19 @@ const AboutSection = ({}: AboutSectionProps) => {
                 <AccordionContent className="pt-4">
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-base text-muted-foreground">
                         Master of Science in Business Administration (Universität Zürich)
                       </span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-base text-muted-foreground">
                         Spezialisierung auf Pricing & Revenue Management
                       </span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-base text-muted-foreground">
                         Zertifizierungen in Business Analytics & Customer Research
                       </span>
