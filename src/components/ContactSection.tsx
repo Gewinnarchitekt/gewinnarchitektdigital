@@ -96,6 +96,10 @@ const ContactSection = ({}: ContactSectionProps) => {
           <div className="bg-card p-8 rounded-xl card-shadow">
             <h3 className="text-2xl font-semibold mb-6">Nachricht senden</h3>
             <form className="space-y-6">
+              <div>
+                <Input type="email" placeholder="ihre.email@beispiel.ch" />
+              </div>
+              
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <Input placeholder="Ihr Vorname" />
@@ -103,10 +107,6 @@ const ContactSection = ({}: ContactSectionProps) => {
                 <div>
                   <Input placeholder="Ihr Nachname" />
                 </div>
-              </div>
-              
-              <div>
-                <Input type="email" placeholder="ihre.email@beispiel.ch" />
               </div>
               
               <div>
