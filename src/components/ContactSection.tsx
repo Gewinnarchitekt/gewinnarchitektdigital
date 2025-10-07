@@ -25,7 +25,7 @@ const ContactSection = ({}: ContactSectionProps) => {
                   </div>
                   <div>
                     <div className="font-medium">E-Mail</div>
-                    <div className="text-muted-foreground">karl@gewinnarchitekt.ch</div>
+                    <div className="text-muted-foreground">info@gewinnarchitekt.ch</div>
                   </div>
                 </div>
                 
