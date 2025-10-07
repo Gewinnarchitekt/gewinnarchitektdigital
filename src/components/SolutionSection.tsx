@@ -22,7 +22,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       descriptions: [
         "Detaillierte Produkt- und Kundenanalysen bringen Transparenz über den tatsächlich erzielten Gewinnbeitrag pro Angebot.",
         'Mit "Soll-vs-Ist" Vergleichen lassen sich ungewollte Umsatzverluste aufdecken und ein regelmässiges Erfolgsreporting identifiziert die wichtigsten Gewinntreiber.',
-        "Monatlich besprechen wir die aktuellen Entwicklungen und besprechen Massnahmen zur Optimierung.",
+        "Monatlich werden aktuelle Entwicklungen aufgezeigt und Massnahmen zur Gewinnoptimierung besprochen.",
       ],
       note: undefined,
       result: "Kontinuierliche Erhöhung deiner Gewinne",
