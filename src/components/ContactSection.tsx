@@ -2,21 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Calendar } from "lucide-react";
-
 interface ContactSectionProps {}
-
 const ContactSection = ({}: ContactSectionProps) => {
-  return (
-    <section className="py-20 bg-background">
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">
             Lass uns sprechen
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Vereinbaren Sie noch heute ein kostenloses Beratungsgespräch und erfahren Sie, 
-            wie Sie Ihre Angebotsstrategie optimieren können.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Bereit für den nächsten Schritt? Kontaktiere mich per Email oder buche einen Termin</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
@@ -130,10 +124,7 @@ const ContactSection = ({}: ContactSectionProps) => {
               
               <div>
                 <label className="block text-sm font-medium mb-2">Nachricht *</label>
-                <Textarea 
-                  placeholder="Beschreiben Sie kurz Ihre Herausforderung oder Ihr Anliegen..."
-                  rows={5}
-                />
+                <Textarea placeholder="Beschreiben Sie kurz Ihre Herausforderung oder Ihr Anliegen..." rows={5} />
               </div>
               
               <Button variant="hero" size="lg" className="w-full text-lg py-4 h-auto">
@@ -147,8 +138,6 @@ const ContactSection = ({}: ContactSectionProps) => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
