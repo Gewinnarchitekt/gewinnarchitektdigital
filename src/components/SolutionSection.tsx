@@ -32,7 +32,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       title: "Angebotsgestaltung",
       color: "from-green-600 to-green-700",
       descriptions: [
-        "Die klare Spezifikation des Problems und der Vergleich mit bestehenden angewandten Lösungen ermöglicht die Erstellung eines marktorientierten Angebots.",
+        "Die klare Spezifikation des Problems und das Studium bestehender Lösungsprozesse ermöglicht die Erstellung eines marktorientierten Angebots.",
         "Dieses wird nach den neuesten Erkenntnissen aus der Verhaltensforschung strukturiert und die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess gebracht.",
         "Begleitet wird der Prozess mit quantitativen Analysen bezüglich Marktpotential, Gewinnerwartung und Liquiditätsentwicklung.",
       ],
