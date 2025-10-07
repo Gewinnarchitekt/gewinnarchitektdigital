@@ -7,7 +7,7 @@ const PricingSection = ({}: PricingSectionProps) => {
   const packages = [
     {
       name: "Angebotsstrategie",
-      price: "CHF 5'500",
+      price: "CHF 6'000",
       period: "pro Monat¹",
       description: "Abstimmungen nach Bedarf",
       icon: Target,
@@ -25,7 +25,7 @@ const PricingSection = ({}: PricingSectionProps) => {
     },
     {
       name: "Angebotsoptimierung", 
-      price: "CHF 3'500",
+      price: "CHF 4'000",
       period: "pro Monat¹",
       description: "Wöchentliche Abstimmungen",
       icon: TrendingDown,
