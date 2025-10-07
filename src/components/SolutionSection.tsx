@@ -75,12 +75,6 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                       {description}
                     </p>
                   ))}
-                  
-                  {solution.note && (
-                    <p className="text-muted-foreground leading-relaxed italic">
-                      {solution.note}
-                    </p>
-                  )}
                 </div>
 
                 <div className="flex justify-center mt-auto">
