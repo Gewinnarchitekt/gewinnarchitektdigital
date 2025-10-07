@@ -30,7 +30,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     },
     {
       icon: TrendingDown,
-      title: "Entwicklung",
+      title: "Umsetzung",
       problems: [
         {
           title: "Daten über das Kundenverhalten werden nicht ausreichend genutzt",
