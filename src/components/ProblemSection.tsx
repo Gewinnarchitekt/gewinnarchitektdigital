@@ -1,4 +1,4 @@
-import { AlertTriangle, Wrench, Target } from "lucide-react";
+import { Package, Wrench, Target } from "lucide-react";
 
 interface ProblemSectionProps {}
 
@@ -53,7 +53,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       color: "from-red-600 to-red-700"
     },
     {
-      icon: AlertTriangle,
+      icon: Package,
       title: "Entwicklung",
       problems: [
         {

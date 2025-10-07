@@ -1,4 +1,4 @@
-import { AlertTriangle, Wrench, Target } from "lucide-react";
+import { Package, Wrench, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface SolutionSectionProps {}
@@ -30,7 +30,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       result: "Kontinuierliche Erhöhung deiner Gewinne"
     },
     "angebotsgestaltung": {
-      icon: AlertTriangle,
+      icon: Package,
       title: "Angebotsgestaltung",
       color: "from-green-600 to-green-700",
       descriptions: [
