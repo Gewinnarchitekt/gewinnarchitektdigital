@@ -77,15 +77,18 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                   <h3 className="text-xl font-semibold">{category.title}</h3>
                 </div>
 
-                {/* Single box containing all problems */}
-                <div className="bg-card rounded-lg p-6 card-shadow hover:elegant-shadow smooth-transition mb-6">
-                  <ul className="space-y-4">
-                    {category.problems.map((problem, problemIndex) => (
-                      <li key={problemIndex} className="text-base text-muted-foreground leading-tight">
-                        • {problem.title}
-                      </li>
-                    ))}
-                  </ul>
+                {/* Individual boxes for each problem */}
+                <div className="space-y-4 mb-6" style={{
+              height: '380px'
+            }}>
+                  {category.problems.map((problem, problemIndex) => <div key={problemIndex} className="bg-card rounded-lg p-4 card-shadow hover:elegant-shadow smooth-transition h-20 flex items-center">
+                      <h4 className="text-base text-muted-foreground leading-tight">
+                        {problem.title}
+                      </h4>
+                      {problem.description && <p className="text-sm text-muted-foreground mt-2">
+                          {problem.description}
+                        </p>}
+                    </div>)}
                 </div>
 
                 {/* Highlight box - aligned to bottom */}
