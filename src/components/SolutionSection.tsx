@@ -7,7 +7,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       icon: Target,
       title: "Angebotsstrategie",
       color: "from-green-600 to-green-700",
-      descriptions: ["Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.", "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.", "Als strategische Partner unterstütze ich dich zudem beim Durchspielen verschiedener Angebotsstrategien und zeige Chancen und Gefahren auf."],
+      descriptions: ["Holistische Business Cases erlauben die Beurteilung des erwarteten Mehrwerts von technologischen Produktanpassungen.", "In Kombination mit einer langfristigen Umsatzplanung ermöglichen diese die klare Priorisierung verschiedener Projekte bezüglich Kundennutzen und Gewinnbeitrag.", "Als strategische Partner unterstütze ich dich beim Durchspielen verschiedener Angebotsstrategien und zeige Chancen und Gefahren auf."],
       note: undefined,
       result: "Nachhaltige Wettbewerbsvorteile"
     },
