@@ -17,7 +17,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Es fehlt eine langfristige Perspektive",
       description: ""
     }],
-    highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen³",
+    highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen¹",
     color: "from-red-600 to-red-700"
   }, {
     icon: Wrench,
