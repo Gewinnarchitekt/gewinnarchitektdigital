@@ -98,11 +98,11 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                   </p>
                 </div>
                 
-                {/* Footnote for first and second categories */}
+                {/* Footnotes */}
                 {index === 0 && <div className="text-center mt-4">
                     <p className="text-sm text-muted-foreground">
-                      <a href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                        ¹Proven packaging and pricing designs | Simon Kucher
+                      <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        ³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
                       </a>
                     </p>
                   </div>}
@@ -117,8 +117,8 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 
                 {index === 2 && <div className="text-center mt-4">
                     <p className="text-sm text-muted-foreground">
-                      <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                        ³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
+                      <a href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        ¹Proven packaging and pricing designs | Simon Kucher
                       </a>
                     </p>
                   </div>}
