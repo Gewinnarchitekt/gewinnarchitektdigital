@@ -62,7 +62,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           <h2 className="font-bold mb-6">
             Die Angebotsgestaltung entscheidet über Erfolg und Misserfolg
           </h2>
-          <p className="text-xl text-muted-foreground mx-auto">Eine gute Angebotsgestaltung macht den Unterschied zwischen nachhaltigem Gewinn und dem jagen kurzfristiger Umsatzziele.</p>
+          <p className="text-xl text-muted-foreground mx-auto">Eine gute Angebotsgestaltung macht den Unterschied zwischen nachhaltigem Gewinn und kurzfristigen Verkaufsaktionen.</p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
