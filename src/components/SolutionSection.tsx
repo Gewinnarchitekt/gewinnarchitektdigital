@@ -15,7 +15,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       icon: Wrench,
       title: "Angebotsoptimierung",
       color: "from-green-600 to-green-700",
-      descriptions: ["Detaillierte Produkt- und Kundenanalysen bringen Transparenz über den tatsächlich erzielten Gewinnbeitrag pro Angebot.", 'Mit "Soll-vs-Ist" Vergleichen lassen sich ungewollte Umsatzverluste aufdecken und ein regelmässiges Erfolgsreporting identifiziert die wichtigsten Gewinntreiber.', "Monatlich werden aktuelle Entwicklungen aufgezeigt und Massnahmen zur Gewinnoptimierung besprochen."],
+      descriptions: ["Detaillierte Produkt- und Kundenanalysen bringen Transparenz über den tatsächlich erzielten Gewinnbeitrag pro Angebot.", 'Mit "Soll-vs-Ist" Vergleichen lassen sich ungewollte Umsatzverluste aufdecken und ein regelmässiges Erfolgsreporting identifiziert die wichtigsten Gewinntreiber.', "Monatlich zeige ich dir die aktuelle Entwicklung auf und empfehle Massnahmen zur Gewinnoptimierung."],
       note: undefined,
       result: "Kontinuierliche Erhöhung deiner Gewinne"
     },
