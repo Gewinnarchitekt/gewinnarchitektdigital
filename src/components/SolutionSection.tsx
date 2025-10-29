@@ -39,7 +39,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {Object.entries(solutions).map(([key, solution]) => {
           const IconComponent = solution.icon;
-          return <div key={key} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition lg:h-[600px] flex flex-col">
+          return <div key={key} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition lg:h-[700px] flex flex-col">
                 {/* Icon and Title at the top of each box */}
                 <div className="flex items-center mb-6 pb-4 border-b border-border">
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
@@ -50,7 +50,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
 
                 {/* Content */}
                 <div className="space-y-4 mb-8 flex-grow">
-                  {solution.descriptions.map((description, descIndex) => <p key={descIndex} className="text-lg text-muted-foreground leading-relaxed">
+                  {solution.descriptions.map((description, descIndex) => <p key={descIndex} className={`text-lg text-muted-foreground leading-relaxed ${key === 'angebotsstrategie' && descIndex === 2 ? 'font-bold' : ''}`}>
                       {description}
                     </p>)}
                 </div>
