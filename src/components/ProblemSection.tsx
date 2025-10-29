@@ -17,7 +17,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Es fehlt eine langfristige Perspektive",
       description: ""
     }],
-    highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen³",
+    highlight: "¹61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen",
     color: "from-red-600 to-red-700"
   }, {
     icon: Wrench,
@@ -102,7 +102,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 {index === 0 && <div className="text-center mt-4">
                     <p className="text-sm text-muted-foreground">
                       <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                        ³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
+                        ¹Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
                       </a>
                     </p>
                   </div>}
