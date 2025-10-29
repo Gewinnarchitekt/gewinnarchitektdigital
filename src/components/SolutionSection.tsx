@@ -32,6 +32,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Ich unterstütze in drei unterschiedlichen Phasen</h2>
+          <p className="text-xl text-muted-foreground">Mit einer Herangehensweise, die auf dich abgestimmt ist</p>
         </div>
 
         {/* Grid layout with 3 columns */}
