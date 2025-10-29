@@ -23,7 +23,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           description: "",
         },
       ],
-      highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen³",
+      highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen¹",
       color: "from-red-600 to-red-700",
     },
     {
@@ -71,7 +71,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           description: "",
         },
       ],
-      highlight: "Das richtige Angebot bringt 20% mehr Umsatz¹",
+      highlight: "Das richtige Angebot bringt 20% mehr Umsatz³",
       color: "from-red-600 to-red-700",
     },
   ];
@@ -133,7 +133,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                         rel="noopener noreferrer"
                         className="hover:underline"
                       >
-                        ³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
+                        ¹Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
                       </a>
                     </p>
                   </div>
@@ -163,7 +163,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                         rel="noopener noreferrer"
                         className="hover:underline"
                       >
-                        ¹Proven packaging and pricing designs | Simon Kucher
+                        ³Proven packaging and pricing designs | Simon Kucher
                       </a>
                     </p>
                   </div>
