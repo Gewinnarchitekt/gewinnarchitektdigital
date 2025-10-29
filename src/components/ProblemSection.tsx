@@ -144,7 +144,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                   <div className="text-center mt-4">
                     <p className="text-sm text-muted-foreground">
                       <a
-                        href="hhttps://www.mckinsey.com.br/capabilities/growth-marketing-and-sales/our-insights/defying-cost-volatility-a-strategic-pricing-response"
+                        href="https://www.mckinsey.com.br/capabilities/growth-marketing-and-sales/our-insights/defying-cost-volatility-a-strategic-pricing-response"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:underline"
