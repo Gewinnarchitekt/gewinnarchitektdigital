@@ -39,7 +39,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     color: "from-red-600 to-red-700"
   }, {
     icon: Package,
-    title: "Entwicklung",
+    title: "Konzeption",
     problems: [{
       title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
       description: ""
