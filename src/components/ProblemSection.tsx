@@ -62,7 +62,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           <h2 className="font-bold mb-6">
             Die Angebotsgestaltung entscheidet über Erfolg und Misserfolg
           </h2>
-          <p className="text-xl text-muted-foreground mx-auto">Eine gute Angebotsgestaltung macht für Sie den Unterschied zwischen nachhaltigem Gewinn und kurzfristigen Verkaufsaktionen.</p>
+          <p className="text-xl text-muted-foreground mx-auto">Sie macht den Unterschied zwischen nachhaltigen Gewinnen und kurzfristigen Verkaufsaktionen.</p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
@@ -102,14 +102,14 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 {index === 0 && <div className="text-center mt-4">
                     <p className="text-sm text-muted-foreground">
                       <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                        ¹Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
+                        ³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
                       </a>
                     </p>
                   </div>}
                 
                 {index === 1 && <div className="text-center mt-4">
                     <p className="text-sm text-muted-foreground">
-                      <a href="https://www.mckinsey.com.br/capabilities/growth-marketing-and-sales/our-insights/defying-cost-volatility-a-strategic-pricing-response" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      <a href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" target="_blank" rel="noopener noreferrer" className="hover:underline">
                         ²The pricing response to cost volatility | McKinsey
                       </a>
                     </p>
