@@ -109,7 +109,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 
                 {index === 1 && <div className="text-center mt-4">
                     <p className="text-sm text-muted-foreground">
-                      <a href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      <a href="https://www.mckinsey.com.br/capabilities/growth-marketing-and-sales/our-insights/defying-cost-volatility-a-strategic-pricing-response" target="_blank" rel="noopener noreferrer" className="hover:underline">
                         ²The pricing response to cost volatility | McKinsey
                       </a>
                     </p>
