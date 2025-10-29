@@ -23,7 +23,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       icon: Package,
       title: "Angebotsgestaltung",
       color: "from-green-600 to-green-700",
-      descriptions: ["Die klare Spezifikation des Problems und das Studium bestehender Lösungsansätze ermöglicht die Erstellung eines marktorientierten Angebots.", "Dieses wird nach den neuesten Erkenntnissen aus der Verhaltensforschung strukturiert und die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess gebracht.", "Mit quantatitiven Analysen und einem kontinuierlichem Erfolgstracking biete ich dir zusätzliche Sicherheit."],
+      descriptions: ["Die klare Spezifikation des Problems und das Studium des Kundenverhaltens ermöglicht die Erstellung eines marktorientierten Angebots.", "Dieses wird nach den neuesten Erkenntnissen aus der Verhaltensforschung strukturiert und die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess gebracht.", "Mit quantatitiven Analysen und einem kontinuierlichem Erfolgstracking biete ich dir zusätzliche Sicherheit."],
       note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
       result: "Profitable Angebote, die sich verkaufen lassen"
     }
