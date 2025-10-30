@@ -166,22 +166,4 @@
       transform: translateY(0);
     }
   }
-
-  /* Enable hyphenation for body text and descriptions */
-  p, li, .text-muted-foreground, .leading-relaxed {
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-  }
-
-  /* Disable hyphenation for headings, buttons, and UI elements */
-  h1, h2, h3, h4, h5, h6, 
-  button, 
-  .font-bold, .font-semibold,
-  nav, 
-  label {
-    hyphens: none;
-    -webkit-hyphens: none;
-    -ms-hyphens: none;
-  }
 }
