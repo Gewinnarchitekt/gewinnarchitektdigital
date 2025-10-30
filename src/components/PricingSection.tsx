@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { CheckCircle, Package, Wrench, Target, ChevronDown } from "lucide-react";
+import { CheckCircle, Package, Wrench, Target, ChevronDown, MessageSquare } from "lucide-react";
 import { useState } from "react";
 interface PricingSectionProps {}
 const PricingSection = ({}: PricingSectionProps) => {
@@ -129,6 +129,43 @@ const PricingSection = ({}: PricingSectionProps) => {
               </div>
             );
           })}
+        </div>
+
+        {/* Coaching Box */}
+        <div className="max-w-7xl mx-auto mt-12">
+          <div className="bg-card rounded-2xl p-8 md:p-12 card-shadow hover:elegant-shadow smooth-transition border-2 border-blue-600/20">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              {/* Icon */}
+              <div className="flex-shrink-0">
+                <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700">
+                  <MessageSquare className="w-12 h-12 text-white" />
+                </div>
+              </div>
+              
+              {/* Content */}
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  Individuelles Coaching
+                </h3>
+                <p className="text-lg text-muted-foreground mb-2">
+                  Erhalte qualitativen Input zu deinen Angeboten und Massnahmen.
+                </p>
+                <p className="text-xl font-semibold text-foreground">
+                  2 mal 50 Minuten pro Monat • CHF 350
+                </p>
+              </div>
+              
+              {/* CTA */}
+              <div className="flex-shrink-0">
+                <Button 
+                  size="lg"
+                  className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-lg px-8 py-6 h-auto"
+                >
+                  Coaching buchen
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="max-w-7xl mx-auto mt-16">
