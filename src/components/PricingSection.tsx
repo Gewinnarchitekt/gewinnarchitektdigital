@@ -102,7 +102,7 @@ const PricingSection = ({}: PricingSectionProps) => {
                   })}
                 </div>
 
-                <div className="text-center mb-6 mt-auto">
+                <div className="text-right mb-6 mt-auto">
                   <div className="text-2xl font-semibold text-foreground mb-1">{pkg.price}</div>
                   <div className="text-sm text-muted-foreground">{pkg.period}</div>
                 </div>
