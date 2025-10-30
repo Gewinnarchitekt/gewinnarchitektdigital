@@ -127,7 +127,7 @@ const PricingSection = ({}: PricingSectionProps) => {
             <p className="text-lg text-muted-foreground text-center">
               Nur an Coaching interessiert? 2 x 50 Min. pro Monat für CHF 350 •{" "}
               <a href="#" className="text-primary hover:underline font-medium">
-                15min Kennenlerntermin vereinbaren
+                unverbindlichen Termin zum Kennenlernen vereinbaren
               </a>
             </p>
           </div>
