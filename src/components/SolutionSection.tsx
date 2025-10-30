@@ -22,7 +22,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       color: "from-green-600 to-green-700",
       descriptions: [
         "Durch Auswertung deiner Daten verschaffe ich dir Transparenz über dein Angebotsportfolio und zeige ungenutzte Ertragspotentiale auf.",
-        "Detaillierte Produkt- und Kundenanalysen machen den erzielten Erfolgsbeitrag jedes Angebots sichtbar und Soll-Ist-Vergleiche decken ungewollte Umsatzverluste auf.",
+        "Detaillierte Produkt- und Kundenanalysen machen den tatsächlichen Erfolgsbeitrag jedes Angebots sichtbar und Soll-Ist-Vergleiche decken ungewollte Umsatzverluste auf.",
         "Ein systematisches Erfolgsreporting identifiziert die wichtigsten Hebel zur Ertragssteigerung aus Angebots-, Kunden- und Unternehmenssicht.",
         "Monat für Monat verbessern wir gemeinsam deine Profitabilität durch konkrete, datenbasierte Massnahmen zur Gewinnoptimierung.",
       ],
