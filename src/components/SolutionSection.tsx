@@ -11,7 +11,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "Als Sparringpartner unterstütze ich dich mit fundierten Entscheidungsgrundlagen und konstruktivem Feedback.",
         "Ich liefere dir ganzheitliche Finanzmodelle, die den tatsächlichen Mehrwert von Produktanpassungen messbar machen und eine vorausschauende Finanzplanung macht zukünftige Entwicklungen greifbar.",
         "Schwierige Entscheidungen zerlegen wir systematisch in ihre Einzelteile und bewerten die Risiken mit differenzierten Szenariomodellen.",
-        "Du wirst Jahresabschlüsse auf Jahre hinaus prognostizieren können und erhältst Klarheit über profitable Wachstumsmöglichkeiten und dem optimalen Einsatz deiner Ressourcen.",
+        "Du kannst Jahresabschlüsse langfristig prognostizieren und erkennst profitable Wachstumschancen",
       ],
       note: undefined,
       result: "Nachhaltige Wettbewerbsvorteile",
