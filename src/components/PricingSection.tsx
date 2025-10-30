@@ -108,7 +108,9 @@ const PricingSection = ({}: PricingSectionProps) => {
                 </div>
 
                 <div className="text-right mb-6 mt-auto">
-                  <div className="text-2xl font-semibold text-foreground mb-1">{pkg.price}</div>
+                  <div className="text-2xl font-semibold text-foreground mb-1">
+                    {pkg.price}<sup className="text-sm">1</sup>
+                  </div>
                   <div className="text-sm text-muted-foreground">{pkg.period}</div>
                 </div>
 
@@ -123,7 +125,7 @@ const PricingSection = ({}: PricingSectionProps) => {
         <div className="max-w-7xl mx-auto mt-16">
           <Collapsible open={isOpen} onOpenChange={setIsOpen}>
             <CollapsibleTrigger className="flex items-center gap-2 text-2xl font-bold text-foreground mb-6 hover:text-primary transition-colors">
-              Detailpreise
+              Detailpreise<sup className="text-sm">1</sup>
               <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
             </CollapsibleTrigger>
             <CollapsibleContent className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
@@ -140,27 +142,31 @@ const PricingSection = ({}: PricingSectionProps) => {
                   <TableBody>
                     <TableRow>
                       <TableCell className="font-medium">unter CHF 100'000</TableCell>
-                      <TableCell>CHF 3'000</TableCell>
-                      <TableCell>CHF 2'000</TableCell>
-                      <TableCell>CHF 1'000</TableCell>
+                      <TableCell>CHF 3'000<sup className="text-xs">1</sup></TableCell>
+                      <TableCell>CHF 2'000<sup className="text-xs">1</sup></TableCell>
+                      <TableCell>CHF 1'000<sup className="text-xs">1</sup></TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="font-medium">unter CHF 250'000</TableCell>
-                      <TableCell>CHF 4'500</TableCell>
-                      <TableCell>CHF 3'000</TableCell>
-                      <TableCell>CHF 2'000</TableCell>
+                      <TableCell>CHF 4'500<sup className="text-xs">1</sup></TableCell>
+                      <TableCell>CHF 3'000<sup className="text-xs">1</sup></TableCell>
+                      <TableCell>CHF 2'000<sup className="text-xs">1</sup></TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="font-medium">über CHF 250'000</TableCell>
-                      <TableCell>CHF 6'000</TableCell>
-                      <TableCell>CHF 4'000</TableCell>
-                      <TableCell>CHF 2'500</TableCell>
+                      <TableCell>CHF 6'000<sup className="text-xs">1</sup></TableCell>
+                      <TableCell>CHF 4'000<sup className="text-xs">1</sup></TableCell>
+                      <TableCell>CHF 2'500<sup className="text-xs">1</sup></TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
               </div>
             </CollapsibleContent>
           </Collapsible>
+          
+          <div className="mt-8 text-sm text-muted-foreground">
+            <sup>1</sup> Alle Preise verstehen sich zzgl. MwSt.
+          </div>
         </div>
       </div>
     </section>
