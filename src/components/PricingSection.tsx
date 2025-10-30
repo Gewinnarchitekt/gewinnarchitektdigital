@@ -6,7 +6,7 @@ const PricingSection = ({}: PricingSectionProps) => {
   const packages = [
     {
       name: "Angebotsstrategie",
-      price: "CHF 6'000",
+      price: "ab CHF 3'000",
       period: "pro Monat",
       description: "Abstimmungen nach Bedarf",
       icon: Target,
@@ -24,7 +24,7 @@ const PricingSection = ({}: PricingSectionProps) => {
     },
     {
       name: "Angebotsoptimierung",
-      price: "CHF 4'000",
+      price: "ab CHF 2'000",
       period: "pro Monat",
       description: "Wöchentliche Abstimmungen",
       icon: Wrench,
@@ -39,7 +39,7 @@ const PricingSection = ({}: PricingSectionProps) => {
     },
     {
       name: "Angebotsgestaltung",
-      price: "CHF 2'500",
+      price: "ab CHF 1'000",
       period: "pro Monat",
       description: "Bi-weekly Abstimmungen",
       icon: Package,
