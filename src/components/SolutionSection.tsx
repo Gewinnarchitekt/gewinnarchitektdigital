@@ -34,9 +34,10 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       title: "Angebotsgestaltung",
       color: "from-green-600 to-green-700",
       descriptions: [
-        "Die klare Spezifikation des Problems und das Studium des Kundenverhaltens ermöglicht die Erstellung eines marktorientierten Angebots.",
-        "Dieses wird nach den neuesten Erkenntnissen aus der Verhaltensforschung strukturiert und die Pricinglogik in Einklang mit dem Kundenkaufentscheidungsprozess gebracht.",
-        "Mit quantatitiven Analysen und einem kontinuierlichem Erfolgstracking biete ich dir zusätzliche Sicherheit.",
+        "Die klare Spezifikation des Problems und das Studium des Kundenverhaltens ermöglichen die Erstellung eines Angebotskonzepts, welches mithilfe von Kundenbefragungen und Einzelkundenanalysen geprüft wird.",
+        "Darauf aufbauend gestalten wir gemeinsam eine Angebotsstruktur, die verhaltenspsychologischen Prinzipien berücksichtigt und mithilfe einheitlicher Kommunikationsstandards Transparenz schafft und Kaufentscheidungen erleichtert.",
+        "Quantitative Analysen und kontinuierliches Erfolgstracking bieten dir zusätzliche Sicherheit bei der Markteinführung und ermöglichen laufende Optimierungen.",
+        "Du erhältst Angebote, die sich verkaufen lassen und gleichzeitig die Profitabilität steigern.",
       ],
       note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
       result: "Profitable Angebote, die sich verkaufen lassen",
