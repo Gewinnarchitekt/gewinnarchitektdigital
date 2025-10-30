@@ -73,8 +73,8 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                       key={descIndex}
                       className={`text-lg text-muted-foreground leading-relaxed hyphens-auto break-words ${key === "angebotsstrategie" && descIndex === 3 ? "font-bold" : ""}`}
                       style={{ 
-                        hyphenateLimitChars: '15 5 5',
-                        WebkitHyphenateLimitChars: '15 5 5'
+                        hyphenateLimitChars: '15 8 8',
+                        WebkitHyphenateLimitChars: '15 8 8'
                       } as React.CSSProperties}
                     >
                       {description}
