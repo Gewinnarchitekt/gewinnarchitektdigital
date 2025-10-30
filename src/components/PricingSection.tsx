@@ -14,7 +14,7 @@ const PricingSection = ({}: PricingSectionProps) => {
         "Kundenanalysen",
         "Marktauswertungen",
         "Erfolgstracking",
-        "Systematische Gewinntreiber-Analyse",
+        "Gewinntreiber-Analyse",
         "Abweichungsanalyse ggü. Plan",
         "Business Cases",
         "Szenariomodellierungen",
@@ -32,7 +32,7 @@ const PricingSection = ({}: PricingSectionProps) => {
         "Kundenanalysen",
         "Marktauswertungen",
         "Erfolgstracking",
-        "Systematische Gewinntreiber-Analyse",
+        "Gewinntreiber-Analyse",
         "Abweichungsanalyse ggü. Vorjahr",
       ],
     },
@@ -79,7 +79,7 @@ const PricingSection = ({}: PricingSectionProps) => {
                     
                     const shouldNotBeBold = 
                       (isAngebotsoptimierung && ["Kundenanalysen", "Marktauswertungen", "Erfolgstracking"].includes(feature)) ||
-                      (isAngebotsstrategie && ["Kundenanalysen", "Marktauswertungen", "Erfolgstracking", "Systematische Gewinntreiber-Analyse"].includes(feature));
+                      (isAngebotsstrategie && ["Kundenanalysen", "Marktauswertungen", "Erfolgstracking", "Gewinntreiber-Analyse"].includes(feature));
                     
                     return (
                       <div key={featureIndex} className="flex items-center space-x-3">
