@@ -24,7 +24,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "Durch Auswertung deiner Daten verschaffe ich dir Transparenz über dein Angebotsportfolio und zeige ungenutzte Ertragspotentiale auf.",
         "Detaillierte Produkt- und Kundenanalysen machen den tatsächlichen Erfolgsbeitrag jedes Angebots sichtbar und Soll-Ist-Vergleiche decken ungewollte Umsatzverluste auf.",
         "Ein systematisches Erfolgsreporting identifiziert die wichtigsten Hebel zur Gewinnsteigerung aus Angebots-, Kunden- und Unternehmenssicht.",
-        "Monat für Monat verbessern wir gemeinsam deine Profitabilität durch konkrete, datenbasierte Massnahmen",
+        "Monat für Monat verbessern wir gemeinsam deine Profitabilität mithilfe konkreter, datenbasierte Massnahmen",
       ],
       note: undefined,
       result: "Kontinuierliche Erhöhung deiner Gewinne",
