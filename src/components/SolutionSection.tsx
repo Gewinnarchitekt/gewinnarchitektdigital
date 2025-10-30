@@ -71,7 +71,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                   {solution.descriptions.map((description, descIndex) => (
                     <p
                       key={descIndex}
-                      className={`text-lg text-muted-foreground leading-relaxed ${key === "angebotsstrategie" && descIndex === 3 ? "font-bold" : ""}`}
+                      className={`text-lg text-muted-foreground leading-relaxed hyphens-auto break-words ${key === "angebotsstrategie" && descIndex === 3 ? "font-bold" : ""}`}
                     >
                       {description}
                     </p>
