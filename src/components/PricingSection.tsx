@@ -123,7 +123,7 @@ const PricingSection = ({}: PricingSectionProps) => {
         </div>
 
         <div className="max-w-7xl mx-auto mt-12">
-          <div className="bg-muted/30 rounded-lg py-6 px-8 border border-border/50">
+          <div className="bg-transparent rounded-lg py-6 px-8 border border-border/50">
             <p className="text-lg text-muted-foreground text-center">
               Nur an Coaching interessiert? 2 x 50 Min. pro Monat für CHF 350 •{" "}
               <a href="#" className="text-green-600 hover:underline font-medium hover:text-green-700">
