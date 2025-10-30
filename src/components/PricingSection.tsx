@@ -63,6 +63,15 @@ const PricingSection = ({}: PricingSectionProps) => {
           </p>
         </div>
 
+        {/* Coaching Banner */}
+        <div className="max-w-7xl mx-auto mb-8">
+          <div className="bg-card rounded-2xl p-6 md:p-8 card-shadow border-2 border-primary/20">
+            <p className="text-lg md:text-xl text-center text-foreground">
+              <span className="font-bold">Individuelles Coaching:</span> Erhalte qualitativen Input zu deinen Angeboten und Massnahmen. 2 mal 50 Minuten pro Monat zu CHF 350
+            </p>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {packages.map((pkg, index) => {
             const IconComponent = pkg.icon;
