@@ -122,6 +122,17 @@ const PricingSection = ({}: PricingSectionProps) => {
           })}
         </div>
 
+        <div className="max-w-7xl mx-auto mt-12 text-center">
+          <div className="bg-muted/30 rounded-lg py-6 px-8 border border-border/50">
+            <p className="text-lg text-muted-foreground mb-3">
+              Keines der Pakete passt? Buche 2 x 50 Min. Individualberatung für CHF 350
+            </p>
+            <Button variant="outline" className="mt-2">
+              Coaching buchen
+            </Button>
+          </div>
+        </div>
+
         <div className="max-w-7xl mx-auto mt-16">
           <Collapsible open={isOpen} onOpenChange={setIsOpen}>
             <CollapsibleTrigger className="flex items-center gap-2 text-2xl font-bold text-foreground mb-6 hover:text-primary transition-colors">
