@@ -72,7 +72,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                   {solution.descriptions.map((description, descIndex) => (
                     <p
                       key={descIndex}
-                      className={`text-lg text-muted-foreground leading-relaxed hyphens-auto break-words ${key === "angebotsstrategie" && descIndex === 3 ? "font-bold" : ""}`}
+                      className={`text-lg text-muted-foreground leading-relaxed hyphens-auto break-words ${(key === "angebotsstrategie" || key === "angebotsoptimierung") && descIndex === 3 ? "font-bold" : ""}`}
                       style={{ 
                         hyphenateLimitChars: '15 8 8',
                         WebkitHyphenateLimitChars: '15 8 8'
