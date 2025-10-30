@@ -9,8 +9,9 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       color: "from-green-600 to-green-700",
       descriptions: [
         "Als Sparringpartner unterstütze ich dich mit fundierten Entscheidungsgrundlagen und konstruktivem Feedback.",
-        "Durch umfassende Business Cases bewerten wir gemeinsam den tatsächlichen Mehrwert geplanter Produktanpassungen und eine vorausschauende Finanzplanung macht zukünftige Entwicklungen greifbar. Verlässlich lassen sich dadurch zukünftige Jahresabschlüsse prognostizieren.",
-        "Du erhältst Klarheit über profitable Wachstumsmöglichkeiten und den optimalen Ressourceneinsatz",
+        "Ich liefere dir ganzheitliche Finanzmodelle, die den tatsächlichen Mehrwert von Produktanpassungen messbar machen und eine vorausschauende Finanzplanung macht zukünftige Entwicklungen greif-, sowie planbar.",
+        "Schwierige Entscheidungen zerlegen wir systematisch in ihre Einzelteile und bewerten die Risiken mit differenzierten Szenariomodellen.",
+        "Du wirst Jahresabschlüsse auf Jahre hinaus prognostizieren können und erhältst Klarheit über profitable Wachstumsmöglichkeiten und dem optimalen Einsatz deiner Ressourcen.",
       ],
       note: undefined,
       result: "Nachhaltige Wettbewerbsvorteile",
@@ -70,7 +71,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                   {solution.descriptions.map((description, descIndex) => (
                     <p
                       key={descIndex}
-                      className={`text-lg text-muted-foreground leading-relaxed ${key === "angebotsstrategie" && descIndex === 2 ? "font-bold" : ""}`}
+                      className={`text-lg text-muted-foreground leading-relaxed ${key === "angebotsstrategie" && descIndex === 3 ? "font-bold" : ""}`}
                     >
                       {description}
                     </p>
