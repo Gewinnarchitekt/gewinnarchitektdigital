@@ -139,26 +139,26 @@ const PricingSection = ({}: PricingSectionProps) => {
                       <TableHead className="font-semibold">Angebotsgestaltung</TableHead>
                     </TableRow>
                   </TableHeader>
-                  <TableBody>
+                   <TableBody>
                     <TableRow>
                       <TableCell className="font-medium">unter CHF 100'000</TableCell>
-                      <TableCell>CHF 3'000</TableCell>
-                      <TableCell>CHF 2'000</TableCell>
-                      <TableCell>CHF 1'000</TableCell>
+                      <TableCell className="text-right">CHF 3'000</TableCell>
+                      <TableCell className="text-right">CHF 2'000</TableCell>
+                      <TableCell className="text-right">CHF 1'000</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="font-medium">unter CHF 500'000</TableCell>
-                      <TableCell>CHF 4'500</TableCell>
-                      <TableCell>CHF 3'000</TableCell>
-                      <TableCell>CHF 2'000</TableCell>
+                      <TableCell className="text-right">CHF 4'500</TableCell>
+                      <TableCell className="text-right">CHF 3'000</TableCell>
+                      <TableCell className="text-right">CHF 2'000</TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="font-medium">über CHF 500'000</TableCell>
-                      <TableCell>CHF 6'000</TableCell>
-                      <TableCell>CHF 4'000</TableCell>
-                      <TableCell>CHF 3'000</TableCell>
+                      <TableCell className="text-right">CHF 6'000</TableCell>
+                      <TableCell className="text-right">CHF 4'000</TableCell>
+                      <TableCell className="text-right">CHF 3'000</TableCell>
                     </TableRow>
-                  </TableBody>
+                   </TableBody>
                 </Table>
               </div>
             </CollapsibleContent>
