@@ -16,7 +16,7 @@ const PricingSection = ({}: PricingSectionProps) => {
         "Erfolgstracking",
         "Monatlicher Gewinntreiberreport",
         "Abweichungsanalyse ggü. Plan",
-        "Business Cases",
+        "Finanzmodelle",
         "Szenariomodellierungen",
         "Mittel- und Langfristplanung",
       ],
