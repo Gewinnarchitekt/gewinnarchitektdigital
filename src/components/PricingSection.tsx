@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { CheckCircle, Package, Wrench, Target } from "lucide-react";
 interface PricingSectionProps {}
 const PricingSection = ({}: PricingSectionProps) => {
@@ -113,6 +114,42 @@ const PricingSection = ({}: PricingSectionProps) => {
               </div>
             );
           })}
+        </div>
+
+        <div className="max-w-7xl mx-auto mt-16">
+          <h3 className="text-2xl font-bold text-foreground mb-6 text-center">Detailpreise</h3>
+          <div className="overflow-x-auto">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="font-semibold">Monatsumsatz</TableHead>
+                  <TableHead className="font-semibold">Angebotsstrategie</TableHead>
+                  <TableHead className="font-semibold">Angebotsoptimierung</TableHead>
+                  <TableHead className="font-semibold">Angebotsgestaltung</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell className="font-medium">unter CHF 100'000</TableCell>
+                  <TableCell>CHF 3'000</TableCell>
+                  <TableCell>CHF 2'000</TableCell>
+                  <TableCell>CHF 1'000</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">unter CHF 250'000</TableCell>
+                  <TableCell>CHF 4'500</TableCell>
+                  <TableCell>CHF 3'000</TableCell>
+                  <TableCell>CHF 2'000</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">über CHF 250'000</TableCell>
+                  <TableCell>CHF 6'000</TableCell>
+                  <TableCell>CHF 4'000</TableCell>
+                  <TableCell>CHF 2'500</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </div>
         </div>
       </div>
     </section>
