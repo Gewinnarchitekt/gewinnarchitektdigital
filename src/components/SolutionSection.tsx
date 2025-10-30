@@ -23,7 +23,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       descriptions: [
         "Durch Auswertung deiner Daten verschaffe ich dir Transparenz über dein Angebotsportfolio und zeige ungenutzte Ertragspotentiale auf.",
         "Detaillierte Produkt- und Kundenanalysen machen den tatsächlichen Erfolgsbeitrag jedes Angebots sichtbar und Soll-Ist-Vergleiche decken ungewollte Umsatzverluste auf.",
-        "Ein systematisches Treiberreporting identifiziert die wichtigsten Hebel zur Gewinnsteigerung aus Angebots-, Kunden- und Unternehmenssicht.",
+        "Ein systematisches Treibermodell identifiziert die wichtigsten Hebel zur Gewinnsteigerung aus Angebots-, Kunden- und Unternehmenssicht.",
         "Monat für Monat verbessern wir gemeinsam deine Profitabilität mithilfe konkreter, datenbasierte Massnahmen",
       ],
       note: undefined,
