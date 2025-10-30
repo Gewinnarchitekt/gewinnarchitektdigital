@@ -79,7 +79,7 @@ const PricingSection = ({}: PricingSectionProps) => {
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${pkg.color} mr-4`}>
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground">{pkg.name}</h3>
+                  <h3 className="text-2xl font-bold text-foreground">{pkg.name}</h3>
                 </div>
 
                 <div className="space-y-4 mb-8 flex-1">
@@ -103,8 +103,8 @@ const PricingSection = ({}: PricingSectionProps) => {
                 </div>
 
                 <div className="text-center mb-6 mt-auto">
-                  <div className="text-4xl font-bold text-foreground mb-2">{pkg.price}</div>
-                  <div className="text-muted-foreground">{pkg.period}</div>
+                  <div className="text-2xl font-semibold text-foreground mb-1">{pkg.price}</div>
+                  <div className="text-sm text-muted-foreground">{pkg.period}</div>
                 </div>
 
                 <Button className="w-full text-lg py-3 h-auto bg-gray-500 hover:bg-accent text-white hover:text-accent-foreground transition-colors">
