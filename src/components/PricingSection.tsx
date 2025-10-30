@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { CheckCircle, Package, Wrench, Target, ChevronDown, MessageSquare } from "lucide-react";
+import { CheckCircle, Package, Wrench, Target, ChevronDown } from "lucide-react";
 import { useState } from "react";
 interface PricingSectionProps {}
 const PricingSection = ({}: PricingSectionProps) => {
@@ -163,51 +163,6 @@ const PricingSection = ({}: PricingSectionProps) => {
               </div>
             </CollapsibleContent>
           </Collapsible>
-        </div>
-
-        {/* Coaching Section */}
-        <div className="max-w-3xl mx-auto mt-20">
-          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
-            Oder buche individuelles Coaching
-          </h3>
-          <div className="relative bg-card rounded-2xl p-8 card-shadow hover:elegant-shadow smooth-transition hover:-translate-y-1">
-            <div className="flex items-center mb-6 pb-4 border-b border-border">
-              <div className="p-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 mr-4">
-                <MessageSquare className="w-6 h-6 text-white" />
-              </div>
-              <h4 className="text-2xl font-bold text-foreground">Individuelles Coaching</h4>
-            </div>
-
-            <div className="space-y-4 mb-8">
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                <span className="text-base text-muted-foreground font-semibold">1 x 50 Minuten pro Monat</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                <span className="text-base text-muted-foreground">Individuelle Beratung</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                <span className="text-base text-muted-foreground">Flexible Terminvereinbarung</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                <span className="text-base text-muted-foreground">Per Video oder Telefon</span>
-              </div>
-            </div>
-
-            <div className="text-right mb-6">
-              <div className="text-2xl font-semibold text-foreground mb-1">
-                CHF 350
-              </div>
-              <div className="text-sm text-muted-foreground">pro Monat</div>
-            </div>
-
-            <Button className="w-full text-lg py-3 h-auto bg-gray-500 hover:bg-accent text-white hover:text-accent-foreground transition-colors">
-              Coaching buchen
-            </Button>
-          </div>
         </div>
       </div>
     </section>
