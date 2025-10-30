@@ -126,8 +126,8 @@ const PricingSection = ({}: PricingSectionProps) => {
           <div className="bg-muted/30 rounded-lg py-6 px-8 border border-border/50">
             <p className="text-lg text-muted-foreground text-center">
               Nur an Coaching interessiert? 2 x 50 Min. pro Monat für CHF 350 •{" "}
-              <a href="#" className="text-primary hover:underline font-medium">
-                unverbindlichen Termin zum Kennenlernen vereinbaren
+              <a href="#" className="text-green-600 hover:underline font-medium hover:text-green-700">
+                unverbindlich Kennenlernen
               </a>
             </p>
           </div>
