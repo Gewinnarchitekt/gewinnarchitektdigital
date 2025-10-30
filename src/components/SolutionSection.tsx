@@ -34,7 +34,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       title: "Angebotsgestaltung",
       color: "from-green-600 to-green-700",
       descriptions: [
-        "Die klare Spezifikation des Problems und das Studium des Kundenverhaltens ermöglichen die Erstellung eines Angebotskonzepts.",
+        "Durch Kundenbefragungen und Einzelkundenanalysen entsteht ein Wertversprechen, das bei deiner Zielgruppe auf Interesse stösst",
         "Die Angebotsstruktur gestalten wir nach verhaltenspsychologischen Prinzipien und einheitlichen Kommunikationsstandards, die Transparenz schaffen und Kaufentscheidungen erleichtern.",
         "Quantitative Analysen und kontinuierliches Erfolgstracking bieten dir zusätzliche Sicherheit bei der Markteinführung und ermöglichen laufende Optimierungen.",
         "Du erhältst Angebote, die sich verkaufen lassen und gleichzeitig die Profitabilität steigern.",
