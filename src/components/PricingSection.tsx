@@ -114,10 +114,6 @@ const PricingSection = ({}: PricingSectionProps) => {
             );
           })}
         </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-sm text-muted-foreground">¹exkl. MWST</p>
-        </div>
       </div>
     </section>
   );
