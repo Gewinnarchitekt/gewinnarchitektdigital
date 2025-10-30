@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { CheckCircle, Package, Wrench, Target, ChevronDown, MessageSquare } from "lucide-react";
+import { CheckCircle, Package, Wrench, Target, ChevronDown } from "lucide-react";
 import { useState } from "react";
 interface PricingSectionProps {}
 const PricingSection = ({}: PricingSectionProps) => {
@@ -51,20 +51,6 @@ const PricingSection = ({}: PricingSectionProps) => {
       color: "from-green-600 to-green-700",
       features: ["Kundenanalysen", "Marktauswertungen", "Erfolgstracking"],
     },
-    {
-      name: "Individuelles Coaching",
-      price: "CHF 350",
-      period: "pro Monat",
-      description: "Zweimal 1 Stunde pro Monat",
-      icon: MessageSquare,
-      color: "from-blue-600 to-blue-700",
-      features: [
-        "2 x 1 Stunde pro Monat",
-        "Individuelle Beratung",
-        "Flexible Terminvereinbarung",
-        "Per Video oder Telefon",
-      ],
-    },
   ];
   return (
     <section className="py-20 bg-background">
@@ -77,7 +63,7 @@ const PricingSection = ({}: PricingSectionProps) => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-4 gap-8 max-w-[1400px] mx-auto">
+        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {packages.map((pkg, index) => {
             const IconComponent = pkg.icon;
             return (
@@ -123,7 +109,7 @@ const PricingSection = ({}: PricingSectionProps) => {
 
                 <div className="text-right mb-6 mt-auto">
                   <div className="text-2xl font-semibold text-foreground mb-1">
-                    {pkg.name === "Individuelles Coaching" ? pkg.price : `${pkg.price}¹`}
+                    {pkg.price}¹
                   </div>
                   <div className="text-sm text-muted-foreground">{pkg.period}</div>
                 </div>
