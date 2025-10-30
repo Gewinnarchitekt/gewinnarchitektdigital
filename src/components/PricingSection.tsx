@@ -123,11 +123,11 @@ const PricingSection = ({}: PricingSectionProps) => {
         </div>
 
         <div className="max-w-7xl mx-auto mt-12 text-center">
-          <div className="bg-muted/30 rounded-lg py-6 px-8 border border-border/50">
-            <p className="text-lg text-muted-foreground mb-3">
+          <div className="bg-muted/30 rounded-lg py-6 px-8 border border-border/50 flex items-center justify-between gap-6">
+            <p className="text-lg text-muted-foreground mb-0">
               Nur an Coaching interessiert? 2 x 50 Min. pro Monat für CHF 350
             </p>
-            <Button variant="outline" className="mt-2">
+            <Button variant="outline" className="whitespace-nowrap">
               Coaching buchen
             </Button>
           </div>
