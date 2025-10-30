@@ -153,7 +153,7 @@ const PricingSection = ({}: PricingSectionProps) => {
                       <TableCell>CHF 2'000</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell className="font-medium">über CHF 250'000</TableCell>
+                      <TableCell className="font-medium">über CHF 500'000</TableCell>
                       <TableCell>CHF 6'000</TableCell>
                       <TableCell>CHF 4'000</TableCell>
                       <TableCell>CHF 2'500</TableCell>
