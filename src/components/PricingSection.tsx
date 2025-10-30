@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Package, Wrench, Target } from "lucide-react";
 interface PricingSectionProps {}
 const PricingSection = ({}: PricingSectionProps) => {
@@ -63,8 +64,17 @@ const PricingSection = ({}: PricingSectionProps) => {
             return (
               <div
                 key={index}
-                className="relative bg-card rounded-2xl p-8 card-shadow hover:elegant-shadow smooth-transition hover:-translate-y-1 flex flex-col"
+                className={`relative bg-card rounded-2xl p-8 card-shadow hover:elegant-shadow smooth-transition hover:-translate-y-1 flex flex-col ${
+                  pkg.name === "Angebotsoptimierung" ? "ring-2 ring-green-600" : ""
+                }`}
               >
+                {pkg.name === "Angebotsoptimierung" && (
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                    <Badge className="bg-green-600 text-white hover:bg-green-700 px-4 py-1 text-sm font-semibold">
+                      Beliebt
+                    </Badge>
+                  </div>
+                )}
                 <div className="flex items-center mb-6 pb-4 border-b border-border">
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${pkg.color} mr-4`}>
                     <IconComponent className="w-6 h-6 text-white" />
