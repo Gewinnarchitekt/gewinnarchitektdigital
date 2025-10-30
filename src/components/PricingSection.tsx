@@ -125,7 +125,7 @@ const PricingSection = ({}: PricingSectionProps) => {
         <div className="max-w-7xl mx-auto mt-12 text-center">
           <div className="bg-muted/30 rounded-lg py-6 px-8 border border-border/50">
             <p className="text-lg text-muted-foreground mb-3">
-              Keines der Pakete passt? Buche 2 x 50 Min. Individualberatung für CHF 350
+              Nur an Coaching interessiert? 2 x 50 Min. pro Monat für CHF 350
             </p>
             <Button variant="outline" className="mt-2">
               Coaching buchen
