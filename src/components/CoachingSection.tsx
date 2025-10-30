@@ -19,7 +19,7 @@ const CoachingSection = ({}: CoachingSectionProps) => {
               
               {/* Content */}
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+                <h3 className="text-2xl font-bold text-foreground mb-3">
                   Individuelles Coaching
                 </h3>
                 <p className="text-lg text-muted-foreground mb-2">
@@ -34,7 +34,7 @@ const CoachingSection = ({}: CoachingSectionProps) => {
               <div className="flex-shrink-0">
                 <Button 
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-lg px-8 py-6 h-auto"
+                  className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-2xl px-8 py-6 h-auto"
                 >
                   Coaching buchen
                 </Button>
