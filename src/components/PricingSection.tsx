@@ -109,7 +109,7 @@ const PricingSection = ({}: PricingSectionProps) => {
 
                 <div className="text-right mb-6 mt-auto">
                   <div className="text-2xl font-semibold text-foreground mb-1">
-                    {pkg.price}<sup className="text-sm">1</sup>
+                    {pkg.price}<sup className="text-xs">1</sup>
                   </div>
                   <div className="text-sm text-muted-foreground">{pkg.period}</div>
                 </div>
@@ -125,7 +125,7 @@ const PricingSection = ({}: PricingSectionProps) => {
         <div className="max-w-7xl mx-auto mt-16">
           <Collapsible open={isOpen} onOpenChange={setIsOpen}>
             <CollapsibleTrigger className="flex items-center gap-2 text-2xl font-bold text-foreground mb-6 hover:text-primary transition-colors">
-              <span><sup className="text-sm">1</sup>Detailpreise</span>
+              <span><sup className="text-xs">1</sup>Detailpreise</span>
               <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
             </CollapsibleTrigger>
             <CollapsibleContent className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
