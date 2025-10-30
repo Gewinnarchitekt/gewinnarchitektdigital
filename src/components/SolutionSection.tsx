@@ -9,7 +9,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       color: "from-green-600 to-green-700",
       descriptions: [
         "Als Sparringpartner unterstütze ich dich mit fundierten Entscheidungsgrundlagen und konstruktivem Feedback.",
-        "Ich liefere dir ganzheitliche Finanzmodelle, die den tatsächlichen Mehrwert von Produktanpassungen messbar machen und eine vorausschauende Finanzplanung macht zukünftige Entwicklungen greif-, sowie planbar.",
+        "Ich liefere dir ganzheitliche Finanzmodelle, die den tatsächlichen Mehrwert von Produktanpassungen messbar machen und eine vorausschauende Finanzplanung macht zukünftige Entwicklungen planbar.",
         "Schwierige Entscheidungen zerlegen wir systematisch in ihre Einzelteile und bewerten die Risiken mit differenzierten Szenariomodellen.",
         "Du wirst Jahresabschlüsse auf Jahre hinaus prognostizieren können und erhältst Klarheit über profitable Wachstumsmöglichkeiten und dem optimalen Einsatz deiner Ressourcen.",
       ],
