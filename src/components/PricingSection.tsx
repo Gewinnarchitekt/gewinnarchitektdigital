@@ -99,7 +99,7 @@ const PricingSection = ({}: PricingSectionProps) => {
                     return (
                       <div key={featureIndex} className="flex items-center space-x-3">
                         <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                        <span className={`text-base text-muted-foreground ${shouldNotBeBold ? '' : 'font-semibold'}`}>
+                        <span className={`text-lg text-muted-foreground ${shouldNotBeBold ? '' : 'font-semibold'}`}>
                           {feature}
                         </span>
                       </div>
