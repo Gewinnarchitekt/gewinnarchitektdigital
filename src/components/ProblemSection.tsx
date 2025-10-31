@@ -1,4 +1,4 @@
-import { Package, Wrench, Target, AlertCircle } from "lucide-react";
+import { Package, Wrench, Target } from "lucide-react";
 interface ProblemSectionProps {}
 const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [{
@@ -63,59 +63,54 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           <p className="text-xl text-muted-foreground mx-auto">Preise kalkulieren ist simpel – Margen maximieren eine Kunst</p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8 items-stretch">
           {problemCategories.map((category, index) => {
           const IconComponent = category.icon;
-          return <div key={index} className="flex flex-col">
-                {/* Icon and Title above the boxes */}
-                <div className="flex items-center justify-start mb-6">
-                  <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} mr-4 flex-shrink-0`}>
+          return <div key={index} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition flex flex-col">
+                {/* Icon and Title at the top of each box */}
+                <div className="flex items-center mb-6 pb-4 border-b border-border">
+                  <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} mr-4`}>
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold">{category.title}</h3>
+                  <h3 className="text-xl font-semibold text-foreground">{category.title}</h3>
                 </div>
 
-                {/* Problem list - fixed height to align all boxes */}
-                <div className="space-y-3 min-h-[320px]">
-                  {category.problems.map((problem, problemIndex) => <div key={problemIndex} className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/30 transition-colors duration-200">
-                      <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                      <p className="text-lg text-foreground leading-snug">{problem.title}</p>
-                    </div>)}
+                {/* Problem list */}
+                <div className="space-y-4 mb-6 flex-grow">
+                  {category.problems.map((problem, problemIndex) => (
+                    <p key={problemIndex} className="text-lg text-muted-foreground leading-relaxed">
+                      {problem.title}
+                    </p>
+                  ))}
                 </div>
 
-                {/* Prominent conclusion box - fixed height for consistency */}
+                {/* Red conclusion box */}
                 <div className="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-600 p-6 rounded-lg min-h-[120px] flex items-center justify-center">
                   <p className="font-bold text-center leading-tight text-red-600 dark:text-red-500 text-lg">
                     {category.highlight}
                   </p>
                 </div>
-
-                {/* Footnotes */}
-                {index === 0 && <div className="text-center mt-4">
-                    <p className="text-sm text-muted-foreground">
-                      <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                        ¹Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
-                      </a>
-                    </p>
-                  </div>}
-
-                {index === 1 && <div className="text-center mt-4">
-                    <p className="text-sm text-muted-foreground">
-                      <a href="https://www.mckinsey.com.br/capabilities/growth-marketing-and-sales/our-insights/defying-cost-volatility-a-strategic-pricing-response" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                        ²The pricing response to cost volatility | McKinsey
-                      </a>
-                    </p>
-                  </div>}
-
-                {index === 2 && <div className="text-center mt-4">
-                    <p className="text-sm text-muted-foreground">
-                      <a href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                        ³Proven packaging and pricing designs | Simon Kucher
-                      </a>
-                    </p>
-                  </div>}
               </div>;
         })}
+        </div>
+
+        {/* Footnotes */}
+        <div className="mt-8 space-y-2 text-center">
+          <p className="text-sm text-muted-foreground">
+            <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              ¹Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
+            </a>
+          </p>
+          <p className="text-sm text-muted-foreground">
+            <a href="https://www.mckinsey.com.br/capabilities/growth-marketing-and-sales/our-insights/defying-cost-volatility-a-strategic-pricing-response" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              ²The pricing response to cost volatility | McKinsey
+            </a>
+          </p>
+          <p className="text-sm text-muted-foreground">
+            <a href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              ³Proven packaging and pricing designs | Simon Kucher
+            </a>
+          </p>
         </div>
       </div>
     </section>;
