@@ -13,7 +13,7 @@ const Impressum = () => {
           <section>
             <p className="font-semibold">Gewinnarchitekt</p>
             <p>Karl Aschwanden</p>
-            <p className="mt-4">Goldbrunnenstrasse 145</p>
+            <p>Goldbrunnenstrasse 145</p>
             <p>8055 Zürich</p>
             <p>Schweiz</p>
           </section>
