@@ -2,7 +2,7 @@ import goldbachLogo from "@/assets/logos/goldbach-2.png";
 import amexLogo from "@/assets/logos/amex-2.png";
 import sunriseLogo from "@/assets/logos/sunrise-2.png";
 import swisscardLogo from "@/assets/logos/swisscard.png";
-import twentyMinLogo from "@/assets/logos/20min.png";
+import twentyMinLogo from "@/assets/logos/20min-new.svg";
 import tagesanzeigerLogo from "@/assets/logos/tagesanzeiger-2.png";
 interface LogoSectionProps {}
 const LogoSection = ({}: LogoSectionProps) => {
