@@ -12,28 +12,6 @@ const Footer = ({}: FooterProps) => {
             </p>
             
           </div>
-
-          {/* Quick Links */}
-          
-
-          {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
-            <ul className="space-y-3 text-primary-foreground/80">
-              <li className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>karl@gewinnarchitekt.ch</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 flex-shrink-0" />
-                <span>+41 79 XXX XX XX</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4 flex-shrink-0" />
-                <span>Zürich, Schweiz</span>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8">
