@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Linkedin, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 interface FooterProps {}
 const Footer = ({}: FooterProps) => {
   return <footer className="bg-primary text-primary-foreground">
@@ -23,9 +24,9 @@ const Footer = ({}: FooterProps) => {
               <a href="#" className="hover:text-primary-foreground smooth-transition">
                 Datenschutz
               </a>
-              <a href="/impressum" className="hover:text-primary-foreground smooth-transition">
+              <Link to="/impressum" className="hover:text-primary-foreground smooth-transition">
                 Impressum
-              </a>
+              </Link>
             </div>
           </div>
         </div>

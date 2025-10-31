@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 interface NavigationProps {}
 
@@ -8,6 +9,8 @@ const Navigation = ({}: NavigationProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,12 +80,12 @@ const Navigation = ({}: NavigationProps) => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo/Brand */}
-          <button
-            onClick={scrollToTop}
+          <Link
+            to="/"
             className="text-xl font-bold text-black hover:opacity-80 transition-opacity"
           >
             <span className="text-green-600">Gewinn</span>architekt.ch
-          </button>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
