@@ -69,9 +69,9 @@ const Navigation = ({}: NavigationProps) => {
           {/* Logo/Brand */}
           <button
             onClick={scrollToTop}
-            className="text-xl font-semibold text-foreground hover:text-primary transition-colors"
+            className="text-xl font-bold text-black hover:opacity-80 transition-opacity"
           >
-            gewinnarchitekt.ch
+            <span className="text-green-600">Gewinn</span>architekt.ch
           </button>
 
           {/* Desktop Navigation */}
