@@ -5,9 +5,9 @@ const Footer = ({}: FooterProps) => {
       <div className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 text-center">
             <h3 className="text-2xl font-bold mb-4">gewinnarchitekt.ch</h3>
-            <p className="text-primary-foreground/80 mb-6 max-w-md">
+            <p className="text-primary-foreground/80 mb-6 max-w-md mx-auto">
               Dein Partner für profitable Angebotsstrategien, Pricingexpertise und nachhaltiges Wachstum
             </p>
             
@@ -39,7 +39,7 @@ const Footer = ({}: FooterProps) => {
         <div className="border-t border-primary-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-primary-foreground/60 text-sm">
-              © 2024 gewinnarchitekt.ch - Karl Aschwanden. Alle Rechte vorbehalten.
+              © 2025 gewinnarchitekt.ch - Karl Aschwanden. Alle Rechte vorbehalten.
             </div>
             <div className="flex space-x-6 text-sm text-primary-foreground/60">
               <a href="#" className="hover:text-primary-foreground smooth-transition">
@@ -47,9 +47,6 @@ const Footer = ({}: FooterProps) => {
               </a>
               <a href="#" className="hover:text-primary-foreground smooth-transition">
                 Impressum
-              </a>
-              <a href="#" className="hover:text-primary-foreground smooth-transition">
-                AGB
               </a>
             </div>
           </div>
