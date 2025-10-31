@@ -88,19 +88,19 @@ const AboutSection = ({}: AboutSectionProps) => {
                     <div className="flex items-start space-x-3">
                       <div className="w-1.5 h-1.5 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-lg text-muted-foreground">
-                        Master of Science in Business Administration (Universität Zürich)
+                        MBA (IE Business School)
                       </span>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-1.5 h-1.5 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-lg text-muted-foreground">
-                        Spezialisierung auf Pricing & Revenue Management
+                        Advanced Financial Modeler (FMI)
                       </span>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-1.5 h-1.5 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-lg text-muted-foreground">
-                        Zertifizierungen in Business Analytics & Customer Research
+                        Applied Data Science Program (MIT)
                       </span>
                     </div>
                   </div>
