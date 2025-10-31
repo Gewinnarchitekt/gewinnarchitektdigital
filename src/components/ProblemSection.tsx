@@ -69,28 +69,25 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           {problemCategories.map((category, index) => {
           const IconComponent = category.icon;
           return <div key={index} className="flex flex-col">
-                {/* Box containing Icon, Title, and Problem listings */}
-                <div className="bg-card rounded-lg p-6 shadow-sm border border-border mb-4">
-                  {/* Icon and Title */}
-                  <div className="flex items-center justify-center mb-6">
-                    <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} mr-4 flex-shrink-0`}>
-                      <IconComponent className="w-6 h-6 text-white" />
-                    </div>
-                    <h3 className="text-xl font-semibold">{category.title}</h3>
+                {/* Icon and Title above the boxes */}
+                <div className="flex items-center justify-center mb-6">
+                  <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} mr-4 flex-shrink-0`}>
+                    <IconComponent className="w-6 h-6 text-white" />
                   </div>
+                  <h3 className="text-xl font-semibold">{category.title}</h3>
+                </div>
 
-                  {/* Problem list */}
-                  <div className="space-y-3">
-                    {category.problems.map((problem, problemIndex) => (
-                      <div 
-                        key={problemIndex} 
-                        className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/30 transition-colors duration-200"
-                      >
-                        <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                        <p className="text-base text-foreground leading-snug">{problem.title}</p>
-                      </div>
-                    ))}
-                  </div>
+                {/* Problem list - fixed height to align all boxes */}
+                <div className="space-y-3 min-h-[320px]">
+                  {category.problems.map((problem, problemIndex) => (
+                    <div 
+                      key={problemIndex} 
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/30 transition-colors duration-200"
+                    >
+                      <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                      <p className="text-base text-foreground leading-snug">{problem.title}</p>
+                    </div>
+                  ))}
                 </div>
 
                 {/* Prominent conclusion box - fixed height for consistency */}
