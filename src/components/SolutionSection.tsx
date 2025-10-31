@@ -85,8 +85,8 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                 </div>
 
                 {/* Green conclusion box */}
-                <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-4 rounded-lg">
-                  <p className="text-base font-semibold leading-relaxed hyphens-auto break-words"
+                <div className="bg-green-50 dark:bg-green-950/20 border-l-4 border-green-600 p-6 rounded-lg min-h-[120px] flex items-center justify-center">
+                  <p className="font-bold text-center leading-tight text-green-600 dark:text-green-500 text-lg hyphens-auto break-words"
                     style={{ 
                       hyphenateLimitChars: '15 8 8',
                       WebkitHyphenateLimitChars: '15 8 8'
