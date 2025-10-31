@@ -17,12 +17,12 @@ const AboutSection = ({}: AboutSectionProps) => {
 
         <div className="grid lg:grid-cols-2 gap-16 items-start max-w-6xl mx-auto">
           {/* Profile Image */}
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-center">
             <div className="relative">
               <img 
                 src={karlPortrait} 
                 alt="Karl Aschwanden Portrait" 
-                className="rounded-2xl w-full max-w-sm h-auto object-cover card-shadow"
+                className="rounded-2xl w-full max-w-xs h-auto object-cover card-shadow"
               />
               {/* LinkedIn icon overlay */}
               <a 
