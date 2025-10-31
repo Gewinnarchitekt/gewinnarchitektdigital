@@ -80,7 +80,7 @@ const Navigation = ({}: NavigationProps) => {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className={`text-sm font-medium transition-colors hover:text-primary relative ${
+                className={`text-base font-medium transition-colors hover:text-primary relative ${
                   activeSection === link.id ? "text-primary" : "text-foreground/80"
                 }`}
               >
