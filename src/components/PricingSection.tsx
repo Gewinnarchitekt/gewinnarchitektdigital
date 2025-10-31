@@ -145,9 +145,9 @@ const PricingSection = ({}: PricingSectionProps) => {
                   <TableHeader>
                     <TableRow>
                       <TableHead className="font-semibold">Jahresumsatz</TableHead>
-                      <TableHead className="font-semibold">Angebotsstrategie</TableHead>
-                      <TableHead className="font-semibold">Angebotsoptimierung</TableHead>
-                      <TableHead className="font-semibold">Angebotsgestaltung</TableHead>
+                      <TableHead className="font-semibold text-center">Angebotsstrategie</TableHead>
+                      <TableHead className="font-semibold text-center">Angebotsoptimierung</TableHead>
+                      <TableHead className="font-semibold text-center">Angebotsgestaltung</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
