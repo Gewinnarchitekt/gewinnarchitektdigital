@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroDataBackground from "@/assets/hero-data-background.mp4";
+import heroDataBackground from "@/assets/hero-data-background.jpg";
 
 interface HeroSectionProps {}
 
@@ -7,15 +7,7 @@ const HeroSection = ({}: HeroSectionProps) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Modern data background */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src={heroDataBackground} type="video/mp4" />
-      </video>
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroDataBackground})` }} />
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-black/50" />
       
