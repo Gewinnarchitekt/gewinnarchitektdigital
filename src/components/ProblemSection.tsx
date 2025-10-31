@@ -56,7 +56,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     highlight: "Das richtige Angebot bringt 20% mehr Umsatz³",
     color: "from-red-600 to-red-700"
   }];
-  return <section className="py-20 bg-background">
+  return <section id="herausforderungen" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Herausforderungen in der Angebotsgestaltung</h2>

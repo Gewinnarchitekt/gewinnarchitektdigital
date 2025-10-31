@@ -1,5 +1,6 @@
 // Update this page (the content is just a fallback if you fail to update the page)
 
+import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import LogoSection from "@/components/LogoSection";
 import ProblemSection from "@/components/ProblemSection";
@@ -12,6 +13,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Navigation />
       <HeroSection />
       <LogoSection />
       <ProblemSection />

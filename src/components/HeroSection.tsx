@@ -5,7 +5,7 @@ interface HeroSectionProps {}
 
 const HeroSection = ({}: HeroSectionProps) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Modern data background */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroDataBackground})` }} />
       {/* Dark overlay for text readability */}

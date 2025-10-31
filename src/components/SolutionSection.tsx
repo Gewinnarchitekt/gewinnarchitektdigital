@@ -28,7 +28,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       result: "Profitable Angebote, die sich verkaufen lassen"
     }
   };
-  return <section className="py-20 bg-muted">
+  return <section id="leistungen" className="py-20 bg-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Systematisch zu profitablen Angeboten</h2>

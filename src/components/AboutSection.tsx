@@ -4,7 +4,7 @@ import { Linkedin } from "lucide-react";
 import karlPortrait from "@/assets/karl-portrait.jpg";
 interface AboutSectionProps {}
 const AboutSection = ({}: AboutSectionProps) => {
-  return <section className="py-20 bg-muted">
+  return <section id="ueber-mich" className="py-20 bg-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">

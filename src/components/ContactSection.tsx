@@ -8,7 +8,7 @@ interface ContactSectionProps {}
 const ContactSection = ({}: ContactSectionProps) => {
   const [copyToSelf, setCopyToSelf] = useState(false);
   return (
-    <section className="py-20 bg-background">
+    <section id="kontakt" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
