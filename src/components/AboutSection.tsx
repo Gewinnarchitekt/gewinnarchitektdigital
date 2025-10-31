@@ -7,10 +7,10 @@ const AboutSection = ({}: AboutSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">
-            Warum man mir vertraut
+            Was mich auszeichnet
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Karl Aschwanden – Partner für profitable Angebotsstrategien
+            Strukturierte Methodik, klare Kommunikation und messbare Ergebnisse
           </p>
         </div>
 
