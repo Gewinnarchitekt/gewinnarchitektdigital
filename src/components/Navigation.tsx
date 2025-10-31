@@ -13,18 +13,28 @@ const Navigation = ({}: NavigationProps) => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      // Determine active section
+      // Determine active section - only mark as active when section is properly in view
       const sections = ["herausforderungen", "leistungen", "angebot", "ueber-mich", "kontakt"];
-      const current = sections.find(section => {
+      const offset = 150; // Navigation height + buffer
+      
+      let foundActive = false;
+      for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
+          // Section is active if its top is above the offset and bottom is below the offset
+          if (rect.top <= offset && rect.bottom > offset) {
+            setActiveSection(section);
+            foundActive = true;
+            break;
+          }
         }
-        return false;
-      });
+      }
       
-      if (current) setActiveSection(current);
+      // If no section is active (e.g., in hero section), clear active state
+      if (!foundActive) {
+        setActiveSection("");
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
