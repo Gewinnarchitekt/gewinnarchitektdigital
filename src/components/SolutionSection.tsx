@@ -15,7 +15,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       icon: Wrench,
       title: "Angebotsoptimierung",
       color: "from-green-600 to-green-700",
-      descriptions: ["Durch Auswertung deiner Daten verschaffe ich dir Transparenz über dein Angebotsportfolio und zeige ungenutzte Ertragspotentiale auf.", "Detaillierte Produkt- und Kundenanalysen machen den tatsächlichen Erfolgsbeitrag jedes Angebots sichtbar und Soll-Ist-Vergleiche decken ungewollte Umsatzverluste auf.", "Ein systematisches Treibermodell identifiziert die wichtigsten Hebel zur Gewinnsteigerung aus Angebots-, Kunden- und Unternehmenssicht.", "Monat für Monat verbessern wir deine Profitabilität mithilfe konkreter, datenbasierte Massnahmen"],
+      descriptions: ["Durch Auswertung deiner Daten verschaffe ich dir Transparenz über dein Angebotsportfolio und zeige ungenutzte Ertragspotentiale auf.", "Detaillierte Produkt- und Kundenanalysen machen den tatsächlichen Erfolgsbeitrag jedes Angebots sichtbar und Soll-Ist-Vergleiche decken ungewollte Umsatzverluste auf.", "Ein systematisches Treibermodell identifiziert die wichtigsten Hebel zur Gewinnsteigerung aus Angebots-, Kunden- und Unternehmenssicht.", "Monatlich verbessern wir deine Profitabilität mithilfe konkreter, datenbasierter Massnahmen"],
       note: undefined,
       result: "Kontinuierliche Erhöhung deiner Gewinne"
     },
