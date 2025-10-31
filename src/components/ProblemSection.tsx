@@ -1,4 +1,4 @@
-import { Package, Wrench, Target, CheckCircle, ArrowDown } from "lucide-react";
+import { Package, Wrench, Target, AlertCircle, ArrowDown } from "lucide-react";
 interface ProblemSectionProps {}
 const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [{
@@ -68,7 +68,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
         <div className="grid lg:grid-cols-3 gap-8">
           {problemCategories.map((category, index) => {
           const IconComponent = category.icon;
-          return <div key={index} className="flex flex-col h-full">
+          return <div key={index} className="flex flex-col">
                 {/* Icon and Title above the boxes */}
                 <div className="flex items-center justify-center mb-6">
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} mr-4 flex-shrink-0`}>
@@ -77,14 +77,14 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                   <h3 className="text-xl font-semibold">{category.title}</h3>
                 </div>
 
-                {/* Problem list */}
-                <div className="space-y-3 mb-8">
+                {/* Problem list - fixed height to align all boxes */}
+                <div className="space-y-3 mb-8 min-h-[380px]">
                   {category.problems.map((problem, problemIndex) => (
                     <div 
                       key={problemIndex} 
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/30 transition-colors duration-200"
                     >
-                      <CheckCircle className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                      <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                       <p className="text-base text-foreground leading-snug">{problem.title}</p>
                     </div>
                   ))}
@@ -95,8 +95,8 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                   <ArrowDown className="w-8 h-8 text-red-600 animate-bounce" />
                 </div>
 
-                {/* Prominent conclusion box */}
-                <div className="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-600 p-6 rounded-lg">
+                {/* Prominent conclusion box - fixed height for consistency */}
+                <div className="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-600 p-6 rounded-lg min-h-[120px] flex items-center justify-center">
                   <p className="font-bold text-center leading-tight text-red-600 dark:text-red-500 text-lg">
                     {category.highlight}
                   </p>
