@@ -60,9 +60,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Die Angebotsgestaltung ist komplex und herausfordernd</h2>
-          <p className="text-xl text-muted-foreground mx-auto">
-            Sie macht den Unterschied zwischen nachhaltigen Gewinnen und kurzfristigen Verkaufsaktionen.
-          </p>
+          <p className="text-xl text-muted-foreground mx-auto">Preise kalkulieren ist simpel – Margen maximieren eine Kunst</p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
