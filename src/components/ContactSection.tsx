@@ -72,9 +72,11 @@ const ContactSection = ({}: ContactSectionProps) => {
             </div>
 
             {/* CTA Button */}
-            <Button variant="outline" size="lg" className="w-full text-lg py-3 h-auto">
-              Jetzt Gewinnpotential abklären!
-            </Button>
+            <div className="mt-auto">
+              <Button variant="outline" size="lg" className="w-full text-lg py-3 h-auto">
+                Jetzt Gewinnpotential abklären!
+              </Button>
+            </div>
             </div>
           </div>
 
