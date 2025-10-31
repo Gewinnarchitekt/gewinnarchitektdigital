@@ -69,11 +69,11 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                 </div>
 
                 {/* Content */}
-                <div className="space-y-4 mb-8 flex-grow">
-                  {solution.descriptions.map((description, descIndex) => (
+                <div className="space-y-4 mb-6 flex-grow">
+                  {solution.descriptions.slice(0, 3).map((description, descIndex) => (
                     <p
                       key={descIndex}
-                      className={`text-lg text-muted-foreground leading-relaxed hyphens-auto break-words ${(key === "angebotsstrategie" || key === "angebotsoptimierung" || key === "angebotsgestaltung") && descIndex === 3 ? "font-bold" : ""}`}
+                      className="text-lg text-muted-foreground leading-relaxed hyphens-auto break-words"
                       style={{ 
                         hyphenateLimitChars: '15 8 8',
                         WebkitHyphenateLimitChars: '15 8 8'
@@ -84,7 +84,17 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                   ))}
                 </div>
 
-                <div className="flex justify-center mt-auto"></div>
+                {/* Green conclusion box */}
+                <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-4 rounded-lg">
+                  <p className="text-base font-semibold leading-relaxed hyphens-auto break-words"
+                    style={{ 
+                      hyphenateLimitChars: '15 8 8',
+                      WebkitHyphenateLimitChars: '15 8 8'
+                    } as React.CSSProperties}
+                  >
+                    {solution.descriptions[3]}
+                  </p>
+                </div>
               </div>
             );
           })}
