@@ -140,7 +140,7 @@ const PricingSection = ({}: PricingSectionProps) => {
               <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
             </CollapsibleTrigger>
             <CollapsibleContent className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
-              <p className="text-lg text-muted-foreground mb-6">Höherer Umsatz bedeutet grösseres Gewinnpotential</p>
+              <p className="text-lg text-muted-foreground mb-6">Höhere Umsätze bedeuten grösseres Gewinnpotential</p>
               <div className="overflow-x-auto">
                   <Table>
                   <TableHeader>
