@@ -80,12 +80,21 @@ const Navigation = ({}: NavigationProps) => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo/Brand */}
-          <Link
-            to="/"
-            className="text-xl font-bold text-black hover:opacity-80 transition-opacity"
-          >
-            <span className="text-green-600">Gewinn</span>architekt.ch
-          </Link>
+          {isHomePage ? (
+            <button
+              onClick={scrollToTop}
+              className="text-xl font-bold text-black hover:opacity-80 transition-opacity"
+            >
+              <span className="text-green-600">Gewinn</span>architekt.ch
+            </button>
+          ) : (
+            <Link
+              to="/"
+              className="text-xl font-bold text-black hover:opacity-80 transition-opacity"
+            >
+              <span className="text-green-600">Gewinn</span>architekt.ch
+            </Link>
+          )}
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
