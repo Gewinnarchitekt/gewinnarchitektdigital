@@ -14,7 +14,7 @@ const ContactSection = ({}: ContactSectionProps) => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Lass uns sprechen</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Bereit für den nächsten Schritt? Kontaktiere mich per Email oder buche einen Termin
+            Bereit für den nächsten Schritt? Schreibe mir eine Nachricht oder buche einen Termin
           </p>
         </div>
 
