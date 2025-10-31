@@ -68,7 +68,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           const IconComponent = category.icon;
           return <div key={index} className="flex flex-col">
                 {/* Icon and Title above the boxes */}
-                <div className="flex items-center justify-center mb-6">
+                <div className="flex items-center justify-start mb-6">
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} mr-4 flex-shrink-0`}>
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
