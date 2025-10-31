@@ -26,7 +26,7 @@ const AboutSection = ({}: AboutSectionProps) => {
               />
               {/* LinkedIn icon overlay */}
               <a 
-                href="https://www.linkedin.com/in/karl-aschwanden/" 
+                href="https://www.linkedin.com/in/karlaschwanden/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg hover:scale-110 hover:text-accent transition-all duration-300 text-primary"
