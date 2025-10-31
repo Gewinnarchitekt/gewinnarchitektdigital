@@ -118,12 +118,6 @@ const AboutSection = ({}: AboutSectionProps) => {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-
-            <div className="pt-4">
-              <Button variant="cta" size="lg" className="text-lg px-8 py-4 h-auto">
-                Kostenloses Erstgespräch vereinbaren
-              </Button>
-            </div>
           </div>
         </div>
       </div>
