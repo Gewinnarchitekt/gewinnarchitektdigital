@@ -59,7 +59,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
   return <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-bold mb-6">Deine Angebotsgestaltung entscheidet über Erfolg und Misserfolg</h2>
+          <h2 className="font-bold mb-6">Die Angebotsgestaltung ist komplex und herausfordernd</h2>
           <p className="text-xl text-muted-foreground mx-auto">
             Sie macht den Unterschied zwischen nachhaltigen Gewinnen und kurzfristigen Verkaufsaktionen.
           </p>
@@ -79,15 +79,10 @@ const ProblemSection = ({}: ProblemSectionProps) => {
 
                 {/* Problem list - fixed height to align all boxes */}
                 <div className="space-y-3 min-h-[320px]">
-                  {category.problems.map((problem, problemIndex) => (
-                    <div 
-                      key={problemIndex} 
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/30 transition-colors duration-200"
-                    >
+                  {category.problems.map((problem, problemIndex) => <div key={problemIndex} className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/30 transition-colors duration-200">
                       <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                       <p className="text-base text-foreground leading-snug">{problem.title}</p>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
 
                 {/* Prominent conclusion box - fixed height for consistency */}
