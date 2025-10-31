@@ -38,7 +38,7 @@ const LogoSection = ({}: LogoSectionProps) => {
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-          {logos.map((logo, index) => <div key={index} className="flex items-center justify-center p-4 rounded-lg bg-white card-shadow hover:elegant-shadow smooth-transition w-full h-24 grayscale hover:grayscale-0">
+          {logos.map((logo, index) => <div key={index} className="flex items-center justify-center p-4 rounded-lg bg-white card-shadow hover:elegant-shadow smooth-transition w-full h-24">
               <img src={logo.src} alt={logo.alt} className="max-h-12 max-w-full object-contain" />
             </div>)}
         </div>
