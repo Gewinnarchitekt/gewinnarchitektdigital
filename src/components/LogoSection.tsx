@@ -35,9 +35,6 @@ const LogoSection = ({}: LogoSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">Erfolgreich für bekannte Marken</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Angebotsgestaltung und Pricing für die Folgenden Firmen und Marken
-          </p>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
