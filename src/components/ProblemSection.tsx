@@ -78,7 +78,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 </div>
 
                 {/* Problem list - fixed height to align all boxes */}
-                <div className="space-y-3 mb-8 min-h-[380px]">
+                <div className="space-y-3 mb-4 min-h-[380px]">
                   {category.problems.map((problem, problemIndex) => (
                     <div 
                       key={problemIndex} 
@@ -91,7 +91,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 </div>
 
                 {/* Animated arrow */}
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center mb-3">
                   <ArrowDown className="w-8 h-8 text-red-600 animate-bounce" />
                 </div>
 
