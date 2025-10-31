@@ -79,7 +79,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 <div className="space-y-3 min-h-[320px]">
                   {category.problems.map((problem, problemIndex) => <div key={problemIndex} className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/30 transition-colors duration-200">
                       <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                      <p className="text-base text-foreground leading-snug">{problem.title}</p>
+                      <p className="text-lg text-foreground leading-snug">{problem.title}</p>
                     </div>)}
                 </div>
 
