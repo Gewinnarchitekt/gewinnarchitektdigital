@@ -1,4 +1,4 @@
-import { Package, Wrench, Target } from "lucide-react";
+import { Package, Wrench, Target, CheckCircle, ArrowDown } from "lucide-react";
 interface ProblemSectionProps {}
 const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [{
@@ -77,19 +77,29 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                   <h3 className="text-xl font-semibold">{category.title}</h3>
                 </div>
 
-                {/* Individual boxes for each problem */}
-                <div className="space-y-4 mb-6" style={{
-              height: "380px"
-            }}>
-                  {category.problems.map((problem, problemIndex) => <div key={problemIndex} className="bg-card rounded-lg p-4 card-shadow hover:elegant-shadow smooth-transition h-20 flex items-center">
-                      <h4 className="text-base text-muted-foreground leading-tight">{problem.title}</h4>
-                      {problem.description && <p className="text-sm text-muted-foreground mt-2">{problem.description}</p>}
-                    </div>)}
+                {/* Problem list */}
+                <div className="space-y-3 mb-8">
+                  {category.problems.map((problem, problemIndex) => (
+                    <div 
+                      key={problemIndex} 
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/30 transition-colors duration-200"
+                    >
+                      <CheckCircle className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                      <p className="text-base text-foreground leading-snug">{problem.title}</p>
+                    </div>
+                  ))}
                 </div>
 
-                {/* Highlight box - aligned to bottom */}
-                <div className="p-4 rounded-lg bg-transparent h-20 flex items-center justify-center">
-                  <p className="font-semibold text-center leading-tight text-red-600">{category.highlight}</p>
+                {/* Animated arrow */}
+                <div className="flex justify-center mb-6">
+                  <ArrowDown className="w-8 h-8 text-red-600 animate-bounce" />
+                </div>
+
+                {/* Prominent conclusion box */}
+                <div className="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-600 p-6 rounded-lg">
+                  <p className="font-bold text-center leading-tight text-red-600 dark:text-red-500 text-lg">
+                    {category.highlight}
+                  </p>
                 </div>
 
                 {/* Footnotes */}
