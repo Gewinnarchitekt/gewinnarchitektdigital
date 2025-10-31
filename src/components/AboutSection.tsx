@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Linkedin } from "lucide-react";
 import karlPortrait from "@/assets/karl-portrait.jpg";
 interface AboutSectionProps {}
 const AboutSection = ({}: AboutSectionProps) => {
@@ -23,6 +24,16 @@ const AboutSection = ({}: AboutSectionProps) => {
                 alt="Karl Aschwanden Portrait" 
                 className="rounded-2xl w-full max-w-md h-auto object-cover card-shadow"
               />
+              {/* LinkedIn icon overlay */}
+              <a 
+                href="https://www.linkedin.com/in/karl-aschwanden/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg hover:scale-110 hover:text-accent transition-all duration-300 text-primary"
+                aria-label="LinkedIn Profile"
+              >
+                <Linkedin size={24} />
+              </a>
               {/* Decorative gradient border */}
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl -z-10 opacity-20"></div>
             </div>
