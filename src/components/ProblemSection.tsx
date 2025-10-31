@@ -59,7 +59,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
   return <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-bold mb-6">Die Angebotsgestaltung ist komplex und herausfordernd</h2>
+          <h2 className="font-bold mb-6">Angebotsgestaltung ist komplex und herausfordernd</h2>
           <p className="text-xl text-muted-foreground mx-auto">Preise kalkulieren ist simpel – Margen maximieren eine Kunst</p>
         </div>
 
