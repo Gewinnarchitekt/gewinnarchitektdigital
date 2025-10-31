@@ -8,7 +8,7 @@ const Datenschutz = () => {
         
         <div className="space-y-8">
           <section>
-            <p className="font-semibold">Gewinnarchitekt</p>
+            <p className="font-semibold">gewinnarchitekt</p>
             <p>Karl Aschwanden</p>
             <p className="mt-4 text-muted-foreground">Stand: 18. August 2025</p>
           </section>

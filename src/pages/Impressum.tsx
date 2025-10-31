@@ -9,7 +9,7 @@ const Impressum = () => {
 
         <div className="space-y-8">
           <section>
-            <p className="font-semibold">Gewinnarchitekt</p>
+            <p className="font-semibold">gewinnarchitekt</p>
             <p>Karl Aschwanden</p>
             <p>Goldbrunnenstrasse 145</p>
             <p>8055 Zürich</p>
