@@ -45,7 +45,7 @@ const Footer = ({}: FooterProps) => {
               <a href="#" className="hover:text-primary-foreground smooth-transition">
                 Datenschutz
               </a>
-              <a href="#" className="hover:text-primary-foreground smooth-transition">
+              <a href="/impressum" className="hover:text-primary-foreground smooth-transition">
                 Impressum
               </a>
             </div>
