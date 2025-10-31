@@ -34,7 +34,7 @@ const LogoSection = ({}: LogoSectionProps) => {
   return <section className="py-16 bg-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">Erfolgreich für bekannte Marken</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Erfolgreich für bekannte Marken</h2>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
