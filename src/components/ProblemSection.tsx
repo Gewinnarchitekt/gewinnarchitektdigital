@@ -78,7 +78,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 </div>
 
                 {/* Problem list - fixed height to align all boxes */}
-                <div className="space-y-3 mb-4 min-h-[380px]">
+                <div className="space-y-3 min-h-[380px]">
                   {category.problems.map((problem, problemIndex) => (
                     <div 
                       key={problemIndex} 
