@@ -8,8 +8,7 @@ const Footer = ({}: FooterProps) => {
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-4">gewinnarchitekt.ch</h3>
             <p className="text-primary-foreground/80 mb-6 max-w-md">
-              Ihr Partner für profitable Angebotsstrategien. Pricing Expertise auf Abruf für 
-              nachhaltiges Wachstum und optimierte Kundenerlebnisse.
+              Dein Partner für profitable Angebotsstrategien, Pricingexpertise und nachhaltiges Wachstum
             </p>
             
           </div>
