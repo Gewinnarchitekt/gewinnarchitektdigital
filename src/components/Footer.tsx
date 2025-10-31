@@ -1,10 +1,7 @@
 import { Mail, Phone, MapPin, Linkedin, ExternalLink } from "lucide-react";
-
 interface FooterProps {}
-
 const Footer = ({}: FooterProps) => {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -14,50 +11,11 @@ const Footer = ({}: FooterProps) => {
               Ihr Partner für profitable Angebotsstrategien. Pricing Expertise auf Abruf für 
               nachhaltiges Wachstum und optimierte Kundenerlebnisse.
             </p>
-            <div className="flex space-x-4">
-              <a 
-                href="#" 
-                className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-primary-foreground/20 smooth-transition"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a 
-                href="#" 
-                className="p-2 bg-primary-foreground/10 rounded-lg hover:bg-primary-foreground/20 smooth-transition"
-                aria-label="Business Network"
-              >
-                <ExternalLink className="w-5 h-5" />
-              </a>
-            </div>
+            
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
-            <ul className="space-y-3 text-primary-foreground/80">
-              <li>
-                <a href="#problems" className="hover:text-primary-foreground smooth-transition">
-                  Problemanalyse
-                </a>
-              </li>
-              <li>
-                <a href="#solutions" className="hover:text-primary-foreground smooth-transition">
-                  Lösungsansätze
-                </a>
-              </li>
-              <li>
-                <a href="#pricing" className="hover:text-primary-foreground smooth-transition">
-                  Angebotspakete
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="hover:text-primary-foreground smooth-transition">
-                  Über mich
-                </a>
-              </li>
-            </ul>
-          </div>
+          
 
           {/* Contact Info */}
           <div>
@@ -98,8 +56,6 @@ const Footer = ({}: FooterProps) => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
