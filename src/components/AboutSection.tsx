@@ -44,7 +44,7 @@ const AboutSection = ({}: AboutSectionProps) => {
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Ich entwickle mit euch fundierte Strategien für langfristig stabile Erträge und 
+                Ich entwickle mit dir fundierte Strategien für langfristig stabile Erträge und 
                 ein profitables, wachsendes Unternehmen.
               </p>
             </div>
