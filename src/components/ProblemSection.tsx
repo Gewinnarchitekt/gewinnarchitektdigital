@@ -3,7 +3,7 @@ interface ProblemSectionProps {}
 const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [{
     icon: Target,
-    title: "Planung",
+    title: "Planungsdefizite",
     problems: [{
       title: "Kundenbedürfnisse werden zu spät berücksichtigt",
       description: ""
@@ -21,7 +21,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     color: "from-red-600 to-red-700"
   }, {
     icon: Wrench,
-    title: "Umsetzung",
+    title: "Umsetzungsprobleme",
     problems: [{
       title: "Daten über das Kundenverhalten werden nicht ausreichend genutzt",
       description: ""
@@ -39,7 +39,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     color: "from-red-600 to-red-700"
   }, {
     icon: Package,
-    title: "Konzeption",
+    title: "Konzeptionsmängel",
     problems: [{
       title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
       description: ""
