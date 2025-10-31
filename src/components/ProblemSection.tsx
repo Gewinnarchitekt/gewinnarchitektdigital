@@ -1,4 +1,4 @@
-import { Package, Wrench, Target } from "lucide-react";
+import { Package, Wrench, Target, AlertCircle } from "lucide-react";
 interface ProblemSectionProps {}
 const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [{
@@ -78,9 +78,12 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 {/* Problem list */}
                 <div className="space-y-4 mb-6 flex-grow">
                   {category.problems.map((problem, problemIndex) => (
-                    <p key={problemIndex} className="text-lg text-muted-foreground leading-relaxed">
-                      {problem.title}
-                    </p>
+                    <div key={problemIndex} className="flex items-start gap-3">
+                      <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        {problem.title}
+                      </p>
+                    </div>
                   ))}
                 </div>
 
