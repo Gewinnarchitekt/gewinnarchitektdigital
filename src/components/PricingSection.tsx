@@ -101,11 +101,12 @@ const PricingSection = ({}: PricingSectionProps) => {
               <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
             </CollapsibleTrigger>
             <CollapsibleContent className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
+              <p className="text-lg text-muted-foreground mb-4">Höhere Umsätze bedeuten grösseres Gewinnpotential</p>
               <div className="overflow-x-auto">
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead className="font-semibold">Monatsumsatz</TableHead>
+                      <TableHead className="font-semibold">Jahresumsatz</TableHead>
                       <TableHead className="font-semibold">Angebotsstrategie</TableHead>
                       <TableHead className="font-semibold">Angebotsoptimierung</TableHead>
                       <TableHead className="font-semibold">Angebotsgestaltung</TableHead>
@@ -113,22 +114,28 @@ const PricingSection = ({}: PricingSectionProps) => {
                   </TableHeader>
                   <TableBody>
                     <TableRow>
-                      <TableCell className="font-medium">unter CHF 100'000</TableCell>
+                      <TableCell className="font-medium">unter mCHF 1.0</TableCell>
                       <TableCell className="text-center">CHF 3'000</TableCell>
                       <TableCell className="text-center">CHF 2'000</TableCell>
                       <TableCell className="text-center">CHF 1'000</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell className="font-medium">unter CHF 500'000</TableCell>
-                      <TableCell className="text-center">CHF 4'500</TableCell>
-                      <TableCell className="text-center">CHF 3'000</TableCell>
+                      <TableCell className="font-medium">unter mCHF 2.5</TableCell>
+                      <TableCell className="text-center">CHF 4'000</TableCell>
+                      <TableCell className="text-center">CHF 2'750</TableCell>
+                      <TableCell className="text-center">CHF 1'500</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-medium">unter mCHF 5.0</TableCell>
+                      <TableCell className="text-center">CHF 5'000</TableCell>
+                      <TableCell className="text-center">CHF 3'500</TableCell>
                       <TableCell className="text-center">CHF 2'000</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell className="font-medium">über CHF 500'000</TableCell>
+                      <TableCell className="font-medium">über mCHF 5.0</TableCell>
                       <TableCell className="text-center">CHF 6'000</TableCell>
-                      <TableCell className="text-center">CHF 4'000</TableCell>
-                      <TableCell className="text-center">CHF 3'000</TableCell>
+                      <TableCell className="text-center">CHF 4'250</TableCell>
+                      <TableCell className="text-center">CHF 2'500</TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
