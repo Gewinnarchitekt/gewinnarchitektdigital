@@ -22,7 +22,7 @@ const AboutSection = ({}: AboutSectionProps) => {
               <img 
                 src={karlPortrait} 
                 alt="Karl Aschwanden Portrait" 
-                className="rounded-2xl w-full max-w-md h-auto object-cover card-shadow"
+                className="rounded-2xl w-full max-w-sm h-auto object-cover card-shadow"
               />
               {/* LinkedIn icon overlay */}
               <a 
