@@ -23,9 +23,9 @@ const Footer = ({}: FooterProps) => {
               © 2025 gewinnarchitekt.ch - Karl Aschwanden. Alle Rechte vorbehalten.
             </div>
             <div className="flex space-x-6 text-sm text-primary-foreground/60">
-              <a href="#" className="hover:text-primary-foreground smooth-transition">
+              <Link to="/datenschutz" className="hover:text-primary-foreground smooth-transition">
                 Datenschutz
-              </a>
+              </Link>
               <Link to="/impressum" className="hover:text-primary-foreground smooth-transition">
                 Impressum
               </Link>
