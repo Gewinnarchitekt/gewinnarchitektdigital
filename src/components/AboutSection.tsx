@@ -7,7 +7,7 @@ const AboutSection = ({}: AboutSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">
-            Karl Aschwanden
+            Was mich auszeichnet
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Strukturierte Methodik, klare Kommunikation und messbare Ergebnisse
@@ -16,11 +16,7 @@ const AboutSection = ({}: AboutSectionProps) => {
 
         <div className="grid lg:grid-cols-2 gap-16 items-start max-w-6xl mx-auto">
           {/* Profile Image */}
-          <div className="flex flex-col items-center lg:items-start space-y-6">
-            <div className="text-center lg:text-left">
-              <h3 className="text-3xl font-bold mb-2">Karl Aschwanden</h3>
-              <p className="text-xl text-muted-foreground">Pricing & Angebotsstrategien Experte</p>
-            </div>
+          <div className="flex justify-center lg:justify-start">
             <div className="relative">
               <img 
                 src={karlPortrait} 
