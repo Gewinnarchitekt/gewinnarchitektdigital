@@ -1,4 +1,4 @@
-import { Package, Wrench, Target, AlertCircle, ArrowDown } from "lucide-react";
+import { Package, Wrench, Target, AlertCircle } from "lucide-react";
 interface ProblemSectionProps {}
 const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [{
@@ -88,11 +88,6 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                       <p className="text-base text-foreground leading-snug">{problem.title}</p>
                     </div>
                   ))}
-                </div>
-
-                {/* Animated arrow */}
-                <div className="flex justify-center mb-3">
-                  <ArrowDown className="w-8 h-8 text-red-600 animate-bounce" />
                 </div>
 
                 {/* Prominent conclusion box - fixed height for consistency */}
