@@ -32,7 +32,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Mangelnde Expertise im Bereich Pricing & Monetarisierung",
       description: ""
     }, {
-      title: "Isolierte Abteilungen und mangelnder Informationsaustausch",
+      title: "Datensilos behindern den Informationsfluss",
       description: ""
     }],
     highlight: "66% des Potentials von Preisanpassungen geht durch falsche Prozesse verloren²",
