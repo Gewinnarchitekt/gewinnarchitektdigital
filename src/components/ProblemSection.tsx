@@ -41,16 +41,16 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     icon: Package,
     title: "Konzeptionsmängel",
     problems: [{
-      title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
+      title: "Einheitsangebote ignorieren unterschiedliche Kundensegmente",
+      description: ""
+    }, {
+      title: "Die Preislogik ist nicht auf das Kundenverhalten abgestimmt",
       description: ""
     }, {
       title: "Intern kalkulierte Angebote widerspiegeln nicht den Kundenwert",
       description: ""
     }, {
-      title: "Einheitsangebote ignorieren unterschiedliche Kundensegmente",
-      description: ""
-    }, {
-      title: "Die Preislogik ist nicht auf das Kundenverhalten abgestimmt",
+      title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
       description: ""
     }],
     highlight: "Das richtige Angebot bringt 20% mehr Umsatz³",
