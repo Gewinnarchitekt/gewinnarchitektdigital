@@ -53,7 +53,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
       description: ""
     }],
-    highlight: "Das richtige Angebot bringt 20% mehr Umsatz³",
+    highlight: "Fehlende Angebotsoptimierung kostet 52% des möglichen Umsatzes³",
     color: "from-red-600 to-red-700"
   }];
   return <section id="herausforderungen" className="py-20 bg-background">
