@@ -73,9 +73,11 @@ const ContactSection = ({}: ContactSectionProps) => {
 
             {/* CTA Button */}
             <div className="mt-auto">
-              <Button variant="outline" size="lg" className="w-full text-lg py-3 h-auto">
-                Jetzt Gewinnpotential abklären!
-              </Button>
+              <a href="https://tidycal.com/gewinnarchitekt/angebotscheck" target="_blank" rel="noopener noreferrer" className="block">
+                <Button variant="outline" size="lg" className="w-full text-lg py-3 h-auto">
+                  Jetzt Gewinnpotential abklären!
+                </Button>
+              </a>
             </div>
             </div>
           </div>

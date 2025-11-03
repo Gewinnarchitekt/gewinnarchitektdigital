@@ -25,13 +25,15 @@ const HeroSection = ({}: HeroSectionProps) => {
           
           {/* CTA Button */}
           <div className="flex justify-start">
-            <Button 
-              variant="hero" 
-              size="lg"
-              className="text-lg px-8 py-4 h-auto"
-            >
-              Jetzt Gewinnpotential abklären!
-            </Button>
+            <a href="https://tidycal.com/gewinnarchitekt/angebotscheck" target="_blank" rel="noopener noreferrer">
+              <Button 
+                variant="hero" 
+                size="lg"
+                className="text-lg px-8 py-4 h-auto"
+              >
+                Jetzt Gewinnpotential abklären!
+              </Button>
+            </a>
           </div>
         </div>
       </div>
