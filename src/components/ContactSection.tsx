@@ -4,9 +4,77 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Check } from "lucide-react";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "@/hooks/use-toast";
+const contactFormSchema = z.object({
+  email: z.string().trim().email({ message: "Ungültige E-Mail-Adresse" }).max(255),
+  firstName: z.string().trim().min(1, { message: "Vorname ist erforderlich" }).max(100),
+  lastName: z.string().trim().min(1, { message: "Nachname ist erforderlich" }).max(100),
+  company: z.string().trim().max(100).optional(),
+  phone: z.string().trim().max(50).optional(),
+  message: z.string().trim().min(1, { message: "Nachricht ist erforderlich" }).max(1000, { message: "Nachricht darf maximal 1000 Zeichen haben" }),
+  copyToSelf: z.boolean().default(false),
+});
+
+type ContactFormData = z.infer<typeof contactFormSchema>;
+
 interface ContactSectionProps {}
+
 const ContactSection = ({}: ContactSectionProps) => {
-  const [copyToSelf, setCopyToSelf] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  
+  const {
+    register,
+    handleSubmit,
+    watch,
+    setValue,
+    reset,
+    formState: { errors },
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      copyToSelf: false,
+    },
+  });
+
+  const copyToSelf = watch("copyToSelf");
+
+  const onSubmit = async (data: ContactFormData) => {
+    setIsSubmitting(true);
+    console.log("Submitting contact form:", data);
+
+    try {
+      const { data: responseData, error } = await supabase.functions.invoke("send-contact-email", {
+        body: data,
+      });
+
+      if (error) {
+        console.error("Error sending message:", error);
+        throw error;
+      }
+
+      console.log("Message sent successfully:", responseData);
+
+      toast({
+        title: "Nachricht gesendet!",
+        description: "Vielen Dank für Ihre Nachricht. Wir melden uns bald bei Ihnen.",
+      });
+
+      reset();
+    } catch (error: any) {
+      console.error("Failed to send message:", error);
+      toast({
+        title: "Fehler",
+        description: "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <section id="kontakt" className="py-20 bg-background">
       <div className="container mx-auto px-6">
@@ -86,32 +154,48 @@ const ContactSection = ({}: ContactSectionProps) => {
           <div className="bg-accent p-8 md:p-12 rounded-xl flex flex-col h-full">
             <h3 className="text-3xl font-bold mb-8 text-white">Nachricht senden</h3>
 
-            <form className="space-y-6 flex-1 flex flex-col">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 flex-1 flex flex-col">
               {/* Email */}
-              <Input
-                type="email"
-                placeholder="Email*"
-                required
-                className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-              />
+              <div>
+                <Input
+                  type="email"
+                  placeholder="Email*"
+                  {...register("email")}
+                  className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
+                />
+                {errors.email && (
+                  <p className="text-red-200 text-sm mt-1">{errors.email.message}</p>
+                )}
+              </div>
 
               {/* First and Last Name */}
               <div className="grid md:grid-cols-2 gap-4">
-                <Input
-                  placeholder="Vorname*"
-                  required
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-                />
-                <Input
-                  placeholder="Nachname*"
-                  required
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-                />
+                <div>
+                  <Input
+                    placeholder="Vorname*"
+                    {...register("firstName")}
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
+                  />
+                  {errors.firstName && (
+                    <p className="text-red-200 text-sm mt-1">{errors.firstName.message}</p>
+                  )}
+                </div>
+                <div>
+                  <Input
+                    placeholder="Nachname*"
+                    {...register("lastName")}
+                    className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
+                  />
+                  {errors.lastName && (
+                    <p className="text-red-200 text-sm mt-1">{errors.lastName.message}</p>
+                  )}
+                </div>
               </div>
 
               {/* Company Name */}
               <Input
                 placeholder="Firmenname"
+                {...register("company")}
                 className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
               />
 
@@ -119,23 +203,29 @@ const ContactSection = ({}: ContactSectionProps) => {
               <Input
                 type="tel"
                 placeholder="Telefonnummer"
+                {...register("phone")}
                 className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
               />
 
               {/* Message */}
-              <Textarea
-                placeholder="Nachricht*"
-                required
-                rows={6}
-                className="bg-white/10 border-white/20 text-white placeholder:text-white/70 resize-none"
-              />
+              <div>
+                <Textarea
+                  placeholder="Nachricht*"
+                  rows={6}
+                  {...register("message")}
+                  className="bg-white/10 border-white/20 text-white placeholder:text-white/70 resize-none"
+                />
+                {errors.message && (
+                  <p className="text-red-200 text-sm mt-1">{errors.message.message}</p>
+                )}
+              </div>
 
               {/* Copy Checkbox */}
               <div className="flex items-center space-x-2">
                 <Checkbox
                   id="copy"
                   checked={copyToSelf}
-                  onCheckedChange={(checked) => setCopyToSelf(checked as boolean)}
+                  onCheckedChange={(checked) => setValue("copyToSelf", checked as boolean)}
                   className="border-white/40 data-[state=checked]:bg-white data-[state=checked]:text-accent"
                 />
                 <label htmlFor="copy" className="text-sm text-white cursor-pointer">
@@ -148,9 +238,10 @@ const ContactSection = ({}: ContactSectionProps) => {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full text-lg py-3 h-auto bg-accent-foreground hover:bg-accent-foreground/90 text-accent font-semibold"
+                  disabled={isSubmitting}
+                  className="w-full text-lg py-3 h-auto bg-accent-foreground hover:bg-accent-foreground/90 text-accent font-semibold disabled:opacity-50"
                 >
-                  senden
+                  {isSubmitting ? "Wird gesendet..." : "senden"}
                 </Button>
               </div>
             </form>
