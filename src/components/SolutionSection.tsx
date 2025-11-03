@@ -23,7 +23,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       icon: Package,
       title: "Angebotsgestaltung",
       color: "from-green-600 to-green-700",
-      descriptions: ["Durch Kundenbefragungen und Einzelkundenanalysen entsteht ein Wertversprechen, das bei deiner Zielgruppe auf Interesse stösst.", "Die Angebotsstruktur gestalten wir gemeinsam nach verhaltenspsychologischen Prinzipien und einheitlichen Kommunikationsstandards, die Transparenz schaffen und Kaufentscheidungen erleichtern.", "Quantitative Analysen und kontinuierliches Erfolgstracking bieten dir zusätzliche Sicherheit bei der Markteinführung und ermöglichen laufende Optimierungen.", "Du erhältst Angebote, die sich verkaufen lassen und gleichzeitig die Profitabilität steigern."],
+      descriptions: ["Durch Kundenbefragungen und Einzelkundenanalysen entsteht ein Wertversprechen, das bei deiner Zielgruppe auf Interesse stösst.", "Die Angebotsstruktur gestalten wir nach verhaltenspsychologischen Prinzipien und einheitlichen Kommunikationsstandards, die Transparenz schaffen und Kaufentscheidungen erleichtern.", "Quantitative Analysen und kontinuierliches Erfolgstracking bieten dir zusätzliche Sicherheit bei der Markteinführung und ermöglichen laufende Optimierungen.", "Du erhältst Angebote, die sich verkaufen lassen und gleichzeitig die Profitabilität steigern."],
       note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
       result: "Profitable Angebote, die sich verkaufen lassen"
     }
