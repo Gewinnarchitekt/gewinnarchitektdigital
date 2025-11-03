@@ -16,6 +16,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       description: "Abstimmungen nach Bedarf",
       icon: Target,
       color: "from-green-600 to-green-700",
+      link: "https://tidycal.com/gewinnarchitekt/angebotsstrategie",
       features: [
         "Kundenanalysen",
         "Marktauswertungen",
@@ -34,6 +35,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       description: "Wöchentliche Abstimmungen",
       icon: Wrench,
       color: "from-green-600 to-green-700",
+      link: "https://tidycal.com/gewinnarchitekt/angebotsoptimierung",
       features: [
         "Kundenanalysen",
         "Marktauswertungen",
@@ -49,6 +51,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       description: "Bi-weekly Abstimmungen",
       icon: Package,
       color: "from-green-600 to-green-700",
+      link: "https://tidycal.com/gewinnarchitekt/angebotsgestaltung",
       features: ["Kundenanalysen", "Marktauswertungen", "Erfolgstracking"],
     },
   ];
@@ -113,9 +116,11 @@ const PricingSection = ({}: PricingSectionProps) => {
                   <div className="text-sm text-muted-foreground">{pkg.period}</div>
                 </div>
 
-                <Button className="w-full text-lg py-3 h-auto bg-gray-500 hover:bg-accent text-white hover:text-accent-foreground transition-colors">
-                  Angebot sichern
-                </Button>
+                <a href={pkg.link} target="_blank" rel="noopener noreferrer" className="block">
+                  <Button className="w-full text-lg py-3 h-auto bg-gray-500 hover:bg-accent text-white hover:text-accent-foreground transition-colors">
+                    Angebot sichern
+                  </Button>
+                </a>
               </div>
             );
           })}
