@@ -6,7 +6,7 @@ const Footer = ({}: FooterProps) => {
       <div className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
-          <div className="lg:col-start-2 lg:col-span-2 text-center">
+          <div className="md:col-span-2 lg:col-start-2 lg:col-span-2 text-center">
             <Link to="/" className="text-2xl font-bold mb-4 inline-block hover:text-green-600 transition-colors">
               gewinnarchitekt.ch
             </Link>
