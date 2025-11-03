@@ -26,7 +26,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Daten über das Kundenverhalten werden nicht ausreichend genutzt",
       description: ""
     }, {
-      title: "Es fehlen Ressourcen für die Identifikation von Umsatzopportunitäten",
+      title: "Es fehlen Ressourcen für die Identifikation von Umsatzpotential",
       description: ""
     }, {
       title: "Mangelnde Expertise im Bereich Pricing & Monetarisierung",
