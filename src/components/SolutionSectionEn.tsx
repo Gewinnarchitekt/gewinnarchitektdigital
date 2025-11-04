@@ -36,7 +36,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
         "Through customer surveys and individual customer analyses, a value proposition emerges that resonates with your target group.",
         "We design the offer structure according to behavioral psychological principles and uniform communication standards that create transparency and facilitate purchase decisions.",
         "Quantitative analyses and continuous success tracking enable you to continuously optimize your offer.",
-        "You receive offers that sell themselves while increasing profitability."
+        "You receive offers that sell themselves and increase profitability."
       ],
       result: "Profitable offers that sell themselves"
     }
