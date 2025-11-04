@@ -86,14 +86,14 @@ const Navigation = ({}: NavigationProps) => {
               onClick={scrollToTop}
               className="text-xl font-bold text-black hover:opacity-80 transition-opacity"
             >
-              <span className="text-green-600">Gewinn</span>architekt.ch
+              <span className="text-green-600">gewinn</span>architekt.ch
             </button>
           ) : (
             <Link
               to="/"
               className="text-xl font-bold text-black hover:opacity-80 transition-opacity"
             >
-              <span className="text-green-600">Gewinn</span>architekt.ch
+              <span className="text-green-600">gewinn</span>architekt.ch
             </Link>
           )}
 
