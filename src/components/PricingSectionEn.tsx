@@ -160,31 +160,31 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
                   </TableHeader>
                   <TableBody>
                     <TableRow>
-                      <TableCell className="font-medium">under CHF 1.0m</TableCell>
+                      <TableCell className="font-medium">under mCHF 1.0</TableCell>
                       <TableCell className="text-center">CHF 3,000</TableCell>
                       <TableCell className="text-center">CHF 2,000</TableCell>
                       <TableCell className="text-center">CHF 1,000</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell className="font-medium">under CHF 2.5m</TableCell>
+                      <TableCell className="font-medium">under mCHF 2.5</TableCell>
                       <TableCell className="text-center">CHF 4,000</TableCell>
                       <TableCell className="text-center">CHF 2,750</TableCell>
                       <TableCell className="text-center">CHF 1,500</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell className="font-medium">under CHF 5.0m</TableCell>
+                      <TableCell className="font-medium">under mCHF 5.0</TableCell>
                       <TableCell className="text-center">CHF 5,000</TableCell>
                       <TableCell className="text-center">CHF 3,500</TableCell>
                       <TableCell className="text-center">CHF 2,000</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell className="font-medium">under CHF 10.0m</TableCell>
+                      <TableCell className="font-medium">under mCHF 10.0</TableCell>
                       <TableCell className="text-center">CHF 6,000</TableCell>
                       <TableCell className="text-center">CHF 4,250</TableCell>
                       <TableCell className="text-center">CHF 2,500</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell className="font-medium">over CHF 10.0m</TableCell>
+                      <TableCell className="font-medium">over mCHF 10.0</TableCell>
                       <TableCell className="text-center">CHF 7,000</TableCell>
                       <TableCell className="text-center">CHF 5,000</TableCell>
                       <TableCell className="text-center">CHF 3,000</TableCell>
