@@ -33,11 +33,11 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
       title: "Implementation Problems",
       problems: [
         {
-          title: "Customer behavior data is not sufficiently utilized",
+          title: "Customer data remains underutilized",
           description: ""
         },
         {
-          title: "Resources for identifying revenue potential are lacking",
+          title: "Insufficient resources to identify revenue opportunities",
           description: ""
         },
         {
@@ -45,7 +45,7 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
           description: ""
         },
         {
-          title: "Data silos hinder information flow",
+          title: "Data silos prevent information sharing",
           description: ""
         }
       ],
