@@ -65,7 +65,7 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
           description: ""
         },
         {
-          title: "Internally calculated offers don't reflect customer value",
+          title: "Internally calculated offers don't reflect the value provided",
           description: ""
         },
         {
