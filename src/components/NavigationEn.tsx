@@ -3,30 +3,28 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Globe } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-interface NavigationProps {}
+interface NavigationEnProps {}
 
-const Navigation = ({}: NavigationProps) => {
+const NavigationEn = ({}: NavigationEnProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const location = useLocation();
   const navigate = useNavigate();
-  const isHomePage = location.pathname === "/";
+  const isHomePage = location.pathname === "/en";
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      // Determine active section - only mark as active when section is properly in view
-      const sections = ["herausforderungen", "leistungen", "angebot", "ueber-mich", "kontakt"];
-      const offset = 150; // Navigation height + buffer
+      const sections = ["challenges", "services", "pricing", "about", "contact"];
+      const offset = 150;
       
       let foundActive = false;
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          // Section is active if its top is above the offset and bottom is below the offset
           if (rect.top <= offset && rect.bottom > offset) {
             setActiveSection(section);
             foundActive = true;
@@ -35,7 +33,6 @@ const Navigation = ({}: NavigationProps) => {
         }
       }
       
-      // If no section is active (e.g., in hero section), clear active state
       if (!foundActive) {
         setActiveSection("");
       }
@@ -48,7 +45,7 @@ const Navigation = ({}: NavigationProps) => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const offset = 80; // Navigation height
+      const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY - offset;
 
@@ -66,10 +63,10 @@ const Navigation = ({}: NavigationProps) => {
   };
 
   const navLinks = [
-    { label: "Herausforderungen", id: "herausforderungen" },
-    { label: "Leistungen", id: "leistungen" },
-    { label: "Angebot", id: "angebot" },
-    { label: "Über mich", id: "ueber-mich" },
+    { label: "Challenges", id: "challenges" },
+    { label: "Services", id: "services" },
+    { label: "Pricing", id: "pricing" },
+    { label: "About", id: "about" },
   ];
 
   return (
@@ -86,14 +83,14 @@ const Navigation = ({}: NavigationProps) => {
               onClick={scrollToTop}
               className="text-xl font-bold text-black hover:opacity-80 transition-opacity"
             >
-              <span className="text-green-600">Gewinn</span>architekt.ch
+              <span className="text-green-600">Profit</span>architect.ch
             </button>
           ) : (
             <Link
-              to="/"
+              to="/en"
               className="text-xl font-bold text-black hover:opacity-80 transition-opacity"
             >
-              <span className="text-green-600">Gewinn</span>architekt.ch
+              <span className="text-green-600">Profit</span>architect.ch
             </Link>
           )}
 
@@ -120,18 +117,18 @@ const Navigation = ({}: NavigationProps) => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => navigate("/en")}
+              onClick={() => navigate("/")}
               className="flex items-center gap-2"
             >
               <Globe size={16} />
-              EN
+              DE
             </Button>
             <Button
               variant="cta"
               size="default"
-              onClick={() => scrollToSection("kontakt")}
+              onClick={() => scrollToSection("contact")}
             >
-              Kontakt
+              Contact
             </Button>
           </div>
 
@@ -163,19 +160,19 @@ const Navigation = ({}: NavigationProps) => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => navigate("/en")}
+              onClick={() => navigate("/")}
               className="flex items-center gap-2 justify-start"
             >
               <Globe size={16} />
-              English
+              Deutsch
             </Button>
             <Button
               variant="cta"
               size="lg"
-              onClick={() => scrollToSection("kontakt")}
+              onClick={() => scrollToSection("contact")}
               className="w-full mt-2"
             >
-              Kontakt
+              Contact
             </Button>
           </div>
         </div>
@@ -184,4 +181,4 @@ const Navigation = ({}: NavigationProps) => {
   );
 };
 
-export default Navigation;
+export default NavigationEn;
