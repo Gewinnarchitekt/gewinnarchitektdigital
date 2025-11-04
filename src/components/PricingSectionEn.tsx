@@ -147,7 +147,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
               <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
             </CollapsibleTrigger>
             <CollapsibleContent className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
-              <p className="text-lg text-muted-foreground mb-6">Higher revenues mean greater profit potential</p>
+              <p className="text-lg text-muted-foreground mb-6">Higher revenues lead to greater profit potential</p>
               <div className="overflow-x-auto">
                 <Table>
                   <TableHeader>
