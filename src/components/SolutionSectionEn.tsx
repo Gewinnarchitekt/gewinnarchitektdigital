@@ -22,7 +22,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
       color: "from-green-600 to-green-700",
       descriptions: [
         "By analyzing your data, I provide you with transparency about your offer portfolio and reveal untapped revenue potential.",
-        "Detailed product and customer analyses make the actual success contribution of each offer visible, and target-actual comparisons reveal unwanted revenue losses.",
+        "Detailed product and customer analyses make the actual success contribution of each offer visible, and target vs actual comparisons reveal unwanted revenue losses.",
         "A systematic driver model identifies the most important levers for profit increase from offer, customer, and company perspective.",
         "We improve your profitability monthly through concrete, data-based measures"
       ],
