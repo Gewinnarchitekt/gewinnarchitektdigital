@@ -10,7 +10,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
       color: "from-green-600 to-green-700",
       descriptions: [
         "As a sparring partner, I support you with well-founded decision-making bases and constructive feedback.",
-        "I provide you with comprehensive financial models that make the added value of product adjustments measurable and enable the forecast of future financial statements.",
+        "I deliver comprehensive financial models that make the value of product adjustments measurable and enable forecasting of future financial statements.",
         "We systematically break down difficult decisions into their components and assess risks with differentiated scenario models.",
         "You gain clarity about profitable growth opportunities and optimal resource allocation"
       ],
