@@ -9,19 +9,19 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
       title: "Planning Deficits",
       problems: [
         {
-          title: "Customer needs are considered too late",
+          title: "Customer needs are addressed too late",
           description: ""
         },
         {
-          title: "Innovations are developed past the market",
+          title: "Innovations fail to address market needs",
           description: ""
         },
         {
-          title: "Prioritization is not aligned with monetary growth",
+          title: "Priorities aren't tied to financial growth",
           description: ""
         },
         {
-          title: "Long-term perspective is missing",
+          title: "Lack of a long term perspective",
           description: ""
         }
       ],
