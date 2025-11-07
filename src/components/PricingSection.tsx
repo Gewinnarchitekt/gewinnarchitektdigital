@@ -90,9 +90,9 @@ const PricingSection = ({}: PricingSectionProps) => {
                 </div>
 
                 <p className="text-sm text-muted-foreground mb-4 italic">
-                  {pkg.name === "Angebotsstrategie" && "bestehende und zukünftige Produkte"}
-                  {pkg.name === "Angebotsoptimierung" && "bestehende Produkt"}
-                  {pkg.name === "Angebotsgestaltung" && "ein Produkt"}
+                  {pkg.name === "Angebotsstrategie" && "für bestehende und zukünftige Produkte"}
+                  {pkg.name === "Angebotsoptimierung" && "für bestehende und zukünftige Produkte"}
+                  {pkg.name === "Angebotsgestaltung" && "für ein Produkt"}
                 </p>
 
                 <div className="space-y-4 mb-8 flex-1">
