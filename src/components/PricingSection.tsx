@@ -91,7 +91,7 @@ const PricingSection = ({}: PricingSectionProps) => {
 
                 <p className="text-sm text-muted-foreground mb-4 italic">
                   {pkg.name === "Angebotsstrategie" && "für bestehende und zukünftige Produkte"}
-                  {pkg.name === "Angebotsoptimierung" && "für bestehende und zukünftige Produkte"}
+                  {pkg.name === "Angebotsoptimierung" && "für bestehende Produkte"}
                   {pkg.name === "Angebotsgestaltung" && "für ein Produkt"}
                 </p>
 
