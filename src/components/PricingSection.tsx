@@ -89,6 +89,12 @@ const PricingSection = ({}: PricingSectionProps) => {
                   <h3 className="text-2xl font-bold text-foreground">{pkg.name}</h3>
                 </div>
 
+                <p className="text-sm text-muted-foreground mb-4 italic">
+                  {pkg.name === "Angebotsstrategie" && "bestehende und zukünftige Produkte"}
+                  {pkg.name === "Angebotsoptimierung" && "bestehende Produkt"}
+                  {pkg.name === "Angebotsgestaltung" && "ein Produkt"}
+                </p>
+
                 <div className="space-y-4 mb-8 flex-1">
                   {pkg.features.map((feature, featureIndex) => {
                     const isAngebotsoptimierung = pkg.name === "Angebotsoptimierung";
