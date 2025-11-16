@@ -25,7 +25,6 @@ const PricingSection = ({}: PricingSectionProps) => {
         "Abweichungsanalyse ggü. Plan",
         "Finanzmodelle",
         "Szenariomodellierungen",
-        "Mittel- und Langfristplanung",
       ],
     },
     {
