@@ -10,7 +10,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
       color: "from-green-600 to-green-700",
       descriptions: [
         "As a sparring partner, I support you with well-founded decision-making bases and constructive feedback.",
-        "I deliver comprehensive financial models that make the value of product adjustments measurable and enable forecasting of future financial statements.",
+        "I deliver comprehensive Business Cases that make the value of product adjustments measurable and enable forecasting of future financial statements.",
         "We systematically break down difficult decisions into their components and assess risks with differentiated scenario models.",
         "You gain clarity about profitable growth opportunities and optimal resource allocation"
       ],
@@ -33,8 +33,8 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
       title: "Offer Design",
       color: "from-green-600 to-green-700",
       descriptions: [
-        "Through customer surveys and individual customer analyses, a value proposition emerges that resonates with your target group.",
-        "We design the offer structure according to behavioral psychological principles and uniform communication standards that create transparency and facilitate purchase decisions.",
+        "Through customer surveys and individual customer analyses, I develop a value proposition that resonates with your target group.",
+        "We design the offer structure according to behavioral psychological principles and create transparency through uniform communication standards that facilitate purchase decisions.",
         "Quantitative analyses and continuous success tracking enable you to continuously optimize your offer.",
         "You receive offers that sell themselves and increase profitability."
       ],
