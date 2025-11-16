@@ -7,7 +7,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       icon: Target,
       title: "Angebotsstrategie",
       color: "from-green-600 to-green-700",
-      descriptions: ["Als Sparringpartner unterstütze ich dich mit fundierten Entscheidungsgrundlagen und konstruktivem Feedback.", "Ich liefere dir ganzheitliche Finanzmodelle, die den Mehrwert von Produktanpassungen messbar machen und die Prognose von zukünftigen Jahresabschlüssen ermöglichen.", "Schwierige Entscheidungen zerlegen wir systematisch in ihre Einzelteile und bewerten die Risiken mit differenzierten Szenariomodellen.", "Du gewinnst Klarheit über profitable Wachstumsmöglichkeiten und den optimalen Ressourceneinsatz"],
+      descriptions: ["Als Sparringpartner unterstütze ich dich mit fundierten Entscheidungsgrundlagen und konstruktivem Feedback.", "Ich liefere dir ganzheitliche Business Cases, die den Mehrwert von Produktanpassungen messbar machen und die Prognose von zukünftigen Jahresabschlüssen ermöglichen.", "Schwierige Entscheidungen zerlegen wir systematisch in ihre Einzelteile und bewerten die Risiken mit differenzierten Szenariomodellen.", "Du gewinnst Klarheit über profitable Wachstumsmöglichkeiten und den optimalen Ressourceneinsatz"],
       note: undefined,
       result: "Nachhaltige Wettbewerbsvorteile"
     },
