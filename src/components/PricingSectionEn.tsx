@@ -13,7 +13,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
   const packages = [
     {
       name: "Offer Strategy",
-      price: "from CHF 3,000",
+      price: "CHF 6'000",
       period: "per month",
       description: "Alignment as needed",
       icon: Target,
@@ -31,7 +31,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
     },
     {
       name: "Offer Optimization",
-      price: "from CHF 2,000",
+      price: "CHF 3'500",
       period: "per month",
       description: "Weekly alignments",
       icon: Wrench,
@@ -47,7 +47,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
     },
     {
       name: "Offer Design",
-      price: "from CHF 1,000",
+      price: "CHF 2'500",
       period: "per month",
       description: "Bi-weekly alignments",
       icon: Package,
