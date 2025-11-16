@@ -23,7 +23,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       icon: Package,
       title: "Angebotsgestaltung",
       color: "from-green-600 to-green-700",
-      descriptions: ["Mithilfe von Kundenbefragungen und Einzelkundenanalysen entwickle ich dir ein Wertversprechen, das bei deiner Zielgruppe auf Interesse stösst.", "Die Angebotsstruktur gestalten wir nach verhaltenspsychologischen Prinzipien und einheitlichen Kommunikationsstandards, die Transparenz schaffen und Kaufentscheidungen erleichtern.", "Quantitative Analysen und kontinuierliches Erfolgstracking ermöglichen dir die laufende Optimierung deines Angebots.", "Du erhältst Angebote, die sich verkaufen lassen und gleichzeitig die Profitabilität steigern."],
+      descriptions: ["Mithilfe von Kundenbefragungen und Einzelkundenanalysen entwickle ich dir ein Wertversprechen, das bei deiner Zielgruppe auf Interesse stösst.", "Dabei gestalten wir die Angebotsstruktur nach verhaltenspsychologischen Prinzipien und schaffen durch einheitliche Kommunikationsstandards eine Transparenz, die Kaufentscheidungen erleichtert.", "Quantitative Analysen und kontinuierliches Erfolgstracking ermöglichen dir die laufende Optimierung deines Angebots.", "Du erhältst Angebote, die sich verkaufen lassen und gleichzeitig die Profitabilität steigern."],
       note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
       result: "Profitable Angebote, die sich verkaufen lassen"
     }
