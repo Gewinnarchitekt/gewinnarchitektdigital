@@ -25,9 +25,8 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
         "Success tracking",
         "Monthly profit driver report",
         "Deviation analysis vs. plan",
-        "Financial models",
+        "Business Cases",
         "Scenario modeling",
-        "Medium and long-term planning",
       ],
     },
     {
@@ -114,7 +113,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
 
                 <div className="text-right mb-6 mt-auto">
                   <div className="text-2xl font-semibold text-foreground mb-1">
-                    {pkg.price}¹
+                    {pkg.price}
                   </div>
                   <div className="text-sm text-muted-foreground">{pkg.period}</div>
                 </div>
@@ -140,61 +139,6 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto mt-16">
-          <Collapsible open={isOpen} onOpenChange={setIsOpen}>
-            <CollapsibleTrigger className="flex items-center gap-2 text-2xl font-bold text-foreground mb-6 hover:text-primary transition-colors">
-              <span>¹Detailed Prices per Month</span>
-              <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
-            </CollapsibleTrigger>
-            <CollapsibleContent className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
-              <p className="text-lg text-muted-foreground mb-6">Higher revenues lead to greater profit potential</p>
-              <div className="overflow-x-auto">
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="font-semibold">Annual Revenue</TableHead>
-                      <TableHead className="font-semibold text-center">Offer Strategy</TableHead>
-                      <TableHead className="font-semibold text-center">Offer Optimization</TableHead>
-                      <TableHead className="font-semibold text-center">Offer Design</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow>
-                      <TableCell className="font-medium">under mCHF 1.0</TableCell>
-                      <TableCell className="text-center">CHF 3,000</TableCell>
-                      <TableCell className="text-center">CHF 2,000</TableCell>
-                      <TableCell className="text-center">CHF 1,000</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">under mCHF 2.5</TableCell>
-                      <TableCell className="text-center">CHF 4,000</TableCell>
-                      <TableCell className="text-center">CHF 2,750</TableCell>
-                      <TableCell className="text-center">CHF 1,500</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">under mCHF 5.0</TableCell>
-                      <TableCell className="text-center">CHF 5,000</TableCell>
-                      <TableCell className="text-center">CHF 3,500</TableCell>
-                      <TableCell className="text-center">CHF 2,000</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">under mCHF 10.0</TableCell>
-                      <TableCell className="text-center">CHF 6,000</TableCell>
-                      <TableCell className="text-center">CHF 4,250</TableCell>
-                      <TableCell className="text-center">CHF 2,500</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">over mCHF 10.0</TableCell>
-                      <TableCell className="text-center">CHF 7,000</TableCell>
-                      <TableCell className="text-center">CHF 5,000</TableCell>
-                      <TableCell className="text-center">CHF 3,000</TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-              </div>
-            </CollapsibleContent>
-          </Collapsible>
-        </div>
       </div>
     </section>
   );
