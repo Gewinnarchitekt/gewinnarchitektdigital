@@ -60,7 +60,7 @@ const PricingSection = ({}: PricingSectionProps) => {
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Mein Angebot an dich</h2>
           <p className="text-xl text-muted-foreground mx-auto mb-8">
-            Kontinuierliche Fachexpertise ohne teure Neueinstellungen
+            Gemeinsam arbeiten wir kontinuierlich an der Wertsteigerung deines Unternehmens
           </p>
         </div>
 
