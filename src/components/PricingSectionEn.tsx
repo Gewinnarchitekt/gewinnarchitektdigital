@@ -24,7 +24,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
         "Market evaluations",
         "Success tracking",
         "Monthly profit driver report",
-        "Deviation analysis vs. plan",
+        "Deviation vs plan",
         "Business Cases",
         "Scenario modeling",
       ],
@@ -42,7 +42,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
         "Market evaluations",
         "Success tracking",
         "Monthly profit driver report",
-        "Deviation analysis vs. prior year",
+        "Deviation vs previous year",
       ],
     },
     {
