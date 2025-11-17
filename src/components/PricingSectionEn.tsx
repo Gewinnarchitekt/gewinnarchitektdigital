@@ -63,7 +63,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">My Offer to You</h2>
           <p className="text-xl text-muted-foreground mx-auto mb-8">
-            Continuous expert knowledge without expensive new hires
+            Together we continuously work on increasing the value of your company
           </p>
         </div>
 
