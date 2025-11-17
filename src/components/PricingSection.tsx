@@ -64,6 +64,17 @@ const PricingSection = ({}: PricingSectionProps) => {
           </p>
         </div>
 
+        <div className="max-w-7xl mx-auto mb-12">
+          <div className="bg-transparent rounded-lg py-6 px-8 border border-border/50">
+            <p className="text-lg text-muted-foreground text-center">
+              Nur an Coaching interessiert? 2 x 50 Min. pro Monat für CHF 350 •{" "}
+              <a href="#" className="text-green-600 hover:underline font-medium hover:text-green-700">
+                kostenlosen Kennenlerntermin buchen
+              </a>
+            </p>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {packages.map((pkg, index) => {
             const IconComponent = pkg.icon;
@@ -129,17 +140,6 @@ const PricingSection = ({}: PricingSectionProps) => {
               </div>
             );
           })}
-        </div>
-
-        <div className="max-w-7xl mx-auto mt-12">
-          <div className="bg-transparent rounded-lg py-6 px-8 border border-border/50">
-            <p className="text-lg text-muted-foreground text-center">
-              Nur an Coaching interessiert? 2 x 50 Min. pro Monat für CHF 350 •{" "}
-              <a href="#" className="text-green-600 hover:underline font-medium hover:text-green-700">
-                kostenlosen Kennenlerntermin buchen
-              </a>
-            </p>
-          </div>
         </div>
 
       </div>
