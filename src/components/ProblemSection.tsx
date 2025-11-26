@@ -1,4 +1,5 @@
 import { Package, Wrench, Target, AlertCircle } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 interface ProblemSectionProps {}
 const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [{
@@ -47,7 +48,8 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     highlight: "Fehlende Angebotsoptimierung kostet 52% des möglichen Umsatzes³",
     color: "from-red-600 to-red-700"
   }];
-  return <section id="herausforderungen" className="py-20 bg-background">
+  return <TooltipProvider delayDuration={200}>
+    <section id="herausforderungen" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Herausforderungen in der Angebotsgestaltung</h2>
@@ -76,12 +78,19 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 {/* Problem list */}
                 <div className="space-y-4 flex-grow">
                   {category.problems.map((problem, problemIndex) => (
-                    <div key={problemIndex} className="flex items-start gap-3">
-                      <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                      <p className="text-lg text-muted-foreground leading-relaxed">
-                        {problem.title}
-                      </p>
-                    </div>
+                    <Tooltip key={problemIndex}>
+                      <TooltipTrigger asChild>
+                        <div className="flex items-start gap-3 cursor-pointer group">
+                          <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                          <p className="text-lg text-muted-foreground leading-relaxed truncate group-hover:text-foreground transition-colors">
+                            {problem.title}
+                          </p>
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent side="top" className="max-w-xs">
+                        <p>{problem.title}</p>
+                      </TooltipContent>
+                    </Tooltip>
                   ))}
                 </div>
               </div>;
@@ -107,6 +116,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           </p>
         </div>
       </div>
-    </section>;
+    </section>
+  </TooltipProvider>;
 };
 export default ProblemSection;

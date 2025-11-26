@@ -1,4 +1,5 @@
 import { Package, Wrench, Target, AlertCircle } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface ProblemSectionEnProps {}
 
@@ -67,7 +68,8 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
   ];
 
   return (
-    <section id="challenges" className="py-20 bg-background">
+    <TooltipProvider delayDuration={200}>
+      <section id="challenges" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Challenges in Offer Design</h2>
@@ -97,12 +99,19 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
                 {/* Problem list */}
                 <div className="space-y-4 flex-grow">
                   {category.problems.map((problem, problemIndex) => (
-                    <div key={problemIndex} className="flex items-start gap-3">
-                      <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                      <p className="text-lg text-muted-foreground leading-relaxed">
-                        {problem.title}
-                      </p>
-                    </div>
+                    <Tooltip key={problemIndex}>
+                      <TooltipTrigger asChild>
+                        <div className="flex items-start gap-3 cursor-pointer group">
+                          <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                          <p className="text-lg text-muted-foreground leading-relaxed truncate group-hover:text-foreground transition-colors">
+                            {problem.title}
+                          </p>
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent side="top" className="max-w-xs">
+                        <p>{problem.title}</p>
+                      </TooltipContent>
+                    </Tooltip>
                   ))}
                 </div>
               </div>
@@ -130,6 +139,7 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
         </div>
       </div>
     </section>
+    </TooltipProvider>
   );
 };
 
