@@ -75,8 +75,15 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                   <h3 className="text-xl font-semibold text-foreground">{category.title}</h3>
                 </div>
 
+                {/* Red conclusion box */}
+                <div className="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-600 p-6 rounded-lg min-h-[120px] flex items-center justify-center mb-6">
+                  <p className="font-bold text-center leading-tight text-red-600 dark:text-red-500 text-lg">
+                    {category.highlight}
+                  </p>
+                </div>
+
                 {/* Problem list */}
-                <div className="space-y-4 mb-6 flex-grow">
+                <div className="space-y-4 flex-grow">
                   {category.problems.map((problem, problemIndex) => (
                     <div key={problemIndex} className="flex items-start gap-3">
                       <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
@@ -85,13 +92,6 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                       </p>
                     </div>
                   ))}
-                </div>
-
-                {/* Red conclusion box */}
-                <div className="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-600 p-6 rounded-lg min-h-[120px] flex items-center justify-center">
-                  <p className="font-bold text-center leading-tight text-red-600 dark:text-red-500 text-lg">
-                    {category.highlight}
-                  </p>
                 </div>
               </div>;
         })}
