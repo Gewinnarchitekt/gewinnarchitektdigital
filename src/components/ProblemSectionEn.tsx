@@ -19,10 +19,6 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
         {
           title: "Priorities aren't tied to financial growth",
           description: ""
-        },
-        {
-          title: "Lack of a long term perspective",
-          description: ""
         }
       ],
       highlight: "61% of companies struggle to implement a long-term strategy effectively¹",
@@ -43,10 +39,6 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
         {
           title: "Lack of expertise in pricing & monetization",
           description: ""
-        },
-        {
-          title: "Data silos prevent information sharing",
-          description: ""
         }
       ],
       highlight: "66% of price adjustment potential is lost through wrong processes²",
@@ -62,10 +54,6 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
         },
         {
           title: "Pricing logic is not aligned with customer behavior",
-          description: ""
-        },
-        {
-          title: "Internally calculated offers don't reflect the value provided",
           description: ""
         },
         {
