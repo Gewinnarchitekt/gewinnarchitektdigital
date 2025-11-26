@@ -4,7 +4,7 @@ import { useState } from "react";
 interface ProblemSectionEnProps {}
 
 const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(0);
   const problemCategories = [
     {
       icon: Target,

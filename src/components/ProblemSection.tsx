@@ -3,7 +3,7 @@ import { useState } from "react";
 
 interface ProblemSectionProps {}
 const ProblemSection = ({}: ProblemSectionProps) => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(0);
   const problemCategories = [{
     icon: Target,
     title: "Planungsdefizite",
