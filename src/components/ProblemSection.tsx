@@ -13,9 +13,6 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     }, {
       title: "Priorisierung ist nicht auf monetäres Wachstum ausgerichtet",
       description: ""
-    }, {
-      title: "Es fehlt eine langfristige Perspektive",
-      description: ""
     }],
     highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen¹",
     color: "from-red-600 to-red-700"
@@ -31,9 +28,6 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     }, {
       title: "Mangelnde Expertise im Bereich Pricing & Monetarisierung",
       description: ""
-    }, {
-      title: "Datensilos behindern den Informationsfluss",
-      description: ""
     }],
     highlight: "66% des Potentials von Preisanpassungen geht durch falsche Prozesse verloren²",
     color: "from-red-600 to-red-700"
@@ -45,9 +39,6 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       description: ""
     }, {
       title: "Die Preislogik ist nicht auf das Kundenverhalten abgestimmt",
-      description: ""
-    }, {
-      title: "Intern kalkulierte Angebote widerspiegeln nicht den Kundenwert",
       description: ""
     }, {
       title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
