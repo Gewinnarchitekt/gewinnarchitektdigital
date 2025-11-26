@@ -1,8 +1,10 @@
-import { Package, Wrench, Target, AlertCircle } from "lucide-react";
+import { Package, Wrench, Target, AlertCircle, ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 interface ProblemSectionEnProps {}
 
 const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const problemCategories = [
     {
       icon: Target,
@@ -90,7 +92,12 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
           {problemCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <div key={index} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition flex flex-col">
+              <div 
+                key={index} 
+                className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition flex flex-col cursor-pointer"
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
                 {/* Icon and Title at the top of each box */}
                 <div className="flex items-center mb-6 pb-4 border-b border-border">
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} mr-4`}>
@@ -100,14 +107,21 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
                 </div>
 
                 {/* Red conclusion box */}
-                <div className="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-600 p-6 rounded-lg min-h-[120px] flex items-center justify-center mb-6">
-                  <p className="font-bold text-center leading-tight text-red-600 dark:text-red-500 text-lg">
+                <div className="bg-red-50 dark:bg-red-950/20 border-l-4 border-red-600 p-6 rounded-lg min-h-[120px] flex flex-col items-center justify-center mb-4">
+                  <p className="font-bold text-center leading-tight text-red-600 dark:text-red-500 text-lg mb-2">
                     {category.highlight}
                   </p>
+                  <ChevronDown 
+                    className={`w-5 h-5 text-red-600 dark:text-red-500 transition-transform duration-300 ${hoveredIndex === index ? 'rotate-180' : ''} md:block hidden`}
+                  />
                 </div>
 
-                {/* Problem list */}
-                <div className="space-y-4 flex-grow">
+                {/* Problem list - hidden by default on desktop, visible on mobile */}
+                <div className={`space-y-4 flex-grow overflow-hidden transition-all duration-300 ease-in-out ${
+                  hoveredIndex === index 
+                    ? 'opacity-100 max-h-[500px]' 
+                    : 'opacity-0 max-h-0 md:max-h-0 max-h-[500px] md:opacity-0 opacity-100'
+                }`}>
                   {category.problems.map((problem, problemIndex) => (
                     <div key={problemIndex} className="flex items-start gap-3">
                       <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
