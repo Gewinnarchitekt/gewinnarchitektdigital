@@ -1,5 +1,4 @@
 import { Package, Wrench, Target, AlertCircle } from "lucide-react";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 interface ProblemSectionProps {}
 const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [{
@@ -13,6 +12,9 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       description: ""
     }, {
       title: "Priorisierung ist nicht auf monetäres Wachstum ausgerichtet",
+      description: ""
+    }, {
+      title: "Es fehlt eine langfristige Perspektive",
       description: ""
     }],
     highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen¹",
@@ -29,6 +31,9 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     }, {
       title: "Mangelnde Expertise im Bereich Pricing & Monetarisierung",
       description: ""
+    }, {
+      title: "Datensilos behindern den Informationsfluss",
+      description: ""
     }],
     highlight: "66% des Potentials von Preisanpassungen geht durch falsche Prozesse verloren²",
     color: "from-red-600 to-red-700"
@@ -42,14 +47,16 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Die Preislogik ist nicht auf das Kundenverhalten abgestimmt",
       description: ""
     }, {
+      title: "Intern kalkulierte Angebote widerspiegeln nicht den Kundenwert",
+      description: ""
+    }, {
       title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
       description: ""
     }],
     highlight: "Fehlende Angebotsoptimierung kostet 52% des möglichen Umsatzes³",
     color: "from-red-600 to-red-700"
   }];
-  return <TooltipProvider delayDuration={200}>
-    <section id="herausforderungen" className="py-20 bg-background">
+  return <section id="herausforderungen" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Herausforderungen in der Angebotsgestaltung</h2>
@@ -78,19 +85,12 @@ const ProblemSection = ({}: ProblemSectionProps) => {
                 {/* Problem list */}
                 <div className="space-y-4 flex-grow">
                   {category.problems.map((problem, problemIndex) => (
-                    <Tooltip key={problemIndex}>
-                      <TooltipTrigger asChild>
-                        <div className="flex items-start gap-3 cursor-pointer group">
-                          <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                          <p className="text-lg text-muted-foreground leading-relaxed truncate group-hover:text-foreground transition-colors">
-                            {problem.title}
-                          </p>
-                        </div>
-                      </TooltipTrigger>
-                      <TooltipContent side="top" className="max-w-xs">
-                        <p>{problem.title}</p>
-                      </TooltipContent>
-                    </Tooltip>
+                    <div key={problemIndex} className="flex items-start gap-3">
+                      <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        {problem.title}
+                      </p>
+                    </div>
                   ))}
                 </div>
               </div>;
@@ -116,7 +116,6 @@ const ProblemSection = ({}: ProblemSectionProps) => {
           </p>
         </div>
       </div>
-    </section>
-  </TooltipProvider>;
+    </section>;
 };
 export default ProblemSection;

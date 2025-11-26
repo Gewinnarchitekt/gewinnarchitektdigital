@@ -1,5 +1,4 @@
 import { Package, Wrench, Target, AlertCircle } from "lucide-react";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface ProblemSectionEnProps {}
 
@@ -19,6 +18,10 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
         },
         {
           title: "Priorities aren't tied to financial growth",
+          description: ""
+        },
+        {
+          title: "Lack of a long term perspective",
           description: ""
         }
       ],
@@ -40,6 +43,10 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
         {
           title: "Lack of expertise in pricing & monetization",
           description: ""
+        },
+        {
+          title: "Data silos prevent information sharing",
+          description: ""
         }
       ],
       highlight: "66% of price adjustment potential is lost through wrong processes²",
@@ -58,6 +65,10 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
           description: ""
         },
         {
+          title: "Internally calculated offers don't reflect the value provided",
+          description: ""
+        },
+        {
           title: "Added value for the customer is not clearly communicated",
           description: ""
         }
@@ -68,8 +79,7 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
   ];
 
   return (
-    <TooltipProvider delayDuration={200}>
-      <section id="challenges" className="py-20 bg-background">
+    <section id="challenges" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Challenges in Offer Design</h2>
@@ -99,19 +109,12 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
                 {/* Problem list */}
                 <div className="space-y-4 flex-grow">
                   {category.problems.map((problem, problemIndex) => (
-                    <Tooltip key={problemIndex}>
-                      <TooltipTrigger asChild>
-                        <div className="flex items-start gap-3 cursor-pointer group">
-                          <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                          <p className="text-lg text-muted-foreground leading-relaxed truncate group-hover:text-foreground transition-colors">
-                            {problem.title}
-                          </p>
-                        </div>
-                      </TooltipTrigger>
-                      <TooltipContent side="top" className="max-w-xs">
-                        <p>{problem.title}</p>
-                      </TooltipContent>
-                    </Tooltip>
+                    <div key={problemIndex} className="flex items-start gap-3">
+                      <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        {problem.title}
+                      </p>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -139,7 +142,6 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
         </div>
       </div>
     </section>
-    </TooltipProvider>
   );
 };
 
