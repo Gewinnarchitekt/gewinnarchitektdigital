@@ -20,7 +20,7 @@ const HeroSection = ({}: HeroSectionProps) => {
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl leading-relaxed">
-            Datenbasierte Pricingstrategien für digitale Geschäftsmodelle, die deine Margen steigern und gleichzeitig deine Kunden überzeugen.
+            Mit datenbasierten Insights helfe ich dir, kundenorientierte Angebote zu entwickeln, die Gewinn und Cashflow nachhaltig steigern
           </p>
           
           {/* CTA Button */}
