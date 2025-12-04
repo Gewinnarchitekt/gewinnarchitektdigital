@@ -48,24 +48,24 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                   <h3 className="text-xl font-semibold text-foreground">{solution.title}</h3>
                 </div>
 
-                {/* Content */}
-                <div className="space-y-4 mb-6 flex-grow">
-                  {solution.descriptions.slice(0, 3).map((description, descIndex) => <p key={descIndex} className="text-lg text-muted-foreground leading-relaxed hyphens-auto break-words" style={{
-                hyphenateLimitChars: '15 8 8',
-                WebkitHyphenateLimitChars: '15 8 8'
-              } as React.CSSProperties}>
-                      {description}
-                    </p>)}
-                </div>
-
                 {/* Green conclusion box */}
-                <div className="bg-green-50 dark:bg-green-950/20 border-l-4 border-green-600 p-6 rounded-lg min-h-[120px] flex items-center justify-center">
+                <div className="bg-green-50 dark:bg-green-950/20 border-l-4 border-green-600 p-6 rounded-lg mb-6 flex items-center justify-center">
                   <p className="font-bold text-center leading-tight text-green-600 dark:text-green-500 text-lg hyphens-auto break-words" style={{
                 hyphenateLimitChars: '15 8 8',
                 WebkitHyphenateLimitChars: '15 8 8'
               } as React.CSSProperties}>
                     {solution.descriptions[3]}
                   </p>
+                </div>
+
+                {/* Content */}
+                <div className="space-y-4 flex-grow">
+                  {solution.descriptions.slice(0, 3).map((description, descIndex) => <p key={descIndex} className="text-lg text-muted-foreground leading-relaxed hyphens-auto break-words" style={{
+                hyphenateLimitChars: '15 8 8',
+                WebkitHyphenateLimitChars: '15 8 8'
+              } as React.CSSProperties}>
+                      {description}
+                    </p>)}
                 </div>
               </div>;
         })}
