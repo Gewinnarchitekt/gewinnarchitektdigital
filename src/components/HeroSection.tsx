@@ -20,7 +20,7 @@ const HeroSection = ({}: HeroSectionProps) => {
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl leading-relaxed">
-            Mit datenbasierten Insights helfe ich dir, kundenorientierte Angebote zu entwickeln, die Gewinn und Cashflow nachhaltig steigern
+            Mit datenbasierten Pricingstrategien helfe ich dir, kundenorientierte Angebote zu entwickeln, die Gewinn und Cashflow nachhaltig steigern
           </p>
           
           {/* CTA Button */}
