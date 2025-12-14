@@ -13,15 +13,15 @@ const HeroSectionEn = ({}: HeroSectionEnProps) => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl text-left text-white opacity-0 animate-fadeIn">
-          {/* Main headline */}
-          <h1 className="font-bold mb-6 leading-tight">
-            Get More from Your Digital Offerings
-          </h1>
-          
-          {/* Subheading */}
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl leading-relaxed">
-            With data-driven insights, I help you develop customer-oriented offerings that sustainably increase profit and cash flow
+          {/* Tagline */}
+          <p className="text-lg md:text-xl mb-3 text-white/80 uppercase tracking-wider font-medium">
+            Pricing & Controlling as a Service
           </p>
+          
+          {/* Main headline */}
+          <h1 className="font-bold mb-8 leading-tight max-w-3xl">
+            Data-Driven Profit Optimization for Digital Business Models
+          </h1>
           
           {/* CTA Button */}
           <div className="flex justify-start">
