@@ -13,15 +13,15 @@ const HeroSection = ({}: HeroSectionProps) => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl text-left text-white opacity-0 animate-fadeIn">
-          {/* Main headline */}
-          <h1 className="font-bold mb-6 leading-tight">
+          {/* Tagline/Eyebrow */}
+          <p className="text-lg md:text-xl uppercase tracking-wider font-medium text-white/80 mb-4">
             Pricing & Controlling as a Service
-          </h1>
-          
-          {/* Subheading */}
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl leading-relaxed">
-            Datengetriebene Gewinnoptimierung für digitale Geschäftsmodelle
           </p>
+          
+          {/* Main headline */}
+          <h1 className="font-bold mb-8 leading-tight">
+            Datengetriebene Gewinnoptimierung für digitale Geschäftsmodelle
+          </h1>
           
           {/* CTA Button */}
           <div className="flex justify-start">
