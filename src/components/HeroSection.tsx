@@ -12,7 +12,7 @@ const HeroSection = ({}: HeroSectionProps) => {
       <div className="absolute inset-0 bg-black/50" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl text-left text-white opacity-0 animate-fadeIn">
+        <div className="max-w-5xl text-left text-white opacity-0 animate-fadeIn">
           {/* Tagline */}
           <p className="text-sm md:text-base uppercase tracking-widest mb-4 text-white/80 font-medium">
             Pricing & Controlling as a Service
