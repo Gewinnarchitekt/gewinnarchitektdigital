@@ -1,91 +1,76 @@
+import { Package, Wrench, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 interface SolutionSectionProps {}
-
 const SolutionSection = ({}: SolutionSectionProps) => {
   const solutions = {
-    starthilfe: {
-      category: "STARTHILFE",
-      headline: "Entwicklung kundenzentrierter Angebote",
-      introduction: "Du stehst vor der Herausforderung, deine Angebote grundlegend zu überdenken? Services aus diesem Bereich geben dir Angebote, die sich verkaufen lassen und gleichzeitig die Profitabilität steigern.",
-      conclusion: "Du erhältst Angebote, die sich verkaufen lassen und gleichzeitig die Profitabilität steigern.",
-      popular: false
+    angebotsstrategie: {
+      icon: Target,
+      title: "Angebotsstrategie",
+      color: "from-green-600 to-green-700",
+      descriptions: ["Als Sparringpartner unterstütze ich dich mit fundierten Entscheidungsgrundlagen und konstruktivem Feedback.", "Ich liefere dir ganzheitliche Business Cases, die den Mehrwert von Produktanpassungen messbar machen und die Prognose von zukünftigen Jahresabschlüssen ermöglichen.", "Schwierige Entscheidungen zerlegen wir systematisch in ihre Einzelteile und bewerten die Risiken mit differenzierten Szenariomodellen.", "Du gewinnst Klarheit über profitable Wachstumsmöglichkeiten und den optimalen Ressourceneinsatz"],
+      note: undefined,
+      result: "Nachhaltige Wettbewerbsvorteile"
     },
-    gewinnbooster: {
-      category: "GEWINNBOOSTER",
-      headline: "Kontinuierliche Gewinnoptimierung",
-      introduction: "Du verkaufst deine Angebote erfolgreich, aber dir fehlt ein systematisches Controlling? Services aus diesem Bereich ermöglichen dir die monatliche Verbesserung der Profitabilität mithilfe konkreter Massnahmen.",
-      conclusion: "Monatlich verbessern wir deine Profitabilität mithilfe konkreter, datenbasierter Massnahmen.",
-      popular: true
+    angebotsoptimierung: {
+      icon: Wrench,
+      title: "Angebotsoptimierung",
+      color: "from-green-600 to-green-700",
+      descriptions: ["Durch Auswertung deiner Daten verschaffe ich dir Transparenz über dein Angebotsportfolio und zeige ungenutzte Ertragspotentiale auf.", "Detaillierte Produkt- und Kundenanalysen machen den tatsächlichen Erfolgsbeitrag jedes Angebots sichtbar und Soll-Ist-Vergleiche decken ungewollte Umsatzverluste auf.", "Ein systematisches Treibermodell identifiziert die wichtigsten Hebel zur Gewinnsteigerung aus Angebots-, Kunden- und Unternehmenssicht.", "Monatlich verbessern wir deine Profitabilität mithilfe konkreter, datenbasierter Massnahmen"],
+      note: undefined,
+      result: "Kontinuierliche Erhöhung deiner Gewinne"
     },
-    sparringpartner: {
-      category: "SPARRINGPARTNER",
-      headline: "Langfristige Angebotsstrategie",
-      introduction: "Deine Zielmärkte sind im Wandel und du prüfst neue strategische Geschäftsfelder? Services aus diesem Bereich geben dir Klarheit über profitable Wachstumsmöglichkeiten und den optimalen Ressourceneinsatz.",
-      conclusion: "Du gewinnst Klarheit über profitable Wachstumsmöglichkeiten und den optimalen Ressourceneinsatz.",
-      popular: false
+    angebotsgestaltung: {
+      icon: Package,
+      title: "Angebotsgestaltung",
+      color: "from-green-600 to-green-700",
+      descriptions: ["Mithilfe von Kundenbefragungen und Einzelkundenanalysen entwickle ich dir ein Wertversprechen, das bei deiner Zielgruppe auf Interesse stösst.", "Dabei gestalten wir die Angebotsstruktur nach verhaltenspsychologischen Prinzipien und schaffen durch einheitliche Kommunikationsstandards eine Transparenz, die Kaufentscheidungen erleichtert.", "Quantitative Analysen und kontinuierliches Erfolgstracking ermöglichen dir die laufende Optimierung deines Angebots.", "Du erhältst Angebote, die sich verkaufen lassen und gleichzeitig die Profitabilität steigern."],
+      note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
+      result: "Profitable Angebote, die sich verkaufen lassen"
     }
   };
-
-  const order = ['starthilfe', 'gewinnbooster', 'sparringpartner'] as const;
-
-  return (
-    <section id="leistungen" className="py-20 bg-muted">
+  return <section id="leistungen" className="py-20 bg-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Systematisch zu profitablen Angeboten</h2>
           <p className="text-xl text-muted-foreground">Egal ob du gerade startest, kontinuierlich optimieren oder langfristig strategisch wachsen willst – ich begleite dich mit der richtigen Intensität.</p>
         </div>
 
+        {/* Grid layout with 3 columns */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-          {order.map((key) => {
-            const solution = solutions[key];
-            return (
-              <div key={key} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition flex flex-col">
-                {/* Category header with optional badge */}
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-sm font-semibold tracking-wider text-muted-foreground">
-                    {solution.category}
-                  </span>
-                  {solution.popular && (
-                    <span className="px-2 py-0.5 text-xs font-semibold bg-green-600 text-white rounded">
-                      BELIEBT
-                    </span>
-                  )}
+          {Object.entries(solutions).map(([key, solution]) => {
+          const IconComponent = solution.icon;
+          return <div key={key} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition flex flex-col">
+                {/* Icon and Title at the top of each box */}
+                <div className="flex items-center mb-6 pb-4 border-b border-border">
+                  <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
+                    <IconComponent className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">{solution.title}</h3>
                 </div>
 
-                {/* Headline */}
-                <h3 className="text-xl font-bold text-foreground mb-4">
-                  {solution.headline}
-                </h3>
-
-                {/* Introduction */}
-                <p className="text-muted-foreground leading-relaxed mb-6 flex-grow">
-                  {solution.introduction}
-                </p>
-
                 {/* Green conclusion box */}
-                <div className="bg-green-50 dark:bg-green-950/20 border-l-4 border-green-600 p-4 rounded-lg mb-6">
-                  <p className="font-bold text-green-600 dark:text-green-500 leading-tight">
-                    {solution.conclusion}
+                <div className="bg-green-50 dark:bg-green-950/20 border-l-4 border-green-600 p-6 rounded-lg mb-6 flex items-center justify-center">
+                  <p className="font-bold text-center leading-tight text-green-600 dark:text-green-500 text-lg hyphens-auto break-words" style={{
+                hyphenateLimitChars: '15 8 8',
+                WebkitHyphenateLimitChars: '15 8 8'
+              } as React.CSSProperties}>
+                    {solution.descriptions[3]}
                   </p>
                 </div>
 
-                {/* CTA Button */}
-                <Button 
-                  variant="outline" 
-                  className="w-full border-foreground text-foreground hover:bg-foreground hover:text-background"
-                  onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  Angebot sichern
-                </Button>
-              </div>
-            );
-          })}
+                {/* Content */}
+                <div className="space-y-4 flex-grow">
+                  {solution.descriptions.slice(0, 3).map((description, descIndex) => <p key={descIndex} className="text-lg text-muted-foreground leading-relaxed hyphens-auto break-words" style={{
+                hyphenateLimitChars: '15 8 8',
+                WebkitHyphenateLimitChars: '15 8 8'
+              } as React.CSSProperties}>
+                      {description}
+                    </p>)}
+                </div>
+              </div>;
+        })}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default SolutionSection;
