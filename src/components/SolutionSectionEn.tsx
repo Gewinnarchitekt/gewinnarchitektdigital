@@ -14,6 +14,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
         "We systematically break down difficult decisions into their components and assess risks with differentiated scenario models.",
         "You gain clarity about profitable growth opportunities and optimal resource allocation"
       ],
+      services: ["Market Research", "Business Cases", "Financial Planning", "3-Statement Model", "Pricing Governance", "Portfolio Management"],
       result: "Sustainable competitive advantages"
     },
     offerOptimization: {
@@ -26,6 +27,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
         "A systematic driver model identifies the most important levers for profit increase from offer, customer, and company perspective.",
         "We improve your profitability monthly through concrete, data-based measures"
       ],
+      services: ["Reportings", "Pricing Experiments", "Driver Model", "Customer & Product Analytics", "Liquidity Planning", "Cohort Analysis"],
       result: "Continuous increase in your profits"
     },
     offerDesign: {
@@ -38,6 +40,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
         "Quantitative analyses and continuous success tracking enable you to continuously optimize your offer.",
         "You receive offers that sell themselves and increase profitability."
       ],
+      services: ["Customer Needs Analysis", "Customer Interviews", "Value Proposition Design", "Pricing Architecture", "Conjoint Analysis", "Pricing Psychology", "Packaging & Bundling"],
       result: "Profitable offers that sell themselves"
     }
   };
@@ -57,11 +60,23 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
             return (
               <div key={key} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition flex flex-col">
                 {/* Icon and Title at the top of each box */}
-                <div className="flex items-center mb-6 pb-4 border-b border-border">
+                <div className="flex items-center mb-4 pb-4 border-b border-border">
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">{solution.title}</h3>
+                </div>
+
+                {/* Services Tags */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {solution.services.map((service, index) => (
+                    <span 
+                      key={index}
+                      className="text-xs px-2 py-1 bg-muted rounded-full text-muted-foreground border border-border"
+                    >
+                      {service}
+                    </span>
+                  ))}
                 </div>
 
                 {/* Green conclusion box */}
