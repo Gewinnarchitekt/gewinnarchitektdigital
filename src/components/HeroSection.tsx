@@ -23,7 +23,7 @@ const HeroSection = ({}: HeroSectionProps) => {
           
           {/* Main headline */}
           <h1 className="font-bold mb-8 leading-tight">
-            Datengetriebene <span className="text-accent">Gewinnoptimierung</span> für digitale Produkte
+            Datengetriebene <span className="text-accent">Gewinn</span>optimierung für digitale Produkte
           </h1>
           
           {/* CTA Button */}
