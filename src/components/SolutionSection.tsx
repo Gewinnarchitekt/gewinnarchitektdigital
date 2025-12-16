@@ -32,7 +32,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Systematisch zu profitablen Angeboten</h2>
-          <p className="text-xl text-muted-foreground">Ich biete Massgeschneiderte Unterstützung für jede Phase deines Unternehmens</p>
+          <p className="text-xl text-muted-foreground">Egal ob du gerade startest, kontinuierlich optimieren oder langfristig strategisch wachsen willst – ich begleite dich mit der richtigen Intensität.</p>
         </div>
 
         {/* Grid layout with 3 columns */}
