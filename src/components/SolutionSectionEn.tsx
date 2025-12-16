@@ -1,97 +1,84 @@
-import { Package, Wrench, Target } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface SolutionSectionEnProps {}
 
 const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
   const solutions = {
-    offerStrategy: {
-      icon: Target,
-      title: "Offer Strategy",
-      color: "from-green-600 to-green-700",
-      descriptions: [
-        "As a sparring partner, I support you with well-founded decision-making bases and constructive feedback.",
-        "I deliver comprehensive Business Cases that make the value of product adjustments measurable and enable forecasting of future financial statements.",
-        "We systematically break down difficult decisions into their components and assess risks with differentiated scenario models.",
-        "You gain clarity about profitable growth opportunities and optimal resource allocation"
-      ],
-      result: "Sustainable competitive advantages"
+    starter: {
+      category: "STARTER HELP",
+      headline: "Development of Customer-Centric Offers",
+      introduction: "Are you facing the challenge of fundamentally rethinking your offerings? Services in this area give you offers that sell themselves while simultaneously increasing profitability.",
+      conclusion: "You receive offers that sell themselves while simultaneously increasing profitability.",
+      popular: false
     },
-    offerOptimization: {
-      icon: Wrench,
-      title: "Offer Optimization",
-      color: "from-green-600 to-green-700",
-      descriptions: [
-        "By analyzing your data, I provide you with transparency about your offer portfolio and reveal untapped revenue potential.",
-        "Detailed product and customer analyses make the actual profit contribution of each offer visible, and target vs actual comparisons reveal unwanted revenue losses.",
-        "A systematic driver model identifies the most important levers for profit increase from offer, customer, and company perspective.",
-        "We improve your profitability monthly through concrete, data-based measures"
-      ],
-      result: "Continuous increase in your profits"
+    profitBooster: {
+      category: "PROFIT BOOSTER",
+      headline: "Continuous Profit Optimization",
+      introduction: "You're selling your offerings successfully, but you lack systematic controlling? Services in this area enable you to improve profitability monthly through concrete measures.",
+      conclusion: "Monthly, we improve your profitability through concrete, data-based measures.",
+      popular: true
     },
-    offerDesign: {
-      icon: Package,
-      title: "Offer Design",
-      color: "from-green-600 to-green-700",
-      descriptions: [
-        "Through customer surveys and individual customer analyses, I develop a value proposition that resonates with your target group.",
-        "We design the offer structure according to behavioral psychological principles and create transparency through uniform communication standards that facilitate purchase decisions.",
-        "Quantitative analyses and continuous success tracking enable you to continuously optimize your offer.",
-        "You receive offers that sell themselves and increase profitability."
-      ],
-      result: "Profitable offers that sell themselves"
+    sparringPartner: {
+      category: "SPARRING PARTNER",
+      headline: "Long-term Offer Strategy",
+      introduction: "Your target markets are changing and you're exploring new strategic business areas? Services in this area give you clarity about profitable growth opportunities and optimal resource allocation.",
+      conclusion: "You gain clarity about profitable growth opportunities and optimal resource allocation.",
+      popular: false
     }
   };
+
+  const order = ['starter', 'profitBooster', 'sparringPartner'] as const;
 
   return (
     <section id="services" className="py-20 bg-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Systematically to Profitable Offers</h2>
-          <p className="text-xl text-muted-foreground">I offer tailored support for every phase of your business</p>
+          <p className="text-xl text-muted-foreground">Whether you're just starting, continuously optimizing, or aiming for long-term strategic growth – I accompany you with the right intensity.</p>
         </div>
 
-        {/* Grid layout with 3 columns */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-          {Object.entries(solutions).map(([key, solution]) => {
-            const IconComponent = solution.icon;
+          {order.map((key) => {
+            const solution = solutions[key];
             return (
               <div key={key} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition flex flex-col">
-                {/* Icon and Title at the top of each box */}
-                <div className="flex items-center mb-6 pb-4 border-b border-border">
-                  <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
-                    <IconComponent className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground">{solution.title}</h3>
+                {/* Category header with optional badge */}
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-sm font-semibold tracking-wider text-muted-foreground">
+                    {solution.category}
+                  </span>
+                  {solution.popular && (
+                    <span className="px-2 py-0.5 text-xs font-semibold bg-green-600 text-white rounded">
+                      POPULAR
+                    </span>
+                  )}
                 </div>
 
+                {/* Headline */}
+                <h3 className="text-xl font-bold text-foreground mb-4">
+                  {solution.headline}
+                </h3>
+
+                {/* Introduction */}
+                <p className="text-muted-foreground leading-relaxed mb-6 flex-grow">
+                  {solution.introduction}
+                </p>
+
                 {/* Green conclusion box */}
-                <div className="bg-green-50 dark:bg-green-950/20 border-l-4 border-green-600 p-6 rounded-lg mb-6 flex items-center justify-center">
-                  <p 
-                    className="font-bold text-center leading-tight text-green-600 dark:text-green-500 text-lg hyphens-auto break-words"
-                    style={{
-                      hyphenateLimitChars: '15 8 8',
-                      WebkitHyphenateLimitChars: '15 8 8'
-                    } as React.CSSProperties}
-                  >
-                    {solution.descriptions[3]}
+                <div className="bg-green-50 dark:bg-green-950/20 border-l-4 border-green-600 p-4 rounded-lg mb-6">
+                  <p className="font-bold text-green-600 dark:text-green-500 leading-tight">
+                    {solution.conclusion}
                   </p>
                 </div>
 
-                {/* Content */}
-                <div className="space-y-4 flex-grow">
-                  {solution.descriptions.slice(0, 3).map((description, descIndex) => (
-                    <p 
-                      key={descIndex} 
-                      className="text-lg text-muted-foreground leading-relaxed hyphens-auto break-words"
-                      style={{
-                        hyphenateLimitChars: '15 8 8',
-                        WebkitHyphenateLimitChars: '15 8 8'
-                      } as React.CSSProperties}
-                    >
-                      {description}
-                    </p>
-                  ))}
-                </div>
+                {/* CTA Button */}
+                <Button 
+                  variant="outline" 
+                  className="w-full border-foreground text-foreground hover:bg-foreground hover:text-background"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Secure Offer
+                </Button>
               </div>
             );
           })}
