@@ -13,14 +13,17 @@ const HeroSection = ({}: HeroSectionProps) => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-5xl text-left text-white opacity-0 animate-fadeIn">
-          {/* Tagline */}
-          <p className="text-sm md:text-base uppercase tracking-widest mb-4 text-white/80 font-medium">
-            Pricing & Controlling as a Service
-          </p>
+          {/* Tagline with green accent line */}
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-8 h-0.5 bg-accent" />
+            <p className="text-sm md:text-base uppercase tracking-widest text-white/80 font-medium">
+              Pricing & Analytics as a Service
+            </p>
+          </div>
           
           {/* Main headline */}
           <h1 className="font-bold mb-8 leading-tight">
-            Datengetriebene Gewinnoptimierung für digitale Produkte
+            Datengetriebene <span className="text-accent">Gewinnoptimierung</span> für digitale Produkte
           </h1>
           
           {/* CTA Button */}
