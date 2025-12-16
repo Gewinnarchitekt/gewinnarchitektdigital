@@ -8,6 +8,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       title: "Angebotsstrategie",
       color: "from-green-600 to-green-700",
       descriptions: ["Als Sparringpartner unterstütze ich dich mit fundierten Entscheidungsgrundlagen und konstruktivem Feedback.", "Ich liefere dir ganzheitliche Business Cases, die den Mehrwert von Produktanpassungen messbar machen und die Prognose von zukünftigen Jahresabschlüssen ermöglichen.", "Schwierige Entscheidungen zerlegen wir systematisch in ihre Einzelteile und bewerten die Risiken mit differenzierten Szenariomodellen.", "Du gewinnst Klarheit über profitable Wachstumsmöglichkeiten und den optimalen Ressourceneinsatz"],
+      services: ["Marktforschung", "Business Cases", "Finanzplanung", "3-Statement Model", "Pricing Governance", "Portfolio Management"],
       note: undefined,
       result: "Nachhaltige Wettbewerbsvorteile"
     },
@@ -16,6 +17,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       title: "Angebotsoptimierung",
       color: "from-green-600 to-green-700",
       descriptions: ["Durch Auswertung deiner Daten verschaffe ich dir Transparenz über dein Angebotsportfolio und zeige ungenutzte Ertragspotentiale auf.", "Detaillierte Produkt- und Kundenanalysen machen den tatsächlichen Erfolgsbeitrag jedes Angebots sichtbar und Soll-Ist-Vergleiche decken ungewollte Umsatzverluste auf.", "Ein systematisches Treibermodell identifiziert die wichtigsten Hebel zur Gewinnsteigerung aus Angebots-, Kunden- und Unternehmenssicht.", "Monatlich verbessern wir deine Profitabilität mithilfe konkreter, datenbasierter Massnahmen"],
+      services: ["Reportings", "Pricing-Experimente", "Treibermodel", "Customer & Product Analytics", "Liquiditätsplanung", "Kohortenanalyse"],
       note: undefined,
       result: "Kontinuierliche Erhöhung deiner Gewinne"
     },
@@ -24,6 +26,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
       title: "Angebotsgestaltung",
       color: "from-green-600 to-green-700",
       descriptions: ["Mithilfe von Kundenbefragungen und Einzelkundenanalysen entwickle ich dir ein Wertversprechen, das bei deiner Zielgruppe auf Interesse stösst.", "Dabei gestalten wir die Angebotsstruktur nach verhaltenspsychologischen Prinzipien und schaffen durch einheitliche Kommunikationsstandards eine Transparenz, die Kaufentscheidungen erleichtert.", "Quantitative Analysen und kontinuierliches Erfolgstracking ermöglichen dir die laufende Optimierung deines Angebots.", "Du erhältst Angebote, die sich verkaufen lassen und gleichzeitig die Profitabilität steigern."],
+      services: ["Kundenbedarfsanalyse", "Kundeninterviews", "Value Proposition Design", "Pricing Architektur", "Conjoint Analysen", "Preispsychologie", "Packaging & Bundling"],
       note: "Optional besteht die Möglichkeit professioneller Marktforschung.",
       result: "Profitable Angebote, die sich verkaufen lassen"
     }
@@ -41,11 +44,23 @@ const SolutionSection = ({}: SolutionSectionProps) => {
           const IconComponent = solution.icon;
           return <div key={key} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition flex flex-col">
                 {/* Icon and Title at the top of each box */}
-                <div className="flex items-center mb-6 pb-4 border-b border-border">
+                <div className="flex items-center mb-4 pb-4 border-b border-border">
                   <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">{solution.title}</h3>
+                </div>
+
+                {/* Services Tags */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {solution.services.map((service, index) => (
+                    <span 
+                      key={index}
+                      className="text-xs px-2 py-1 bg-muted rounded-full text-muted-foreground border border-border"
+                    >
+                      {service}
+                    </span>
+                  ))}
                 </div>
 
                 {/* Green conclusion box */}
