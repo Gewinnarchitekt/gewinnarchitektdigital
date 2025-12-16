@@ -30,7 +30,7 @@ const HeroSection = ({}: HeroSectionProps) => {
           
           {/* Main headline */}
           <h1 className="font-bold mb-8 leading-tight">
-            Dein <span className="text-accent italic">All-in-One</span> Partner für profitable Angebotsgestaltung
+            Dein <span className="text-accent">All-in-One</span> Partner für profitable Angebotsgestaltung
           </h1>
           
           {/* Benefits list */}
