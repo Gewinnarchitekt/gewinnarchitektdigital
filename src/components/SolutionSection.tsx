@@ -83,16 +83,19 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                 </p>
 
                 {/* Zwischenüberschrift */}
-                <p className="text-sm font-medium text-muted-foreground mb-3">verfügbare Services</p>
+                <p className="font-medium text-muted-foreground mb-3">verfügbare Services</p>
 
-                {/* Services als Liste */}
-                <ul className="space-y-1">
+                {/* Services als Tags */}
+                <div className="flex flex-wrap gap-2">
                   {solution.services.map((service, index) => (
-                    <li key={index} className="text-muted-foreground">
-                      • {service}
-                    </li>
+                    <span 
+                      key={index}
+                      className="px-3 py-1 bg-muted rounded-full text-muted-foreground border border-border"
+                    >
+                      {service}
+                    </span>
                   ))}
-                </ul>
+                </div>
               </div>
             );
           })}
