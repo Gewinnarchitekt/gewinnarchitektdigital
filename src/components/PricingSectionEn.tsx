@@ -61,9 +61,9 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
     <section id="pricing" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-bold mb-6">My Offer to You</h2>
+          <h2 className="font-bold mb-6">Your All-in-One Partner for Profitable Offers</h2>
           <p className="text-xl text-muted-foreground mx-auto mb-8">
-            Together we continuously work on increasing the value of your company
+            Instead of individual projects, you receive continuous expertise at a fixed monthly price – flexible, transparent and tailored to your needs
           </p>
         </div>
 
