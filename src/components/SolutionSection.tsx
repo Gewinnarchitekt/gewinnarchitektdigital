@@ -1,24 +1,26 @@
 import { Package, Wrench, Target } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface SolutionSectionProps {}
 
 const SolutionSection = ({}: SolutionSectionProps) => {
   const solutions = {
-    angebotsstrategie: {
-      icon: Target,
-      title: "Angebotsstrategie",
-      intro: "In einem dynamischen Markt willst du nachhaltiges Gewinnwachstum sicherstellen.",
+    angebotsgestaltung: {
+      icon: Package,
+      title: "Angebotsgestaltung",
+      intro: "Du stehst vor der Herausforderung, deine Angebote grundlegend zu überdenken.",
       services: [
-        "Marktforschung",
-        "Financial Modeling",
-        "Szenarioanalyse",
-        "Forecasting",
-        "3-Statement Modell",
-        "Portfolio Assessment",
-        "Preisstrategie",
-        "Pricing Governance",
-        "CLV Optimierung"
-      ]
+        "Konkurenzauswertung",
+        "Kundenbefragung",
+        "Value Proposition",
+        "Conjoint Analyse",
+        "Preisarchitektur",
+        "Packaging & Bundling",
+        "Preispunktoptimierung",
+        "AI-Kostenprognose",
+        "Sales Enablement"
+      ],
+      caseStudyLink: "#"
     },
     angebotsoptimierung: {
       icon: Wrench,
@@ -34,23 +36,25 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "Dynamic Pricing",
         "AI-Kostenkontrolle",
         "Churn prevention"
-      ]
+      ],
+      caseStudyLink: "#"
     },
-    angebotsgestaltung: {
-      icon: Package,
-      title: "Angebotsgestaltung",
-      intro: "Du stehst vor der Herausforderung, deine Angebote grundlegend zu überdenken.",
+    angebotsstrategie: {
+      icon: Target,
+      title: "Angebotsstrategie",
+      intro: "In einem dynamischen Markt willst du nachhaltiges Gewinnwachstum sicherstellen.",
       services: [
-        "Konkurenzauswertung",
-        "Kundenbefragung",
-        "Value Proposition",
-        "Conjoint Analyse",
-        "Preisarchitektur",
-        "Packaging & Bundling",
-        "Preispunktoptimierung",
-        "AI-Kostenprognose",
-        "Sales Enablement"
-      ]
+        "Marktforschung",
+        "Financial Modeling",
+        "Szenarioanalyse",
+        "Forecasting",
+        "3-Statement Modell",
+        "Portfolio Assessment",
+        "Preisstrategie",
+        "Pricing Governance",
+        "CLV Optimierung"
+      ],
+      caseStudyLink: "#"
     }
   };
 
@@ -78,7 +82,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                 </div>
 
                 {/* Einleitungstext */}
-                <p className="italic text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-4">
                   {solution.intro}
                 </p>
 
@@ -86,7 +90,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                 <p className="font-medium text-muted-foreground mb-3">verfügbare Services</p>
 
                 {/* Services als Tags */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {solution.services.map((service, index) => (
                     <span 
                       key={index}
@@ -95,6 +99,15 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                       {service}
                     </span>
                   ))}
+                </div>
+
+                {/* Fallstudie Button */}
+                <div className="mt-auto flex justify-end">
+                  <a href={solution.caseStudyLink} target="_blank" rel="noopener noreferrer">
+                    <Button className="bg-gray-500 hover:bg-accent text-white hover:text-accent-foreground transition-colors">
+                      Fallstudie
+                    </Button>
+                  </a>
                 </div>
               </div>
             );
