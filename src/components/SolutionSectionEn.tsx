@@ -74,7 +74,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
                   <div className="p-3 rounded-lg bg-gradient-to-r from-green-600 to-green-700 mr-4">
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="!text-xl font-semibold text-foreground">{solution.title}</h3>
+                  <h3 className="!text-2xl font-semibold text-foreground">{solution.title}</h3>
                 </div>
 
                 {/* Introduction text */}
