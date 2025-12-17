@@ -5,27 +5,27 @@ interface ProblemSectionEnProps {}
 const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
   const problemCategories = [
     {
-      icon: Target,
-      title: "Planning Deficits",
+      icon: Package,
+      title: "Concept Deficiencies",
       problems: [
         {
-          title: "Customer needs are addressed too late",
+          title: "One-size-fits-all offers ignore different customer segments",
           description: ""
         },
         {
-          title: "Innovations fail to address market needs",
+          title: "Pricing logic is not aligned with customer behavior",
           description: ""
         },
         {
-          title: "Priorities aren't tied to financial growth",
+          title: "Internally calculated offers don't reflect the value provided",
           description: ""
         },
         {
-          title: "Lack of a long term perspective",
+          title: "Added value for the customer is not clearly communicated",
           description: ""
         }
       ],
-      highlight: "61% of companies struggle to implement a long-term strategy effectively¹",
+      highlight: "Missing offer optimization costs 52% of possible revenue¹",
       color: "from-red-600 to-red-700"
     },
     {
@@ -53,27 +53,27 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
       color: "from-red-600 to-red-700"
     },
     {
-      icon: Package,
-      title: "Concept Deficiencies",
+      icon: Target,
+      title: "Planning Deficits",
       problems: [
         {
-          title: "One-size-fits-all offers ignore different customer segments",
+          title: "Customer needs are addressed too late",
           description: ""
         },
         {
-          title: "Pricing logic is not aligned with customer behavior",
+          title: "Innovations fail to address market needs",
           description: ""
         },
         {
-          title: "Internally calculated offers don't reflect the value provided",
+          title: "Priorities aren't tied to financial growth",
           description: ""
         },
         {
-          title: "Added value for the customer is not clearly communicated",
+          title: "Lack of a long term perspective",
           description: ""
         }
       ],
-      highlight: "Missing offer optimization costs 52% of possible revenue³",
+      highlight: "61% of companies struggle to implement a long-term strategy effectively³",
       color: "from-red-600 to-red-700"
     }
   ];
@@ -125,8 +125,8 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
         {/* Footnotes */}
         <div className="mt-8 space-y-2 text-center">
           <p className="text-sm text-muted-foreground">
-            <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              ¹Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
+            <a href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              ¹Proven packaging and pricing designs | Simon Kucher
             </a>
           </p>
           <p className="text-sm text-muted-foreground">
@@ -135,8 +135,8 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
             </a>
           </p>
           <p className="text-sm text-muted-foreground">
-            <a href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              ³Proven packaging and pricing designs | Simon Kucher
+            <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              ³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
             </a>
           </p>
         </div>
