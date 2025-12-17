@@ -58,9 +58,9 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
     <section id="services" className="py-20 bg-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-bold mb-6">Your All-in-One Partner for Profitable Offers</h2>
+          <h2 className="font-bold mb-6">Systematically to Profitable Offers</h2>
           <p className="text-xl text-muted-foreground">
-            Instead of individual projects, you receive continuous expertise at a fixed monthly price – flexible, transparent, and tailored to your needs.
+            Whether you're just starting, continuously optimizing, or planning long-term growth – I offer solutions for every phase of your business.
           </p>
         </div>
 
