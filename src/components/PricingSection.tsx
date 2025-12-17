@@ -58,9 +58,9 @@ const PricingSection = ({}: PricingSectionProps) => {
     <section id="angebot" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-bold mb-6">Mein Angebot an dich</h2>
+          <h2 className="font-bold mb-6">Dein All-in-One Partner für profitable Angebote</h2>
           <p className="text-xl text-muted-foreground mx-auto mb-8">
-            Gemeinsam arbeiten wir kontinuierlich an der Wertsteigerung deines Unternehmens
+            Statt einzelner Projekte erhältst du kontinuierliche Expertise zu einem festen monatlichen Preis – flexibel, transparent und auf deine Bedürfnisse zugeschnitten
           </p>
         </div>
 
