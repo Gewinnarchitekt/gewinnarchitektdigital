@@ -7,41 +7,50 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
     offerStrategy: {
       icon: Target,
       title: "Offer Strategy",
-      color: "from-green-600 to-green-700",
-      descriptions: [
-        "As a sparring partner, I support you with well-founded decision-making bases and constructive feedback.",
-        "I deliver comprehensive Business Cases that make the value of product adjustments measurable and enable forecasting of future financial statements.",
-        "We systematically break down difficult decisions into their components and assess risks with differentiated scenario models.",
-        "You gain clarity about profitable growth opportunities and optimal resource allocation"
-      ],
-      services: ["Market Research", "Business Cases", "Financial Planning", "3-Statement Model", "Pricing Governance", "Portfolio Management"],
-      result: "Sustainable competitive advantages"
+      intro: "In a dynamic market, you want to ensure sustainable profit growth.",
+      services: [
+        "Market Research",
+        "Financial Modeling",
+        "Scenario Analysis",
+        "Forecasting",
+        "3-Statement Model",
+        "Portfolio Assessment",
+        "Pricing Strategy",
+        "Pricing Governance",
+        "CLV Optimization"
+      ]
     },
     offerOptimization: {
       icon: Wrench,
       title: "Offer Optimization",
-      color: "from-green-600 to-green-700",
-      descriptions: [
-        "By analyzing your data, I provide you with transparency about your offer portfolio and reveal untapped revenue potential.",
-        "Detailed product and customer analyses make the actual profit contribution of each offer visible, and target vs actual comparisons reveal unwanted revenue losses.",
-        "A systematic driver model identifies the most important levers for profit increase from offer, customer, and company perspective.",
-        "We improve your profitability monthly through concrete, data-based measures"
-      ],
-      services: ["Reportings", "Pricing Experiments", "Driver Model", "Customer & Product Analytics", "Liquidity Planning", "Cohort Analysis"],
-      result: "Continuous increase in your profits"
+      intro: "You're selling your offers successfully, but you lack systematic controlling.",
+      services: [
+        "Individual Customer Analysis",
+        "Customer Segmentation",
+        "Success Tracking",
+        "Liquidity Planning",
+        "Margin Optimization",
+        "Profit Driver Structure",
+        "Dynamic Pricing",
+        "AI Cost Control",
+        "Churn Prevention"
+      ]
     },
     offerDesign: {
       icon: Package,
       title: "Offer Design",
-      color: "from-green-600 to-green-700",
-      descriptions: [
-        "Through customer surveys and individual customer analyses, I develop a value proposition that resonates with your target group.",
-        "We design the offer structure according to behavioral psychological principles and create transparency through uniform communication standards that facilitate purchase decisions.",
-        "Quantitative analyses and continuous success tracking enable you to continuously optimize your offer.",
-        "You receive offers that sell themselves and increase profitability."
-      ],
-      services: ["Customer Needs Analysis", "Customer Interviews", "Value Proposition Design", "Pricing Architecture", "Conjoint Analysis", "Pricing Psychology", "Packaging & Bundling"],
-      result: "Profitable offers that sell themselves"
+      intro: "You face the challenge of fundamentally rethinking your offers.",
+      services: [
+        "Competitor Analysis",
+        "Customer Surveys",
+        "Value Proposition",
+        "Conjoint Analysis",
+        "Pricing Architecture",
+        "Packaging & Bundling",
+        "Price Point Optimization",
+        "AI Cost Forecasting",
+        "Sales Enablement"
+      ]
     }
   };
 
@@ -50,25 +59,34 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-bold mb-6">Systematically to Profitable Offers</h2>
-          <p className="text-xl text-muted-foreground">I offer tailored support for every phase of your business</p>
+          <p className="text-xl text-muted-foreground">
+            Whether you're just starting, continuously optimizing, or planning long-term growth – I offer solutions for every phase of your business.
+          </p>
         </div>
 
-        {/* Grid layout with 3 columns */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
           {Object.entries(solutions).map(([key, solution]) => {
             const IconComponent = solution.icon;
             return (
               <div key={key} className="bg-card rounded-xl p-6 card-shadow hover:elegant-shadow smooth-transition flex flex-col">
-                {/* Icon and Title at the top of each box */}
+                {/* Header with Icon and Title */}
                 <div className="flex items-center mb-4 pb-4 border-b border-border">
-                  <div className={`p-3 rounded-lg bg-gradient-to-r ${solution.color} mr-4`}>
+                  <div className="p-3 rounded-lg bg-gradient-to-r from-green-600 to-green-700 mr-4">
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground">{solution.title}</h3>
+                  <h3 className="!text-xl font-semibold text-foreground">{solution.title}</h3>
                 </div>
 
-                {/* Services Tags */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                {/* Introduction text */}
+                <p className="italic text-muted-foreground mb-4">
+                  {solution.intro}
+                </p>
+
+                {/* Subheading */}
+                <p className="text-sm font-medium text-muted-foreground mb-3">available Services</p>
+
+                {/* Services as Tags */}
+                <div className="flex flex-wrap gap-2">
                   {solution.services.map((service, index) => (
                     <span 
                       key={index}
@@ -76,35 +94,6 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
                     >
                       {service}
                     </span>
-                  ))}
-                </div>
-
-                {/* Green conclusion box */}
-                <div className="bg-green-50 dark:bg-green-950/20 border-l-4 border-green-600 p-6 rounded-lg mb-6 flex items-center justify-center">
-                  <p 
-                    className="font-bold text-center leading-tight text-green-600 dark:text-green-500 text-lg hyphens-auto break-words"
-                    style={{
-                      hyphenateLimitChars: '15 8 8',
-                      WebkitHyphenateLimitChars: '15 8 8'
-                    } as React.CSSProperties}
-                  >
-                    {solution.descriptions[3]}
-                  </p>
-                </div>
-
-                {/* Content */}
-                <div className="space-y-4 flex-grow">
-                  {solution.descriptions.slice(0, 3).map((description, descIndex) => (
-                    <p 
-                      key={descIndex} 
-                      className="text-lg text-muted-foreground leading-relaxed hyphens-auto break-words"
-                      style={{
-                        hyphenateLimitChars: '15 8 8',
-                        WebkitHyphenateLimitChars: '15 8 8'
-                      } as React.CSSProperties}
-                    >
-                      {description}
-                    </p>
                   ))}
                 </div>
               </div>
