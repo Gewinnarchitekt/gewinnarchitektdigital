@@ -86,11 +86,11 @@ const SolutionSection = ({}: SolutionSectionProps) => {
                 <p className="font-medium text-muted-foreground mb-3">verfügbare Services</p>
 
                 {/* Services als Tags */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-col gap-2">
                   {solution.services.map((service, index) => (
                     <span 
                       key={index}
-                      className="px-3 py-1 bg-muted rounded-full text-muted-foreground border border-border"
+                      className="px-3 py-1 bg-muted rounded-full text-muted-foreground border border-border w-fit"
                     >
                       {service}
                     </span>
