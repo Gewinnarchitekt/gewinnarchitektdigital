@@ -14,7 +14,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
       features: [
         "Access to expert know-how",
         "2 video calls per month",
-        "Personal chat for preparation and follow-up",
+        "Personal chat channel",
         "cancel monthly",
       ],
     },
