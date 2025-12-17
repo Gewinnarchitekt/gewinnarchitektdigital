@@ -2,22 +2,22 @@ import { Package, Wrench, Target, AlertCircle } from "lucide-react";
 interface ProblemSectionProps {}
 const ProblemSection = ({}: ProblemSectionProps) => {
   const problemCategories = [{
-    icon: Target,
-    title: "Planungsdefizite",
+    icon: Package,
+    title: "Konzeptionsmängel",
     problems: [{
-      title: "Kundenbedürfnisse werden zu spät berücksichtigt",
+      title: "Einheitsangebote ignorieren unterschiedliche Kundensegmente",
       description: ""
     }, {
-      title: "Innovationen werden am Markt vorbei entwickelt",
+      title: "Die Preislogik ist nicht auf das Kundenverhalten abgestimmt",
       description: ""
     }, {
-      title: "Priorisierung ist nicht auf monetäres Wachstum ausgerichtet",
+      title: "Intern kalkulierte Angebote widerspiegeln nicht den Kundenwert",
       description: ""
     }, {
-      title: "Es fehlt eine langfristige Perspektive",
+      title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
       description: ""
     }],
-    highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen¹",
+    highlight: "Fehlende Angebotsoptimierung kostet 52% des möglichen Umsatzes¹",
     color: "from-red-600 to-red-700"
   }, {
     icon: Wrench,
@@ -38,22 +38,22 @@ const ProblemSection = ({}: ProblemSectionProps) => {
     highlight: "66% des Potentials von Preisanpassungen geht durch falsche Prozesse verloren²",
     color: "from-red-600 to-red-700"
   }, {
-    icon: Package,
-    title: "Konzeptionsmängel",
+    icon: Target,
+    title: "Planungsdefizite",
     problems: [{
-      title: "Einheitsangebote ignorieren unterschiedliche Kundensegmente",
+      title: "Kundenbedürfnisse werden zu spät berücksichtigt",
       description: ""
     }, {
-      title: "Die Preislogik ist nicht auf das Kundenverhalten abgestimmt",
+      title: "Innovationen werden am Markt vorbei entwickelt",
       description: ""
     }, {
-      title: "Intern kalkulierte Angebote widerspiegeln nicht den Kundenwert",
+      title: "Priorisierung ist nicht auf monetäres Wachstum ausgerichtet",
       description: ""
     }, {
-      title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
+      title: "Es fehlt eine langfristige Perspektive",
       description: ""
     }],
-    highlight: "Fehlende Angebotsoptimierung kostet 52% des möglichen Umsatzes³",
+    highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen³",
     color: "from-red-600 to-red-700"
   }];
   return <section id="herausforderungen" className="py-20 bg-background">
@@ -100,8 +100,8 @@ const ProblemSection = ({}: ProblemSectionProps) => {
         {/* Footnotes */}
         <div className="mt-8 space-y-2 text-center">
           <p className="text-sm text-muted-foreground">
-            <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              ¹Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
+            <a href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              ¹Proven packaging and pricing designs | Simon Kucher
             </a>
           </p>
           <p className="text-sm text-muted-foreground">
@@ -110,8 +110,8 @@ const ProblemSection = ({}: ProblemSectionProps) => {
             </a>
           </p>
           <p className="text-sm text-muted-foreground">
-            <a href="https://www.simon-kucher.com/en/insights/profit-starts-packaging-and-pricing" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              ³Proven packaging and pricing designs | Simon Kucher
+            <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              ³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
             </a>
           </p>
         </div>
