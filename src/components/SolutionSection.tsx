@@ -1,5 +1,6 @@
 import { Package, Wrench, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 interface SolutionSectionProps {}
 
@@ -20,7 +21,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "AI-Kostenprognose",
         "Sales Enablement"
       ],
-      caseStudyLink: "#"
+      caseStudyLink: "/fallstudie/angebotsgestaltung"
     },
     angebotsoptimierung: {
       icon: Wrench,
@@ -103,11 +104,17 @@ const SolutionSection = ({}: SolutionSectionProps) => {
 
                 {/* Fallstudie Button */}
                 <div className="mt-auto flex justify-end">
-                  <a href={solution.caseStudyLink} target="_blank" rel="noopener noreferrer">
-                    <Button className="bg-gray-500 hover:bg-accent text-white hover:text-accent-foreground transition-colors">
+                  {solution.caseStudyLink !== "#" ? (
+                    <Link to={solution.caseStudyLink}>
+                      <Button className="bg-gray-500 hover:bg-accent text-white hover:text-accent-foreground transition-colors">
+                        Fallstudie
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Button className="bg-gray-500 hover:bg-accent text-white hover:text-accent-foreground transition-colors" disabled>
                       Fallstudie
                     </Button>
-                  </a>
+                  )}
                 </div>
               </div>
             );
