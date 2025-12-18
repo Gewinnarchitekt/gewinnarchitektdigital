@@ -55,7 +55,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "Pricing Governance",
         "CLV Optimierung"
       ],
-      caseStudyLink: "#"
+      caseStudyLink: "/fallstudie/angebotsstrategie"
     }
   };
 
