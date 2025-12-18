@@ -8,7 +8,6 @@ import IndexEn from "./pages/IndexEn";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import FallstudieAngebotsgestaltung from "./pages/FallstudieAngebotsgestaltung";
-import FallstudieAngebotsstrategie from "./pages/FallstudieAngebotsstrategie";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,7 +24,6 @@ const App = () => (
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/fallstudie/angebotsgestaltung" element={<FallstudieAngebotsgestaltung />} />
-          <Route path="/fallstudie/angebotsstrategie" element={<FallstudieAngebotsstrategie />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
