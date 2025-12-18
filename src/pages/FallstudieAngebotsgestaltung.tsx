@@ -170,11 +170,11 @@ const FallstudieAngebotsgestaltung = () => {
             <p className="text-muted-foreground mb-6">
               Lass uns besprechen, wie ich dich bei deiner Angebotsgestaltung unterstützen kann.
             </p>
-            <Link to="/#kontakt">
+            <a href="https://tidycal.com/gewinnarchitekt/angebotscheck" target="_blank" rel="noopener noreferrer">
               <Button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white">
                 Kontakt aufnehmen
               </Button>
-            </Link>
+            </a>
           </section>
         </div>
       </main>
