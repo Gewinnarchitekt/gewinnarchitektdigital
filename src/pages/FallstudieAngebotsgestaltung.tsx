@@ -109,50 +109,20 @@ const FallstudieAngebotsgestaltung = () => {
             {/* Phase 1 */}
             <div className="bg-muted rounded-xl p-6 mb-6">
               <h3 className="text-xl font-semibold mb-3">Phase 1: Kundenbindung durch nahtlose Migration</h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary font-bold">•</span>
-                  <div>
-                    <span className="font-medium text-foreground">Produktentwicklung:</span> Nahezu identisches Ersatzprodukt mit Cashback-Funktionalität statt Treuepunkte, ergänzt durch Apple Pay als zusätzlichen Mehrwert
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary font-bold">•</span>
-                  <div>
-                    <span className="font-medium text-foreground">Zero-Friction Migration:</span> Neue Karten direkt an Kunden verschickt mit klarer Botschaft: "Keine Aktion erforderlich"
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary font-bold">•</span>
-                  <div>
-                    <span className="font-medium text-foreground">Temporäre Promotion:</span> Doppeltes Cashback während der Peak-Aufmerksamkeitsphase, Rückkehr zur Standard-Profitabilität nach einem Jahr
-                  </div>
-                </li>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Entwicklung eines Ersatzprodukts mit Cashback statt Treuepunkte und Apple Pay</li>
+                <li>• Automatische Kartenmigration ohne Kundenaufwand ("Zero-Friction")</li>
+                <li>• Temporär erhöhtes Cashback zur Bindung während der Übergangsphase</li>
               </ul>
             </div>
 
             {/* Phase 2 */}
             <div className="bg-muted rounded-xl p-6">
               <h3 className="text-xl font-semibold mb-3">Phase 2: Produktinnovation für Marktführerschaft</h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary font-bold">•</span>
-                  <div>
-                    <span className="font-medium text-foreground">Conjoint-Analyse:</span> Identifikation bevorzugter Produktattribute in Zielsegmenten
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary font-bold">•</span>
-                  <div>
-                    <span className="font-medium text-foreground">Wettbewerbsvorteil nutzen:</span> Leverage der höheren AMEX-Discountrates gegenüber regulierten Interchange
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary font-bold">•</span>
-                  <div>
-                    <span className="font-medium text-foreground">Datenbasierte Optimierung:</span> Reverse Engineering der führenden Schweizer Kartenvergleichsportale zur Simulation und Optimierung der Produktplatzierung
-                  </div>
-                </li>
+              <ul className="space-y-2 text-muted-foreground">
+                <li>• Conjoint-Analyse zur Identifikation bevorzugter Produktattribute</li>
+                <li>• Nutzung der höheren AMEX-Discountrates als Wettbewerbsvorteil</li>
+                <li>• Simulieren der Produktplatzierung auf den führenden Vergleichsportalen</li>
               </ul>
             </div>
           </section>
