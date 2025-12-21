@@ -129,24 +129,53 @@ const FallstudieAngebotsgestaltung = () => {
 
           {/* Die Ergebnisse */}
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-4">Die Ergebnisse</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6">
-                <div className="text-green-600 font-semibold mb-3 flex items-center gap-2">
-                  <span>🎯</span> Retention
+            <h2 className="text-2xl font-bold mb-6">Die Ergebnisse</h2>
+            
+            {/* Kundenbindung */}
+            <div className="mb-8">
+              <h3 className="text-lg font-semibold text-muted-foreground mb-3">Kundenbindung</h3>
+              <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6 mb-4">
+                <div className="text-green-600 font-semibold flex items-center gap-2">
+                  <span>🎯</span> Retention-Ziele um über 30% übertroffen
                 </div>
-                <p className="text-muted-foreground">
-                  Retention-Ziele übertroffen – erfolgreiche Migration der profitabelsten Kundensegmente
+              </div>
+              <ul className="space-y-2 text-muted-foreground ml-1">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold">•</span>
+                  Erfolgreiche Bindung der Mehrheit der Kunden, insbesondere hochwertige Segmente
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold">•</span>
+                  Nahtlose Migration ohne nennenswerte operationelle Probleme
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold">•</span>
+                  Migrationsprodukt (Cashback Single Card) zeigte starke Kundenakzeptanz mit minimaler Abwanderung
+                </li>
+              </ul>
+            </div>
+
+            {/* Produktexzellenz */}
+            <div>
+              <h3 className="text-lg font-semibold text-muted-foreground mb-3">Produktexzellenz</h3>
+              <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6 mb-4">
+                <div className="text-green-600 font-semibold flex items-center gap-2 mb-2">
+                  <span>🏆</span> Top-Positionierungen auf moneyland.ch
+                </div>
+                <p className="text-muted-foreground text-sm ml-6">
+                  Neue Cashback-Card-Bundles sicherten sich Spitzenpositionen auf der führenden Schweizer Vergleichsplattform
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6">
-                <div className="text-green-600 font-semibold mb-3 flex items-center gap-2">
-                  <span>🏆</span> Top-Positionierungen
-                </div>
-                <p className="text-muted-foreground">
-                  Mehrere Top-Positionierungen auf moneyland.ch in verschiedenen Kreditkarten-Kategorien
-                </p>
-              </div>
+              <ul className="space-y-2 text-muted-foreground ml-1">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold">•</span>
+                  Positive Medienberichterstattung zur neuen Produktpalette
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold">•</span>
+                  Höhere Profitabilitätsmarge im Vergleich zum vorherigen gebührenfreien Produkt
+                </li>
+              </ul>
             </div>
           </section>
 
