@@ -135,14 +135,6 @@ const FallstudieAngebotsstrategie = () => {
                 und einheitliche Entscheidungsgrundlagen.
               </p>
             </div>
-
-            <div className="bg-muted rounded-xl p-6">
-              <h3 className="text-xl font-semibold mb-3">Pricing-Governance</h3>
-              <p className="text-muted-foreground">
-                Etablierung klarer Pricing-Richtlinien und Prozesse für konsistente 
-                Preisentscheidungen über alle Kanäle hinweg.
-              </p>
-            </div>
           </section>
 
           {/* Die Ergebnisse */}
