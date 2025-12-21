@@ -138,47 +138,26 @@ const FallstudieAngebotsstrategie = () => {
 
           {/* Die Ergebnisse */}
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">Die Ergebnisse</h2>
+            <h2 className="text-2xl font-bold mb-6">Ergebnis</h2>
             
-            {/* Finanzielle Erfolge */}
-            <div className="mb-8">
-              <h3 className="text-lg font-semibold text-muted-foreground mb-3">Finanzielle Erfolge</h3>
-              <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6 mb-4">
-                <div className="text-green-600 font-semibold flex items-center gap-2">
-                  <span>💰</span> Kosteneinsparung im zweistelligen Millionenbereich ohne Marktanteilsverluste
-                </div>
-              </div>
-              <ul className="space-y-2 text-muted-foreground ml-1">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary font-bold">•</span>
-                  Signifikante Reduktion der SAC- und Retention-Kosten ohne Churn-Anstieg
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary font-bold">•</span>
-                  Stabile Marktanteile trotz Preisanpassungen
-                </li>
-              </ul>
-            </div>
-
-            {/* Operative Erfolge */}
-            <div>
-              <h3 className="text-lg font-semibold text-muted-foreground mb-3">Operative Erfolge</h3>
-              <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6 mb-4">
-                <div className="text-green-600 font-semibold flex items-center gap-2">
-                  <span>🎯</span> Erfolgreiche Umsetzung gradueller Preiserhöhungen
-                </div>
-              </div>
-              <ul className="space-y-2 text-muted-foreground ml-1">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary font-bold">•</span>
-                  Vermeidung kritischer Preisdifferenzen zu Hauptwettbewerbern
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary font-bold">•</span>
-                  Vertriebsorganisation erfolgreich mitgenommen
-                </li>
-              </ul>
-            </div>
+            <ul className="space-y-2 text-muted-foreground ml-1">
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                Vertriebsorganisation konnte für das Vorhaben gewonnen werden
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                Signifikante Reduktion der SAC- und Retentionkosten
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                Vermeidung kritischer Preisdifferenzen zu Mitbewerbern
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                Stabile Marktanteile mit gleichbleibenden Neukunden- und Churnlevels
+              </li>
+            </ul>
           </section>
 
           {/* CTA */}
