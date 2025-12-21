@@ -151,11 +151,7 @@ const FallstudieAngebotsstrategie = () => {
               <ul className="space-y-2 text-muted-foreground ml-1">
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
-                  Signifikante Reduktion der SAC-Kosten
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary font-bold">•</span>
-                  Optimierte Retention-Kosten ohne Churn-Anstieg
+                  Signifikante Reduktion der SAC- und Retention-Kosten ohne Churn-Anstieg
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
@@ -169,17 +165,17 @@ const FallstudieAngebotsstrategie = () => {
               <h3 className="text-lg font-semibold text-muted-foreground mb-3">Operative Erfolge</h3>
               <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6 mb-4">
                 <div className="text-green-600 font-semibold flex items-center gap-2">
-                  <span>🎯</span> Erfolgreiche Preiserhöhungen im Markt durchgesetzt
+                  <span>🎯</span> Erfolgreiche Umsetzung gradueller Preiserhöhungen
                 </div>
               </div>
               <ul className="space-y-2 text-muted-foreground ml-1">
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
-                  Vermeidung schädlicher Preisdifferenzen zwischen Kanälen
+                  Vermeidung kritischer Preisdifferenzen zu Hauptwettbewerbern
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
-                  Vertrieb vollständig auf neue Strategie ausgerichtet
+                  Vertriebsorganisation erfolgreich mitgenommen
                 </li>
               </ul>
             </div>
