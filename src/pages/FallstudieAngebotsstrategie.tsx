@@ -60,21 +60,26 @@ const FallstudieAngebotsstrategie = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Ausgangslage</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Als zweitgrösster Telekommunikationsanbieter der Schweiz stand Sunrise vor einem fundamentalen 
-              Wandel in der Wettbewerbslandschaft für Mobilfunkgeräte.
+              Sunrise Communications AG, der zweitgrösste Telekommunikationsanbieter der Schweiz, hatte zuvor 
+              starkes Wachstum durch die Bündelung von subventionierten Premium-Smartphones mit hochpreisigen 
+              Tarifen erzielt. Doch die Wettbewerbssituation hatte sich verändert:
             </p>
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Neue aggressive Wettbewerber mit disruptiven Verkaufsmodellen
+                Konkurrenten boten mittlerweile vergleichbare Bundle-Angebote an
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Steigende SAC (Subscriber Acquisition Costs) bei gleichzeitigem Margendruck
+                Subventionierte Premium-Smartphones trieben die Neukundenakquisitionskosten (SAC) und Retention-Kosten massiv in die Höhe
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Bevorstehender IPO erforderte nachhaltige Profitabilitätssteigerung
+                Die ursprünglichen Vorteile bei den Bruttozugängen waren nicht mehr vorhanden
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                Ein bevorstehender IPO durfte nicht gefährdet werden
               </li>
             </ul>
           </section>
@@ -83,26 +88,22 @@ const FallstudieAngebotsstrategie = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Herausforderung</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Das primäre Ziel war klar definiert: <strong className="text-foreground">signifikante Kostenreduktion 
-              ohne Marktanteilsverluste</strong>.
+              Das primäre Ziel war klar definiert: <strong className="text-foreground">Reduktion der Akquisitions- 
+              und Retention-Kosten durch Preiserhöhungen bei Handsets – ohne Marktanteilsverluste</strong>.
             </p>
             <p className="text-muted-foreground font-medium mb-3">Kritische Erfolgsfaktoren:</p>
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Balance zwischen Kostenoptimierung und Wettbewerbsfähigkeit
+                Preiserhöhungen bei Handsets durchsetzen
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Schnelle Reaktionsfähigkeit auf Marktveränderungen
+                Marktanteile halten trotz höherer Preise
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Alignment aller Stakeholder im Pricing-Prozess
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">•</span>
-                Nachhaltige Verankerung der neuen Pricing-Governance
+                Vertriebsorganisation erfolgreich durch die Transformation führen
               </li>
             </ul>
           </section>
@@ -111,40 +112,39 @@ const FallstudieAngebotsstrategie = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Lösung</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Entwicklung und Implementierung einer ganzheitlichen Preisstrategie für das gesamte 
-              Smartphone-Portfolio mit folgenden Kernmassnahmen:
+              Ganzheitliche Preisstrategie mit datenbasierter Wettbewerbsanalyse und dynamischem Forecasting:
             </p>
 
             {/* Massnahmen */}
             <div className="bg-muted rounded-xl p-6 mb-6">
               <h3 className="text-xl font-semibold mb-3">Forecasting-Tool</h3>
               <p className="text-muted-foreground">
-                Entwicklung eines datenbasierten Tools zur Vorhersage von Absatzmengen und 
-                Marktentwicklungen pro Gerätekategorie.
+                Dynamisches Forecasting-Tool, welches zukünftige Kosten automatisch abhängig von der 
+                Preisgestaltung simulierte.
               </p>
             </div>
 
             <div className="bg-muted rounded-xl p-6 mb-6">
               <h3 className="text-xl font-semibold mb-3">Wettbewerbs-Monitoring</h3>
               <p className="text-muted-foreground">
-                Etablierung eines systematischen Preismonitorings aller relevanten Wettbewerber 
-                mit wöchentlicher Aktualisierung.
+                Grafische Darstellung und Monitoring der Marktpreise, um die Wettbewerbsposition sichtbar 
+                zu machen und kritische Preislücken zu vermeiden.
               </p>
             </div>
 
             <div className="bg-muted rounded-xl p-6 mb-6">
               <h3 className="text-xl font-semibold mb-3">Stakeholder-Alignierung</h3>
               <p className="text-muted-foreground">
-                Einführung eines cross-funktionalen Pricing-Komitees mit klaren 
-                Entscheidungsprozessen und Eskalationswegen.
+                Alignierung der Stakeholder durch Schaffung einer objektiven Datengrundlage, welche die 
+                internen Diskussionen versachlichte.
               </p>
             </div>
 
             <div className="bg-muted rounded-xl p-6">
               <h3 className="text-xl font-semibold mb-3">Vertriebsbefähigung</h3>
               <p className="text-muted-foreground">
-                Schulung und Enablement des Vertriebs zur überzeugenden Kommunikation 
-                der neuen Preispositionierung.
+                Befähigung des Vertriebs durch die Bereitstellung aktueller Marktdaten, um die Preiserhöhungen 
+                sicher zu vertreten.
               </p>
             </div>
           </section>
@@ -188,11 +188,15 @@ const FallstudieAngebotsstrategie = () => {
               <ul className="space-y-2 text-muted-foreground ml-1">
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
-                  Vermeidung schädlicher Preisdifferenzen zwischen Kanälen
+                  Erfolgreiche Umsetzung gradueller Preiserhöhungen
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
-                  Vertrieb vollständig auf neue Strategie ausgerichtet
+                  Vermeidung kritischer Preisdifferenzen zu Hauptwettbewerbern
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold">•</span>
+                  Vertriebsorganisation konnte dank transparenter Daten und Tools erfolgreich mitgenommen werden
                 </li>
               </ul>
             </div>
