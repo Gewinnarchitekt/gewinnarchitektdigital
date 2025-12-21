@@ -162,22 +162,20 @@ const FallstudieAngebotsgestaltung = () => {
             <h2 className="text-2xl font-bold mb-4">Die Ergebnisse</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6">
-                <div className="text-green-600 font-semibold mb-3">🎯 Kundenbindung</div>
-                <ul className="space-y-2 text-muted-foreground text-sm">
-                  <li>• Retention-Ziele um über 30% übertroffen</li>
-                  <li>• Erfolgreiche Bindung der Mehrheit der Kunden, insbesondere hochwertige Segmente</li>
-                  <li>• Nahtlose Migration ohne nennenswerte operationelle Probleme</li>
-                  <li>• Migrationsprodukt zeigte starke Kundenakzeptanz mit minimaler Abwanderung</li>
-                </ul>
+                <div className="text-green-600 font-semibold mb-3 flex items-center gap-2">
+                  <span>🎯</span> Retention
+                </div>
+                <p className="text-muted-foreground">
+                  Retention-Ziele übertroffen – erfolgreiche Migration der profitabelsten Kundensegmente
+                </p>
               </div>
               <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6">
-                <div className="text-green-600 font-semibold mb-3">🏆 Produktexzellenz</div>
-                <ul className="space-y-2 text-muted-foreground text-sm">
-                  <li>• Top-Positionierungen auf moneyland.ch gesichert</li>
-                  <li>• Neue Cashback-Card-Bundles erreichten Spitzenpositionen auf der führenden Schweizer Vergleichsplattform</li>
-                  <li>• Positive Medienberichterstattung zur neuen Produktpalette</li>
-                  <li>• Höhere Profitabilitätsmarge im Vergleich zum vorherigen gebührenfreien Produkt</li>
-                </ul>
+                <div className="text-green-600 font-semibold mb-3 flex items-center gap-2">
+                  <span>🏆</span> Top-Positionierungen
+                </div>
+                <p className="text-muted-foreground">
+                  Mehrere Top-Positionierungen auf moneyland.ch in verschiedenen Kreditkarten-Kategorien
+                </p>
               </div>
             </div>
           </section>
