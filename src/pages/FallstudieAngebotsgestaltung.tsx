@@ -110,7 +110,7 @@ const FallstudieAngebotsgestaltung = () => {
             <div className="bg-muted rounded-xl p-6 mb-6">
               <h3 className="text-xl font-semibold mb-3">Phase 1: Kundenbindung durch nahtlose Migration</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li>• Entwicklung eines Ersatzprodukts mit Cashback statt Treuepunkte und Apple Pay</li>
+                <li>• Entwicklung eines Ersatzprodukts mit Apple Pay und Cashback statt Treuepunkten</li>
                 <li>• Automatische Kartenmigration ohne Kundenaufwand ("Zero-Friction")</li>
                 <li>• Temporär erhöhtes Cashback zur Bindung während der Übergangsphase</li>
               </ul>
