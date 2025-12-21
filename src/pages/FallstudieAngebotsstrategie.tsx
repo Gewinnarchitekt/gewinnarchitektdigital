@@ -115,7 +115,7 @@ const FallstudieAngebotsstrategie = () => {
               <h3 className="text-xl font-semibold mb-3">Forecasting-Tool</h3>
               <p className="text-muted-foreground">
                 Entwicklung eines datenbasierten Tools zur Vorhersage von Absatzmengen und 
-                Marktentwicklungen pro Gerätekategorie.
+                Simulation von Kosten pro Gerätekategorie.
               </p>
             </div>
 
