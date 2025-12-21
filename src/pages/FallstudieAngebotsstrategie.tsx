@@ -100,10 +100,6 @@ const FallstudieAngebotsstrategie = () => {
                 <span className="text-primary font-bold">•</span>
                 Alignment aller Stakeholder im Pricing-Prozess
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">•</span>
-                Nachhaltige Verankerung der neuen Pricing-Governance
-              </li>
             </ul>
           </section>
 
