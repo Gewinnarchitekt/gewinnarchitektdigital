@@ -4,13 +4,15 @@ import { Button } from "@/components/ui/button";
 
 const FallstudieAngebotsgestaltung = () => {
   const appliedServices = [
-    "Konkurenzauswertung",
-    "Kundenbefragung",
-    "Value Proposition",
+    "Einzelkundenanalyse",
+    "Kundensegmentierung",
+    "Marktforschung",
     "Conjoint Analyse",
-    "Preisarchitektur",
-    "Packaging & Bundling",
-    "Preispunktoptimierung"
+    "Value Proposition Design",
+    "Financial Modeling",
+    "Szenario Analyse",
+    "Preispunktoptimierung",
+    "Kundenmigration"
   ];
 
   return (
@@ -37,7 +39,7 @@ const FallstudieAngebotsgestaltung = () => {
               Swisscard GmbH
             </h1>
             <p className="text-xl text-muted-foreground">
-              Strategische Angebotsgestaltung bei Partnerschaftsauflösung
+              Strategische Angebotsgestaltung nach Partnerschaftsauflösung
             </p>
           </div>
 
@@ -60,11 +62,11 @@ const FallstudieAngebotsgestaltung = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Ausgangslage</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Swisscard GmbH, ein Joint Venture von American Express und Credit Suisse, betrieb 
-              erfolgreich Co-Branding-Kreditkarten für verschiedene Schweizer Unternehmen, darunter 
-              eine langjährige Partnerschaft mit Coop. Im Rahmen einer strategischen Neuausrichtung 
-              wurde die Zusammenarbeit mit Coop aufgelöst, wodurch Swisscard vor der Herausforderung 
-              stand, bestehende Kunden auf neue Produkte zu migrieren.
+              Swisscard, ein Joint Venture zwischen American Express und Credit Suisse, betrieb eine 
+              erfolgreiche Kreditkarten-Partnerschaft mit Coop, dem zweitgrössten Detailhändler der 
+              Schweiz. Als beide Parteien die Beendigung dieser mehrjährigen Zusammenarbeit beschlossen, 
+              sah sich Swisscard mit der strategischen Aufgabe konfrontiert, sämtliche Bestandeskunden 
+              in ein neues Produktportfolio zu überführen.
             </p>
           </section>
 
@@ -72,22 +74,23 @@ const FallstudieAngebotsgestaltung = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Herausforderung</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Die Entwicklung einer Profit-Sicherungsstrategie, die bestehende Coop-Kreditkarten-Kunden 
-              mit neuen, attraktiven Produktangeboten überzeugt – unter Berücksichtigung folgender 
-              kritischer Rahmenbedingungen:
+              Entwicklung einer Profit-Sicherungsstrategie mit nahtloser Kundenmigration und neuem 
+              Produktportfolio. Die zentrale Fragestellung: Wie können die wertvollsten Kunden gehalten 
+              werden, wenn diese ihre Karten primär als "Coop-Produkte" wahrnehmen?
             </p>
+            <p className="text-muted-foreground font-medium mb-3">Kritische Rahmenbedingungen:</p>
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Zeitdruck durch vertraglich fixiertes Ablaufdatum
+                Höchste Vertraulichkeit erforderlich – nur kleinstes Projektteam möglich
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Heterogene Kundenbasis mit unterschiedlichen Nutzungsprofilen
+                Coop verfügte über deutlich höhere Markenbekanntheit als Swisscard
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Notwendigkeit der Differenzierung gegenüber Konkurrenzangeboten
+                Verlust des Superpoints-Programms für zukünftige Produkte
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
@@ -100,44 +103,55 @@ const FallstudieAngebotsgestaltung = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Lösung</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Implementierung einer zweiphasigen Strategie basierend auf fundierter Markt- und 
-              Kundenanalyse:
+              Implementierung einer zweiphasigen Strategie zur Kundenbindung und Marktpositionierung:
             </p>
 
             {/* Phase 1 */}
             <div className="bg-muted rounded-xl p-6 mb-6">
-              <h3 className="text-xl font-semibold mb-3">Phase 1: Kundenbindung</h3>
-              <ul className="space-y-2 text-muted-foreground">
+              <h3 className="text-xl font-semibold mb-3">Phase 1: Kundenbindung durch nahtlose Migration</h3>
+              <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
-                  Segmentierung der Kundenbasis nach Nutzungsverhalten und Wertbeitrag
+                  <div>
+                    <span className="font-medium text-foreground">Produktentwicklung:</span> Nahezu identisches Ersatzprodukt mit Cashback-Funktionalität statt Treuepunkte, ergänzt durch Apple Pay als zusätzlichen Mehrwert
+                  </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
-                  Entwicklung massgeschneiderter Migrationsangebote pro Segment
+                  <div>
+                    <span className="font-medium text-foreground">Zero-Friction Migration:</span> Neue Karten direkt an Kunden verschickt mit klarer Botschaft: "Keine Aktion erforderlich"
+                  </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
-                  Implementierung eines mehrstufigen Kommunikationskonzepts
+                  <div>
+                    <span className="font-medium text-foreground">Temporäre Promotion:</span> Doppeltes Cashback während der Peak-Aufmerksamkeitsphase, Rückkehr zur Standard-Profitabilität nach einem Jahr
+                  </div>
                 </li>
               </ul>
             </div>
 
             {/* Phase 2 */}
             <div className="bg-muted rounded-xl p-6">
-              <h3 className="text-xl font-semibold mb-3">Phase 2: Produktinnovation</h3>
-              <ul className="space-y-2 text-muted-foreground">
+              <h3 className="text-xl font-semibold mb-3">Phase 2: Produktinnovation für Marktführerschaft</h3>
+              <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
-                  Analyse der Wettbewerbslandschaft und Identifikation von Marktlücken
+                  <div>
+                    <span className="font-medium text-foreground">Conjoint-Analyse:</span> Identifikation bevorzugter Produktattribute in Zielsegmenten
+                  </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
-                  Entwicklung neuer Produktvarianten mit differenzierenden Features
+                  <div>
+                    <span className="font-medium text-foreground">Wettbewerbsvorteil nutzen:</span> Leverage der höheren AMEX-Discountrates gegenüber regulierten Interchange
+                  </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-bold">•</span>
-                  Optimierung der Preisarchitektur basierend auf Conjoint-Analyse
+                  <div>
+                    <span className="font-medium text-foreground">Datenbasierte Optimierung:</span> Reverse Engineering der führenden Schweizer Kartenvergleichsportale zur Simulation und Optimierung der Produktplatzierung
+                  </div>
                 </li>
               </ul>
             </div>
@@ -148,16 +162,22 @@ const FallstudieAngebotsgestaltung = () => {
             <h2 className="text-2xl font-bold mb-4">Die Ergebnisse</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6">
-                <div className="text-green-600 font-semibold mb-2">🎯 Retention</div>
-                <p className="text-muted-foreground">
-                  Retention-Ziele übertroffen – erfolgreiche Migration der profitabelsten Kundensegmente
-                </p>
+                <div className="text-green-600 font-semibold mb-3">🎯 Kundenbindung</div>
+                <ul className="space-y-2 text-muted-foreground text-sm">
+                  <li>• Retention-Ziele um über 30% übertroffen</li>
+                  <li>• Erfolgreiche Bindung der Mehrheit der Kunden, insbesondere hochwertige Segmente</li>
+                  <li>• Nahtlose Migration ohne nennenswerte operationelle Probleme</li>
+                  <li>• Migrationsprodukt zeigte starke Kundenakzeptanz mit minimaler Abwanderung</li>
+                </ul>
               </div>
               <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6">
-                <div className="text-green-600 font-semibold mb-2">🏆 Top-Positionierungen</div>
-                <p className="text-muted-foreground">
-                  Mehrere Top-Positionierungen auf moneyland.ch in verschiedenen Kreditkarten-Kategorien
-                </p>
+                <div className="text-green-600 font-semibold mb-3">🏆 Produktexzellenz</div>
+                <ul className="space-y-2 text-muted-foreground text-sm">
+                  <li>• Top-Positionierungen auf moneyland.ch gesichert</li>
+                  <li>• Neue Cashback-Card-Bundles erreichten Spitzenpositionen auf der führenden Schweizer Vergleichsplattform</li>
+                  <li>• Positive Medienberichterstattung zur neuen Produktpalette</li>
+                  <li>• Höhere Profitabilitätsmarge im Vergleich zum vorherigen gebührenfreien Produkt</li>
+                </ul>
               </div>
             </div>
           </section>
