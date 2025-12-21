@@ -160,7 +160,7 @@ const FallstudieAngebotsgestaltung = () => {
               <h3 className="text-lg font-semibold text-muted-foreground mb-3">Produktexzellenz</h3>
               <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6 mb-4">
                 <div className="text-green-600 font-semibold flex items-center gap-2">
-                  <span>🏆</span> Top-Positionierungen auf Vergleichsplattformen
+                  <span>🏆</span> Top-Positionierungen auf den führenden Vergleichsplattformen
                 </div>
               </div>
               <ul className="space-y-2 text-muted-foreground ml-1">
