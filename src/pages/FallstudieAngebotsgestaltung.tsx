@@ -32,7 +32,7 @@ const FallstudieAngebotsgestaltung = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-12">
-            <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">
+            <p className="text-sm text-green-600 font-medium uppercase tracking-wider mb-2">
               Fallstudie Angebotsgestaltung
             </p>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
