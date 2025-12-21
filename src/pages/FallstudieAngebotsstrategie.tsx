@@ -66,7 +66,7 @@ const FallstudieAngebotsstrategie = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Neue aggressive Wettbewerber mit disruptiven Verkaufsmodellen
+                Intensiver Preiswettbewerb im Schweizer Mobilfunkmarkt
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
@@ -135,16 +135,16 @@ const FallstudieAngebotsstrategie = () => {
             <div className="bg-muted rounded-xl p-6 mb-6">
               <h3 className="text-xl font-semibold mb-3">Stakeholder-Alignierung</h3>
               <p className="text-muted-foreground">
-                Einführung eines cross-funktionalen Pricing-Komitees mit klaren 
-                Entscheidungsprozessen und Eskalationswegen.
+                Verbesserung der internen Abstimmung durch zentrale Datentransparenz 
+                und einheitliche Entscheidungsgrundlagen.
               </p>
             </div>
 
             <div className="bg-muted rounded-xl p-6">
-              <h3 className="text-xl font-semibold mb-3">Vertriebsbefähigung</h3>
+              <h3 className="text-xl font-semibold mb-3">Pricing-Governance</h3>
               <p className="text-muted-foreground">
-                Schulung und Enablement des Vertriebs zur überzeugenden Kommunikation 
-                der neuen Preispositionierung.
+                Etablierung klarer Pricing-Richtlinien und Prozesse für konsistente 
+                Preisentscheidungen über alle Kanäle hinweg.
               </p>
             </div>
           </section>
