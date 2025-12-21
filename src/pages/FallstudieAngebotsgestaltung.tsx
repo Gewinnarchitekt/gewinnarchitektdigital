@@ -159,12 +159,9 @@ const FallstudieAngebotsgestaltung = () => {
             <div>
               <h3 className="text-lg font-semibold text-muted-foreground mb-3">Produktexzellenz</h3>
               <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6 mb-4">
-                <div className="text-green-600 font-semibold flex items-center gap-2 mb-2">
-                  <span>🏆</span> Top-Positionierungen auf moneyland.ch
+                <div className="text-green-600 font-semibold flex items-center gap-2">
+                  <span>🏆</span> Top-Positionierungen auf Vergleichsplattformen
                 </div>
-                <p className="text-muted-foreground text-sm ml-6">
-                  Neue Cashback-Card-Bundles sicherten sich Spitzenpositionen auf der führenden Schweizer Vergleichsplattform
-                </p>
               </div>
               <ul className="space-y-2 text-muted-foreground ml-1">
                 <li className="flex items-start gap-2">
