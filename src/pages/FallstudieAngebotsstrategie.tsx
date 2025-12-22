@@ -89,7 +89,7 @@ const FallstudieAngebotsstrategie = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Balance zwischen Kostenoptimierung und Wettbewerbsfähigkeit
+                Balance zwischen Gewinnoptimierung und Wettbewerbsfähigkeit
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
