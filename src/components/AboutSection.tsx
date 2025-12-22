@@ -124,7 +124,7 @@ const AboutSection = ({}: AboutSectionProps) => {
                     <div className="flex items-start space-x-3">
                       <div className="w-1.5 h-1.5 bg-muted-foreground rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-lg text-muted-foreground">
-                        Advanced Financial Modeler (FMI)
+                        Chartered Financial Modeler (FMI)
                       </span>
                     </div>
                     <div className="flex items-start space-x-3">
