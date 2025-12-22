@@ -83,7 +83,7 @@ const FallstudieAngebotsstrategie = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Herausforderung</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Das primäre Ziel war eine signifikante Kostenreduktion ohne Marktanteilsverluste.
+              Das primäre Ziel war eine Verbesserung der Kundenprofitabilität.
             </p>
             <p className="text-muted-foreground font-medium mb-3">Kritische Erfolgsfaktoren:</p>
             <ul className="space-y-2 text-muted-foreground">
