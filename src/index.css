@@ -30,6 +30,10 @@
     --accent-foreground: 0 0% 100%;
     --accent-hover: 122 39% 44%;
 
+    /* Footer Brand Color */
+    --footer: 217 39% 17%;
+    --footer-foreground: 0 0% 100%;
+
     --muted: 210 15% 96%;
     --muted-foreground: 215 13% 65%;
 
