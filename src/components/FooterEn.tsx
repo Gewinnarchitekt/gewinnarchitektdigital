@@ -9,8 +9,8 @@ const FooterEn = ({}: FooterEnProps) => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2 lg:col-start-2 lg:col-span-2 text-center">
-            <Link to="/en" className="text-2xl font-bold mb-4 inline-block hover:text-green-600 transition-colors">
-              gewinnarchitekt
+            <Link to="/en" className="text-2xl font-bold mb-4 inline-block hover:text-brand-green transition-colors">
+              <span className="text-brand-green">gewinn</span>architekt
             </Link>
             <p className="text-primary-foreground/80 mb-6 max-w-md mx-auto">
               Your partner for profitable offer strategies, pricing expertise, and sustainable growth.
