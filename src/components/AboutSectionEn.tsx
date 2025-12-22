@@ -144,15 +144,20 @@ const AboutSectionEn = ({}: AboutSectionEnProps) => {
 
         {/* Logo Section */}
         <div className="mt-16 pt-12 border-t border-border/50">
-          <p className="text-center text-muted-foreground mb-8 text-lg">
-            Successfully worked for
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 max-w-4xl mx-auto">
-            {aboutLogos.map((logo) => (
-              <div 
-                key={logo.alt}
-                className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
-              >
+          <div className="grid grid-cols-4 gap-6 md:gap-10 max-w-3xl mx-auto place-items-center">
+            {aboutLogos.slice(0, 4).map((logo) => (
+              <div key={logo.alt} className="flex items-center justify-center">
+                <img 
+                  src={logo.src} 
+                  alt={logo.alt} 
+                  className="h-8 md:h-10 w-auto object-contain"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-3 gap-6 md:gap-10 max-w-2xl mx-auto place-items-center mt-6">
+            {aboutLogos.slice(4).map((logo) => (
+              <div key={logo.alt} className="flex items-center justify-center">
                 <img 
                   src={logo.src} 
                   alt={logo.alt} 
