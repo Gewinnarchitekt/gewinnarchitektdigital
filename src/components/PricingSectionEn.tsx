@@ -69,17 +69,8 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
             return (
               <div
                 key={index}
-                className={`relative bg-card rounded-2xl p-8 card-shadow hover:elegant-shadow smooth-transition hover:-translate-y-1 flex flex-col ${
-                  pkg.name === "Value" ? "ring-2 ring-green-600" : ""
-                }`}
+                className="relative bg-card rounded-2xl p-8 card-shadow hover:elegant-shadow smooth-transition hover:-translate-y-1 flex flex-col"
               >
-                {pkg.name === "Value" && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <Badge className="bg-green-600 text-white hover:bg-green-700 px-4 py-1 text-sm font-semibold">
-                      Popular
-                    </Badge>
-                  </div>
-                )}
                 <div className="flex items-center mb-6 pb-4 border-b border-border">
                   <h3 className="text-2xl font-bold text-foreground">{pkg.name}</h3>
                 </div>
