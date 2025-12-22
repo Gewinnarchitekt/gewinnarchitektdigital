@@ -1,7 +1,26 @@
-import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Linkedin } from "lucide-react";
 import karlPortrait from "@/assets/karl-portrait.jpg";
+
+// Logos
+import goldbachLogo from "@/assets/logos/goldbach-3.png";
+import minLogo from "@/assets/logos/20min-2.png";
+import swisscardLogo from "@/assets/logos/swisscard-3.png";
+import tagesanzeigerLogo from "@/assets/logos/tagesanzeiger-3.png";
+import txGroupLogo from "@/assets/logos/tx-group.png";
+import amexLogo from "@/assets/logos/amex-3.png";
+import sunriseLogo from "@/assets/logos/sunrise-3.png";
+
+const aboutLogos = [
+  { src: txGroupLogo, alt: "TX Group" },
+  { src: minLogo, alt: "20 Minuten" },
+  { src: tagesanzeigerLogo, alt: "Tages-Anzeiger" },
+  { src: goldbachLogo, alt: "Goldbach" },
+  { src: swisscardLogo, alt: "Swisscard" },
+  { src: amexLogo, alt: "American Express" },
+  { src: sunriseLogo, alt: "Sunrise" },
+];
+
 interface AboutSectionProps {}
 const AboutSection = ({}: AboutSectionProps) => {
   return <section id="ueber-mich" className="py-20 bg-muted">
@@ -118,6 +137,27 @@ const AboutSection = ({}: AboutSectionProps) => {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </div>
+        </div>
+
+        {/* Logo Section */}
+        <div className="mt-16 pt-12 border-t border-border/50">
+          <p className="text-center text-muted-foreground mb-8 text-lg">
+            Erfolgreich gearbeitet für
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 max-w-4xl mx-auto">
+            {aboutLogos.map((logo) => (
+              <div 
+                key={logo.alt}
+                className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
+              >
+                <img 
+                  src={logo.src} 
+                  alt={logo.alt} 
+                  className="h-8 md:h-10 w-auto object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
