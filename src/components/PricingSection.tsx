@@ -12,7 +12,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       period: "pro Monat",
       link: "https://tidycal.com/gewinnarchitekt/angebotsstrategie",
       features: [
-        "Zugriff auf Experten Know-How",
+        "Zugriff auf Experten\nKnow-How",
         "2 Video Calls im Monat",
         "Persönlicher Chatkanal",
         "monatlich kündbar",
@@ -24,7 +24,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       period: "pro Monat",
       link: "https://tidycal.com/gewinnarchitekt/angebotsoptimierung",
       features: [
-        "Zugriff auf Experten Know-How",
+        "Zugriff auf Experten\nKnow-How",
         "Wöchentliches Alignment",
         "Freie Serviceauswahl",
         "bis zu 2 Services gleichzeitig",
@@ -37,7 +37,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       period: "pro Monat",
       link: "https://tidycal.com/gewinnarchitekt/angebotsgestaltung",
       features: [
-        "Zugriff auf Experten Know-How",
+        "Zugriff auf Experten\nKnow-How",
         "Wöchentliches Alignment",
         "Freie Serviceauswahl",
         "bis zu 4 Services gleichzeitig",
@@ -80,7 +80,7 @@ const PricingSection = ({}: PricingSectionProps) => {
                     pkg.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-start space-x-3 min-h-[3rem]">
                         <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                        <span className="text-lg text-muted-foreground">
+                        <span className="text-lg text-muted-foreground whitespace-pre-line">
                           {feature}
                         </span>
                       </div>
