@@ -8,7 +8,7 @@ const Footer = ({}: FooterProps) => {
           {/* Brand */}
           <div className="md:col-span-2 lg:col-start-2 lg:col-span-2 text-center">
             <Link to="/" className="text-2xl font-bold mb-4 inline-block hover:text-brand-green transition-colors">
-              <span className="text-brand-green">gewinn</span>architekt
+              <span className="text-brand-green">Gewinn</span>architekt
             </Link>
             <p className="text-primary-foreground/80 mb-6 max-w-md mx-auto">
               Dein Partner für profitable Angebotsstrategien, Pricingexpertise und nachhaltiges Wachstum.
@@ -20,7 +20,7 @@ const Footer = ({}: FooterProps) => {
         <div className="border-t border-footer-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-footer-foreground/60 text-sm">
-              © 2025 gewinnarchitekt - Karl Aschwanden. Alle Rechte vorbehalten.
+              © 2025 Gewinnarchitekt - Karl Aschwanden. Alle Rechte vorbehalten.
             </div>
             <div className="flex space-x-6 text-sm text-footer-foreground/60">
               <Link to="/datenschutz" className="hover:text-footer-foreground smooth-transition">
