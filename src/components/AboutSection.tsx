@@ -142,6 +142,9 @@ const AboutSection = ({}: AboutSectionProps) => {
 
         {/* Logo Section */}
         <div className="mt-16 pt-12 border-t border-border/50">
+          <p className="text-center text-muted-foreground mb-8 text-lg">
+            Erfolgreich für
+          </p>
           <div className="grid grid-cols-4 gap-6 md:gap-10 max-w-3xl mx-auto place-items-center">
             {aboutLogos.slice(0, 4).map((logo) => (
               <div key={logo.alt} className="flex items-center justify-center">
