@@ -44,6 +44,14 @@ const PricingSection = ({}: PricingSectionProps) => {
         "monatlich kündbar",
       ],
     },
+    {
+      name: "Fractional",
+      price: "CHF 7'400",
+      period: "pro Monat",
+      link: "https://tidycal.com/gewinnarchitekt/angebotsgestaltung",
+      description: "Verantwortung und Aufbau der Pricing-Funktion in Ihrer Unternehmung.",
+      features: [],
+    },
   ];
 
   return (
@@ -56,7 +64,7 @@ const PricingSection = ({}: PricingSectionProps) => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-4 gap-6 max-w-[1400px] mx-auto">
           {packages.map((pkg, index) => {
             return (
               <div
@@ -77,14 +85,20 @@ const PricingSection = ({}: PricingSectionProps) => {
                 </div>
 
                 <div className="space-y-4 mb-8 flex-1">
-                  {pkg.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center space-x-3">
-                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      <span className="text-lg text-muted-foreground">
-                        {feature}
-                      </span>
-                    </div>
-                  ))}
+                  {pkg.features.length > 0 ? (
+                    pkg.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-center space-x-3">
+                        <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                        <span className="text-lg text-muted-foreground">
+                          {feature}
+                        </span>
+                      </div>
+                    ))
+                  ) : (
+                    <p className="text-lg text-muted-foreground">
+                      {(pkg as any).description}
+                    </p>
+                  )}
                 </div>
 
                 <div className="text-right mb-6 mt-auto">
