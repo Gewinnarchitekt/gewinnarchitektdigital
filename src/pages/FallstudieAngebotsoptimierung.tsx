@@ -78,19 +78,15 @@ const FallstudieAngebotsoptimierung = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Verschiedene Verkaufsunits griffen auf dasselbe Werbeinventar zu, oft mit ähnlichen Produkten aber unterschiedlichen Preisstrukturen
+                Mehrere Verkaufskanäle mit unkoordinierten Preisstrukturen und Kannibalisierungsrisiko
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Hohes Risiko der Preiskannibalisierung durch unkoordinierte Vertriebskanäle
+                Suboptimale Inventarauslastung und entgangene Erträge
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Opportunitätskosten durch suboptimale Auslastung des hochwertigen Inventars
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">•</span>
-                Fehlende Steuerungsinstrumente für eine wertorientierte Verkaufsstrategie
+                Fehlende Steuerungsinstrumente für wertorientierte Verkaufsentscheidungen
               </li>
             </ul>
           </section>
