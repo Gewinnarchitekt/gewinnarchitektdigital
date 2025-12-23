@@ -142,7 +142,7 @@ const FallstudieAngebotsoptimierung = () => {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Yield-Maximierung durch optimalen Trade-off zwischen Auslastung und Preis
+                Ertragsverbesserung dank optimierter Balance zwischen Preis und Auslastung
               </li>
             </ul>
           </section>
