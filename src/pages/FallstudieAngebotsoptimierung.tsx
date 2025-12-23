@@ -59,7 +59,7 @@ const FallstudieAngebotsoptimierung = () => {
             <h2 className="text-2xl font-bold mb-4">Die Ausgangslage</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Goldbach verantwortete die Vermarktung des Werbeinventars von führenden Nachrichtenportalen 
-              wie tagesanzeiger.ch und 20minuten.ch sowie unabhängige Portale über das Goldbach Partner-Netzwerks.
+              wie tagesanzeiger.ch und 20minuten.ch sowie unabhängigen Portalen über das Goldbach Partner-Netzwerks.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Als stark vertriebsorientierte Organisation herrschte hohe Transparenz über die absoluten 
