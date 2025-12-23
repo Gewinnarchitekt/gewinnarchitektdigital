@@ -57,11 +57,14 @@ const FallstudieAngebotsoptimierung = () => {
           {/* Die Ausgangslage */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Ausgangslage</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Goldbach verantwortete die Vermarktung des Werbeinventars von führenden Nachrichtenportalen 
+              wie tagesanzeiger.ch und 20minuten.ch sowie unabhängige Portale über das Goldbach Partner-Netzwerks.
+            </p>
             <p className="text-muted-foreground leading-relaxed">
-              Goldbach vermarktet das Online-Werbeinventar führender Schweizer Nachrichtenportale 
-              wie 20minuten.ch und tagesanzeiger.ch. Monatlich wurden hunderte Millionen Ad Impressions 
-              über verschiedene Kanäle verkauft, doch ein systematischer Einblick in Umsatzqualität 
-              und Gewinntreiber fehlte.
+              Als stark vertriebsorientierte Organisation herrschte hohe Transparenz über die absoluten 
+              Umsatzzahlen, jedoch fehlte ein tiefergehender Einblick in die Qualität des Umsatzes und 
+              die spezifischen Gewinntreiber.
             </p>
           </section>
 
