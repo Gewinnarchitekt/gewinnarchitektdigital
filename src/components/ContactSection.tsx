@@ -99,7 +99,7 @@ const ContactSection = ({}: ContactSectionProps) => {
               <div className="absolute left-4 top-8 bottom-8 w-0.5 bg-accent/30" />
               
               {/* Step 1 */}
-              <div className="flex items-center space-x-4 mb-6">
+              <div className="flex items-center space-x-4 mb-10">
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm z-10">
                   1
                 </div>
@@ -109,7 +109,7 @@ const ContactSection = ({}: ContactSectionProps) => {
               </div>
 
               {/* Step 2 */}
-              <div className="flex items-center space-x-4 mb-6">
+              <div className="flex items-center space-x-4 mb-10">
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm z-10">
                   2
                 </div>
@@ -141,7 +141,7 @@ const ContactSection = ({}: ContactSectionProps) => {
             <div className="mt-auto">
               <a href="https://tidycal.com/gewinnarchitekt/angebotscheck" target="_blank" rel="noopener noreferrer" className="block">
                 <Button variant="outline" size="lg" className="w-full text-lg py-3 h-auto">
-                  Unverbindlich Kennenlernen
+                  Termin vereinbaren
                 </Button>
               </a>
             </div>
