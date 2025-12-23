@@ -93,9 +93,9 @@ const ContactSection = ({}: ContactSectionProps) => {
             <h3 className="text-3xl font-bold mb-8">Weg zu einer Zusammenarbeit</h3>
 
             {/* 3-Step Process */}
-            <div className="relative mb-10 flex-1">
+            <div className="relative mb-10">
               {/* Vertical Line */}
-              <div className="absolute left-4 top-8 bottom-16 w-0.5 bg-accent/30" />
+              <div className="absolute left-4 top-8 bottom-8 w-0.5 bg-accent/30" />
               
               {/* Step 1 */}
               <div className="flex items-center space-x-4 mb-14">
