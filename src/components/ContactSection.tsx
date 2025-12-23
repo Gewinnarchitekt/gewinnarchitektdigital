@@ -95,7 +95,7 @@ const ContactSection = ({}: ContactSectionProps) => {
             {/* 3-Step Process */}
             <div className="relative mb-10 flex-1">
               {/* Vertical Line */}
-              <div className="absolute left-4 top-8 bottom-8 w-0.5 bg-accent/30" />
+              <div className="absolute left-4 top-8 bottom-4 w-0.5 bg-accent/30" />
               
               {/* Step 1 */}
               <div className="flex items-center space-x-4 mb-14">
