@@ -58,9 +58,10 @@ const FallstudieAngebotsoptimierung = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Ausgangslage</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Goldbach vermarktet das Online-Werbeinventar führender Schweizer Nachrichtenportale. 
-              Monatlich wurden hunderte Millionen Ad Impressions über verschiedene Kanäle verkauft – 
-              doch ein systematischer Einblick in Umsatzqualität und Gewinntreiber fehlte.
+              Goldbach vermarktet das Online-Werbeinventar führender Schweizer Nachrichtenportale 
+              wie 20minuten.ch und tagesanzeiger.ch. Monatlich wurden hunderte Millionen Ad Impressions 
+              über verschiedene Kanäle verkauft, doch ein systematischer Einblick in Umsatzqualität 
+              und Gewinntreiber fehlte.
             </p>
           </section>
 
@@ -68,15 +69,14 @@ const FallstudieAngebotsoptimierung = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Herausforderung</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Vermeidung von Kannibalisierung und Optimierung der Inventarnutzung
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Das Werbeinventar wurde über mehrere Verkaufsunits parallel vermarktet: Direktvertrieb, 
-              Programmatic Private Deals und Open Market. Ohne granulare Transparenz entstanden 
-              systemische Risiken.
+              Optimale Monetarisierung in einem schwierigen Marktumfeld
             </p>
             <p className="text-muted-foreground font-medium mb-3">Kernprobleme:</p>
             <ul className="space-y-2 text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                Parallele Vermarktung über mehrere Verkaufskanäle (Direktvertrieb, Programmatic Private Deals, Open Market)
+              </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
                 Interne Kannibalisierung zwischen Verkaufskanälen
