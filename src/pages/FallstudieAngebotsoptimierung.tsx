@@ -69,7 +69,7 @@ const FallstudieAngebotsoptimierung = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Herausforderung</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Optimale Monetarisierung in einem schwierigen Marktumfeld
+              Maximierung der Erträge über alle Verkaufskanäle hinweg
             </p>
             <p className="text-muted-foreground font-medium mb-3">Kernprobleme:</p>
             <ul className="space-y-2 text-muted-foreground">
