@@ -90,7 +90,7 @@ const ContactSection = ({}: ContactSectionProps) => {
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Left Column - Erstgespräch */}
           <div className="bg-muted/50 p-8 md:p-12 rounded-xl flex flex-col h-full">
-            <h3 className="text-3xl font-bold mb-8">Weg zu einer Zusammenarbeit</h3>
+            <h3 className="text-3xl font-bold mb-8">Zusammenarbeit prüfen...</h3>
 
             {/* 3-Step Process */}
             <div className="relative mb-10">
