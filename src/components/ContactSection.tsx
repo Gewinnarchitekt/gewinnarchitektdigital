@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Check } from "lucide-react";
+
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -91,34 +91,40 @@ const ContactSection = ({}: ContactSectionProps) => {
           {/* Left Column - Erstgespräch */}
           <div className="bg-muted/50 p-8 md:p-12 rounded-xl flex flex-col h-full">
             <div className="space-y-8 flex-1">
-            <h3 className="text-3xl font-bold mb-8">Erstgespräch</h3>
+            <h3 className="text-3xl font-bold mb-8">Aktiv werden</h3>
 
-            {/* Benefits List */}
-            <div className="space-y-6 mb-10">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center mt-1">
-                  <Check className="w-4 h-4 text-accent" />
+            {/* 3-Step Process */}
+            <div className="relative mb-10">
+              {/* Vertical Line */}
+              <div className="absolute left-4 top-8 bottom-8 w-0.5 bg-accent/30" />
+              
+              {/* Step 1 */}
+              <div className="flex items-center space-x-4 mb-6">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm z-10">
+                  1
                 </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Analyse deiner aktuellen Angebote - Wo stehst du heute und wo sind die grössten Hebel?
+                <p className="text-lg font-medium text-foreground">
+                  Unverbindlich Kennenlernen
                 </p>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center mt-1">
-                  <Check className="w-4 h-4 text-accent" />
+              {/* Step 2 */}
+              <div className="flex items-center space-x-4 mb-6">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm z-10">
+                  2
                 </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Konkrete Handlungsempfehlungen - Sofort umsetzbare Tipps für mehr Gewinn
+                <p className="text-lg font-medium text-foreground">
+                  Bedürfnisse und Ziele austauschen
                 </p>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center mt-1">
-                  <Check className="w-4 h-4 text-accent" />
+              {/* Step 3 */}
+              <div className="flex items-center space-x-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm z-10">
+                  3
                 </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Passende Lösung finden - Welches Angebot passt am besten zu deinen Zielen?
+                <p className="text-lg font-medium text-foreground">
+                  Individuelles Angebot erhalten
                 </p>
               </div>
             </div>
@@ -126,16 +132,8 @@ const ContactSection = ({}: ContactSectionProps) => {
             {/* Details */}
             <div className="space-y-3 mb-8">
               <div className="text-sm">
-                <span className="font-semibold text-foreground">Dauer:</span>{" "}
-                <span className="text-muted-foreground">30-45 Minuten</span>
-              </div>
-              <div className="text-sm">
                 <span className="font-semibold text-foreground">Format:</span>{" "}
                 <span className="text-muted-foreground">Video-Call</span>
-              </div>
-              <div className="text-sm">
-                <span className="font-semibold text-foreground">Kosten:</span>{" "}
-                <span className="text-muted-foreground">Kostenlos, keine Verpflichtungen</span>
               </div>
             </div>
 
@@ -143,7 +141,7 @@ const ContactSection = ({}: ContactSectionProps) => {
             <div className="mt-auto">
               <a href="https://tidycal.com/gewinnarchitekt/angebotscheck" target="_blank" rel="noopener noreferrer" className="block">
                 <Button variant="outline" size="lg" className="w-full text-lg py-3 h-auto">
-                  Jetzt Gewinnpotential abklären!
+                  Unverbindlich Kennenlernen
                 </Button>
               </a>
             </div>
