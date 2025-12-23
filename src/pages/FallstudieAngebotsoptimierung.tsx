@@ -35,7 +35,7 @@ const FallstudieAngebotsoptimierung = () => {
               Goldbach NeXT AG
             </h1>
             <p className="text-xl text-muted-foreground">
-              Yield Management & Transparenz für führende Werbevermarkter
+              Yield Management & Transparenz für führenden Werbevermarkter
             </p>
           </div>
 
