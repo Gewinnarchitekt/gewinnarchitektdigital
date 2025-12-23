@@ -70,27 +70,27 @@ const FallstudieAngebotsoptimierung = () => {
 
           {/* Die Herausforderung */}
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-4">Die Herausforderung</h2>
+            <h2 className="text-2xl font-bold mb-4">Herausforderung</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Maximierung der Erträge über alle Verkaufskanäle hinweg
+              Vermeidung von Kannibalisierung und Optimierung der Inventarnutzung
             </p>
-            <p className="text-muted-foreground font-medium mb-3">Kernprobleme:</p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Verschiedene Verkaufsunits griffen auf dasselbe Werbeinventar zu, oft mit ähnlichen 
+              Produkten aber unterschiedlichen Preisstrukturen.
+            </p>
+            <p className="text-muted-foreground font-medium mb-3">Die Kernprobleme:</p>
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Parallele Vermarktung über mehrere Verkaufskanäle (Direktvertrieb, Programmatic Private Deals, Open Market)
+                Hohes Risiko der Preiskannibalisierung durch unkoordinierte Vertriebskanäle
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Interne Kannibalisierung zwischen Verkaufskanälen
+                Opportunitätskosten durch suboptimale Auslastung des hochwertigen Inventars
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Suboptimale Preisgestaltung im programmatischen Bereich
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">•</span>
-                Fehlende Transparenz über die tatsächliche Performance pro Kanal und Produkt
+                Fehlende Steuerungsinstrumente für eine wertorientierte Verkaufsstrategie
               </li>
             </ul>
           </section>
