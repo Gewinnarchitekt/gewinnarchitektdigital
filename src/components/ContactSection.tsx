@@ -142,7 +142,7 @@ const ContactSection = ({}: ContactSectionProps) => {
             <div className="mt-auto">
               <a href="https://tidycal.com/gewinnarchitekt/angebotscheck" target="_blank" rel="noopener noreferrer" className="block">
                 <Button variant="outline" size="lg" className="w-full text-lg py-3 h-auto">
-                  Termin vereinbaren
+                  Jetzt aktiv werden
                 </Button>
               </a>
             </div>
