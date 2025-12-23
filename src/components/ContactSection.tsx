@@ -150,7 +150,7 @@ const ContactSection = ({}: ContactSectionProps) => {
 
           {/* Right Column - Contact Form */}
           <div className="bg-accent p-8 md:p-12 rounded-xl flex flex-col h-full">
-            <h3 className="text-3xl font-bold mb-8 text-white">Nachricht senden</h3>
+            <h3 className="text-3xl font-bold mb-8 text-white">... oder Nachricht senden</h3>
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 flex-1 flex flex-col">
               {/* Email */}
