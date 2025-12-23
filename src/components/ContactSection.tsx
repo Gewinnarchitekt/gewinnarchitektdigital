@@ -91,7 +91,7 @@ const ContactSection = ({}: ContactSectionProps) => {
           {/* Left Column - Erstgespräch */}
           <div className="bg-muted/50 p-8 md:p-12 rounded-xl flex flex-col h-full">
             <div className="space-y-8 flex-1">
-            <h3 className="text-3xl font-bold mb-8">Aktiv werden</h3>
+            <h3 className="text-3xl font-bold mb-8">Weg zu einer Zusammenarbeit</h3>
 
             {/* 3-Step Process */}
             <div className="relative mb-10">
@@ -129,13 +129,6 @@ const ContactSection = ({}: ContactSectionProps) => {
               </div>
             </div>
 
-            {/* Details */}
-            <div className="space-y-3 mb-8">
-              <div className="text-sm">
-                <span className="font-semibold text-foreground">Format:</span>{" "}
-                <span className="text-muted-foreground">Video-Call</span>
-              </div>
-            </div>
 
             {/* CTA Button */}
             <div className="mt-auto">
