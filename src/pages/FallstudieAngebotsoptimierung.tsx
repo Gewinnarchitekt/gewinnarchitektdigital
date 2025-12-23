@@ -78,7 +78,11 @@ const FallstudieAngebotsoptimierung = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Koordination mehrerer Verkaufskanäle mit unterschiedlichen Preisstrukturen
+                Mehrere Verkaufskanäle mit Zugriff auf dasselbe Inventar
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                Ähnliche Produkte mit unterschiedlichen Preisstrukturen
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
