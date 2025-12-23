@@ -58,11 +58,9 @@ const FallstudieAngebotsoptimierung = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Ausgangslage</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Goldbach vermarktet das gesamte Online-Werbeinventar der führenden Schweizer 
-              Nachrichtenportale tagesanzeiger.ch und 20minuten.ch. Als führender Vermarkter im 
-              Schweizer Markt wurden monatlich hunderte Millionen Ad Impressions über verschiedene 
-              Kanäle verkauft – doch es fehlte ein systematischer Einblick in die Qualität des 
-              Umsatzes und die wahren Gewinntreiber.
+              Goldbach vermarktet das Online-Werbeinventar führender Schweizer Nachrichtenportale. 
+              Monatlich wurden hunderte Millionen Ad Impressions über verschiedene Kanäle verkauft – 
+              doch ein systematischer Einblick in Umsatzqualität und Gewinntreiber fehlte.
             </p>
           </section>
 
@@ -105,18 +103,14 @@ const FallstudieAngebotsoptimierung = () => {
             <div className="bg-muted rounded-xl p-6 mb-6">
               <h3 className="text-xl font-semibold mb-3">Granulare Transparenz & Reporting</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li>• Implementierung dynamischer Reports nach Volumen und Marge für jede Kombination aus Kanal, Produkt und Inventar</li>
-                <li>• Wöchentliche Performance-Analysen zur Identifikation von Optimierungspotenzialen</li>
+                <li>• Dynamische Reports nach Volumen und Marge pro Kanal, Produkt und Inventar</li>
+                <li>• Regelmässige Analysen zur Identifikation von Optimierungspotenzialen</li>
               </ul>
             </div>
 
             {/* Phase 2 */}
             <div className="bg-muted rounded-xl p-6">
               <h3 className="text-xl font-semibold mb-3">Wöchentliches Pricing-Committee</h3>
-              <p className="text-muted-foreground mb-3">
-                Etablierung eines datengesteuerten Entscheidungsprozesses für die Preiskoordination 
-                im "Open Market" Kanal:
-              </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li>• Dynamische Anpassung der Floor Prices basierend auf Nachfrage und Auslastung</li>
                 <li>• Koordination zwischen Verkaufskanälen zur Vermeidung von Kannibalisierung</li>
