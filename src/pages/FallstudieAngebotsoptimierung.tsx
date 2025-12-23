@@ -98,7 +98,7 @@ const FallstudieAngebotsoptimierung = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Die Lösung</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Implementierung eines datengesteuerten Yield-Management-Systems:
+              360° Transparenz und operatives Yield Management
             </p>
 
             {/* Phase 1 */}
