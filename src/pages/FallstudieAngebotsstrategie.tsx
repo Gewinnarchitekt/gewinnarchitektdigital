@@ -147,10 +147,6 @@ const FallstudieAngebotsstrategie = () => {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Signifikante Reduktion der SAC- und Retentionkosten
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary font-bold">•</span>
                 Vermeidung kritischer Preisdifferenzen zu Mitbewerbern
               </li>
               <li className="flex items-start gap-2">
@@ -158,6 +154,12 @@ const FallstudieAngebotsstrategie = () => {
                 Stabile Marktanteile mit gleichbleibenden Neukunden- und Churnlevels
               </li>
             </ul>
+
+            <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6 mt-6">
+              <div className="text-green-600 font-semibold flex items-center gap-2">
+                <span>💰</span> Reduktion der Kundengewinnungs- und Retentionkosten im zweistelligen Millionenbereich
+              </div>
+            </div>
           </section>
 
           {/* CTA */}
