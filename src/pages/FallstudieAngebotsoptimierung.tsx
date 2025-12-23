@@ -72,7 +72,7 @@ const FallstudieAngebotsoptimierung = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Herausforderung</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Maximierung des Inventarwerts über mehrere Verkaufskanäle hinweg
+              Maximierung der Werbeerträge in einem komplexen Umfeld
             </p>
             <p className="text-muted-foreground font-medium mb-3">Die Kernprobleme:</p>
             <ul className="space-y-2 text-muted-foreground">
