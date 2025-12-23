@@ -118,12 +118,22 @@ const ContactSection = ({}: ContactSectionProps) => {
               </div>
 
               {/* Step 3 */}
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-4 mb-14">
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm z-10">
                   3
                 </div>
                 <p className="text-lg font-medium text-foreground">
                   Individuelles Angebot erhalten
+                </p>
+              </div>
+
+              {/* Step 4 */}
+              <div className="flex items-center space-x-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm z-10">
+                  4
+                </div>
+                <p className="text-lg font-medium text-foreground">
+                  Zielsetzungen vereinbaren
                 </p>
               </div>
             </div>
