@@ -90,11 +90,10 @@ const ContactSection = ({}: ContactSectionProps) => {
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Left Column - Erstgespräch */}
           <div className="bg-muted/50 p-8 md:p-12 rounded-xl flex flex-col h-full">
-            <div className="space-y-8 flex-1">
             <h3 className="text-3xl font-bold mb-8">Weg zu einer Zusammenarbeit</h3>
 
             {/* 3-Step Process */}
-            <div className="relative mb-10">
+            <div className="relative mb-10 flex-1">
               {/* Vertical Line */}
               <div className="absolute left-4 top-8 bottom-8 w-0.5 bg-accent/30" />
               
@@ -129,7 +128,6 @@ const ContactSection = ({}: ContactSectionProps) => {
               </div>
             </div>
 
-
             {/* CTA Button */}
             <div className="mt-auto">
               <a href="https://tidycal.com/gewinnarchitekt/angebotscheck" target="_blank" rel="noopener noreferrer" className="block">
@@ -137,7 +135,6 @@ const ContactSection = ({}: ContactSectionProps) => {
                   Termin vereinbaren
                 </Button>
               </a>
-            </div>
             </div>
           </div>
 
