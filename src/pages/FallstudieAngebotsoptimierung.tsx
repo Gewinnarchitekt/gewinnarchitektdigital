@@ -72,14 +72,14 @@ const FallstudieAngebotsoptimierung = () => {
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Herausforderung</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Vermeidung von Kannibalisierung und Optimierung der Inventarnutzung
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Verschiedene Verkaufsunits griffen auf dasselbe Werbeinventar zu, oft mit ähnlichen 
-              Produkten aber unterschiedlichen Preisstrukturen.
+              Maximierung des Inventarwerts über mehrere Verkaufskanäle hinweg
             </p>
             <p className="text-muted-foreground font-medium mb-3">Die Kernprobleme:</p>
             <ul className="space-y-2 text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <span className="text-primary font-bold">•</span>
+                Verschiedene Verkaufsunits griffen auf dasselbe Werbeinventar zu, oft mit ähnlichen Produkten aber unterschiedlichen Preisstrukturen
+              </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
                 Hohes Risiko der Preiskannibalisierung durch unkoordinierte Vertriebskanäle
