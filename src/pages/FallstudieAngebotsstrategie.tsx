@@ -139,6 +139,12 @@ const FallstudieAngebotsstrategie = () => {
           {/* Die Ergebnisse */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-6">Ergebnis</h2>
+
+            <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6 mb-6">
+              <div className="text-green-600 font-semibold flex items-center gap-2">
+                <span>💰</span> Reduktion der Kundengewinnungs- und Retentionkosten im zweistelligen Millionenbereich
+              </div>
+            </div>
             
             <ul className="space-y-2 text-muted-foreground ml-1">
               <li className="flex items-start gap-2">
@@ -154,12 +160,6 @@ const FallstudieAngebotsstrategie = () => {
                 Stabile Marktanteile mit gleichbleibenden Neukunden- und Churnlevels
               </li>
             </ul>
-
-            <div className="bg-gradient-to-br from-green-600/10 to-green-700/10 border border-green-600/20 rounded-xl p-6 mt-6">
-              <div className="text-green-600 font-semibold flex items-center gap-2">
-                <span>💰</span> Reduktion der Kundengewinnungs- und Retentionkosten im zweistelligen Millionenbereich
-              </div>
-            </div>
           </section>
 
           {/* CTA */}
