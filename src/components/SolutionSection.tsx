@@ -38,7 +38,7 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "AI-Kostenkontrolle",
         "Churn prevention"
       ],
-      caseStudyLink: "#"
+      caseStudyLink: "/fallstudie/angebotsoptimierung"
     },
     angebotsstrategie: {
       icon: Target,
