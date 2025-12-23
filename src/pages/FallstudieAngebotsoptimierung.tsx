@@ -78,15 +78,15 @@ const FallstudieAngebotsoptimierung = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Mehrere Verkaufskanäle mit unkoordinierten Preisstrukturen und Kannibalisierungsrisiko
+                Koordination mehrerer Verkaufskanäle mit unterschiedlichen Preisstrukturen
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Suboptimale Inventarauslastung und entgangene Erträge
+                Optimierung der Inventarauslastung über alle Kanäle
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Fehlende Steuerungsinstrumente für wertorientierte Verkaufsentscheidungen
+                Etablierung von Steuerungsinstrumenten für wertorientierte Verkaufsentscheidungen
               </li>
             </ul>
           </section>
