@@ -134,15 +134,15 @@ const FallstudieAngebotsoptimierung = () => {
             <ul className="space-y-2 text-muted-foreground ml-1">
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Vollständige Transparenz über die Profitabilität jedes Verkaufskanals
+                Zielgerichtete Vertriebssteuerung auf Basis klarer Margentransparenz
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Messbare Reduktion der Kannibalisierung zwischen Vertriebswegen
+                Vermeidung von Kannibalisierung dank Frühwarnsystem
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Etablierung einer datengetriebenen Pricing-Kultur im gesamten Verkaufsteam
+                Yield-Maximierung durch optimalen Trade-off zwischen Auslastung und Preis
               </li>
             </ul>
           </section>
