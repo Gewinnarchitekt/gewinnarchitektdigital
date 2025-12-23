@@ -82,7 +82,7 @@ const FallstudieAngebotsoptimierung = () => {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                Optimierung der Inventarauslastung über alle Kanäle
+                Optimierung der Inventarauslastung
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
