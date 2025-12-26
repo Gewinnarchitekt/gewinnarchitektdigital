@@ -165,11 +165,10 @@ const FallstudieAngebotsstrategie = () => {
           {/* CTA */}
           <section className="bg-muted rounded-xl p-8 text-center">
             <h2 className="text-2xl font-bold mb-4">
-              Bereit für Ihre Pricing-Transformation?
+              Ähnliche Herausforderung?
             </h2>
             <p className="text-muted-foreground mb-6">
-              Lassen Sie uns gemeinsam analysieren, wie Sie mit einer datenbasierten Preisstrategie 
-              nachhaltige Profitabilität erreichen können.
+              Lass uns besprechen, wie ich dich bei deiner Angebotsstrategie unterstützen kann.
             </p>
             <a href="https://tidycal.com/gewinnarchitekt/angebotscheck" target="_blank" rel="noopener noreferrer">
               <Button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white">
