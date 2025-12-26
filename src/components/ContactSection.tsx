@@ -82,7 +82,7 @@ const ContactSection = ({}: ContactSectionProps) => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Nächster Schritt</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Termin buchen oder direkt Kontakt aufnehmen
+            Wähle deinen bevorzugten Weg
           </p>
         </div>
 
