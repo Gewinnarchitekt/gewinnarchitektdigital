@@ -82,7 +82,7 @@ const ContactSection = ({}: ContactSectionProps) => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Nächster Schritt</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            So können wir starten
+            Erfahre mehr über den Prozess oder nimm direkt Kontakt auf
           </p>
         </div>
 
