@@ -17,7 +17,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Der Mehrwert für den Kunden wird nicht klar kommuniziert",
       description: ""
     }],
-    highlight: "Fehlende Angebotsoptimierung kostet 52% des möglichen Umsatzes¹",
+    highlight: "Ohne optimiertes Angebot entgehen über 20% des möglichen Umsatzes¹",
     color: "from-red-600 to-red-700"
   }, {
     icon: Wrench,
