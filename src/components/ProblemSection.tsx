@@ -53,7 +53,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Es fehlt eine langfristige Perspektive",
       description: ""
     }],
-    highlight: "61% der Firmen bekunden Mühe, eine langfristige Strategie effektiv umzusetzen³",
+    highlight: "30% an Preisentscheidungen verfehlen den optimalen Preis³",
     color: "from-red-600 to-red-700"
   }];
   return <section id="herausforderungen" className="py-20 bg-background">
@@ -110,8 +110,8 @@ const ProblemSection = ({}: ProblemSectionProps) => {
             </a>
           </p>
           <p className="text-sm text-muted-foreground">
-            <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              ³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
+            <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/using-big-data-to-make-better-pricing-decisions" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              ³Using big data to make better pricing decisions | McKinsey
             </a>
           </p>
         </div>
