@@ -19,7 +19,9 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "Packaging & Bundling",
         "Preispunktoptimierung",
         "AI-Kostenprognose",
-        "Sales Enablement"
+        "Sales Enablement",
+        "Naming",
+        "Jobs To Be Done"
       ],
       caseStudyLink: "/fallstudie/angebotsgestaltung"
     },
@@ -36,7 +38,13 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "Gewinntreiberstruktur",
         "Dynamic Pricing",
         "AI-Kostenkontrolle",
-        "Churn prevention"
+        "Churn prevention",
+        "Kundenmigration",
+        "Reporting",
+        "Analytics",
+        "Data Visualization",
+        "Preismonitoring",
+        "Benchmarking"
       ],
       caseStudyLink: "/fallstudie/angebotsoptimierung"
     },
@@ -53,7 +61,11 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "Portfolio Assessment",
         "Preisstrategie",
         "Pricing Governance",
-        "CLV Optimierung"
+        "CLV Optimierung",
+        "Workshops",
+        "Positionierung",
+        "Langfristplanung",
+        "Change Mgmt"
       ],
       caseStudyLink: "/fallstudie/angebotsstrategie"
     }
