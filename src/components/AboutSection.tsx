@@ -68,9 +68,9 @@ const AboutSection = ({}: AboutSectionProps) => {
               
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Ich verfolge einen datengetriebenen Ansatz, der Kundenbedürfnisse priorisiert und 
-                gleichzeitig nachhaltigen Geschäftserfolg sicherstellt. Dazu nutze ich das gesamte 
-                Spektrum an Pricing & Analytics Anwendungen und Tools, die den Geschäftserfolg 
-                messbar verbessern können.
+                gleichzeitig nachhaltigen Geschäftserfolg sicherstellt. Dazu nutze ich sämtliche 
+                Pricing & Analytics Anwendungen und Tools, die den Geschäftserfolg messbar 
+                verbessern können.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
