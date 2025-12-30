@@ -53,7 +53,7 @@ const ProblemSection = ({}: ProblemSectionProps) => {
       title: "Es fehlt eine langfristige Perspektive",
       description: ""
     }],
-    highlight: "30% an Preisentscheidungen verfehlen den optimalen Preis³",
+    highlight: "30% der wichtigen Entscheidungen verfehlen den besten Preis³",
     color: "from-red-600 to-red-700"
   }];
   return <section id="herausforderungen" className="py-20 bg-background">
