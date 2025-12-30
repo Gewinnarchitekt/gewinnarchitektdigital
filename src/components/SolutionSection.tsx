@@ -21,7 +21,8 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "AI-Kostenprognose",
         "Sales Enablement",
         "Naming",
-        "Jobs To Be Done"
+        "Jobs To Be Done",
+        "Go 2 Market"
       ],
       caseStudyLink: "/fallstudie/angebotsgestaltung"
     },
@@ -35,7 +36,6 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "Erfolgstracking",
         "Liquiditätsplanung",
         "Margenoptimierung",
-        "Gewinntreiberstruktur",
         "Dynamic Pricing",
         "AI-Kostenkontrolle",
         "Churn prevention",
@@ -65,7 +65,8 @@ const SolutionSection = ({}: SolutionSectionProps) => {
         "Workshops",
         "Positionierung",
         "Langfristplanung",
-        "Change Mgmt"
+        "Change Mgmt",
+        "Gewinntreiberstruktur"
       ],
       caseStudyLink: "/fallstudie/angebotsstrategie"
     }
