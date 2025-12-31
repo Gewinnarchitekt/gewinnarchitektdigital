@@ -70,9 +70,8 @@ const AboutSectionEn = ({}: AboutSectionEnProps) => {
               
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I pursue a data-driven approach that prioritizes customer needs while 
-                ensuring business success. Methods include customer surveys, competitive 
-                analyses, market research, financial/driver models, data analytics, and 
-                dynamic reporting.
+                ensuring sustainable business success. I utilize all Pricing & Analytics 
+                applications and tools that can measurably improve business success.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">

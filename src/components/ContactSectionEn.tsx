@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Check } from "lucide-react";
+
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -82,62 +82,61 @@ const ContactSectionEn = ({}: ContactSectionEnProps) => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Let's Talk</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Increase Your Profits</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready for the next step? Send me a message or book an appointment
+            Choose your preferred path to success now
           </p>
         </div>
 
         {/* Two Column Layout */}
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Left Column - Initial Meeting */}
+          {/* Left Column - Check Collaboration */}
           <div className="bg-muted/50 p-8 md:p-12 rounded-xl flex flex-col h-full">
-            <div className="space-y-8 flex-1">
-            <h3 className="text-3xl font-bold mb-8">Initial Meeting</h3>
+            <h3 className="text-3xl font-bold mb-8">Check collaboration...</h3>
 
-            {/* Benefits List */}
-            <div className="space-y-6 mb-10">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center mt-1">
-                  <Check className="w-4 h-4 text-accent" />
+            {/* 4-Step Process */}
+            <div className="relative mb-10">
+              {/* Vertical Line */}
+              <div className="absolute left-4 top-8 bottom-8 w-0.5 bg-accent/30" />
+              
+              {/* Step 1 */}
+              <div className="flex items-center space-x-4 mb-14">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm z-10">
+                  1
                 </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Analysis of your current offers - Where do you stand today and where are the biggest levers?
+                <p className="text-lg font-medium text-foreground">
+                  Non-binding introduction
                 </p>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center mt-1">
-                  <Check className="w-4 h-4 text-accent" />
+              {/* Step 2 */}
+              <div className="flex items-center space-x-4 mb-14">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm z-10">
+                  2
                 </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Concrete action recommendations - Immediately implementable tips for more profit
+                <p className="text-lg font-medium text-foreground">
+                  Exchange needs and goals
                 </p>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center mt-1">
-                  <Check className="w-4 h-4 text-accent" />
+              {/* Step 3 */}
+              <div className="flex items-center space-x-4 mb-14">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm z-10">
+                  3
                 </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Find the right solution - Which offer best fits your goals?
+                <p className="text-lg font-medium text-foreground">
+                  Receive individual offer
                 </p>
               </div>
-            </div>
 
-            {/* Details */}
-            <div className="space-y-3 mb-8">
-              <div className="text-sm">
-                <span className="font-semibold text-foreground">Duration:</span>{" "}
-                <span className="text-muted-foreground">30-45 minutes</span>
-              </div>
-              <div className="text-sm">
-                <span className="font-semibold text-foreground">Format:</span>{" "}
-                <span className="text-muted-foreground">Video Call</span>
-              </div>
-              <div className="text-sm">
-                <span className="font-semibold text-foreground">Cost:</span>{" "}
-                <span className="text-muted-foreground">Free, no obligations</span>
+              {/* Step 4 */}
+              <div className="flex items-center space-x-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm z-10">
+                  4
+                </div>
+                <p className="text-lg font-medium text-foreground">
+                  Agree on objectives
+                </p>
               </div>
             </div>
 
@@ -145,16 +144,15 @@ const ContactSectionEn = ({}: ContactSectionEnProps) => {
             <div className="mt-auto">
               <a href="https://tidycal.com/gewinnarchitekt/angebotscheck" target="_blank" rel="noopener noreferrer" className="block">
                 <Button variant="outline" size="lg" className="w-full text-lg py-3 h-auto">
-                  Clarify Profit Potential Now!
+                  Book Appointment
                 </Button>
               </a>
-            </div>
             </div>
           </div>
 
           {/* Right Column - Contact Form */}
           <div className="bg-accent p-8 md:p-12 rounded-xl flex flex-col h-full">
-            <h3 className="text-3xl font-bold mb-8 text-white">Send Message</h3>
+            <h3 className="text-3xl font-bold mb-8 text-white">... or send message</h3>
 
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 flex-1 flex flex-col">
               {/* Email */}

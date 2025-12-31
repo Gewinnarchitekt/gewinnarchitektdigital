@@ -18,7 +18,10 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
         "Packaging & Bundling",
         "Price Point Optimization",
         "AI Cost Forecasting",
-        "Sales Enablement"
+        "Sales Enablement",
+        "Naming",
+        "Jobs To Be Done",
+        "Go 2 Market"
       ],
       caseStudyLink: "#"
     },
@@ -32,10 +35,15 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
         "Success Tracking",
         "Liquidity Planning",
         "Margin Optimization",
-        "Profit Driver Structure",
         "Dynamic Pricing",
         "AI Cost Control",
-        "Churn Prevention"
+        "Churn Prevention",
+        "Customer Migration",
+        "Reporting",
+        "Analytics",
+        "Data Visualization",
+        "Price Monitoring",
+        "Benchmarking"
       ],
       caseStudyLink: "#"
     },
@@ -52,7 +60,12 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
         "Portfolio Assessment",
         "Pricing Strategy",
         "Pricing Governance",
-        "CLV Optimization"
+        "CLV Optimization",
+        "Workshops",
+        "Positioning",
+        "Long-term Planning",
+        "Change Mgmt",
+        "Profit Driver Structure"
       ],
       caseStudyLink: "#"
     }

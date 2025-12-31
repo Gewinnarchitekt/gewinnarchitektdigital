@@ -25,7 +25,7 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
           description: ""
         }
       ],
-      highlight: "Missing offer optimization costs 52% of possible revenue¹",
+      highlight: "Without optimized offers, over 20% of possible revenue is lost¹",
       color: "from-red-600 to-red-700"
     },
     {
@@ -73,7 +73,7 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
           description: ""
         }
       ],
-      highlight: "61% of companies struggle to implement a long-term strategy effectively³",
+      highlight: "30% of important decisions miss the best price³",
       color: "from-red-600 to-red-700"
     }
   ];
@@ -135,8 +135,8 @@ const ProblemSectionEn = ({}: ProblemSectionEnProps) => {
             </a>
           </p>
           <p className="text-sm text-muted-foreground">
-            <a href="https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/why-good-strategies-fail-report.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              ³Why Good Strategies Fail: Lessons for C-Suite | PMI Thought Leadership Series
+            <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/using-big-data-to-make-better-pricing-decisions" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              ³Using big data to make better pricing decisions | McKinsey
             </a>
           </p>
         </div>
