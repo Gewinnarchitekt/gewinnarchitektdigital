@@ -1,5 +1,6 @@
 import { Package, Wrench, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 interface SolutionSectionEnProps {}
 
@@ -23,7 +24,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
         "Jobs To Be Done",
         "Go 2 Market"
       ],
-      caseStudyLink: "#"
+      caseStudyLink: "/fallstudie/angebotsgestaltung"
     },
     offerOptimization: {
       icon: Wrench,
@@ -45,7 +46,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
         "Price Monitoring",
         "Benchmarking"
       ],
-      caseStudyLink: "#"
+      caseStudyLink: "/fallstudie/angebotsoptimierung"
     },
     offerStrategy: {
       icon: Target,
@@ -67,7 +68,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
         "Change Mgmt",
         "Profit Driver Structure"
       ],
-      caseStudyLink: "#"
+      caseStudyLink: "/fallstudie/angebotsstrategie"
     }
   };
 
@@ -100,7 +101,7 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
                 </p>
 
                 {/* Subheading */}
-                <p className="font-medium text-muted-foreground mb-3">available Services</p>
+                <p className="font-medium text-muted-foreground mb-3">available services</p>
 
                 {/* Services as Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
@@ -116,11 +117,11 @@ const SolutionSectionEn = ({}: SolutionSectionEnProps) => {
 
                 {/* Case Study Button */}
                 <div className="mt-auto flex justify-end">
-                  <a href={solution.caseStudyLink} target="_blank" rel="noopener noreferrer">
+                  <Link to={solution.caseStudyLink}>
                     <Button className="bg-gray-500 hover:bg-accent text-white hover:text-accent-foreground transition-colors">
                       Case Study
                     </Button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             );
