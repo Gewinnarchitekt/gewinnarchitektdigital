@@ -27,7 +27,7 @@ const PricingSection = ({}: PricingSectionProps) => {
         "Wöchentliches Alignment",
         "Freie Serviceauswahl",
         "bis zu 2 Services gleichzeitig",
-        "jeder weitere Service\n+CHF 1'000/Monat",
+        "CHF 1'000 pro zusätzlichem Service",
       ],
     },
     {
