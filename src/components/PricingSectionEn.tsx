@@ -15,11 +15,10 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
         "Access to expert\nknow-how",
         "2 video calls per month",
         "Personal chat channel",
-        "cancel monthly",
       ],
     },
     {
-      name: "Value",
+      name: "Services",
       price: "CHF 2'900",
       period: "per month",
       link: "https://tidycal.com/gewinnarchitekt/angebotsoptimierung",
@@ -28,20 +27,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
         "Weekly alignment",
         "Free service selection",
         "up to 2 services simultaneously",
-        "cancel monthly",
-      ],
-    },
-    {
-      name: "Impact",
-      price: "CHF 4'900",
-      period: "per month",
-      link: "https://tidycal.com/gewinnarchitekt/angebotsgestaltung",
-      features: [
-        "Access to expert\nknow-how",
-        "Weekly alignment",
-        "Free service selection",
-        "up to 4 services simultaneously",
-        "cancel monthly",
+        "each additional service\n+CHF 1'000",
       ],
     },
     {
@@ -64,7 +50,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-4 gap-6 max-w-[1400px] mx-auto">
+        <div className="grid lg:grid-cols-3 gap-6 max-w-[1100px] mx-auto">
           {packages.map((pkg, index) => {
             return (
               <div
