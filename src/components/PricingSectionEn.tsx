@@ -7,7 +7,7 @@ interface PricingSectionEnProps {}
 const PricingSectionEn = ({}: PricingSectionEnProps) => {
   const packages = [
     {
-      name: "Coaching",
+      name: "Do It Yourself",
       price: "CHF 290",
       period: "per month",
       link: "https://tidycal.com/gewinnarchitekt/angebotsstrategie",
