@@ -35,8 +35,11 @@ const PricingSection = ({}: PricingSectionProps) => {
       price: "CHF 7'400",
       period: "pro Monat",
       link: "https://tidycal.com/gewinnarchitekt/angebotsgestaltung",
-      description: "Aufbau oder strategische Leitung der Pricing-Funktion",
-      features: [],
+      features: [
+        "Aufbau oder Leitung Preismanagement",
+        "Führung von Transformationsprojekten",
+        "Strategische Produktentwicklung",
+      ],
     },
   ];
 
