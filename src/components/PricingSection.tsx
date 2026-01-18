@@ -18,7 +18,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       ],
     },
     {
-      name: "Services",
+      name: "Pick your Service",
       price: "CHF 2'900",
       period: "pro Monat",
       link: "https://tidycal.com/gewinnarchitekt/angebotsoptimierung",
@@ -31,7 +31,7 @@ const PricingSection = ({}: PricingSectionProps) => {
       ],
     },
     {
-      name: "Fractional",
+      name: "Share Ownership",
       price: "CHF 7'400",
       period: "pro Monat",
       link: "https://tidycal.com/gewinnarchitekt/angebotsgestaltung",
