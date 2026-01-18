@@ -18,7 +18,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
       ],
     },
     {
-      name: "Pick your Service",
+      name: "Pick Your Service",
       price: "CHF 2'900",
       period: "per month",
       link: "https://tidycal.com/gewinnarchitekt/angebotsoptimierung",
