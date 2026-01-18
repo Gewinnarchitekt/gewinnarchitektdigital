@@ -31,7 +31,7 @@ const PricingSectionEn = ({}: PricingSectionEnProps) => {
       ],
     },
     {
-      name: "Share Ownership",
+      name: "Share The Ownership",
       price: "CHF 7'400",
       period: "per month",
       link: "https://tidycal.com/gewinnarchitekt/angebotsgestaltung",
