@@ -1,8 +1,14 @@
+import SEOHead from "@/components/SEOHead";
 import Footer from "@/components/Footer";
 
 const Datenschutz = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Datenschutzerklärung – gewinnarchitekt.ch"
+        description="Datenschutzerklärung von gewinnarchitekt. Informationen zum Umgang mit personenbezogenen Daten."
+        canonical="https://gewinnarchitekt.ch/datenschutz"
+      />
       <main className="flex-1 container mx-auto px-6 py-16 max-w-4xl">
         <h1 className="text-4xl font-bold mb-2">Datenschutzerklärung</h1>
         

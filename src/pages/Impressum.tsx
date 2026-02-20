@@ -1,8 +1,14 @@
+import SEOHead from "@/components/SEOHead";
 import Footer from "@/components/Footer";
 
 const Impressum = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title="Impressum – gewinnarchitekt.ch"
+        description="Impressum und rechtliche Informationen von gewinnarchitekt, Karl Aschwanden, Zürich."
+        canonical="https://gewinnarchitekt.ch/impressum"
+      />
       <main className="flex-1 container mx-auto px-6 py-16 max-w-4xl">
         <h1 className="text-4xl font-bold mb-2">Impressum</h1>
         <p className="text-muted-foreground mb-8">18. August 2025</p>
