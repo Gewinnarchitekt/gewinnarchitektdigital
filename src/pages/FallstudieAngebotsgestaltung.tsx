@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
+import ogImage from "@/assets/solution-angebotsgestaltung.jpg";
 
 const FallstudieAngebotsgestaltung = () => {
   const appliedServices = [
@@ -17,6 +19,12 @@ const FallstudieAngebotsgestaltung = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Fallstudie Swisscard – Angebotsgestaltung – gewinnarchitekt.ch"
+        description="Strategische Angebotsgestaltung nach Partnerschaftsauflösung bei Swisscard GmbH."
+        canonical="https://gewinnarchitekt.ch/fallstudie/angebotsgestaltung"
+        ogImage={ogImage}
+      />
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-6">
         <Link to="/#leistungen">

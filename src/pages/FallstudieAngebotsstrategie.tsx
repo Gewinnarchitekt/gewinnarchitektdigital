@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
+import ogImage from "@/assets/solution-angebotsstrategie.jpg";
 
 const FallstudieAngebotsstrategie = () => {
   const appliedServices = [
@@ -15,6 +17,12 @@ const FallstudieAngebotsstrategie = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Fallstudie Sunrise – Angebotsstrategie – gewinnarchitekt.ch"
+        description="Pricingstrategie für Smartphones bei Sunrise Communications AG."
+        canonical="https://gewinnarchitekt.ch/fallstudie/angebotsstrategie"
+        ogImage={ogImage}
+      />
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-6">
         <Link to="/#leistungen">

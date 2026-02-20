@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
+import ogImage from "@/assets/solution-angebotsoptimierung.jpg";
 
 const FallstudieAngebotsoptimierung = () => {
   const appliedServices = [
@@ -13,6 +15,12 @@ const FallstudieAngebotsoptimierung = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Fallstudie Goldbach – Angebotsoptimierung – gewinnarchitekt.ch"
+        description="Yield Management & Transparenz für führenden Werbevermarkter Goldbach NeXT AG."
+        canonical="https://gewinnarchitekt.ch/fallstudie/angebotsoptimierung"
+        ogImage={ogImage}
+      />
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-6">
         <Link to="/#leistungen">
