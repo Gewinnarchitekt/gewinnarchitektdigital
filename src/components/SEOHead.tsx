@@ -7,6 +7,9 @@ interface SEOHeadProps {
   ogImage?: string;
   noIndex?: boolean;
   schemaJson?: Record<string, unknown>;
+  locale?: string;
+  alternates?: Array<{ hreflang: string; href: string }>;
+  htmlLang?: string;
 }
 
 const SEOHead = ({
@@ -16,9 +19,13 @@ const SEOHead = ({
   ogImage,
   noIndex = false,
   schemaJson,
+  locale,
+  alternates,
+  htmlLang,
 }: SEOHeadProps) => {
   return (
     <Helmet>
+      {htmlLang && <html lang={htmlLang} />}
       <title>{title}</title>
       <meta name="description" content={description} />
       {canonical && <link rel="canonical" href={canonical} />}
@@ -29,11 +36,16 @@ const SEOHead = ({
       <meta property="og:type" content="website" />
       {canonical && <meta property="og:url" content={canonical} />}
       {ogImage && <meta property="og:image" content={ogImage} />}
+      {locale && <meta property="og:locale" content={locale} />}
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+      {alternates?.map((alt) => (
+        <link key={alt.hreflang} rel="alternate" hrefLang={alt.hreflang} href={alt.href} />
+      ))}
 
       {schemaJson && (
         <script type="application/ld+json">

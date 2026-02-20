@@ -22,9 +22,12 @@ const HeroSection = ({}: HeroSectionProps) => {
           </div>
           
           {/* Main headline */}
-          <h1 className="font-bold mb-8 leading-tight">
+          <h1 className="font-bold mb-6 leading-tight">
             Datengetriebene <span className="text-accent">Gewinnoptimierung</span> für digitale Produkte
           </h1>
+          <p className="text-lg md:text-xl text-white/85 mb-8 max-w-3xl">
+            Mit datengetriebenen Analysen helfe ich dir, kundenorientierte Angebote zu entwickeln, die Gewinn und Cashflow nachhaltig steigern.
+          </p>
           
           {/* CTA Button */}
           <div className="flex justify-start">
