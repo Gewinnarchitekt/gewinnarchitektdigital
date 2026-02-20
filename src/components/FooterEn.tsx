@@ -21,7 +21,7 @@ const FooterEn = ({}: FooterEnProps) => {
         <div className="border-t border-footer-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-footer-foreground/60 text-sm">
-              © 2025 Gewinnarchitekt - Karl Aschwanden. All rights reserved.
+              © 2026 Gewinnarchitekt - Karl Aschwanden. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm text-footer-foreground/60">
               <Link to="/datenschutz" className="hover:text-footer-foreground smooth-transition">
