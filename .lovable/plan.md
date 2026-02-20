@@ -1,96 +1,163 @@
 
 
-# Add SEO Meta Tags to All Pages
+# Clean Up Homepage and Optimize for SEO & SAO
 
 ## Overview
 
-Install `react-helmet-async`, create a reusable `SEOHead` component, add it to every page with page-specific values, and clean up `index.html` to avoid duplicate meta tags.
+Improve the German and English homepages with semantic HTML, structured data, language signals, and content enhancements that benefit both traditional search engines (SEO) and AI-powered search/answer engines (SAO).
+
+## Issues Found
+
+1. **No semantic `<main>` landmark** -- screen readers and crawlers cannot identify the primary content area
+2. **No JSON-LD structured data** -- no Organization, WebSite, or Service schema on homepages
+3. **Missing `hreflang` tags** -- search engines cannot associate DE and EN pages as language alternates
+4. **Missing subheading on German hero** -- the EN hero has a descriptive `<p>` below the `<h1>`, but the DE hero does not, reducing crawlable text
+5. **`robots.txt` missing Sitemap directive** -- search engines may not discover the sitemap automatically
+6. **Footer copyright year says 2025** -- current year is 2026
+7. **`index.html` missing `lang` fallback handling** -- EN page should signal `lang="en"` to the document
+8. **No `og:locale` tags** -- helps social platforms and AI crawlers identify content language
+9. **Background hero image has no `<img>` tag** -- CSS background images are invisible to crawlers; adding a hidden semantic `<img>` with alt text would help
+10. **Comment on line 1 of Index.tsx** -- "Update this page (the content is just a fallback...)" is unnecessary noise
 
 ## Changes
 
-### 1. Install `react-helmet-async`
+### 1. Add `<main>` semantic wrapper to both homepages
 
-Add the dependency for managing `<head>` tags from React components.
+Wrap all content sections (between Navigation and Footer) in a `<main>` tag in both `Index.tsx` and `IndexEn.tsx`.
 
-### 2. Wrap App with `HelmetProvider`
+### 2. Add JSON-LD structured data to both homepages
 
-In `src/main.tsx`, wrap `<App />` with `<HelmetProvider>` from `react-helmet-async`.
+Add Organization + WebSite + ProfessionalService schema via the existing `schemaJson` prop on `SEOHead`:
 
-### 3. Create `src/components/SEOHead.tsx`
+**German homepage schema includes:**
+- `@type: ProfessionalService` with name, url, description, founder, areaServed, serviceType
+- Nested `WebSite` for sitelinks search
 
-A reusable component accepting these props:
-- `title` (string)
-- `description` (string)
-- `canonical` (string) -- full URL
-- `ogImage` (string, optional)
-- `noIndex` (boolean, optional, default false)
-- `schemaJson` (object, optional) -- JSON-LD structured data
+**English homepage:** Same structure with English descriptions.
 
-The component renders a `<Helmet>` with:
-- `<title>`
-- `<meta name="description">`
-- `<link rel="canonical">`
-- `<meta name="robots">` (only if noIndex)
-- `<meta property="og:title">`, `og:description`, `og:url`, `og:image`, `og:type`
-- `<meta name="twitter:card">`, `twitter:title`, `twitter:description`, `twitter:image`
-- `<script type="application/ld+json">` (if schemaJson provided)
+### 3. Add `hreflang` alternate links
 
-### 4. Add SEOHead to every page
+Update `SEOHead` component to accept an optional `alternates` prop (array of `{hreflang, href}`). Render `<link rel="alternate" hreflang="..." href="..." />` for each entry.
 
-Base URL: `https://gewinnarchitekt.ch`
+Both homepages will declare:
+- `hreflang="de"` pointing to `https://gewinnarchitekt.ch/`
+- `hreflang="en"` pointing to `https://gewinnarchitekt.ch/en`
+- `hreflang="x-default"` pointing to `https://gewinnarchitekt.ch/`
 
-| Page | Title | Description | Canonical | OG Image |
-|------|-------|-------------|-----------|----------|
-| `/` (Index) | gewinnarchitekt.ch - Pricing Expertise auf Abruf | Datengetriebene Gewinnoptimierung fur digitale Produkte. Pricing & Analytics as a Service. | https://gewinnarchitekt.ch/ | hero-data-background.jpg |
-| `/en` (IndexEn) | gewinnarchitekt.ch - Pricing Expertise on Demand | Get More from Your Digital Offerings. Data-driven insights for customer-oriented offerings. | https://gewinnarchitekt.ch/en | hero-data-background.jpg |
-| `/impressum` | Impressum - gewinnarchitekt.ch | Impressum und rechtliche Informationen von gewinnarchitekt, Karl Aschwanden, Zurich. | https://gewinnarchitekt.ch/impressum | (none) |
-| `/datenschutz` | Datenschutzerklarung - gewinnarchitekt.ch | Datenschutzerklarung von gewinnarchitekt. Informationen zum Umgang mit personenbezogenen Daten. | https://gewinnarchitekt.ch/datenschutz | (none) |
-| `/fallstudie/angebotsgestaltung` | Fallstudie Swisscard - Angebotsgestaltung - gewinnarchitekt.ch | Strategische Angebotsgestaltung nach Partnerschaftsauflosung bei Swisscard GmbH. | https://gewinnarchitekt.ch/fallstudie/angebotsgestaltung | solution-angebotsgestaltung.jpg |
-| `/fallstudie/angebotsoptimierung` | Fallstudie Goldbach - Angebotsoptimierung - gewinnarchitekt.ch | Yield Management & Transparenz fur fuhrenden Werbevermarkter Goldbach NeXT AG. | https://gewinnarchitekt.ch/fallstudie/angebotsoptimierung | solution-angebotsoptimierung.jpg |
-| `/fallstudie/angebotsstrategie` | Fallstudie Sunrise - Angebotsstrategie - gewinnarchitekt.ch | Pricingstrategie fur Smartphones bei Sunrise Communications AG. | https://gewinnarchitekt.ch/fallstudie/angebotsstrategie | solution-angebotsstrategie.jpg |
-| `*` (NotFound) | Seite nicht gefunden - gewinnarchitekt.ch | Die angeforderte Seite wurde nicht gefunden. | (none) | noIndex: true |
+### 4. Add subheading paragraph to German HeroSection
 
-### 5. Clean up `index.html`
+Add a `<p>` tag below the `<h1>` matching the EN version pattern:
+> "Mit datengetriebenen Analysen helfe ich dir, kundenorientierte Angebote zu entwickeln, die Gewinn und Cashflow nachhaltig steigern"
 
-Remove from `<head>`:
-- `<title>` tag (line 8)
-- `<meta name="description">` (line 9)
-- All `og:` meta tags (lines 12-15)
-- All `twitter:` meta tags (lines 17-19)
+This gives crawlers and AI engines more contextual text to index.
 
-Keep:
-- `<meta charset>`
-- `<meta name="viewport">`
-- `<link rel="icon">` tags
-- `<meta name="author">`
+### 5. Add `og:locale` to SEOHead
 
-No extra body/title/h1 content issues found -- body only contains `<div id="root">` and the script tag.
+Add an optional `locale` prop to `SEOHead`. Set `og:locale` to `de_CH` on the DE page and `en` on the EN page.
 
-### 6. No existing direct meta tag overrides
+### 6. Update `robots.txt`
 
-No pages currently set meta tags directly in their components, so no removal needed beyond `index.html`.
+Add `Sitemap: https://gewinnarchitekt.ch/sitemap.xml` at the bottom.
+
+### 7. Fix footer copyright year
+
+Change "2025" to "2026" in both `Footer.tsx` and `FooterEn.tsx`.
+
+### 8. Set document `lang` attribute for EN page
+
+Use `react-helmet-async` to set `<html lang="en">` on the EN homepage (and `<html lang="de">` on DE). This overrides the static `lang="de"` in `index.html` when on the EN route.
+
+### 9. Remove stale comment from Index.tsx
+
+Remove the "Update this page" comment on line 1.
+
+---
+
+## Files Modified
+
+| File | Change |
+|------|--------|
+| `src/components/SEOHead.tsx` | Add `alternates` and `locale` props; render hreflang links and og:locale |
+| `src/pages/Index.tsx` | Add `<main>` wrapper, JSON-LD schema, hreflang alternates, locale, remove comment |
+| `src/pages/IndexEn.tsx` | Add `<main>` wrapper, JSON-LD schema, hreflang alternates, locale, html lang="en" |
+| `src/components/HeroSection.tsx` | Add subheading `<p>` below `<h1>` |
+| `src/components/Footer.tsx` | Update copyright year to 2026 |
+| `src/components/FooterEn.tsx` | Update copyright year to 2026 |
+| `public/robots.txt` | Add Sitemap directive |
+
+## Files NOT Modified
+
+All other pages and components remain untouched -- scope is limited to the two homepages, the shared SEOHead component, and the two footers.
 
 ---
 
 ## Technical Details
 
-### Files created:
-- `src/components/SEOHead.tsx`
+### SEOHead updated interface
 
-### Files modified:
-- `src/main.tsx` -- add HelmetProvider wrapper
-- `index.html` -- remove title, description, og, twitter tags
-- `src/pages/Index.tsx` -- add SEOHead
-- `src/pages/IndexEn.tsx` -- add SEOHead
-- `src/pages/Impressum.tsx` -- add SEOHead
-- `src/pages/Datenschutz.tsx` -- add SEOHead
-- `src/pages/FallstudieAngebotsgestaltung.tsx` -- add SEOHead
-- `src/pages/FallstudieAngebotsoptimierung.tsx` -- add SEOHead
-- `src/pages/FallstudieAngebotsstrategie.tsx` -- add SEOHead
-- `src/pages/NotFound.tsx` -- add SEOHead with noIndex
+```typescript
+interface SEOHeadProps {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  noIndex?: boolean;
+  schemaJson?: Record<string, unknown>;
+  locale?: string;               // NEW: e.g. "de_CH", "en"
+  alternates?: Array<{           // NEW: hreflang alternates
+    hreflang: string;
+    href: string;
+  }>;
+  htmlLang?: string;             // NEW: override <html lang="">
+}
+```
 
-### Warnings
+### JSON-LD schema (German homepage example)
 
-- **Favicon**: The site uses custom favicon files (`favicon-16x16.png`, `favicon-32x32.png`) -- these appear to be custom, not Lovable defaults. You should verify they show the correct gewinnarchitekt branding.
-- **placeholder.svg**: The file `public/placeholder.svg` exists but does not appear to be used on any page. It is likely a Lovable default placeholder and can be safely removed.
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "Gewinnarchitekt",
+      "url": "https://gewinnarchitekt.ch",
+      "description": "Datengetriebene Gewinnoptimierung fuer digitale Produkte. Pricing & Analytics as a Service.",
+      "founder": {
+        "@type": "Person",
+        "name": "Karl Aschwanden"
+      },
+      "areaServed": "CH",
+      "serviceType": ["Pricing Strategy", "Analytics", "Offer Optimization"]
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://gewinnarchitekt.ch",
+      "name": "Gewinnarchitekt",
+      "inLanguage": "de"
+    }
+  ]
+}
+```
+
+### Updated robots.txt
+
+```text
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://gewinnarchitekt.ch/sitemap.xml
+```
 
