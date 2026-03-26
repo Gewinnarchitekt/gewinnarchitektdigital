@@ -1,6 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Linkedin } from "lucide-react";
-import karlPortrait from "@/assets/karl-portrait.jpg";
+
 
 // Logos
 import goldbachLogo from "@/assets/logos/goldbach-3.png";
