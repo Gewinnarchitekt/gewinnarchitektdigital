@@ -39,7 +39,7 @@ const AboutSection = ({}: AboutSectionProps) => {
           <div className="flex justify-center">
             <div className="relative">
               <img 
-                src={karlPortrait} 
+                src="/lovable-uploads/2f59b102-977c-4ba3-989c-d7173e9a16b9.jpg" 
                 alt="Karl Aschwanden Portrait" 
                 className="rounded-2xl w-full max-w-xs h-auto object-cover card-shadow"
               />
